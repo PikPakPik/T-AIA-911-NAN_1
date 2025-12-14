@@ -1,0 +1,9 @@
+1,je voudrais aller de Toulouse à bordeaux
+2,Comment me rendre à Port-Boulet depuis la gare de Tours ?
+3,Je veux aller voir mon ami Albert à Tours en partant de Bordeaux
+4,Il y a-t-il des trains de Nantes à Montaigu
+5,Une phrase sans origine ni destination
+7,is there any train going from Paris to Marseille ?
+8,depuis paris je veux aller a albert pour boire un monaco.
+9,je veux faire saint denis saint etienne
+
