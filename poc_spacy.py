@@ -23,7 +23,7 @@ parser.add_argument("--output", help="Path to output CSV file", default="dataset
 parser.add_argument(
     "--model",
     help="SpaCy model to load",
-    choices=["fr_core_news_md", "fr_core_news_lg"],
+    choices=["fr_core_news_md", "fr_core_news_lg", "./output/model-best", "./output/model-last"],
     default="fr_core_news_lg",
 )
 
@@ -62,6 +62,8 @@ with open(args.output, 'w', newline='', encoding='utf-8') as csvfile:
         phrase = line.strip()
         doc = nlp(phrase)
         lieux = [ent.text for ent in doc.ents if ent.label_ == "LOC"]
+        for ent in doc.ents:
+            print(f"Entity: {ent.text}, Label: {ent.label_}")
 
         departure = lieux[0] if len(lieux) > 0 else 'INVALID'
         arrival = lieux[-1] if len(lieux) > 1 else 'INVALID'

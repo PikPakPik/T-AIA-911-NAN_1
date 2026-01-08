@@ -6,41 +6,33 @@ import spacy
 from spacy.tokens import DocBin
 import unicodedata
 
-regions = requests.get("https://geo.api.gouv.fr/regions").json()
-departments = requests.get("https://geo.api.gouv.fr/departements").json()
-cities = requests.get("https://geo.api.gouv.fr/communes").json()
-associated_delegated_cities = requests.get("https://geo.api.gouv.fr/communes_associees_deleguees").json()
+# regions = requests.get("https://geo.api.gouv.fr/regions").json()
+# departments = requests.get("https://geo.api.gouv.fr/departements").json()
+# cities = requests.get("https://geo.api.gouv.fr/communes").json()
+# associated_delegated_cities = requests.get("https://geo.api.gouv.fr/communes_associees_deleguees").json()
 
-with open('geo.csv', 'w', newline='', encoding='utf-8') as csvfile:
-    writer = csv.writer(csvfile)
+# with open('geo.csv', 'w', newline='', encoding='utf-8') as csvfile:
+#     writer = csv.writer(csvfile)
 
-    print("Writing regions")
-    for region in regions:
-        writer.writerow([region["nom"], "LOC_REGION"])
+#     print("Writing regions")
+#     for region in regions:
+#         writer.writerow([region["nom"], "LOC_REGION"])
 
-    print("Writing departments")
-    for department in departments:
-        writer.writerow([department["nom"], "LOC_DEPARTMENT"])
+#     print("Writing departments")
+#     for department in departments:
+#         writer.writerow([department["nom"], "LOC_DEPARTMENT"])
 
-    print("Writing cities")
-    for city in cities:
-        writer.writerow([city["nom"], "LOC_CITY"])
+#     print("Writing cities")
+#     for city in cities:
+#         writer.writerow([city["nom"], "LOC_CITY"])
 
-    print("Writing associated/delegated cities")
-    for city in associated_delegated_cities:
-        writer.writerow([city["nom"], "LOC_CITY"])
+#     print("Writing associated/delegated cities")
+#     for city in associated_delegated_cities:
+#         writer.writerow([city["nom"], "LOC_CITY"])
 
 with open("geo.csv", "r", encoding="utf-8") as file:
     reader = csv.reader(file)
     locations = list(reader)
-
-TEMPLATES = [
-    "Je veux aller de {a} à {b}",
-    "Train entre {a} et {b}",
-    "Voyage de {a} vers {b}",
-    "Je souhaite me rendre à {b} depuis {a}",
-    "Billet {a} {b}",
-]
 
 def remove_accents(text: str) -> str:
     """Remove accents from text."""
@@ -92,5 +84,104 @@ def generate_variants(name: str) -> set[str]:
 
     return final
 
-for row in locations:
-    print(generate_variants(row[0]))
+TEMPLATES = [
+    # Base simple
+    "Je veux aller de {a} à {b}",
+    "Train entre {a} et {b}",
+    "Voyage de {a} vers {b}",
+    "Billet {a} {b}",
+
+    # Questions
+    "Comment aller de {a} à {b}?",
+    "Quel train entre {a} et {b}?",
+    "C'est combien pour aller de {a} à {b}?",
+    
+    # Formulations naturelles
+    "Je dois me rendre de {a} à {b}",
+    "Je dois aller de {a} à {b} demain",
+    "Un aller-retour {a}-{b} s'il vous plaît",
+    "Un billet {a} {b} svp",
+    
+    # Avec contexte temporel
+    "Départ de {a} vers {b} ce soir",
+    "Je pars de {a} pour {b} lundi prochain",
+    "Train de {a} à {b} demain matin",
+    "Départ {a} arrivée {b} cet après-midi",
+    
+    # Variations ordre inversé
+    "Trajet depuis {a} vers {b}",
+    "Réserver un billet de {a} pour {b}",
+    "Je souhaite me rendre à {b} depuis {a}",
+    "Je veux aller à {b} en partant de {a}",
+    "Aller à {b} au départ de {a}",
+    "Direction {b} depuis {a}",
+    
+    # Formulations familières
+    "J'ai besoin d'aller de {a} à {b}",
+    "Faut que j'aille de {a} à {b}",
+    "Cherche train {a} {b}",
+    "Dispo {a}-{b}?",
+    
+    # Avec détails
+    "Réservation au départ de {a} direction {b}",
+    "Billet de train de {a} à destination de {b}",
+    "Partir de {a} pour rejoindre {b}",
+    "Trajet en train de {a} jusqu'à {b}",
+    
+    # Variations
+    "Trajet depuis {a} vers {b}",
+    "Réserver un billet de {a} pour {b}",
+]
+
+def generate_annotated_sentences(locations, n=25000):
+    samples = []
+
+    for _ in range(n):
+        (name1, label1), (name2, label2) = random.sample(locations, 2)
+
+        v1 = random.choice(list(generate_variants(name1)))
+        v2 = random.choice(list(generate_variants(name2)))
+
+        sentence = random.choice(TEMPLATES).format(a=v1, b=v2)
+
+        start1 = sentence.index(v1)
+        end1 = start1 + len(v1)
+        start2 = sentence.index(v2)
+        end2 = start2 + len(v2)
+
+        samples.append((
+            sentence,
+            [
+                (start1, end1, label1),
+                (start2, end2, label2),
+            ]
+        ))
+
+    return samples
+
+def build_docbin(samples, output_path):
+    nlp = spacy.blank("fr")
+    db = DocBin()
+
+    for text, entities in samples:
+        doc = nlp.make_doc(text)
+        spans = []
+        for start, end, label in entities:
+            span = doc.char_span(start, end, label=label)
+            if span:
+                spans.append(span)
+        doc.ents = spans
+        db.add(doc)
+
+    db.to_disk(output_path)
+
+samples = generate_annotated_sentences(locations, n=15000)
+
+random.shuffle(samples)
+split_train = int(len(samples) * 0.8)
+
+train_data = samples[:split_train]
+dev_data = samples[split_train:]
+
+build_docbin(train_data, "train.spacy")
+build_docbin(dev_data, "dev.spacy")
