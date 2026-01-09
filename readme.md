@@ -1,5 +1,10 @@
 # T-AIA-911
 
+## Initialize the environment
+```bash
+pyenv install 3.12.8
+```
+
 ## Spacy
 ### Train the model
 ```bash
