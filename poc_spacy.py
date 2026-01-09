@@ -55,7 +55,7 @@ nlp = spacy.load(args.model)
 
 # Traite chaque ligne pour extraire les entités LOC et écrit les résultats dans dataset_output.csv.
 # Chaque ligne du CSV contient: [index, départ, ... étapes ..., arrivée].
-with open(args.output, 'w', newline='', encoding='utf-8') as csvfile:
+with open("./dataset/" + args.output, 'w', newline='', encoding='utf-8') as csvfile:
     writer = csv.writer(csvfile)
 
     for idx, line in enumerate(lines, 1):

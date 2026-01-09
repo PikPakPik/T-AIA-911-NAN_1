@@ -6,31 +6,7 @@ import spacy
 from spacy.tokens import DocBin
 import unicodedata
 
-# regions = requests.get("https://geo.api.gouv.fr/regions").json()
-# departments = requests.get("https://geo.api.gouv.fr/departements").json()
-# cities = requests.get("https://geo.api.gouv.fr/communes").json()
-# associated_delegated_cities = requests.get("https://geo.api.gouv.fr/communes_associees_deleguees").json()
-
-# with open('geo.csv', 'w', newline='', encoding='utf-8') as csvfile:
-#     writer = csv.writer(csvfile)
-
-#     print("Writing regions")
-#     for region in regions:
-#         writer.writerow([region["nom"], "LOC_REGION"])
-
-#     print("Writing departments")
-#     for department in departments:
-#         writer.writerow([department["nom"], "LOC_DEPARTMENT"])
-
-#     print("Writing cities")
-#     for city in cities:
-#         writer.writerow([city["nom"], "LOC_CITY"])
-
-#     print("Writing associated/delegated cities")
-#     for city in associated_delegated_cities:
-#         writer.writerow([city["nom"], "LOC_CITY"])
-
-with open("geo.csv", "r", encoding="utf-8") as file:
+with open("./dataset/geo.csv", "r", encoding="utf-8") as file:
     reader = csv.reader(file)
     locations = list(reader)
 
@@ -179,9 +155,12 @@ samples = generate_annotated_sentences(locations, n=15000)
 
 random.shuffle(samples)
 split_train = int(len(samples) * 0.8)
+split_dev = int(len(samples) * 0.9)
 
 train_data = samples[:split_train]
-dev_data = samples[split_train:]
+dev_data = samples[split_train:split_dev]
+test_data = samples[split_dev:]
 
-build_docbin(train_data, "train.spacy")
-build_docbin(dev_data, "dev.spacy")
+build_docbin(train_data, "./training_data/train.spacy")
+build_docbin(dev_data, "./training_data/dev.spacy")
+build_docbin(test_data, "./training_data/test.spacy")
