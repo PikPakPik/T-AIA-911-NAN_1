@@ -31,8 +31,8 @@ def generate_variants(name: str) -> set[str]:
     base = name.strip()
 
     saint_rules = [
-        (r"\bSaint\b", ["Saint", "St"]),
-        (r"\bSainte\b", ["Sainte", "Ste"]),
+        (r"\bSaint\b", ["Saint", "St", "St."]),
+        (r"\bSainte\b", ["Sainte", "Ste", "Ste."]),
     ]
 
     def apply_rules(text):
