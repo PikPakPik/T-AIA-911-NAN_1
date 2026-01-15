@@ -1,8 +1,8 @@
-Toulouse,Bordeaux
-Tours,Port-Boulet
-Bordeaux,Tours
-Nantes,Montaigu
-INVALID,
-INVALID,
-Paris,Albert
-Saint-Denis,Saint-Etienne
+1,Toulouse,Bordeaux
+2,Tours,Port-Boulet
+3,Bordeaux,Tours
+4,Nantes,Montaigu
+5,INVALID,
+7,INVALID,
+8,Paris,Albert
+9,Saint-Denis,Saint-Etienne
