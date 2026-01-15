@@ -61,7 +61,7 @@ with open("./dataset/" + args.output, 'w', newline='', encoding='utf-8') as csvf
     for idx, line in enumerate(lines, 1):
         phrase = line.strip()
         doc = nlp(phrase)
-        lieux = [ent.text for ent in doc.ents if ent.label_ == "LOC"]
+        lieux = [ent.text for ent in doc.ents if ent.label_ in ("LOC", "LOC_CITY")]
         for ent in doc.ents:
             print(f"Entity: {ent.text}, Label: {ent.label_}")
 
