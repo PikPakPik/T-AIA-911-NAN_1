@@ -81,20 +81,150 @@ VALID_PATTERNS = [
     lambda d, a: f"De {d} jusqu'à {a}",
 ]
 
-# Phrases invalides (sans origine/destination valides)
+# Phrases invalides : rien à voir avec une demande de trajet
 INVALID_PATTERNS = [
+    # Courtoisie / général
     "bonjour comment allez-vous",
-    "je voudrais acheter un livre",
-    "quelle est la météo aujourd'hui",
-    "je cherche un restaurant",
-    "une phrase sans origine ni destination",
-    "je veux juste dire bonjour",
-    "pouvez-vous m'aider",
     "merci beaucoup",
     "à bientôt",
+    "pouvez-vous m'aider",
     "je ne sais pas quoi faire",
     "c'est une belle journée",
+    "une phrase sans origine ni destination",
+    "je veux juste dire bonjour",
+    "au revoir",
+    "bonne journée",
+    "excusez-moi",
+    "s'il vous plaît",
+    "pas de souci",
+    "très bien",
+    "d'accord",
+    "compris",
+    # Achats / réservations (non train)
+    "je voudrais acheter un livre",
     "je voudrais réserver une chambre d'hôtel",
+    "je cherche un restaurant",
+    "réserver une table pour deux",
+    "où est la pharmacie",
+    "je voudrais un café",
+    "l'addition s'il vous plaît",
+    "c'est combien",
+    "j'aimerais commander une pizza",
+    "où puis-je acheter des billets de concert",
+    # Météo / infos
+    "quelle est la météo aujourd'hui",
+    "il fait beau",
+    "il pleut demain",
+    "quelle heure est-il",
+    "quelle date sommes-nous",
+    "où sont les toilettes",
+    "où est la gare la plus proche",
+    "c'est ouvert à quelle heure",
+    # Demandes non voyage
+    "je cherche un emploi",
+    "comment aller au musée",
+    "où est le parc",
+    "annuler ma commande",
+    "je me suis perdu",
+    "pouvez-vous répéter",
+    "je ne comprends pas",
+    "quel temps fait-il",
+    "combien coûte ce livre",
+    "où puis-je acheter un ticket de métro",
+    "je voudrais un renseignement",
+    "c'est où la sortie",
+    "y a-t-il un distributeur",
+    # Conversation générale
+    "qu'est-ce que vous recommandez",
+    "c'est délicieux",
+    "je n'aime pas ça",
+    "on fait quoi ce soir",
+    "tu viens ce week-end",
+    "raconte-moi ta journée",
+    "comment ça va",
+    "ça fait longtemps",
+    "je suis fatigué",
+    "j'ai faim",
+    "il est tard",
+    "je dois partir",
+    "à tout à l'heure",
+    "bonne nuit",
+    "bon appétit",
+    # Questions diverses
+    "pourquoi pas",
+    "comment ça marche",
+    "c'est possible",
+    "vous avez des infos",
+    "quel est le numéro",
+    "c'est gratuit",
+    "il y a un wifi",
+    "où est le parking",
+    "c'est loin",
+    "combien de temps ça prend",
+    # Ordres / refus
+    "stop",
+    "attendez",
+    "non merci",
+    "pas maintenant",
+    "plus tard",
+    "je réfléchis",
+    "laissez-moi tranquille",
+    "je ne veux pas",
+    "c'est tout",
+    "rien d'autre",
+    # Téléphone / tech
+    "mon portable est déchargé",
+    "vous avez du réseau",
+    "je n'ai pas internet",
+    "comment on fait une réservation en ligne",
+    "l'application ne marche pas",
+    # Santé / urgence
+    "j'ai mal à la tête",
+    "où est l'hôpital",
+    "appelez une ambulance",
+    "au secours",
+    "aidez-moi",
+    # Culture / loisirs (sans demande de trajet)
+    "quel film à l'affiche",
+    "c'est quoi ce spectacle",
+    "je voudrais voir une exposition",
+    "y a-t-il un concert ce soir",
+    "où est le cinéma",
+    "je cherche une librairie",
+    "vous avez des places",
+    # Travail / admin
+    "je dois envoyer un mail",
+    "où signer",
+    "c'est pour un rendez-vous",
+    "j'ai un entretien demain",
+    "je cherche un stage",
+    "vous avez des brochures",
+    "je voudrais un reçu",
+    # Nonsense / hors sujet
+    "le chat est sur le tapis",
+    "il pleut des cordes",
+    "c'est la fin des haricots",
+    "je m'en moque",
+    "n'importe quoi",
+    "bof",
+    "peut-être",
+    "on verra",
+]
+
+# Contexte recette / pâtisserie : Paris-Brest, religieuse = pâtisseries, pas des trajets → INVALID
+RECIPE_INVALID_PATTERNS = [
+    "Recette de cuisine pour un Paris-Brest",
+    "Recette du Paris-Brest",
+    "Je veux une religieuse à la pâtisserie",
+    "Je commande un Paris-Brest",
+    "Recette de la religieuse",
+    "Un Paris-Brest et un café",
+    "recette de cuisine pour un paris-brest",
+    "Où trouver une bonne religieuse",
+    "Ingrédients pour un Paris-Brest",
+    "Je prépare un Paris-Brest pour le dessert",
+    "La recette du Paris-Brest de ma grand-mère",
+    "Différence entre Paris-Brest et religieuse",
 ]
 
 # Prénoms qui sont aussi des noms de villes (pour les pièges)
@@ -205,7 +335,7 @@ def generate_valid_sentences(num_sentences: int) -> List[Tuple[str, str, str]]:
 def generate_invalid_sentences(num_sentences: int) -> List[Tuple[str, str, str]]:
     """Génère des phrases invalides"""
     sentences = []
-    
+
     for _ in range(num_sentences):
         # Parfois utiliser un pattern, parfois aléatoire
         if random.random() < 0.7:
@@ -217,13 +347,71 @@ def generate_invalid_sentences(num_sentences: int) -> List[Tuple[str, str, str]]
                 "comment", "depuis", "vers", "à", "de"
             ]
             sentence = ' '.join(random.sample(mots_aleatoires, random.randint(3, 6)))
-        
+
         # Ajouter des variations
         variations = add_variations(sentence)
         sentence = random.choice(variations)
-        
+
         sentences.append((sentence, "INVALID", ""))
-    
+
+    return sentences
+
+
+def generate_recipe_invalid_sentences(num_sentences: int) -> List[Tuple[str, str, str]]:
+    """Phrases recette / pâtisserie (Paris-Brest, religieuse) = INVALID, pas des trajets."""
+    sentences = []
+    for _ in range(num_sentences):
+        sentence = random.choice(RECIPE_INVALID_PATTERNS)
+        variations = add_variations(sentence)
+        sentence = random.choice(variations)
+        sentences.append((sentence, "INVALID", ""))
+    return sentences
+
+
+def generate_city_context_invalid_sentences(num_sentences: int) -> List[Tuple[str, str, str]]:
+    """Phrases avec noms de villes mais pas une demande de trajet (sport, culture, visite, etc.) → INVALID."""
+    sentences = []
+    # Templates à 1 ville
+    one_city = [
+        lambda v: f"J'ai visité {v} l'année dernière",
+        lambda v: f"J'ai été à {v} en vacances",
+        lambda v: f"Mon ami habite à {v}",
+        lambda v: f"Je suis né à {v}",
+        lambda v: f"Le musée de {v} est magnifique",
+        lambda v: f"J'adore {v}",
+        lambda v: f"On a passé le week-end à {v}",
+        lambda v: f"La météo à {v} est bonne",
+        lambda v: f"Tu connais {v}",
+        lambda v: f"L'équipe de {v} a gagné",
+        lambda v: f"Le match à {v} était nul",
+        lambda v: f"Le concert à {v} est annulé",
+        lambda v: f"Le festival de {v} a lieu en juillet",
+        lambda v: f"La gare de {v} est en travaux",
+        lambda v: f"Combien d'habitants à {v}",
+        lambda v: f"Le maire de {v}",
+        lambda v: f"L'aéroport de {v}",
+    ]
+    # Templates à 2 villes
+    two_cities = [
+        lambda v1, v2: f"Le match {v1} {v2} c'est quand",
+        lambda v1, v2: f"Résultat du match {v1} contre {v2}",
+        lambda v1, v2: f"Finale {v1} {v2}",
+        lambda v1, v2: f"La distance {v1} {v2} en voiture",
+        lambda v1, v2: f"Différence entre {v1} et {v2}",
+    ]
+    ville_pairs = list(itertools.permutations(VILLES, 2))
+    for _ in range(num_sentences):
+        if random.random() < 0.6:
+            template = random.choice(one_city)
+            ville = random.choice(VILLES)
+            base = template(ville.lower())
+        else:
+            template = random.choice(two_cities)
+            v1, v2 = random.choice(ville_pairs)
+            base = template(v1.lower(), v2.lower())
+        variations = add_variations(base)
+        sentence = random.choice(variations)
+        sentences.append((sentence, "INVALID", ""))
     return sentences
 
 def generate_trap_sentences(num_valid_traps: int, num_invalid_traps: int) -> List[Tuple[str, str, str]]:
@@ -290,23 +478,33 @@ def generate_trap_sentences(num_valid_traps: int, num_invalid_traps: int) -> Lis
     return sentences
 
 def main():
-    """Génère le dataset complet"""
-    print("Génération du dataset...")
-    
-    # Générer environ 8500 phrases valides normales, 500 valides pièges
-    # 800 invalides normales, 1200 invalides pièges
-    num_valid = 8500
-    num_valid_traps = 500
-    num_invalid = 800
-    num_invalid_traps = 1200
-    
+    """Génère le dataset complet (~100k phrases)"""
+    print("Génération du dataset (~100k phrases)...")
+
+    # Répartition pour ~100k : valides, invalides générales, villes en contexte (INVALID), pièges, recette
+    num_valid = 51_000
+    num_invalid = 25_000
+    num_city_context_invalid = 12_000
+    num_valid_traps = 5_000
+    num_invalid_traps = 5_000
+    num_recipe_invalid = 2_000
+
     valid_sentences = generate_valid_sentences(num_valid)
     invalid_sentences = generate_invalid_sentences(num_invalid)
+    city_context_invalid = generate_city_context_invalid_sentences(num_city_context_invalid)
     trap_sentences_valid = generate_trap_sentences(num_valid_traps, 0)
     trap_sentences_invalid = generate_trap_sentences(0, num_invalid_traps)
-    
+    recipe_invalid_sentences = generate_recipe_invalid_sentences(num_recipe_invalid)
+
     # Mélanger toutes les phrases
-    all_sentences = valid_sentences + invalid_sentences + trap_sentences_valid + trap_sentences_invalid
+    all_sentences = (
+        valid_sentences
+        + invalid_sentences
+        + city_context_invalid
+        + trap_sentences_valid
+        + trap_sentences_invalid
+        + recipe_invalid_sentences
+    )
     random.shuffle(all_sentences)
     
     # Écrire le fichier d'entrée
@@ -323,10 +521,12 @@ def main():
                     f_output.write(f"{sentence_id},{depart},{arrivee}\n")
     
     print(f"✅ Dataset généré avec succès!")
-    print(f"   - Phrases valides normales: {num_valid}")
+    print(f"   - Phrases valides (trajet): {num_valid}")
     print(f"   - Phrases valides pièges: {num_valid_traps}")
-    print(f"   - Phrases invalides normales: {num_invalid}")
+    print(f"   - Phrases invalides (hors voyage): {num_invalid}")
+    print(f"   - Villes en contexte non-trajet (INVALID): {num_city_context_invalid}")
     print(f"   - Phrases invalides pièges: {num_invalid_traps}")
+    print(f"   - Phrases recette/pâtisserie (INVALID): {num_recipe_invalid}")
     print(f"   - Total: {len(all_sentences)} phrases")
     print(f"   - Fichiers créés: dataset_input.txt, dataset_output.txt")
 
