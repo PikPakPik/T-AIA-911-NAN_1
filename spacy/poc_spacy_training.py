@@ -12,10 +12,19 @@ import seaborn as sns
 import numpy as np
 import argparse
 
-# Charge les données de géolocalisation
-with open("../dataset/geo.csv", "r", encoding="utf-8") as file:
-    reader = csv.reader(file)
-    locations = list(reader)
+# Charge les données de géolocalisation avec leur labels
+def load_locations():
+    """Charge toutes les localisations avec leurs labels spécifiques"""
+    locations = []
+    with open("../dataset/geo.csv", "r", encoding="utf-8") as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            name = row['nom']
+            label = row['label']
+            locations.append((name, label))
+    return locations
+
+locations = load_locations()
 
 def remove_accents(text: str) -> str:
     """Remove accents from text."""
@@ -120,8 +129,8 @@ def generate_annotated_sentences(locations, n=15000):
         samples.append((
             sentence,
             [
-                (start1, end1, "LOC"),
-                (start2, end2, "LOC"),
+                (start1, end1, label1),
+                (start2, end2, label2),
             ]
         ))
 
