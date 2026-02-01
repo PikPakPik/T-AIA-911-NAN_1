@@ -44,6 +44,8 @@ Options : `--dataset-dir ./dataset`, `--output-dir ./roberta_ner_model`, `--seed
 
 Le modèle fine-tuné est enregistré dans `./roberta_ner_model/`.
 
+**GPU Apple Silicon (M1/M2/M3)** : MPS est utilisé automatiquement par le Trainer et les pipelines (`poc_roberta.py`, `chat_roberta_loc.py`) si PyTorch est installé avec support MPS. PyTorch ≥ 1.13 recommandé.
+
 ### Générer le jeu de test (formulations différentes)
 Pour évaluer le modèle sur des phrases **jamais vues** à l’entraînement :
 
