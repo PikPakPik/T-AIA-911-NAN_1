@@ -17,6 +17,31 @@ from sklearn.metrics import accuracy_score, precision_recall_fscore_support
 import unicodedata
 
 
+def get_device():
+    """Retourne le meilleur device : MPS (Mac ARM64), CUDA, ou CPU."""
+    if torch.cuda.is_available():
+        return torch.device("cuda")
+    if getattr(torch.backends, "mps", None) is not None and torch.backends.mps.is_available() and torch.backends.mps.is_built():
+        return torch.device("mps")
+    return torch.device("cpu")
+
+
+class TrainerMPS(Trainer):
+    """Trainer qui utilise MPS (Apple Silicon) quand disponible."""
+
+    def _setup_devices(self):
+        device = get_device()
+        self.args._n_gpu = 1 if device.type in ("cuda", "mps") else 0
+        self.args.n_gpu = self.args._n_gpu
+        self.args.device = device
+        if device.type == "mps":
+            print("Device: MPS (Apple Silicon GPU)")
+        elif device.type == "cuda":
+            print("Device: CUDA")
+        else:
+            print("Device: CPU")
+
+
 def remove_accents(text: str) -> str:
     """Remove accents from text (used for matching in load_dataset_input_output)."""
     nfkd = unicodedata.normalize("NFD", text)
@@ -335,8 +360,8 @@ def main():
     # Data collator
     data_collator = DataCollatorForTokenClassification(tokenizer=tokenizer)
     
-    # Trainer
-    trainer = Trainer(
+    # Trainer (utilise MPS sur Mac ARM64 si disponible)
+    trainer = TrainerMPS(
         model=model,
         args=training_args,
         train_dataset=train_dataset,

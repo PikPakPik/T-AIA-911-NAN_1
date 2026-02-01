@@ -82,13 +82,28 @@ def main():
     )
     args = parser.parse_args()
 
+    # Device : MPS (Mac ARM64), CUDA, ou CPU
+    def _get_device():
+        if torch.cuda.is_available():
+            return 0
+        if getattr(torch.backends, "mps", None) is not None and torch.backends.mps.is_available() and torch.backends.mps.is_built():
+            return torch.device("mps")
+        return -1
+
+    _device = _get_device()
+    if isinstance(_device, torch.device):
+        print("Device: MPS (Apple Silicon GPU)")
+    elif _device == 0:
+        print("Device: CUDA")
+    else:
+        print("Device: CPU")
     print(f"Chargement du modèle: {args.model}...")
     ner = pipeline(
         "ner",
         model=args.model,
         tokenizer=args.model,
         aggregation_strategy="simple",
-        device=0 if torch.cuda.is_available() else -1,
+        device=_device,
     )
     print("Modèle prêt. Envoie une phrase pour extraire les lieux (LOC).")
     print("  Commande: quit / exit / q  pour quitter.\n")

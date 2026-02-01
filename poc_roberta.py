@@ -70,8 +70,23 @@ def read_lines_from_source(source: str):
 
 lines = read_lines_from_source(args.file if args.file else args.url)
 
+# Device : MPS (Mac ARM64), CUDA, ou CPU
+def _get_device():
+    if torch.cuda.is_available():
+        return 0
+    if getattr(torch.backends, "mps", None) is not None and torch.backends.mps.is_available() and torch.backends.mps.is_built():
+        return torch.device("mps")
+    return -1
+
 # Charge le modèle RoBERTa/CamemBERT pour la NER
 print(f"Loading model: {args.model}...")
+_device = _get_device()
+if isinstance(_device, torch.device):
+    print(f"Device: MPS (Apple Silicon GPU)")
+elif _device == 0:
+    print("Device: CUDA")
+else:
+    print("Device: CPU")
 try:
     # Essaie de charger comme un modèle NER fine-tuné
     ner_pipeline = pipeline(
@@ -79,7 +94,7 @@ try:
         model=args.model,
         tokenizer=args.model,
         aggregation_strategy="simple",
-        device=0 if torch.cuda.is_available() else -1
+        device=_device
     )
     print("Model loaded successfully as NER model!")
 except Exception as e:
