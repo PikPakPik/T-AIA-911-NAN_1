@@ -9,22 +9,52 @@ Sortie : dataset_test_input.txt, dataset_test_output.txt
 
 import random
 import itertools
+import csv
 from typing import List, Tuple
 
-# Même liste de villes que le dataset d'entraînement (cohérence du domaine)
-VILLES = [
-    "Paris", "Lyon", "Marseille", "Toulouse", "Nice", "Nantes", "Strasbourg",
-    "Montpellier", "Bordeaux", "Lille", "Rennes", "Reims", "Le Havre",
-    "Saint-Étienne", "Toulon", "Grenoble", "Dijon", "Angers", "Nîmes",
-    "Villeurbanne", "Saint-Denis", "Le Mans", "Aix-en-Provence", "Clermont-Ferrand",
-    "Brest", "Tours", "Limoges", "Amiens", "Perpignan", "Metz", "Besançon",
-    "Orléans", "Mulhouse", "Caen", "Boulogne-Billancourt", "Rouen", "Nancy",
-    "Argenteuil", "Montreuil", "Saint-Denis", "Roubaix", "Avignon", "Tourcoing",
-    "Fort-de-France", "Créteil", "Dunkerque", "Poitiers", "Asnières-sur-Seine",
-    "Versailles", "Courbevoie", "Vitry-sur-Seine", "Colombes", "Aulnay-sous-Bois",
-    "La Rochelle", "Antibes", "Mérignac", "Béziers", "Pessac", "Port-Boulet",
-    "Albert", "Lourdes", "Florence", "Montaigu",
-]
+def load_cities_from_geo_csv(csv_path: str = "geo.csv", max_cities: int = 100) -> List[str]:
+    """Charge 100 villes depuis geo.csv pour le test (différent des 1000 de l'entraînement)"""
+    cities = []
+    try:
+        with open(csv_path, "r", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                if row.get("label", "").strip() == "LOC_CITY":
+                    city_name = row.get("nom", "").strip()
+                    if city_name:
+                        cities.append(city_name)
+                        if len(cities) >= max_cities:
+                            break
+    except FileNotFoundError:
+        cities = [
+            "Paris", "Lyon", "Marseille", "Toulouse", "Nice", "Nantes", "Strasbourg",
+            "Montpellier", "Bordeaux", "Lille", "Rennes", "Reims", "Le Havre",
+            "Albert", "Florence", "Nancy", "Montaigu"
+        ]
+    return cities
+
+def load_prenoms_from_csv(csv_path: str = "prenoms.csv") -> Tuple[List[str], List[str]]:
+    """Charge les prénoms depuis prenoms.csv"""
+    tous_prenoms = []
+    prenoms_villes = []
+    try:
+        with open(csv_path, "r", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                prenom = row.get("prenom", "").strip()
+                aussi_ville = row.get("aussi_ville", "").strip().lower()
+                if prenom:
+                    tous_prenoms.append(prenom)
+                    if aussi_ville == "oui":
+                        prenoms_villes.append(prenom)
+    except FileNotFoundError:
+        tous_prenoms = ["Albert", "Florence", "Nancy", "Paris", "Monaco", "Marie", "Pierre"]
+        prenoms_villes = ["Albert", "Florence", "Nancy", "Paris", "Monaco"]
+    return tous_prenoms, prenoms_villes
+
+# Charge villes et prénoms depuis CSV
+VILLES = load_cities_from_geo_csv("geo.csv", max_cities=100)
+TOUS_PRENOMS, PRENOMS_VILLES = load_prenoms_from_csv("prenoms.csv")
 
 # Formulations de TEST différentes de generate_dataset.py (jamais vues à l'entraînement)
 TEST_VALID_PATTERNS = [
@@ -66,15 +96,7 @@ TEST_INVALID_PATTERNS = [
     "où puis-je acheter un ticket",
 ]
 
-# Pièges pour le test (voir / un / monaco boisson)
-PRENOMS_VILLES = {
-    "Albert": "albert",
-    "Paris": "paris",
-    "Florence": "florence",
-    "Monaco": "monaco",
-    "Nancy": "nancy",
-    "Valérie": "valerie",
-}
+# Pièges pour le test : les prénoms sont chargés depuis prenoms.csv (voir ligne 57)
 
 TEST_TRAP_PATTERNS_VALID = [
     lambda d, a, p: f"avec {p} je prends le train de {d} à {a}",
@@ -124,9 +146,10 @@ def generate_invalid(num: int) -> List[Tuple[str, str, str]]:
 
 def generate_trap_valid(num: int) -> List[Tuple[str, str, str]]:
     sentences = []
-    villes_normales = [v for v in VILLES if v not in PRENOMS_VILLES]
+    prenoms_villes_lower = [p.lower() for p in PRENOMS_VILLES]
+    villes_normales = [v for v in VILLES if v.lower() not in prenoms_villes_lower]
     ville_pairs = list(itertools.permutations(villes_normales, 2))
-    prenoms = list(PRENOMS_VILLES.values())
+    prenoms = TOUS_PRENOMS
     for _ in range(num):
         pattern = random.choice(TEST_TRAP_PATTERNS_VALID)
         depart, arrivee = random.choice(ville_pairs)
@@ -139,8 +162,9 @@ def generate_trap_valid(num: int) -> List[Tuple[str, str, str]]:
 
 def generate_trap_invalid(num: int) -> List[Tuple[str, str, str]]:
     sentences = []
-    prenoms = list(PRENOMS_VILLES.values())
-    villes_normales = [v for v in VILLES if v not in PRENOMS_VILLES]
+    prenoms = TOUS_PRENOMS
+    prenoms_villes_lower = [p.lower() for p in PRENOMS_VILLES]
+    villes_normales = [v for v in VILLES if v.lower() not in prenoms_villes_lower]
     for _ in range(num):
         pattern = random.choice(TEST_TRAP_PATTERNS_INVALID)
         prenom = random.choice(prenoms)

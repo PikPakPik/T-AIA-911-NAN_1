@@ -7,22 +7,60 @@ Génère des phrases variées avec différentes structures grammaticales
 
 import random
 import itertools
+import csv
 from typing import List, Tuple
 
-# Liste de villes/gares françaises courantes
-VILLES = [
-    "Paris", "Lyon", "Marseille", "Toulouse", "Nice", "Nantes", "Strasbourg",
-    "Montpellier", "Bordeaux", "Lille", "Rennes", "Reims", "Le Havre",
-    "Saint-Étienne", "Toulon", "Grenoble", "Dijon", "Angers", "Nîmes",
-    "Villeurbanne", "Saint-Denis", "Le Mans", "Aix-en-Provence", "Clermont-Ferrand",
-    "Brest", "Tours", "Limoges", "Amiens", "Perpignan", "Metz", "Besançon",
-    "Orléans", "Mulhouse", "Caen", "Boulogne-Billancourt", "Rouen", "Nancy",
-    "Argenteuil", "Montreuil", "Saint-Denis", "Roubaix", "Avignon", "Tourcoing",
-    "Fort-de-France", "Créteil", "Dunkerque", "Poitiers", "Asnières-sur-Seine",
-    "Versailles", "Courbevoie", "Vitry-sur-Seine", "Colombes", "Aulnay-sous-Bois",
-    "La Rochelle", "Antibes", "Mérignac", "Béziers", "Pessac", "Port-Boulet",
-    "Albert", "Lourdes", "Florence", "Montaigu"
-]
+def load_cities_from_geo_csv(csv_path: str = "geo.csv", max_cities: int = None) -> List[str]:
+    """
+    Charge les villes depuis geo.csv (filtre LOC_CITY uniquement).
+    
+    Args:
+        csv_path: Chemin vers geo.csv
+        max_cities: Limite le nombre de villes (None = toutes). Utile pour générer un dataset
+                    sans exploser la mémoire (1000 villes suffisent pour un bon entraînement).
+    
+    Returns:
+        Liste de noms de villes
+    """
+    cities = []
+    try:
+        with open(csv_path, "r", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                # Filtre : on ne garde que les villes (LOC_CITY), pas les régions/départements
+                if row.get("label", "").strip() == "LOC_CITY":
+                    city_name = row.get("nom", "").strip()
+                    if city_name:
+                        cities.append(city_name)
+                        # Limite si spécifié (pour éviter OOM lors de la génération)
+                        if max_cities and len(cities) >= max_cities:
+                            break
+        
+        if max_cities and len(cities) >= max_cities:
+            print(f"✓ {len(cities)} villes chargées depuis {csv_path} (limité à {max_cities})")
+        else:
+            print(f"✓ {len(cities)} villes chargées depuis {csv_path}")
+    except FileNotFoundError:
+        print(f"⚠️  Fichier {csv_path} introuvable. Utilisation de la liste par défaut.")
+        # Liste de secours si geo.csv n'est pas trouvé
+        cities = [
+            "Paris", "Lyon", "Marseille", "Toulouse", "Nice", "Nantes", "Strasbourg",
+            "Montpellier", "Bordeaux", "Lille", "Rennes", "Reims", "Le Havre",
+            "Saint-Étienne", "Toulon", "Grenoble", "Dijon", "Angers", "Nîmes",
+            "Villeurbanne", "Saint-Denis", "Le Mans", "Aix-en-Provence", "Clermont-Ferrand",
+            "Brest", "Tours", "Limoges", "Amiens", "Perpignan", "Metz", "Besançon",
+            "Orléans", "Mulhouse", "Caen", "Boulogne-Billancourt", "Rouen", "Nancy",
+            "Argenteuil", "Montreuil", "Roubaix", "Avignon", "Tourcoing",
+            "Fort-de-France", "Créteil", "Dunkerque", "Poitiers", "Asnières-sur-Seine",
+            "Versailles", "Courbevoie", "Vitry-sur-Seine", "Colombes", "Aulnay-sous-Bois",
+            "La Rochelle", "Antibes", "Mérignac", "Béziers", "Pessac", "Port-Boulet",
+            "Albert", "Lourdes", "Florence", "Montaigu"
+        ]
+    return cities
+
+# Charge 1000 villes pour la génération (équilibre entre diversité et performance)
+# Le modèle NER détectera ensuite les 37k villes via l'index optimisé dans poc_roberta_training.py
+VILLES = load_cities_from_geo_csv("geo.csv", max_cities=1000)
 
 # Structures de phrases valides
 VALID_PATTERNS = [
@@ -227,15 +265,42 @@ RECIPE_INVALID_PATTERNS = [
     "Différence entre Paris-Brest et religieuse",
 ]
 
-# Prénoms qui sont aussi des noms de villes (pour les pièges)
-PRENOMS_VILLES = {
-    "Albert": "albert",
-    "Paris": "paris",
-    "Florence": "florence",
-    "Monaco": "monaco",  # aussi une boisson
-    "Nancy": "nancy",
-    "Valérie": "valerie",  # proche de Valence
-}
+def load_prenoms_from_csv(csv_path: str = "prenoms.csv") -> Tuple[List[str], List[str]]:
+    """
+    Charge les prénoms depuis prenoms.csv.
+    
+    Returns:
+        Tuple (tous_prenoms, prenoms_villes):
+        - tous_prenoms: Liste de tous les prénoms
+        - prenoms_villes: Liste des prénoms qui sont aussi des villes
+    """
+    tous_prenoms = []
+    prenoms_villes = []
+    
+    try:
+        with open(csv_path, "r", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                prenom = row.get("prenom", "").strip()
+                aussi_ville = row.get("aussi_ville", "").strip().lower()
+                
+                if prenom:
+                    tous_prenoms.append(prenom)
+                    if aussi_ville == "oui":
+                        prenoms_villes.append(prenom)
+        
+        print(f"✓ {len(tous_prenoms)} prénoms chargés ({len(prenoms_villes)} prénoms-villes)")
+    except FileNotFoundError:
+        print(f"⚠️  Fichier {csv_path} introuvable. Utilisation de la liste par défaut.")
+        # Liste de secours
+        tous_prenoms = ["Albert", "Florence", "Nancy", "Paris", "Monaco", "Marie", "Pierre", 
+                        "Jean", "Sophie", "Lucas", "Emma", "Louis", "Chloé", "Hugo", "Léa"]
+        prenoms_villes = ["Albert", "Florence", "Nancy", "Paris", "Monaco"]
+    
+    return tous_prenoms, prenoms_villes
+
+# Charge les prénoms depuis prenoms.csv
+TOUS_PRENOMS, PRENOMS_VILLES = load_prenoms_from_csv("prenoms.csv")
 
 # Patterns de phrases pièges (avec prénoms ou mots ambigus)
 TRAP_PATTERNS_VALID = [
@@ -248,15 +313,17 @@ TRAP_PATTERNS_VALID = [
     lambda d, a, prenom: f"avec mes amis {prenom} et {a.lower()} je voudrais aller de {a.lower()} à {prenom}",
     lambda d, a, prenom: f"avec {prenom} je veux aller de {d} à {a}",
     lambda d, a, prenom: f"je veux aller voir mon ami {prenom} à {a} en partant de {d}",
+    # Phrases valides avec "boire un monaco" (piège contextuel, mais structure de trajet claire)
+    lambda d, a, prenom: f"je veux aller de {d} à {a} boire un monaco",
+    lambda d, a, prenom: f"je veu aller de {d} à {a} boire un monaco",
 ]
 
 TRAP_PATTERNS_INVALID = [
-    # Prénom utilisé comme ville (avec vraie ville)
+    # Prénom utilisé comme ville (structure de trajet mais villes invalides)
     lambda d, a, prenom: f"je voudrais aller de {prenom} à {a}",
     lambda d, a, prenom: f"aller de {d} à {prenom}",
     lambda d, a, prenom: f"trains de {prenom} vers {a}",
-    # Exemple spécifique : boire un monaco (avec vraies villes)
-    lambda d, a, prenom: f"je veux aller de {d} à {a} boire un monaco",
+    # Pas de structure de trajet claire (contexte ambiguë)
     lambda d, a, prenom: f"aller de {prenom} à {a} boire un monaco",
     lambda d, a, prenom: f"depuis {prenom} je veux aller à {a} pour boire un monaco",
     # Avec deux prénoms (tous les deux prénoms, pas villes)
@@ -418,11 +485,13 @@ def generate_trap_sentences(num_valid_traps: int, num_invalid_traps: int) -> Lis
     """Génère des phrases pièges avec prénoms/ambiguités"""
     sentences = []
     
-    # Villes normales (sans prénoms)
-    villes_normales = [v for v in VILLES if v not in PRENOMS_VILLES]
+    # Villes normales (sans prénoms-villes ambigus)
+    prenoms_villes_lower = [p.lower() for p in PRENOMS_VILLES]
+    villes_normales = [v for v in VILLES if v.lower() not in prenoms_villes_lower]
     ville_pairs = list(itertools.permutations(villes_normales, 2))
     
-    prenoms = list(PRENOMS_VILLES.values())
+    # Utilise tous les prénoms pour plus de diversité
+    prenoms = TOUS_PRENOMS
     
     # Phrases pièges VALIDES : prénom mentionné mais vraie ville présente
     for _ in range(num_valid_traps):
