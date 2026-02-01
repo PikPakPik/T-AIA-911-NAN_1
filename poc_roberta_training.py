@@ -3,6 +3,7 @@ import random
 import json
 import argparse
 import os
+import csv
 from transformers import (
     AutoTokenizer,
     AutoModelForTokenClassification,
@@ -141,19 +142,71 @@ def _find_all_occurrences(phrase: str, name: str) -> list[tuple[int, int]]:
         pos = i + 1
     return result
 
+def _load_known_cities(geo_csv_path: str = "./dataset/geo.csv") -> set[str]:
+    """Charge la liste des villes connues depuis geo.csv (colonne 'nom')."""
+    cities = set()
+    try:
+        with open(geo_csv_path, "r", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                city_name = row.get("nom", "").strip()
+                if city_name:
+                    cities.add(city_name)
+    except FileNotFoundError:
+        print(f"⚠️  Fichier {geo_csv_path} introuvable. Aucune ville chargée pour INVALID.")
+    return cities
+
+def _find_cities_in_phrase(phrase: str, known_cities: set[str]) -> list[tuple[int, int, str]]:
+    """
+    Détecte automatiquement les villes présentes dans une phrase.
+    Retourne une liste d'entités (start, end, "LOC").
+    """
+    entities = []
+    # Trie les villes par longueur décroissante pour détecter les plus longues d'abord
+    # (évite que "Paris" match dans "Paris-Brest" si "Paris-Brest" est une ville)
+    sorted_cities = sorted(known_cities, key=len, reverse=True)
+    
+    # Pour éviter les doublons, on garde trace des zones déjà couvertes
+    covered_ranges = []
+    
+    for city in sorted_cities:
+        occurrences = _find_all_occurrences(phrase, city)
+        for start, end in occurrences:
+            # Vérifie qu'on ne chevauche pas une zone déjà couverte
+            overlaps = any(
+                (start < c_end and end > c_start)
+                for c_start, c_end in covered_ranges
+            )
+            if not overlaps:
+                entities.append((start, end, "LOC"))
+                covered_ranges.append((start, end))
+    
+    # Trie par position pour cohérence
+    entities.sort(key=lambda x: x[0])
+    return entities
+
 def load_dataset_input_output(
     input_path: str = "./dataset/dataset_input.txt",
     output_path: str = "./dataset/dataset_output.txt",
+    geo_csv_path: str = "./dataset/geo.csv",
 ) -> list[tuple[str, list[tuple[int, int, str]]]]:
     """
     Charge dataset_input.txt et dataset_output.txt et les convertit en samples NER.
     Chaque sample est (phrase, [(start, end, "LOC"), ...]).
-    INVALID → aucune entité (tout en O).
+    
+    IMPORTANT: Pour les phrases INVALID, on détecte automatiquement les villes présentes
+    dans la phrase (depuis geo.csv) et on les annote comme LOC. Cela permet au modèle
+    d'apprendre à reconnaître les noms de villes même dans des contextes non-voyage.
     """
     with open(input_path, "r", encoding="utf-8") as f:
         input_lines = [line.rstrip("\n") for line in f]
     with open(output_path, "r", encoding="utf-8") as f:
         output_lines = [line.rstrip("\n") for line in f]
+
+    # Charge la liste des villes connues pour détecter les LOC dans les phrases INVALID
+    print(f"  Chargement des villes depuis {geo_csv_path}...")
+    known_cities = _load_known_cities(geo_csv_path)
+    print(f"  → {len(known_cities)} villes chargées")
 
     samples = []
     for inp, out in zip(input_lines, output_lines):
@@ -171,7 +224,9 @@ def load_dataset_input_output(
         dest = parts_out[2].strip() if len(parts_out) > 2 else ""
 
         if dep == "INVALID" or not dep:
-            samples.append((phrase, []))
+            # Détecte automatiquement les villes dans la phrase
+            entities = _find_cities_in_phrase(phrase, known_cities)
+            samples.append((phrase, entities))
             continue
 
         occ_dep = _find_all_occurrences(phrase, dep)
@@ -278,13 +333,14 @@ def main():
     # Chargement du dataset (dataset_input.txt + dataset_output.txt)
     input_path = os.path.join(args.dataset_dir, "dataset_input.txt")
     output_path = os.path.join(args.dataset_dir, "dataset_output.txt")
+    geo_csv_path = os.path.join(args.dataset_dir, "geo.csv")
     if not os.path.isfile(input_path) or not os.path.isfile(output_path):
         raise FileNotFoundError(
             f"Fichiers dataset introuvables: {input_path}, {output_path}. "
             "Générez-les avec: cd dataset && python3 generate_dataset.py"
         )
     print(f"Chargement du dataset: {input_path} / {output_path}...")
-    samples = load_dataset_input_output(input_path, output_path)
+    samples = load_dataset_input_output(input_path, output_path, geo_csv_path)
     print(f"  → {len(samples)} phrases chargées")
 
 

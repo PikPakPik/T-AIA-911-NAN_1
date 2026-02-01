@@ -1,27 +1,27 @@
 1,horaires nîmes avignon ce week-end
-2,Arret a besancon en venant de nimes
-3,Billet SNCF saint-denis dunkirk
+2,arrêt à besançon en venant de nîmes
+3,Billet SNCF saint-denis dunkerque
 4,Peut-on aller de clermont-ferrand a montreuil en train
-5,Liaison dunkirk perpignan aujourd'hui
+5,Liaison dunkerque perpignan aujourd'hui
 6,Tarif clermont-ferrand bordeaux s'il vous plaît
-7,TGV au départ de florence à destination de tours
+7,TGV au depart de florence a destination de tours
 8,distance montaigu port-boulet en train
 9,je veux aller voir albert et boire un monaco
-10,avec florence je prends le train de béziers à mulhouse
+10,avec florence je prends le train de beziers a mulhouse
 11,ou puis-je acheter un ticket
 12,où sont les toilettes
 13,un billet pour voir nancy c'est quoi
-14,Train du matin rennes orléans
-15,Correspondance grenoble puis le mans
-16,connexion ferroviaire angers lourdes
-17,Arrêt à lourdes en venant de boulogne-billancourt
+14,train du matin rennes orléans
+15,correspondance grenoble puis le mans
+16,Connexion ferroviaire angers lourdes
+17,Arret a lourdes en venant de boulogne-billancourt
 18,Prochain train lille vers argenteuil
 19,un billet pour voir paris c'est quoi
 20,réserver brest - grenoble pour demain
-21,Correspondance entre dunkirk et nancy
+21,Correspondance entre dunkerque et nancy
 22,Peut-on aller de courbevoie a aix-en-provence en train
-23,réserver montreuil - nîmes pour demain
-24,Billet SNCF toulon besançon
+23,Réserver montreuil - nîmes pour demain
+24,Billet SNCF toulon besancon
 25,un billet pour voir monaco c'est quoi
 26,pouvez-vous répéter
 27,Billet SNCF béziers grenoble
@@ -29,121 +29,121 @@
 29,train du matin brest aix-en-provence
 30,Distance asnieres-sur-seine brest en train
 31,Trajet direct villeurbanne brest
-32,correspondance entre angers et nice
-33,arrêt à lyon en venant de montaigu
-34,Prochain train pessac vers asnières-sur-seine
-35,prochain train villeurbanne vers montaigu
+32,Correspondance entre angers et nice
+33,Arrêt à lyon en venant de montaigu
+34,prochain train pessac vers asnières-sur-seine
+35,Prochain train villeurbanne vers montaigu
 36,un billet pour voir paris c'est quoi
 37,un billet pour voir valerie c'est quoi
 38,mon collègue paris part de colombes pour versailles
-39,Réserver amiens - brest pour demain
+39,Reserver amiens - brest pour demain
 40,mon collègue florence part de aulnay-sous-bois pour la rochelle
 41,Ou prendre le train besancon mulhouse
 42,correspondance entre rennes et saint-étienne
-43,reserver une table pour deux
-44,réservation reims versailles pour vendredi
+43,réserver une table pour deux
+44,Réservation reims versailles pour vendredi
 45,Correspondance entre créteil et clermont-ferrand
 46,je veux aller voir monaco et boire un monaco
 47,je cherche une pharmacie
-48,billet sncf limoges reims
-49,réserver une table pour deux
-50,Correspondance entre amiens et perpignan
+48,Billet SNCF limoges reims
+49,reserver une table pour deux
+50,correspondance entre amiens et perpignan
 51,un billet pour voir nancy c'est quoi
 52,avec valerie je prends le train de marseille à avignon
 53,horaires albert paris ce week-end
-54,Peut-on aller de lille a nantes en train
-55,Reserver grenoble - vitry-sur-seine pour demain
+54,peut-on aller de lille à nantes en train
+55,réserver grenoble - vitry-sur-seine pour demain
 56,correspondance reims puis pessac
 57,Tarif nimes aulnay-sous-bois s'il vous plait
-58,Distance saint-etienne reims en train
-59,TGV au depart de port-boulet a destination de rennes
+58,Distance saint-étienne reims en train
+59,tgv au départ de port-boulet à destination de rennes
 60,mon collegue florence part de clermont-ferrand pour creteil
-61,réserver une table pour deux
+61,reserver une table pour deux
 62,train du matin vitry-sur-seine rouen
 63,je cherche une pharmacie
 64,correspondance brest puis albert
-65,TGV au départ de perpignan à destination de le havre
+65,TGV au depart de perpignan a destination de le havre
 66,combien coûte ce livre
-67,Billet SNCF fort-de-france rennes
+67,billet sncf fort-de-france rennes
 68,je ne comprends pas
-69,Reservation saint-etienne tourcoing pour vendredi
+69,Réservation saint-étienne tourcoing pour vendredi
 70,où est la gare la plus proche
-71,Des trains circulent-ils entre aulnay-sous-bois et montaigu
+71,des trains circulent-ils entre aulnay-sous-bois et montaigu
 72,J'ai besoin d'un trajet fort-de-france montreuil
-73,voyage amiens strasbourg en première classe
+73,Voyage amiens strasbourg en première classe
 74,je veux aller voir monaco et boire un monaco
-75,correspondance entre montaigu et dijon
+75,Correspondance entre montaigu et dijon
 76,mon collègue monaco part de créteil pour bordeaux
 77,prochain train grenoble vers dijon
 78,un billet pour voir paris c'est quoi
 79,avec nancy je prends le train de lyon a nantes
-80,Liaison angers mérignac aujourd'hui
+80,Liaison angers merignac aujourd'hui
 81,je veux aller voir monaco et boire un monaco
 82,Prochain train angers vers aulnay-sous-bois
 83,où prendre le train grenoble orléans
 84,je me suis perdu
-85,TGV au départ de limoges à destination de port-boulet
-86,tgv au départ de saint-étienne à destination de aulnay-sous-bois
+85,TGV au depart de limoges a destination de port-boulet
+86,TGV au départ de saint-étienne à destination de aulnay-sous-bois
 87,connexion ferroviaire strasbourg colombes
-88,mon collègue valerie part de aix-en-provence pour versailles
+88,mon collegue valerie part de aix-en-provence pour versailles
 89,Voyage lourdes bordeaux en première classe
-90,Correspondance entre dunkirk et aulnay-sous-bois
-91,avec valerie je prends le train de villeurbanne a caen
+90,Correspondance entre dunkerque et aulnay-sous-bois
+91,avec valerie je prends le train de villeurbanne à caen
 92,Correspondance entre tourcoing et metz
 93,je veux aller voir paris et boire un monaco
-94,liaison dunkirk strasbourg aujourd'hui
+94,liaison dunkerque strasbourg aujourd'hui
 95,Connexion ferroviaire nantes nice
-96,réserver toulouse - aulnay-sous-bois pour demain
-97,Où prendre le train perpignan saint-denis
-98,Horaires fort-de-france metz ce week-end
-99,Liaison avignon tours aujourd'hui
-100,réservation dijon vitry-sur-seine pour vendredi
-101,tgv au départ de grenoble à destination de montpellier
+96,Reserver toulouse - aulnay-sous-bois pour demain
+97,Ou prendre le train perpignan saint-denis
+98,horaires fort-de-france metz ce week-end
+99,liaison avignon tours aujourd'hui
+100,Réservation dijon vitry-sur-seine pour vendredi
+101,TGV au départ de grenoble à destination de montpellier
 102,où est la gare la plus proche
 103,Liaison créteil brest aujourd'hui
-104,correspondance lourdes puis nîmes
+104,Correspondance lourdes puis nimes
 105,Train du matin tours le mans
-106,mon collegue florence part de lyon pour toulouse
+106,mon collègue florence part de lyon pour toulouse
 107,Tarif rouen florence s'il vous plait
-108,Réserver paris - tourcoing pour demain
-109,correspondance entre mérignac et tourcoing
+108,réserver paris - tourcoing pour demain
+109,Correspondance entre mérignac et tourcoing
 110,un billet pour voir florence c'est quoi
-111,tarif angers nice s'il vous plaît
+111,Tarif angers nice s'il vous plaît
 112,Connexion ferroviaire besancon amiens
-113,Trajet direct metz montpellier
-114,trajet direct mérignac nantes
+113,trajet direct metz montpellier
+114,Trajet direct mérignac nantes
 115,ou puis-je acheter un ticket
 116,prochain train poitiers vers la rochelle
-117,Tarif aix-en-provence villeurbanne s'il vous plait
-118,Tarif rouen mulhouse s'il vous plaît
+117,tarif aix-en-provence villeurbanne s'il vous plaît
+118,tarif rouen mulhouse s'il vous plaît
 119,où puis-je acheter un ticket
-120,Prochain train toulon vers avignon
+120,prochain train toulon vers avignon
 121,Réserver versailles - florence pour demain
-122,Billet SNCF lille dunkirk
+122,Billet SNCF lille dunkerque
 123,Correspondance entre aulnay-sous-bois et lille
-124,des trains circulent-ils entre nice et tourcoing
-125,train du matin limoges boulogne-billancourt
-126,peut-on aller de marseille à rouen en train
-127,Trajet direct merignac florence
+124,Des trains circulent-ils entre nice et tourcoing
+125,Train du matin limoges boulogne-billancourt
+126,Peut-on aller de marseille a rouen en train
+127,Trajet direct mérignac florence
 128,Horaires pessac clermont-ferrand ce week-end
 129,avec florence je prends le train de tourcoing a mulhouse
-130,voyage lyon clermont-ferrand en première classe
+130,Voyage lyon clermont-ferrand en premiere classe
 131,des trains circulent-ils entre aix-en-provence et aulnay-sous-bois
 132,combien coûte ce livre
-133,voyage strasbourg mulhouse en première classe
+133,Voyage strasbourg mulhouse en premiere classe
 134,Tarif marseille villeurbanne s'il vous plait
-135,correspondance marseille puis besançon
-136,Billet SNCF dijon vitry-sur-seine
+135,Correspondance marseille puis besancon
+136,billet sncf dijon vitry-sur-seine
 137,avec paris je prends le train de perpignan a courbevoie
 138,j'ai besoin d'un trajet amiens toulouse
 139,prochain train vitry-sur-seine vers aulnay-sous-bois
 140,j'ai besoin d'un trajet toulouse pessac
-141,Train du matin tours caen
+141,train du matin tours caen
 142,avec monaco je prends le train de aix-en-provence à fort-de-france
-143,Peut-on aller de vitry-sur-seine a paris en train
-144,TGV au depart de saint-etienne a destination de colombes
-145,Réservation courbevoie mérignac pour vendredi
-146,Où prendre le train saint-denis mérignac
+143,Peut-on aller de vitry-sur-seine à paris en train
+144,tgv au départ de saint-étienne à destination de colombes
+145,réservation courbevoie mérignac pour vendredi
+146,Ou prendre le train saint-denis merignac
 147,où est la gare la plus proche
 148,Liaison tourcoing poitiers aujourd'hui
 149,Trajet direct brest montpellier
@@ -152,253 +152,253 @@
 152,un billet pour voir florence c'est quoi
 153,Peut-on aller de florence à besançon en train
 154,boire un monaco en allant a reims depuis lille
-155,réserver nîmes - albert pour demain
-156,Réserver poitiers - roubaix pour demain
+155,Réserver nîmes - albert pour demain
+156,Reserver poitiers - roubaix pour demain
 157,un billet pour voir albert c'est quoi
 158,je veux aller voir nancy et boire un monaco
-159,avec valerie je prends le train de orleans a pessac
-160,Horaires boulogne-billancourt lourdes ce week-end
-161,boire un monaco en allant a merignac depuis nantes
-162,j'ai besoin d'un trajet tourcoing saint-étienne
-163,tarif nantes toulon s'il vous plaît
-164,Billet SNCF asnières-sur-seine le havre
-165,peut-on aller de caen à marseille en train
+159,avec valerie je prends le train de orléans à pessac
+160,horaires boulogne-billancourt lourdes ce week-end
+161,boire un monaco en allant à mérignac depuis nantes
+162,J'ai besoin d'un trajet tourcoing saint-étienne
+163,Tarif nantes toulon s'il vous plait
+164,Billet SNCF asnieres-sur-seine le havre
+165,Peut-on aller de caen a marseille en train
 166,Liaison le mans perpignan aujourd'hui
-167,trajet direct fort-de-france roubaix
-168,TGV au depart de mulhouse a destination de dunkirk
-169,réserver une table pour deux
+167,Trajet direct fort-de-france roubaix
+168,tgv au départ de mulhouse à destination de dunkerque
+169,reserver une table pour deux
 170,Reservation rouen marseille pour vendredi
-171,Distance poitiers florence en train
-172,Arrêt à nîmes en venant de versailles
+171,distance poitiers florence en train
+172,arrêt à nîmes en venant de versailles
 173,Voyage vitry-sur-seine asnieres-sur-seine en premiere classe
 174,TGV au depart de toulouse a destination de nantes
-175,voyage avignon béziers en première classe
+175,Voyage avignon béziers en première classe
 176,Tarif port-boulet brest s'il vous plaît
 177,horaires brest vitry-sur-seine ce week-end
-178,TGV au depart de antibes a destination de argenteuil
-179,horaires reims besançon ce week-end
-180,Peut-on aller de rouen a vitry-sur-seine en train
-181,tarif lille angers s'il vous plaît
-182,Des trains circulent-ils entre rouen et orleans
-183,prochain train albert vers metz
+178,TGV au départ de antibes à destination de argenteuil
+179,Horaires reims besancon ce week-end
+180,Peut-on aller de rouen à vitry-sur-seine en train
+181,Tarif lille angers s'il vous plait
+182,des trains circulent-ils entre rouen et orléans
+183,Prochain train albert vers metz
 184,trajet direct reims rouen
-185,boire un monaco en allant à rennes depuis aix-en-provence
-186,mon collegue monaco part de toulouse pour clermont-ferrand
+185,boire un monaco en allant a rennes depuis aix-en-provence
+186,mon collègue monaco part de toulouse pour clermont-ferrand
 187,des trains circulent-ils entre avignon et albert
-188,distance argenteuil montaigu en train
+188,Distance argenteuil montaigu en train
 189,pouvez-vous repeter
-190,Des trains circulent-ils entre aulnay-sous-bois et nantes
+190,des trains circulent-ils entre aulnay-sous-bois et nantes
 191,peut-on aller de fort-de-france à metz en train
-192,Reservation nancy bordeaux pour vendredi
-193,Connexion ferroviaire nimes toulon
+192,réservation nancy bordeaux pour vendredi
+193,connexion ferroviaire nîmes toulon
 194,un billet pour voir albert c'est quoi
-195,des trains circulent-ils entre lourdes et antibes
+195,Des trains circulent-ils entre lourdes et antibes
 196,distance tourcoing reims en train
-197,peut-on aller de nîmes à tours en train
+197,Peut-on aller de nimes a tours en train
 198,avec florence je prends le train de tours a avignon
 199,je ne comprends pas
-200,boire un monaco en allant à pessac depuis dijon
-201,Horaires toulon tourcoing ce week-end
-202,où prendre le train toulon port-boulet
+200,boire un monaco en allant a pessac depuis dijon
+201,horaires toulon tourcoing ce week-end
+202,Où prendre le train toulon port-boulet
 203,Des trains circulent-ils entre saint-denis et tourcoing
 204,Distance limoges tourcoing en train
-205,TGV au depart de boulogne-billancourt a destination de brest
+205,TGV au départ de boulogne-billancourt à destination de brest
 206,des trains circulent-ils entre courbevoie et rennes
 207,Prochain train caen vers argenteuil
 208,correspondance entre tours et nîmes
 209,je me suis perdu
 210,Arrêt à angers en venant de lille
-211,prochain train angers vers saint-denis
+211,Prochain train angers vers saint-denis
 212,correspondance entre rouen et nîmes
-213,peut-on aller de le havre à colombes en train
+213,Peut-on aller de le havre à colombes en train
 214,correspondance nancy puis paris
-215,tgv au départ de mérignac à destination de boulogne-billancourt
-216,Où prendre le train créteil saint-denis
+215,TGV au depart de merignac a destination de boulogne-billancourt
+216,Ou prendre le train creteil saint-denis
 217,je me suis perdu
-218,Reserver clermont-ferrand - dunkirk pour demain
-219,Correspondance entre asnières-sur-seine et albert
+218,réserver clermont-ferrand - dunkerque pour demain
+219,Correspondance entre asnieres-sur-seine et albert
 220,un billet pour voir nancy c'est quoi
 221,Tarif amiens colombes s'il vous plait
-222,correspondance entre créteil et paris
+222,Correspondance entre creteil et paris
 223,J'ai besoin d'un trajet saint-étienne la rochelle
-224,réservation port-boulet bordeaux pour vendredi
+224,Reservation port-boulet bordeaux pour vendredi
 225,liaison mulhouse tours aujourd'hui
-226,Correspondance angers puis lyon
-227,réserver rennes - saint-denis pour demain
+226,correspondance angers puis lyon
+227,Réserver rennes - saint-denis pour demain
 228,Où prendre le train mulhouse la rochelle
-229,correspondance entre caen et la rochelle
-230,Ou prendre le train perpignan le mans
+229,Correspondance entre caen et la rochelle
+230,Où prendre le train perpignan le mans
 231,je veux aller voir valerie et boire un monaco
 232,Peut-on aller de strasbourg a perpignan en train
-233,réservation dunkirk argenteuil pour vendredi
-234,Connexion ferroviaire créteil argenteuil
+233,Réservation dunkerque argenteuil pour vendredi
+234,connexion ferroviaire créteil argenteuil
 235,connexion ferroviaire nancy limoges
 236,avec monaco je prends le train de argenteuil à béziers
-237,Prochain train roubaix vers nice
-238,j'ai besoin d'un trajet mulhouse lourdes
-239,avec albert je prends le train de montpellier à bordeaux
+237,prochain train roubaix vers nice
+238,J'ai besoin d'un trajet mulhouse lourdes
+239,avec albert je prends le train de montpellier a bordeaux
 240,Où prendre le train aix-en-provence fort-de-france
-241,Réservation toulouse toulon pour vendredi
+241,Reservation toulouse toulon pour vendredi
 242,Peut-on aller de béziers à limoges en train
 243,horaires aulnay-sous-bois avignon ce week-end
 244,correspondance avignon puis albert
 245,mon collègue nancy part de montpellier pour montaigu
 246,je ne comprends pas
 247,Correspondance aulnay-sous-bois puis caen
-248,Billet SNCF rouen albert
-249,Connexion ferroviaire port-boulet saint-denis
+248,billet sncf rouen albert
+249,connexion ferroviaire port-boulet saint-denis
 250,Trajet direct saint-étienne tourcoing
-251,connexion ferroviaire fort-de-france perpignan
+251,Connexion ferroviaire fort-de-france perpignan
 252,correspondance entre boulogne-billancourt et florence
-253,correspondance vitry-sur-seine puis saint-étienne
+253,Correspondance vitry-sur-seine puis saint-etienne
 254,un billet pour voir monaco c'est quoi
-255,billet sncf saint-denis clermont-ferrand
+255,Billet SNCF saint-denis clermont-ferrand
 256,un billet pour voir nancy c'est quoi
 257,boire un monaco en allant à montaigu depuis besançon
 258,un billet pour voir albert c'est quoi
-259,réserver créteil - florence pour demain
+259,Reserver creteil - florence pour demain
 260,connexion ferroviaire metz lyon
-261,j'ai besoin d'un trajet nice toulon
+261,J'ai besoin d'un trajet nice toulon
 262,voyage tourcoing amiens en première classe
-263,Correspondance la rochelle puis dunkirk
-264,Voyage le havre versailles en première classe
-265,Reserver marseille - villeurbanne pour demain
+263,correspondance la rochelle puis dunkerque
+264,voyage le havre versailles en première classe
+265,Réserver marseille - villeurbanne pour demain
 266,Horaires nancy fort-de-france ce week-end
-267,avec valerie je prends le train de le mans à nice
-268,reserver une table pour deux
+267,avec valerie je prends le train de le mans a nice
+268,réserver une table pour deux
 269,Peut-on aller de strasbourg a saint-etienne en train
-270,TGV au depart de vitry-sur-seine a destination de caen
+270,TGV au départ de vitry-sur-seine à destination de caen
 271,Peut-on aller de creteil a orleans en train
 272,je veux aller voir florence et boire un monaco
 273,Correspondance courbevoie puis grenoble
 274,avec paris je prends le train de villeurbanne a grenoble
-275,voyage orléans florence en première classe
-276,connexion ferroviaire nice vitry-sur-seine
-277,Connexion ferroviaire lille angers
-278,Où prendre le train lourdes rouen
-279,peut-on aller de poitiers à strasbourg en train
+275,Voyage orleans florence en premiere classe
+276,Connexion ferroviaire nice vitry-sur-seine
+277,connexion ferroviaire lille angers
+278,Ou prendre le train lourdes rouen
+279,Peut-on aller de poitiers à strasbourg en train
 280,boire un monaco en allant a le havre depuis angers
 281,boire un monaco en allant a reims depuis nantes
-282,des trains circulent-ils entre florence et antibes
-283,Reserver grenoble - fort-de-france pour demain
+282,Des trains circulent-ils entre florence et antibes
+283,Réserver grenoble - fort-de-france pour demain
 284,Distance strasbourg nantes en train
 285,Trajet direct reims brest
-286,boire un monaco en allant a tourcoing depuis brest
+286,boire un monaco en allant à tourcoing depuis brest
 287,boire un monaco en allant a boulogne-billancourt depuis montaigu
 288,mon collegue albert part de port-boulet pour lourdes
-289,mon collègue florence part de béziers pour lourdes
+289,mon collegue florence part de beziers pour lourdes
 290,mon collègue florence part de mérignac pour asnières-sur-seine
-291,Liaison béziers poitiers aujourd'hui
-292,Réserver marseille - tours pour demain
-293,arrêt à villeurbanne en venant de aix-en-provence
+291,Liaison beziers poitiers aujourd'hui
+292,Reserver marseille - tours pour demain
+293,Arret a villeurbanne en venant de aix-en-provence
 294,annuler ma commande
-295,mon collegue paris part de lyon pour grenoble
+295,mon collègue paris part de lyon pour grenoble
 296,Réservation créteil aix-en-provence pour vendredi
 297,ou sont les toilettes
 298,boire un monaco en allant a vitry-sur-seine depuis grenoble
-299,Correspondance boulogne-billancourt puis lille
-300,Réservation saint-étienne montpellier pour vendredi
+299,correspondance boulogne-billancourt puis lille
+300,réservation saint-étienne montpellier pour vendredi
 301,avec monaco je prends le train de creteil a nimes
 302,Peut-on aller de le mans à versailles en train
 303,Correspondance nice puis colombes
-304,Prochain train dijon vers nice
-305,arrêt à antibes en venant de aulnay-sous-bois
+304,prochain train dijon vers nice
+305,Arret a antibes en venant de aulnay-sous-bois
 306,je cherche une pharmacie
 307,je veux aller voir paris et boire un monaco
 308,Correspondance entre bordeaux et angers
 309,Train du matin le mans creteil
 310,un billet pour voir monaco c'est quoi
-311,peut-on aller de vitry-sur-seine à perpignan en train
+311,Peut-on aller de vitry-sur-seine à perpignan en train
 312,distance colombes perpignan en train
 313,distance courbevoie albert en train
-314,TGV au depart de roubaix a destination de clermont-ferrand
+314,TGV au départ de roubaix à destination de clermont-ferrand
 315,Réserver villeurbanne - béziers pour demain
 316,quelle heure est-il
 317,Peut-on aller de mérignac à le mans en train
-318,Voyage saint-denis courbevoie en première classe
-319,avec valerie je prends le train de amiens a boulogne-billancourt
+318,voyage saint-denis courbevoie en première classe
+319,avec valerie je prends le train de amiens à boulogne-billancourt
 320,Tarif florence versailles s'il vous plaît
 321,Correspondance entre grenoble et mérignac
-322,Réservation antibes caen pour vendredi
+322,réservation antibes caen pour vendredi
 323,un billet pour voir florence c'est quoi
-324,mon collègue paris part de limoges pour toulon
-325,Trajet direct angers fort-de-france
+324,mon collegue paris part de limoges pour toulon
+325,trajet direct angers fort-de-france
 326,Distance asnières-sur-seine villeurbanne en train
-327,Trajet direct metz dunkirk
-328,Horaires caen fort-de-france ce week-end
+327,trajet direct metz dunkerque
+328,horaires caen fort-de-france ce week-end
 329,Voyage antibes saint-étienne en première classe
-330,Correspondance antibes puis marseille
-331,horaires saint-denis montpellier ce week-end
+330,correspondance antibes puis marseille
+331,Horaires saint-denis montpellier ce week-end
 332,J'ai besoin d'un trajet dijon florence
-333,Arret a clermont-ferrand en venant de limoges
+333,arrêt à clermont-ferrand en venant de limoges
 334,où est la gare la plus proche
 335,boire un monaco en allant à angers depuis saint-denis
 336,quel temps fait-il
-337,prochain train le havre vers albert
-338,Billet SNCF argenteuil merignac
+337,Prochain train le havre vers albert
+338,billet sncf argenteuil mérignac
 339,quelle heure est-il
 340,Correspondance entre tourcoing et rouen
 341,je voudrais un cafe
 342,je ne comprends pas
-343,avec albert je prends le train de rennes a grenoble
+343,avec albert je prends le train de rennes à grenoble
 344,Réserver rouen - besançon pour demain
 345,avec florence je prends le train de tours à orléans
 346,boire un monaco en allant à nîmes depuis nice
-347,Où prendre le train courbevoie la rochelle
-348,Prochain train antibes vers avignon
-349,correspondance entre le mans et caen
+347,où prendre le train courbevoie la rochelle
+348,prochain train antibes vers avignon
+349,Correspondance entre le mans et caen
 350,des trains circulent-ils entre poitiers et mulhouse
-351,Tarif grenoble argenteuil s'il vous plaît
-352,horaires aulnay-sous-bois clermont-ferrand ce week-end
+351,Tarif grenoble argenteuil s'il vous plait
+352,Horaires aulnay-sous-bois clermont-ferrand ce week-end
 353,Peut-on aller de le havre à saint-étienne en train
 354,je veux aller voir nancy et boire un monaco
-355,réservation florence albert pour vendredi
+355,Reservation florence albert pour vendredi
 356,je veux aller voir valerie et boire un monaco
 357,mon collegue albert part de la rochelle pour nimes
 358,je cherche une pharmacie
 359,trajet direct avignon aix-en-provence
-360,Connexion ferroviaire nîmes strasbourg
-361,voyage montreuil le havre en première classe
+360,connexion ferroviaire nîmes strasbourg
+361,Voyage montreuil le havre en premiere classe
 362,je veux aller voir paris et boire un monaco
-363,Ou prendre le train tours dunkirk
+363,Où prendre le train tours dunkerque
 364,pouvez-vous répéter
-365,J'ai besoin d'un trajet saint-denis la rochelle
-366,où prendre le train nantes aix-en-provence
+365,j'ai besoin d'un trajet saint-denis la rochelle
+366,Où prendre le train nantes aix-en-provence
 367,un billet pour voir nancy c'est quoi
-368,reserver une table pour deux
+368,réserver une table pour deux
 369,Des trains circulent-ils entre villeurbanne et roubaix
-370,Réserver montaigu - clermont-ferrand pour demain
+370,réserver montaigu - clermont-ferrand pour demain
 371,je veux aller voir albert et boire un monaco
-372,Prochain train bordeaux vers asnieres-sur-seine
+372,prochain train bordeaux vers asnières-sur-seine
 373,pouvez-vous répéter
 374,je veux aller voir nancy et boire un monaco
 375,mon collègue valerie part de marseille pour argenteuil
-376,mon collegue albert part de dunkirk pour brest
+376,mon collegue albert part de dunkerque pour brest
 377,je ne comprends pas
 378,quel temps fait-il
-379,réserver strasbourg - brest pour demain
-380,boire un monaco en allant a versailles depuis toulon
+379,Reserver strasbourg - brest pour demain
+380,boire un monaco en allant à versailles depuis toulon
 381,J'ai besoin d'un trajet reims albert
-382,Connexion ferroviaire strasbourg rouen
+382,connexion ferroviaire strasbourg rouen
 383,prochain train lyon vers aulnay-sous-bois
 384,je veux aller voir nancy et boire un monaco
 385,réservation tours le havre pour vendredi
 386,trajet direct port-boulet avignon
 387,liaison grenoble caen aujourd'hui
 388,Train du matin dijon lourdes
-389,J'ai besoin d'un trajet orléans brest
+389,j'ai besoin d'un trajet orléans brest
 390,annuler ma commande
-391,Ou prendre le train lille toulouse
-392,arrêt à boulogne-billancourt en venant de courbevoie
+391,Où prendre le train lille toulouse
+392,Arret a boulogne-billancourt en venant de courbevoie
 393,billet sncf colombes saint-denis
 394,je veux aller voir valerie et boire un monaco
-395,Où prendre le train nîmes besançon
+395,Ou prendre le train nimes besancon
 396,J'ai besoin d'un trajet tourcoing caen
 397,je veux aller voir monaco et boire un monaco
 398,quel temps fait-il
 399,Correspondance entre boulogne-billancourt et nantes
-400,liaison créteil albert aujourd'hui
-401,mon collegue florence part de metz pour colombes
+400,Liaison créteil albert aujourd'hui
+401,mon collègue florence part de metz pour colombes
 402,boire un monaco en allant a aulnay-sous-bois depuis lourdes
 403,un billet pour voir florence c'est quoi
 404,où est la gare la plus proche
@@ -406,46 +406,46 @@
 406,je veux aller voir albert et boire un monaco
 407,je veux aller voir nancy et boire un monaco
 408,avec valerie je prends le train de creteil a mulhouse
-409,boire un monaco en allant à nîmes depuis asnières-sur-seine
+409,boire un monaco en allant a nimes depuis asnieres-sur-seine
 410,Arret a strasbourg en venant de dijon
-411,où prendre le train saint-denis nancy
+411,Où prendre le train saint-denis nancy
 412,billet sncf lourdes tourcoing
-413,Horaires nice asnieres-sur-seine ce week-end
+413,horaires nice asnières-sur-seine ce week-end
 414,Peut-on aller de rouen à le mans en train
 415,Connexion ferroviaire aulnay-sous-bois toulon
-416,distance florence strasbourg en train
+416,Distance florence strasbourg en train
 417,Correspondance toulouse puis dijon
 418,prochain train montreuil vers rouen
 419,boire un monaco en allant a metz depuis la rochelle
 420,combien coûte ce livre
-421,j'ai besoin d'un trajet strasbourg le havre
+421,J'ai besoin d'un trajet strasbourg le havre
 422,Train du matin lille montpellier
-423,Billet SNCF fort-de-france clermont-ferrand
+423,billet sncf fort-de-france clermont-ferrand
 424,je veux aller voir valerie et boire un monaco
-425,Réservation asnières-sur-seine rennes pour vendredi
+425,réservation asnières-sur-seine rennes pour vendredi
 426,correspondance entre villeurbanne et marseille
-427,j'ai besoin d'un trajet le mans rouen
-428,mon collègue monaco part de poitiers pour asnières-sur-seine
+427,J'ai besoin d'un trajet le mans rouen
+428,mon collegue monaco part de poitiers pour asnieres-sur-seine
 429,boire un monaco en allant à montpellier depuis roubaix
 430,mon collegue valerie part de fort-de-france pour saint-denis
-431,tarif créteil reims s'il vous plaît
+431,Tarif creteil reims s'il vous plait
 432,Horaires pessac port-boulet ce week-end
 433,un billet pour voir albert c'est quoi
-434,billet sncf argenteuil toulouse
+434,Billet SNCF argenteuil toulouse
 435,Où prendre le train aulnay-sous-bois courbevoie
 436,je veux aller voir paris et boire un monaco
 437,prochain train avignon vers colombes
-438,avec albert je prends le train de le mans à fort-de-france
-439,reserver une table pour deux
+438,avec albert je prends le train de le mans a fort-de-france
+439,réserver une table pour deux
 440,un billet pour voir albert c'est quoi
-441,réservation amiens aix-en-provence pour vendredi
-442,Des trains circulent-ils entre dunkirk et montpellier
+441,Réservation amiens aix-en-provence pour vendredi
+442,Des trains circulent-ils entre dunkerque et montpellier
 443,Reservation albert besancon pour vendredi
 444,je ne comprends pas
-445,Voyage strasbourg grenoble en première classe
+445,voyage strasbourg grenoble en première classe
 446,Distance port-boulet grenoble en train
 447,des trains circulent-ils entre brest et le mans
-448,Liaison mulhouse albert aujourd'hui
+448,liaison mulhouse albert aujourd'hui
 449,Reservation lille antibes pour vendredi
 450,Distance florence poitiers en train
 451,Réserver fort-de-france - la rochelle pour demain
@@ -453,463 +453,463 @@
 453,Tarif mérignac boulogne-billancourt s'il vous plaît
 454,tarif brest saint-denis s'il vous plaît
 455,un billet pour voir paris c'est quoi
-456,Prochain train besancon vers metz
-457,Billet SNCF montaigu florence
+456,Prochain train besançon vers metz
+457,billet sncf montaigu florence
 458,Des trains circulent-ils entre creteil et albert
-459,connexion ferroviaire aix-en-provence paris
-460,Tarif roubaix strasbourg s'il vous plaît
+459,Connexion ferroviaire aix-en-provence paris
+460,tarif roubaix strasbourg s'il vous plaît
 461,Arrêt à caen en venant de saint-denis
-462,Voyage fort-de-france mulhouse en premiere classe
+462,Voyage fort-de-france mulhouse en première classe
 463,un billet pour voir nancy c'est quoi
 464,horaires saint-denis angers ce week-end
-465,TGV au départ de lyon à destination de roubaix
-466,Correspondance aulnay-sous-bois puis metz
+465,tgv au départ de lyon à destination de roubaix
+466,correspondance aulnay-sous-bois puis metz
 467,combien coûte ce livre
-468,Reservation roubaix nimes pour vendredi
+468,réservation roubaix nîmes pour vendredi
 469,j'ai besoin d'un trajet rennes metz
-470,correspondance entre béziers et rouen
+470,Correspondance entre béziers et rouen
 471,quel temps fait-il
 472,je ne comprends pas
-473,Réservation tourcoing montpellier pour vendredi
+473,Reservation tourcoing montpellier pour vendredi
 474,train du matin créteil angers
-475,Distance nantes saint-denis en train
+475,distance nantes saint-denis en train
 476,je veux aller voir nancy et boire un monaco
-477,train du matin nantes aulnay-sous-bois
-478,TGV au départ de port-boulet à destination de rouen
-479,Peut-on aller de aix-en-provence a besancon en train
-480,mon collegue albert part de poitiers pour caen
+477,Train du matin nantes aulnay-sous-bois
+478,TGV au depart de port-boulet a destination de rouen
+479,Peut-on aller de aix-en-provence à besançon en train
+480,mon collègue albert part de poitiers pour caen
 481,un billet pour voir valerie c'est quoi
-482,Tarif clermont-ferrand antibes s'il vous plaît
+482,tarif clermont-ferrand antibes s'il vous plaît
 483,correspondance entre reims et antibes
 484,Horaires asnieres-sur-seine besancon ce week-end
-485,mon collègue valerie part de avignon pour montpellier
+485,mon collegue valerie part de avignon pour montpellier
 486,quel temps fait-il
 487,connexion ferroviaire versailles strasbourg
-488,trajet direct versailles rennes
-489,Tarif amiens bordeaux s'il vous plait
-490,mon collègue florence part de boulogne-billancourt pour lyon
+488,Trajet direct versailles rennes
+489,Tarif amiens bordeaux s'il vous plaît
+490,mon collegue florence part de boulogne-billancourt pour lyon
 491,Correspondance le mans puis rennes
-492,Arret a aulnay-sous-bois en venant de le havre
-493,Reserver courbevoie - vitry-sur-seine pour demain
+492,Arrêt à aulnay-sous-bois en venant de le havre
+493,réserver courbevoie - vitry-sur-seine pour demain
 494,Billet SNCF besançon fort-de-france
 495,Liaison boulogne-billancourt antibes aujourd'hui
-496,tgv au départ de saint-denis à destination de roubaix
-497,boire un monaco en allant a montreuil depuis villeurbanne
-498,Distance aix-en-provence paris en train
+496,TGV au depart de saint-denis a destination de roubaix
+497,boire un monaco en allant à montreuil depuis villeurbanne
+498,distance aix-en-provence paris en train
 499,prochain train toulouse vers florence
-500,Voyage antibes lille en premiere classe
-501,des trains circulent-ils entre strasbourg et perpignan
-502,Prochain train la rochelle vers créteil
+500,voyage antibes lille en première classe
+501,Des trains circulent-ils entre strasbourg et perpignan
+502,prochain train la rochelle vers créteil
 503,un billet pour voir albert c'est quoi
 504,prochain train tourcoing vers angers
 505,un billet pour voir valerie c'est quoi
-506,réservation asnières-sur-seine saint-denis pour vendredi
+506,Réservation asnières-sur-seine saint-denis pour vendredi
 507,annuler ma commande
 508,un billet pour voir valerie c'est quoi
 509,je veux aller voir monaco et boire un monaco
-510,tarif albert béziers s'il vous plaît
+510,Tarif albert beziers s'il vous plait
 511,j'ai besoin d'un trajet courbevoie perpignan
 512,j'ai besoin d'un trajet reims rennes
-513,Distance creteil beziers en train
-514,réservation nantes la rochelle pour vendredi
-515,avec paris je prends le train de le havre à nantes
-516,Peut-on aller de saint-denis à limoges en train
+513,distance créteil béziers en train
+514,Reservation nantes la rochelle pour vendredi
+515,avec paris je prends le train de le havre a nantes
+516,Peut-on aller de saint-denis a limoges en train
 517,train du matin brest grenoble
 518,mon collègue albert part de boulogne-billancourt pour villeurbanne
-519,Correspondance aix-en-provence puis dunkirk
-520,horaires antibes lille ce week-end
+519,correspondance aix-en-provence puis dunkerque
+520,Horaires antibes lille ce week-end
 521,un billet pour voir monaco c'est quoi
-522,boire un monaco en allant a vitry-sur-seine depuis tourcoing
+522,boire un monaco en allant à vitry-sur-seine depuis tourcoing
 523,je veux aller voir monaco et boire un monaco
 524,je ne comprends pas
-525,distance créteil rennes en train
+525,Distance creteil rennes en train
 526,annuler ma commande
-527,Réserver bordeaux - limoges pour demain
+527,réserver bordeaux - limoges pour demain
 528,peut-on aller de versailles à dijon en train
-529,Peut-on aller de brest a clermont-ferrand en train
-530,Correspondance entre grenoble et montaigu
+529,peut-on aller de brest à clermont-ferrand en train
+530,correspondance entre grenoble et montaigu
 531,des trains circulent-ils entre le havre et montpellier
 532,correspondance fort-de-france puis tours
 533,j'ai besoin d'un trajet florence la rochelle
-534,boire un monaco en allant à boulogne-billancourt depuis mulhouse
-535,TGV au départ de boulogne-billancourt à destination de montpellier
-536,correspondance entre mulhouse et metz
-537,horaires aix-en-provence besançon ce week-end
+534,boire un monaco en allant a boulogne-billancourt depuis mulhouse
+535,tgv au départ de boulogne-billancourt à destination de montpellier
+536,Correspondance entre mulhouse et metz
+537,Horaires aix-en-provence besancon ce week-end
 538,où puis-je acheter un ticket
-539,Arret a montaigu en venant de asnieres-sur-seine
+539,Arrêt à montaigu en venant de asnières-sur-seine
 540,je ne comprends pas
-541,mon collegue florence part de limoges pour argenteuil
-542,Billet SNCF aulnay-sous-bois florence
-543,Correspondance entre roubaix et nimes
-544,Tarif bordeaux vitry-sur-seine s'il vous plait
-545,Correspondance saint-etienne puis toulouse
+541,mon collègue florence part de limoges pour argenteuil
+542,billet sncf aulnay-sous-bois florence
+543,Correspondance entre roubaix et nîmes
+544,Tarif bordeaux vitry-sur-seine s'il vous plaît
+545,correspondance saint-étienne puis toulouse
 546,Connexion ferroviaire brest saint-denis
 547,boire un monaco en allant a merignac depuis grenoble
-548,trajet direct mérignac fort-de-france
+548,Trajet direct mérignac fort-de-france
 549,Reserver merignac - dijon pour demain
-550,Où prendre le train poitiers montreuil
-551,Reservation besancon versailles pour vendredi
-552,TGV au depart de creteil a destination de brest
-553,boire un monaco en allant a rouen depuis fort-de-france
+550,Ou prendre le train poitiers montreuil
+551,réservation besançon versailles pour vendredi
+552,TGV au départ de créteil à destination de brest
+553,boire un monaco en allant à rouen depuis fort-de-france
 554,Billet SNCF aix-en-provence lyon
-555,TGV au départ de brest à destination de caen
-556,train du matin roubaix créteil
+555,tgv au départ de brest à destination de caen
+556,Train du matin roubaix créteil
 557,Billet SNCF boulogne-billancourt saint-denis
-558,J'ai besoin d'un trajet saint-denis mérignac
+558,J'ai besoin d'un trajet saint-denis merignac
 559,je voudrais un cafe
-560,Prochain train aulnay-sous-bois vers courbevoie
+560,prochain train aulnay-sous-bois vers courbevoie
 561,j'ai besoin d'un trajet montreuil le mans
-562,Liaison orleans argenteuil aujourd'hui
+562,Liaison orléans argenteuil aujourd'hui
 563,je voudrais un café
 564,prochain train poitiers vers lyon
 565,Billet SNCF lille reims
 566,boire un monaco en allant à antibes depuis mulhouse
-567,Réserver toulouse - clermont-ferrand pour demain
+567,Reserver toulouse - clermont-ferrand pour demain
 568,Tarif metz aix-en-provence s'il vous plait
-569,Trajet direct avignon mérignac
+569,Trajet direct avignon merignac
 570,Horaires poitiers montaigu ce week-end
 571,liaison grenoble aulnay-sous-bois aujourd'hui
 572,boire un monaco en allant à versailles depuis la rochelle
-573,Prochain train vitry-sur-seine vers grenoble
-574,Voyage caen nimes en premiere classe
-575,Tarif beziers argenteuil s'il vous plait
+573,prochain train vitry-sur-seine vers grenoble
+574,Voyage caen nîmes en première classe
+575,Tarif béziers argenteuil s'il vous plaît
 576,Ou prendre le train saint-denis saint-denis
-577,Tarif pessac lyon s'il vous plaît
+577,tarif pessac lyon s'il vous plaît
 578,je veux aller voir nancy et boire un monaco
 579,je veux aller voir paris et boire un monaco
 580,TGV au depart de rouen a destination de pessac
-581,Distance fort-de-france marseille en train
-582,billet sncf dunkirk poitiers
-583,où prendre le train créteil saint-étienne
-584,boire un monaco en allant a montpellier depuis tourcoing
+581,distance fort-de-france marseille en train
+582,Billet SNCF dunkerque poitiers
+583,Ou prendre le train creteil saint-etienne
+584,boire un monaco en allant à montpellier depuis tourcoing
 585,boire un monaco en allant a mulhouse depuis aix-en-provence
 586,je veux aller voir monaco et boire un monaco
 587,Peut-on aller de versailles à metz en train
-588,Où prendre le train bordeaux nantes
-589,TGV au départ de marseille à destination de pessac
+588,Ou prendre le train bordeaux nantes
+589,tgv au départ de marseille à destination de pessac
 590,un billet pour voir paris c'est quoi
 591,liaison courbevoie le havre aujourd'hui
-592,réserver lille - toulon pour demain
+592,Reserver lille - toulon pour demain
 593,je veux aller voir paris et boire un monaco
-594,réserver brest - versailles pour demain
+594,Réserver brest - versailles pour demain
 595,Distance port-boulet toulouse en train
-596,avec nancy je prends le train de reims a brest
-597,Ou prendre le train lourdes port-boulet
-598,réserver poitiers - nantes pour demain
-599,Des trains circulent-ils entre versailles et aix-en-provence
-600,horaires avignon grenoble ce week-end
+596,avec nancy je prends le train de reims à brest
+597,où prendre le train lourdes port-boulet
+598,Reserver poitiers - nantes pour demain
+599,des trains circulent-ils entre versailles et aix-en-provence
+600,Horaires avignon grenoble ce week-end
 601,je voudrais un café
 602,je veux aller voir nancy et boire un monaco
 603,prochain train angers vers antibes
-604,Peut-on aller de nancy a merignac en train
+604,Peut-on aller de nancy à mérignac en train
 605,Tarif argenteuil strasbourg s'il vous plaît
-606,Réservation nice roubaix pour vendredi
+606,Reservation nice roubaix pour vendredi
 607,connexion ferroviaire asnières-sur-seine tours
-608,avec florence je prends le train de grenoble à aulnay-sous-bois
+608,avec florence je prends le train de grenoble a aulnay-sous-bois
 609,Peut-on aller de marseille a florence en train
 610,Distance strasbourg mulhouse en train
 611,Horaires la rochelle clermont-ferrand ce week-end
-612,Des trains circulent-ils entre antibes et paris
+612,des trains circulent-ils entre antibes et paris
 613,Arrêt à créteil en venant de aix-en-provence
 614,un billet pour voir albert c'est quoi
-615,Réservation limoges lille pour vendredi
+615,Reservation limoges lille pour vendredi
 616,boire un monaco en allant à asnières-sur-seine depuis toulon
 617,peut-on aller de tours à rennes en train
-618,reserver une table pour deux
+618,réserver une table pour deux
 619,billet sncf lourdes paris
 620,Peut-on aller de clermont-ferrand à créteil en train
 621,Tarif caen merignac s'il vous plait
 622,avec valerie je prends le train de saint-étienne à aix-en-provence
 623,je cherche une pharmacie
 624,mon collegue monaco part de aix-en-provence pour asnieres-sur-seine
-625,Des trains circulent-ils entre clermont-ferrand et perpignan
-626,Horaires brest nancy ce week-end
+625,des trains circulent-ils entre clermont-ferrand et perpignan
+626,horaires brest nancy ce week-end
 627,Trajet direct perpignan toulon
-628,Arret a tours en venant de beziers
+628,Arrêt à tours en venant de béziers
 629,liaison lyon saint-denis aujourd'hui
 630,Reservation orleans amiens pour vendredi
 631,Des trains circulent-ils entre tourcoing et courbevoie
-632,TGV au départ de saint-étienne à destination de nancy
+632,tgv au départ de saint-étienne à destination de nancy
 633,Où prendre le train aulnay-sous-bois aix-en-provence
-634,J'ai besoin d'un trajet limoges villeurbanne
+634,j'ai besoin d'un trajet limoges villeurbanne
 635,je cherche une pharmacie
 636,Peut-on aller de reims a saint-etienne en train
 637,un billet pour voir valerie c'est quoi
-638,mon collègue nancy part de le mans pour tours
+638,mon collegue nancy part de le mans pour tours
 639,mon collegue monaco part de creteil pour roubaix
 640,Où prendre le train le havre rouen
-641,Arret a reims en venant de asnieres-sur-seine
+641,Arrêt à reims en venant de asnières-sur-seine
 642,pouvez-vous répéter
 643,je veux aller voir albert et boire un monaco
-644,Réserver saint-denis - le mans pour demain
+644,Reserver saint-denis - le mans pour demain
 645,mon collegue monaco part de versailles pour reims
 646,je me suis perdu
 647,distance roubaix courbevoie en train
-648,J'ai besoin d'un trajet roubaix tourcoing
-649,Train du matin tours besançon
-650,mon collegue florence part de montreuil pour angers
+648,j'ai besoin d'un trajet roubaix tourcoing
+649,Train du matin tours besancon
+650,mon collègue florence part de montreuil pour angers
 651,horaires boulogne-billancourt rennes ce week-end
-652,tarif fort-de-france lourdes s'il vous plaît
-653,trajet direct perpignan vitry-sur-seine
+652,Tarif fort-de-france lourdes s'il vous plait
+653,Trajet direct perpignan vitry-sur-seine
 654,je voudrais un cafe
 655,Ou prendre le train mulhouse avignon
 656,horaires brest vitry-sur-seine ce week-end
 657,Trajet direct toulon grenoble
 658,un billet pour voir valerie c'est quoi
 659,Ou prendre le train aulnay-sous-bois bordeaux
-660,avec florence je prends le train de strasbourg à nice
-661,boire un monaco en allant a colombes depuis marseille
+660,avec florence je prends le train de strasbourg a nice
+661,boire un monaco en allant à colombes depuis marseille
 662,je veux aller voir monaco et boire un monaco
 663,boire un monaco en allant à vitry-sur-seine depuis brest
 664,Prochain train lyon vers toulon
-665,boire un monaco en allant à bordeaux depuis saint-denis
+665,boire un monaco en allant a bordeaux depuis saint-denis
 666,je cherche une pharmacie
-667,trajet direct dunkirk la rochelle
-668,train du matin poitiers brest
+667,trajet direct dunkerque la rochelle
+668,Train du matin poitiers brest
 669,réservation caen marseille pour vendredi
-670,Liaison marseille besancon aujourd'hui
-671,tgv au départ de toulon à destination de port-boulet
+670,liaison marseille besançon aujourd'hui
+671,TGV au depart de toulon a destination de port-boulet
 672,Liaison reims saint-denis aujourd'hui
-673,réserver asnières-sur-seine - nice pour demain
+673,Réserver asnières-sur-seine - nice pour demain
 674,je me suis perdu
 675,Horaires amiens nice ce week-end
-676,Peut-on aller de beziers a metz en train
+676,Peut-on aller de béziers à metz en train
 677,je veux aller voir monaco et boire un monaco
-678,distance reims angers en train
+678,Distance reims angers en train
 679,annuler ma commande
 680,pouvez-vous répéter
 681,ou est la gare la plus proche
 682,je voudrais un cafe
 683,je cherche une pharmacie
-684,Tarif angers tourcoing s'il vous plaît
+684,tarif angers tourcoing s'il vous plaît
 685,Connexion ferroviaire besancon colombes
-686,Où prendre le train rennes lyon
+686,Ou prendre le train rennes lyon
 687,je cherche une pharmacie
-688,Ou prendre le train amiens besancon
-689,Tarif roubaix nîmes s'il vous plaît
+688,où prendre le train amiens besançon
+689,Tarif roubaix nimes s'il vous plait
 690,je veux aller voir albert et boire un monaco
-691,Réservation argenteuil florence pour vendredi
+691,réservation argenteuil florence pour vendredi
 692,quel temps fait-il
-693,Train du matin montpellier angers
-694,liaison montaigu tourcoing aujourd'hui
-695,horaires metz lourdes ce week-end
+693,train du matin montpellier angers
+694,Liaison montaigu tourcoing aujourd'hui
+695,Horaires metz lourdes ce week-end
 696,combien coûte ce livre
-697,Arrêt à la rochelle en venant de tours
+697,Arret a la rochelle en venant de tours
 698,j'ai besoin d'un trajet poitiers fort-de-france
-699,Liaison roubaix montaigu aujourd'hui
+699,liaison roubaix montaigu aujourd'hui
 700,Correspondance amiens puis grenoble
-701,avec paris je prends le train de angers a asnieres-sur-seine
-702,distance strasbourg dijon en train
-703,Train du matin port-boulet perpignan
-704,liaison limoges vitry-sur-seine aujourd'hui
-705,Ou prendre le train fort-de-france rennes
-706,Des trains circulent-ils entre strasbourg et fort-de-france
+701,avec paris je prends le train de angers à asnières-sur-seine
+702,Distance strasbourg dijon en train
+703,train du matin port-boulet perpignan
+704,Liaison limoges vitry-sur-seine aujourd'hui
+705,Où prendre le train fort-de-france rennes
+706,des trains circulent-ils entre strasbourg et fort-de-france
 707,avec paris je prends le train de la rochelle à le mans
-708,Liaison montreuil reims aujourd'hui
-709,Des trains circulent-ils entre toulouse et albert
-710,train du matin bordeaux besançon
+708,liaison montreuil reims aujourd'hui
+709,des trains circulent-ils entre toulouse et albert
+710,Train du matin bordeaux besançon
 711,réserver paris - saint-étienne pour demain
 712,je ne comprends pas
-713,réservation le havre rennes pour vendredi
+713,Reservation le havre rennes pour vendredi
 714,Voyage colombes orléans en première classe
 715,Peut-on aller de clermont-ferrand à rennes en train
 716,je veux aller voir florence et boire un monaco
-717,Train du matin rouen metz
-718,réservation bordeaux limoges pour vendredi
-719,correspondance entre boulogne-billancourt et marseille
-720,mon collegue nancy part de grenoble pour creteil
-721,liaison grenoble reims aujourd'hui
-722,Arret a aix-en-provence en venant de nice
-723,Connexion ferroviaire montpellier nîmes
-724,Distance nimes avignon en train
-725,mon collegue monaco part de rennes pour bordeaux
+717,train du matin rouen metz
+718,Réservation bordeaux limoges pour vendredi
+719,Correspondance entre boulogne-billancourt et marseille
+720,mon collègue nancy part de grenoble pour créteil
+721,Liaison grenoble reims aujourd'hui
+722,Arrêt à aix-en-provence en venant de nice
+723,connexion ferroviaire montpellier nîmes
+724,distance nîmes avignon en train
+725,mon collègue monaco part de rennes pour bordeaux
 726,un billet pour voir valerie c'est quoi
 727,prochain train brest vers montreuil
-728,j'ai besoin d'un trajet saint-denis courbevoie
-729,train du matin argenteuil asnières-sur-seine
-730,correspondance entre colombes et la rochelle
+728,J'ai besoin d'un trajet saint-denis courbevoie
+729,Train du matin argenteuil asnières-sur-seine
+730,Correspondance entre colombes et la rochelle
 731,Peut-on aller de tours à saint-denis en train
 732,je veux aller voir paris et boire un monaco
 733,Arrêt à besançon en venant de albert
 734,correspondance roubaix puis nancy
-735,correspondance saint-étienne puis orléans
+735,Correspondance saint-étienne puis orléans
 736,Connexion ferroviaire avignon rennes
-737,Ou prendre le train boulogne-billancourt dunkirk
-738,distance poitiers clermont-ferrand en train
-739,tarif tours caen s'il vous plaît
+737,Ou prendre le train boulogne-billancourt dunkerque
+738,Distance poitiers clermont-ferrand en train
+739,Tarif tours caen s'il vous plaît
 740,réserver pessac - mulhouse pour demain
-741,Correspondance entre saint-etienne et strasbourg
-742,Correspondance versailles puis perpignan
+741,Correspondance entre saint-étienne et strasbourg
+742,correspondance versailles puis perpignan
 743,Prochain train albert vers dijon
-744,Prochain train antibes vers marseille
+744,prochain train antibes vers marseille
 745,mon collegue albert part de colombes pour perpignan
-746,Horaires colombes strasbourg ce week-end
+746,horaires colombes strasbourg ce week-end
 747,avec nancy je prends le train de bordeaux à nîmes
 748,mon collegue florence part de antibes pour fort-de-france
-749,Correspondance grenoble puis paris
-750,réservation toulon paris pour vendredi
+749,correspondance grenoble puis paris
+750,Reservation toulon paris pour vendredi
 751,annuler ma commande
 752,je ne comprends pas
-753,Trajet direct antibes villeurbanne
-754,réserver tourcoing - reims pour demain
+753,trajet direct antibes villeurbanne
+754,Reserver tourcoing - reims pour demain
 755,quel temps fait-il
 756,Réservation créteil aix-en-provence pour vendredi
 757,des trains circulent-ils entre argenteuil et lyon
-758,Peut-on aller de vitry-sur-seine à nîmes en train
+758,peut-on aller de vitry-sur-seine à nîmes en train
 759,Voyage florence le havre en première classe
-760,distance villeurbanne paris en train
-761,prochain train vitry-sur-seine vers amiens
+760,Distance villeurbanne paris en train
+761,Prochain train vitry-sur-seine vers amiens
 762,annuler ma commande
 763,un billet pour voir nancy c'est quoi
-764,Reservation montreuil creteil pour vendredi
-765,Horaires montaigu colombes ce week-end
+764,réservation montreuil créteil pour vendredi
+765,horaires montaigu colombes ce week-end
 766,horaires colombes paris ce week-end
 767,je cherche une pharmacie
 768,Connexion ferroviaire merignac port-boulet
 769,correspondance mulhouse puis strasbourg
-770,boire un monaco en allant a aulnay-sous-bois depuis toulon
-771,Reservation mulhouse aix-en-provence pour vendredi
+770,boire un monaco en allant à aulnay-sous-bois depuis toulon
+771,réservation mulhouse aix-en-provence pour vendredi
 772,liaison perpignan albert aujourd'hui
-773,avec albert je prends le train de le havre a mulhouse
+773,avec albert je prends le train de le havre à mulhouse
 774,correspondance entre montreuil et saint-denis
-775,Arrêt à fort-de-france en venant de angers
-776,Peut-on aller de villeurbanne a versailles en train
+775,arrêt à fort-de-france en venant de angers
+776,peut-on aller de villeurbanne à versailles en train
 777,ou est la gare la plus proche
 778,je veux aller voir albert et boire un monaco
 779,je veux aller voir monaco et boire un monaco
 780,Trajet direct versailles albert
 781,Arrêt à boulogne-billancourt en venant de saint-denis
-782,Des trains circulent-ils entre argenteuil et lille
-783,j'ai besoin d'un trajet nice mulhouse
+782,des trains circulent-ils entre argenteuil et lille
+783,J'ai besoin d'un trajet nice mulhouse
 784,je veux aller voir florence et boire un monaco
-785,où prendre le train besançon aix-en-provence
+785,Où prendre le train besançon aix-en-provence
 786,annuler ma commande
-787,où prendre le train le mans saint-denis
-788,Peut-on aller de port-boulet a le mans en train
+787,Où prendre le train le mans saint-denis
+788,peut-on aller de port-boulet à le mans en train
 789,Tarif montreuil le havre s'il vous plait
 790,ou puis-je acheter un ticket
-791,Correspondance entre antibes et reims
-792,Reserver tourcoing - bordeaux pour demain
-793,où prendre le train metz marseille
-794,Billet SNCF pessac mérignac
+791,correspondance entre antibes et reims
+792,Réserver tourcoing - bordeaux pour demain
+793,Où prendre le train metz marseille
+794,Billet SNCF pessac merignac
 795,Prochain train bordeaux vers saint-étienne
-796,Prochain train brest vers port-boulet
+796,prochain train brest vers port-boulet
 797,quel temps fait-il
 798,je ne comprends pas
-799,Train du matin rennes dunkirk
+799,Train du matin rennes dunkerque
 800,j'ai besoin d'un trajet lille aix-en-provence
-801,TGV au départ de rouen à destination de rennes
+801,tgv au départ de rouen à destination de rennes
 802,Correspondance entre saint-denis et nantes
-803,trajet direct le havre rouen
+803,Trajet direct le havre rouen
 804,Où prendre le train mérignac saint-étienne
-805,Connexion ferroviaire créteil nice
+805,Connexion ferroviaire creteil nice
 806,je veux aller voir monaco et boire un monaco
-807,Billet SNCF montpellier rouen
-808,Où prendre le train port-boulet limoges
+807,billet sncf montpellier rouen
+808,où prendre le train port-boulet limoges
 809,où prendre le train béziers besançon
 810,Des trains circulent-ils entre paris et marseille
 811,quelle heure est-il
-812,TGV au départ de aulnay-sous-bois à destination de strasbourg
-813,mon collegue paris part de aulnay-sous-bois pour roubaix
+812,tgv au départ de aulnay-sous-bois à destination de strasbourg
+813,mon collègue paris part de aulnay-sous-bois pour roubaix
 814,train du matin mérignac créteil
 815,un billet pour voir monaco c'est quoi
-816,Ou prendre le train tourcoing tours
-817,Distance poitiers creteil en train
+816,Où prendre le train tourcoing tours
+817,Distance poitiers créteil en train
 818,ou puis-je acheter un ticket
 819,J'ai besoin d'un trajet antibes bordeaux
 820,où est la gare la plus proche
 821,annuler ma commande
-822,tgv au départ de versailles à destination de perpignan
-823,voyage aix-en-provence grenoble en première classe
+822,TGV au depart de versailles a destination de perpignan
+823,Voyage aix-en-provence grenoble en premiere classe
 824,je cherche une pharmacie
-825,boire un monaco en allant à nîmes depuis nantes
-826,Liaison orléans montpellier aujourd'hui
-827,Voyage roubaix metz en premiere classe
+825,boire un monaco en allant a nimes depuis nantes
+826,liaison orléans montpellier aujourd'hui
+827,voyage roubaix metz en première classe
 828,Train du matin villeurbanne aix-en-provence
-829,Correspondance entre courbevoie et orleans
+829,Correspondance entre courbevoie et orléans
 830,horaires asnières-sur-seine caen ce week-end
 831,Correspondance grenoble puis caen
 832,billet sncf brest boulogne-billancourt
 833,billet sncf saint-denis paris
 834,connexion ferroviaire rouen créteil
-835,Réservation poitiers besançon pour vendredi
-836,tgv au départ de albert à destination de tourcoing
-837,J'ai besoin d'un trajet pessac rennes
+835,réservation poitiers besançon pour vendredi
+836,TGV au départ de albert à destination de tourcoing
+837,j'ai besoin d'un trajet pessac rennes
 838,un billet pour voir florence c'est quoi
 839,mon collègue nancy part de le mans pour tourcoing
 840,train du matin vitry-sur-seine antibes
-841,Correspondance entre albert et dunkirk
+841,correspondance entre albert et dunkerque
 842,Ou prendre le train aix-en-provence nice
-843,mon collegue florence part de la rochelle pour perpignan
+843,mon collègue florence part de la rochelle pour perpignan
 844,ou sont les toilettes
-845,Train du matin orleans rennes
-846,j'ai besoin d'un trajet nîmes amiens
+845,train du matin orléans rennes
+846,J'ai besoin d'un trajet nîmes amiens
 847,TGV au depart de le havre a destination de villeurbanne
 848,boire un monaco en allant a merignac depuis strasbourg
 849,boire un monaco en allant a orleans depuis marseille
-850,Peut-on aller de montpellier à poitiers en train
-851,Distance brest angers en train
+850,Peut-on aller de montpellier a poitiers en train
+851,distance brest angers en train
 852,Train du matin montreuil perpignan
-853,Ou prendre le train nice nimes
+853,Où prendre le train nice nîmes
 854,Distance montpellier strasbourg en train
-855,Billet SNCF lourdes bordeaux
+855,billet sncf lourdes bordeaux
 856,Liaison dijon le havre aujourd'hui
-857,boire un monaco en allant a mulhouse depuis besancon
+857,boire un monaco en allant à mulhouse depuis besançon
 858,Voyage le mans grenoble en première classe
-859,j'ai besoin d'un trajet lourdes saint-denis
+859,J'ai besoin d'un trajet lourdes saint-denis
 860,Train du matin montreuil asnieres-sur-seine
 861,je veux aller voir paris et boire un monaco
 862,Réserver antibes - mulhouse pour demain
 863,Trajet direct colombes le mans
-864,réserver montpellier - roubaix pour demain
-865,Voyage tours montreuil en première classe
+864,Reserver montpellier - roubaix pour demain
+865,voyage tours montreuil en première classe
 866,mon collègue valerie part de port-boulet pour lourdes
-867,Liaison marseille rennes aujourd'hui
+867,liaison marseille rennes aujourd'hui
 868,avec florence je prends le train de montaigu à angers
 869,Reservation florence nice pour vendredi
-870,Arrêt à la rochelle en venant de asnières-sur-seine
+870,Arret a la rochelle en venant de asnieres-sur-seine
 871,un billet pour voir paris c'est quoi
-872,trajet direct versailles nice
+872,Trajet direct versailles nice
 873,boire un monaco en allant a tourcoing depuis nimes
-874,Reserver vitry-sur-seine - mulhouse pour demain
+874,réserver vitry-sur-seine - mulhouse pour demain
 875,un billet pour voir florence c'est quoi
 876,des trains circulent-ils entre courbevoie et boulogne-billancourt
-877,Correspondance entre aulnay-sous-bois et beziers
-878,avec albert je prends le train de lourdes à rouen
+877,Correspondance entre aulnay-sous-bois et béziers
+878,avec albert je prends le train de lourdes a rouen
 879,un billet pour voir nancy c'est quoi
-880,voyage béziers vitry-sur-seine en première classe
-881,boire un monaco en allant a nimes depuis roubaix
-882,Arrêt à perpignan en venant de amiens
-883,mon collègue albert part de angers pour dunkirk
-884,Peut-on aller de dunkirk a montaigu en train
-885,Correspondance nice puis lille
-886,Correspondance entre clermont-ferrand et toulouse
+880,Voyage beziers vitry-sur-seine en premiere classe
+881,boire un monaco en allant à nîmes depuis roubaix
+882,arrêt à perpignan en venant de amiens
+883,mon collègue albert part de angers pour dunkerque
+884,Peut-on aller de dunkerque à montaigu en train
+885,correspondance nice puis lille
+886,correspondance entre clermont-ferrand et toulouse
 887,je veux aller voir nancy et boire un monaco
 888,connexion ferroviaire marseille montreuil
 889,pouvez-vous répéter
 890,je cherche une pharmacie
-891,Prochain train toulon vers saint-étienne
-892,Voyage clermont-ferrand aix-en-provence en première classe
-893,tgv au départ de besançon à destination de saint-denis
-894,réserver poitiers - limoges pour demain
-895,avec valerie je prends le train de versailles à saint-denis
-896,Tarif saint-denis poitiers s'il vous plait
-897,Réservation metz nîmes pour vendredi
+891,Prochain train toulon vers saint-etienne
+892,Voyage clermont-ferrand aix-en-provence en premiere classe
+893,TGV au depart de besancon a destination de saint-denis
+894,Réserver poitiers - limoges pour demain
+895,avec valerie je prends le train de versailles a saint-denis
+896,Tarif saint-denis poitiers s'il vous plaît
+897,réservation metz nîmes pour vendredi
 898,je veux aller voir valerie et boire un monaco
-899,avec valerie je prends le train de lourdes à la rochelle
-900,train du matin rouen toulon
-901,reserver une table pour deux
+899,avec valerie je prends le train de lourdes a la rochelle
+900,Train du matin rouen toulon
+901,réserver une table pour deux
 902,un billet pour voir valerie c'est quoi
 903,quel temps fait-il
 904,ou est la gare la plus proche
 905,je me suis perdu
-906,Prochain train amiens vers clermont-ferrand
+906,prochain train amiens vers clermont-ferrand
 907,Connexion ferroviaire fort-de-france lyon
 908,mon collegue florence part de boulogne-billancourt pour caen
 909,liaison rouen brest aujourd'hui
 910,Connexion ferroviaire orleans tours
-911,Des trains circulent-ils entre courbevoie et perpignan
-912,avec nancy je prends le train de bordeaux a courbevoie
+911,des trains circulent-ils entre courbevoie et perpignan
+912,avec nancy je prends le train de bordeaux à courbevoie
 913,Distance lourdes besançon en train
 914,correspondance entre pessac et le mans
 915,je veux aller voir monaco et boire un monaco
@@ -918,56 +918,56 @@
 918,Réserver grenoble - nantes pour demain
 919,je veux aller voir nancy et boire un monaco
 920,TGV au départ de saint-denis à destination de antibes
-921,Peut-on aller de vitry-sur-seine a grenoble en train
+921,peut-on aller de vitry-sur-seine à grenoble en train
 922,Train du matin aix-en-provence toulon
-923,Voyage rouen nantes en première classe
+923,voyage rouen nantes en première classe
 924,Arrêt à nîmes en venant de poitiers
 925,voyage rouen besançon en première classe
 926,boire un monaco en allant a vitry-sur-seine depuis dijon
-927,Prochain train caen vers grenoble
-928,réserver perpignan - aix-en-provence pour demain
-929,boire un monaco en allant à créteil depuis rennes
+927,prochain train caen vers grenoble
+928,Reserver perpignan - aix-en-provence pour demain
+929,boire un monaco en allant a creteil depuis rennes
 930,réservation aix-en-provence roubaix pour vendredi
-931,tgv au départ de orléans à destination de nîmes
-932,avec paris je prends le train de la rochelle à perpignan
-933,horaires asnières-sur-seine aulnay-sous-bois ce week-end
-934,Où prendre le train mérignac nîmes
+931,TGV au départ de orléans à destination de nîmes
+932,avec paris je prends le train de la rochelle a perpignan
+933,Horaires asnières-sur-seine aulnay-sous-bois ce week-end
+934,où prendre le train mérignac nîmes
 935,un billet pour voir florence c'est quoi
 936,correspondance entre vitry-sur-seine et bordeaux
 937,Tarif aulnay-sous-bois versailles s'il vous plait
-938,Arrêt à bordeaux en venant de reims
+938,Arret a bordeaux en venant de reims
 939,correspondance entre fort-de-france et tourcoing
-940,train du matin toulon la rochelle
-941,des trains circulent-ils entre rouen et villeurbanne
+940,Train du matin toulon la rochelle
+941,Des trains circulent-ils entre rouen et villeurbanne
 942,Voyage paris caen en premiere classe
 943,Connexion ferroviaire colombes boulogne-billancourt
 944,Correspondance entre caen et paris
 945,Prochain train tours vers dijon
 946,je veux aller voir nancy et boire un monaco
 947,train du matin albert metz
-948,tarif mérignac pessac s'il vous plaît
+948,Tarif merignac pessac s'il vous plait
 949,annuler ma commande
 950,je veux aller voir valerie et boire un monaco
-951,j'ai besoin d'un trajet clermont-ferrand paris
-952,arrêt à rennes en venant de florence
-953,tarif metz montaigu s'il vous plaît
+951,J'ai besoin d'un trajet clermont-ferrand paris
+952,Arrêt à rennes en venant de florence
+953,Tarif metz montaigu s'il vous plait
 954,avec paris je prends le train de amiens a lille
-955,Arrêt à albert en venant de bordeaux
-956,Connexion ferroviaire versailles creteil
-957,arrêt à le mans en venant de mérignac
+955,arrêt à albert en venant de bordeaux
+956,connexion ferroviaire versailles créteil
+957,Arret a le mans en venant de merignac
 958,pouvez-vous repeter
 959,Liaison colombes lille aujourd'hui
 960,un billet pour voir valerie c'est quoi
-961,Des trains circulent-ils entre nice et lille
+961,des trains circulent-ils entre nice et lille
 962,Horaires poitiers toulouse ce week-end
-963,TGV au depart de poitiers a destination de dunkirk
-964,Voyage pessac caen en premiere classe
-965,des trains circulent-ils entre le mans et reims
+963,tgv au départ de poitiers à destination de dunkerque
+964,voyage pessac caen en première classe
+965,Des trains circulent-ils entre le mans et reims
 966,un billet pour voir florence c'est quoi
 967,je voudrais un cafe
 968,je veux aller voir albert et boire un monaco
-969,Connexion ferroviaire orleans bordeaux
-970,Arret a albert en venant de le mans
+969,connexion ferroviaire orléans bordeaux
+970,arrêt à albert en venant de le mans
 971,Liaison vitry-sur-seine tours aujourd'hui
 972,avec paris je prends le train de lourdes à saint-étienne
 973,un billet pour voir albert c'est quoi
@@ -978,33 +978,33 @@
 978,je voudrais un café
 979,J'ai besoin d'un trajet argenteuil mulhouse
 980,boire un monaco en allant à asnières-sur-seine depuis aulnay-sous-bois
-981,j'ai besoin d'un trajet nice metz
-982,boire un monaco en allant à orléans depuis colombes
+981,J'ai besoin d'un trajet nice metz
+982,boire un monaco en allant a orleans depuis colombes
 983,je veux aller voir valerie et boire un monaco
 984,je ne comprends pas
 985,trajet direct caen perpignan
 986,ou est la gare la plus proche
-987,train du matin saint-denis béziers
-988,Voyage nantes courbevoie en première classe
-989,Arrêt à béziers en venant de dunkirk
-990,mon collegue albert part de brest pour bordeaux
+987,Train du matin saint-denis béziers
+988,voyage nantes courbevoie en première classe
+989,arrêt à béziers en venant de dunkerque
+990,mon collègue albert part de brest pour bordeaux
 991,je voudrais un cafe
 992,je voudrais un café
 993,Trajet direct beziers port-boulet
 994,correspondance entre marseille et mulhouse
-995,avec albert je prends le train de versailles a rennes
-996,Des trains circulent-ils entre vitry-sur-seine et grenoble
-997,boire un monaco en allant a creteil depuis toulouse
+995,avec albert je prends le train de versailles à rennes
+996,des trains circulent-ils entre vitry-sur-seine et grenoble
+997,boire un monaco en allant à créteil depuis toulouse
 998,Correspondance saint-denis puis créteil
-999,réservation port-boulet brest pour vendredi
+999,Reservation port-boulet brest pour vendredi
 1000,peut-on aller de la rochelle à grenoble en train
 1001,où est la gare la plus proche
-1002,Train du matin beziers vitry-sur-seine
-1003,correspondance dunkirk puis pessac
-1004,Arret a florence en venant de orleans
+1002,Train du matin béziers vitry-sur-seine
+1003,correspondance dunkerque puis pessac
+1004,Arrêt à florence en venant de orléans
 1005,mon collegue paris part de orleans pour rouen
-1006,avec valerie je prends le train de saint-etienne a perpignan
-1007,boire un monaco en allant a caen depuis saint-etienne
+1006,avec valerie je prends le train de saint-étienne à perpignan
+1007,boire un monaco en allant à caen depuis saint-étienne
 1008,mon collègue paris part de colombes pour le havre
 1009,boire un monaco en allant a poitiers depuis rennes
 1010,pouvez-vous répéter
@@ -1012,180 +1012,180 @@
 1012,un billet pour voir monaco c'est quoi
 1013,billet sncf fort-de-france mulhouse
 1014,quelle heure est-il
-1015,des trains circulent-ils entre boulogne-billancourt et montpellier
-1016,correspondance entre lyon et metz
+1015,Des trains circulent-ils entre boulogne-billancourt et montpellier
+1016,Correspondance entre lyon et metz
 1017,distance nîmes lille en train
-1018,Liaison lourdes perpignan aujourd'hui
+1018,liaison lourdes perpignan aujourd'hui
 1019,je veux aller voir albert et boire un monaco
-1020,Voyage limoges strasbourg en premiere classe
-1021,Arrêt à paris en venant de poitiers
+1020,Voyage limoges strasbourg en première classe
+1021,arrêt à paris en venant de poitiers
 1022,je veux aller voir florence et boire un monaco
 1023,boire un monaco en allant a aulnay-sous-bois depuis la rochelle
-1024,Réserver florence - nantes pour demain
-1025,Tarif argenteuil boulogne-billancourt s'il vous plait
+1024,Reserver florence - nantes pour demain
+1025,tarif argenteuil boulogne-billancourt s'il vous plaît
 1026,un billet pour voir florence c'est quoi
-1027,Prochain train boulogne-billancourt vers saint-étienne
-1028,Arrêt à argenteuil en venant de roubaix
-1029,tarif reims montpellier s'il vous plaît
+1027,Prochain train boulogne-billancourt vers saint-etienne
+1028,arrêt à argenteuil en venant de roubaix
+1029,Tarif reims montpellier s'il vous plait
 1030,J'ai besoin d'un trajet orléans grenoble
-1031,Distance tours montaigu en train
+1031,distance tours montaigu en train
 1032,un billet pour voir albert c'est quoi
-1033,liaison strasbourg vitry-sur-seine aujourd'hui
-1034,horaires créteil brest ce week-end
-1035,Connexion ferroviaire dunkirk asnieres-sur-seine
-1036,Correspondance orleans puis rennes
-1037,Connexion ferroviaire clermont-ferrand rennes
+1033,Liaison strasbourg vitry-sur-seine aujourd'hui
+1034,Horaires créteil brest ce week-end
+1035,connexion ferroviaire dunkerque asnières-sur-seine
+1036,correspondance orléans puis rennes
+1037,connexion ferroviaire clermont-ferrand rennes
 1038,prochain train marseille vers nice
-1039,tgv au départ de toulon à destination de versailles
+1039,TGV au depart de toulon a destination de versailles
 1040,je me suis perdu
 1041,billet sncf tourcoing dijon
-1042,correspondance entre angers et marseille
-1043,Distance rennes lourdes en train
-1044,billet sncf boulogne-billancourt montreuil
-1045,Réserver toulouse - le havre pour demain
-1046,TGV au départ de rennes à destination de la rochelle
+1042,Correspondance entre angers et marseille
+1043,distance rennes lourdes en train
+1044,Billet SNCF boulogne-billancourt montreuil
+1045,Reserver toulouse - le havre pour demain
+1046,TGV au depart de rennes a destination de la rochelle
 1047,annuler ma commande
 1048,Distance amiens vitry-sur-seine en train
-1049,réserver florence - lourdes pour demain
-1050,boire un monaco en allant à perpignan depuis tours
-1051,Correspondance entre mérignac et nice
+1049,Reserver florence - lourdes pour demain
+1050,boire un monaco en allant a perpignan depuis tours
+1051,correspondance entre mérignac et nice
 1052,combien coûte ce livre
-1053,Réservation toulon béziers pour vendredi
+1053,réservation toulon béziers pour vendredi
 1054,combien coûte ce livre
 1055,je veux aller voir monaco et boire un monaco
 1056,je veux aller voir valerie et boire un monaco
-1057,boire un monaco en allant a toulon depuis dijon
-1058,Correspondance entre port-boulet et brest
-1059,Reservation avignon bordeaux pour vendredi
+1057,boire un monaco en allant à toulon depuis dijon
+1058,correspondance entre port-boulet et brest
+1059,réservation avignon bordeaux pour vendredi
 1060,billet sncf reims montpellier
-1061,connexion ferroviaire aulnay-sous-bois poitiers
+1061,Connexion ferroviaire aulnay-sous-bois poitiers
 1062,distance albert créteil en train
-1063,Correspondance angers puis rennes
+1063,correspondance angers puis rennes
 1064,un billet pour voir florence c'est quoi
-1065,Voyage brest tourcoing en première classe
+1065,Voyage brest tourcoing en premiere classe
 1066,peut-on aller de angers à saint-étienne en train
 1067,où sont les toilettes
-1068,Reservation argenteuil toulouse pour vendredi
+1068,réservation argenteuil toulouse pour vendredi
 1069,horaires colombes lyon ce week-end
-1070,boire un monaco en allant à roubaix depuis asnières-sur-seine
+1070,boire un monaco en allant a roubaix depuis asnieres-sur-seine
 1071,correspondance entre paris et mulhouse
 1072,Ou prendre le train toulouse nimes
-1073,avec paris je prends le train de besançon à limoges
-1074,TGV au depart de poitiers a destination de versailles
+1073,avec paris je prends le train de besancon a limoges
+1074,tgv au départ de poitiers à destination de versailles
 1075,mon collegue monaco part de montpellier pour creteil
-1076,Voyage angers le havre en premiere classe
-1077,trajet direct strasbourg antibes
+1076,Voyage angers le havre en première classe
+1077,Trajet direct strasbourg antibes
 1078,je veux aller voir nancy et boire un monaco
 1079,TGV au depart de albert a destination de port-boulet
 1080,Horaires dijon albert ce week-end
-1081,Voyage rennes argenteuil en premiere classe
+1081,Voyage rennes argenteuil en première classe
 1082,je me suis perdu
-1083,Tarif lourdes argenteuil s'il vous plait
+1083,Tarif lourdes argenteuil s'il vous plaît
 1084,Liaison poitiers dijon aujourd'hui
 1085,Horaires roubaix colombes ce week-end
 1086,voyage orléans boulogne-billancourt en première classe
-1087,Voyage mulhouse aulnay-sous-bois en première classe
+1087,voyage mulhouse aulnay-sous-bois en première classe
 1088,liaison le havre boulogne-billancourt aujourd'hui
-1089,reserver une table pour deux
+1089,réserver une table pour deux
 1090,Où prendre le train lourdes lille
 1091,je veux aller voir monaco et boire un monaco
 1092,Prochain train lyon vers courbevoie
-1093,mon collègue paris part de colombes pour toulon
+1093,mon collegue paris part de colombes pour toulon
 1094,je veux aller voir paris et boire un monaco
 1095,J'ai besoin d'un trajet montaigu fort-de-france
-1096,Tarif port-boulet versailles s'il vous plaît
+1096,Tarif port-boulet versailles s'il vous plait
 1097,Connexion ferroviaire lourdes lyon
 1098,liaison avignon lyon aujourd'hui
-1099,Ou prendre le train bordeaux roubaix
+1099,Où prendre le train bordeaux roubaix
 1100,ou sont les toilettes
 1101,je cherche une pharmacie
-1102,avec albert je prends le train de reims à saint-denis
+1102,avec albert je prends le train de reims a saint-denis
 1103,connexion ferroviaire montaigu limoges
-1104,TGV au depart de la rochelle a destination de beziers
+1104,tgv au départ de la rochelle à destination de béziers
 1105,distance metz le mans en train
-1106,Billet SNCF colombes dunkirk
+1106,billet sncf colombes dunkerque
 1107,mon collègue valerie part de bordeaux pour amiens
-1108,J'ai besoin d'un trajet saint-denis nantes
-1109,Où prendre le train nantes aulnay-sous-bois
+1108,j'ai besoin d'un trajet saint-denis nantes
+1109,où prendre le train nantes aulnay-sous-bois
 1110,liaison montpellier poitiers aujourd'hui
-1111,TGV au départ de nice à destination de reims
+1111,tgv au départ de nice à destination de reims
 1112,trajet direct montpellier lyon
 1113,des trains circulent-ils entre montpellier et lourdes
 1114,quel temps fait-il
-1115,Distance grenoble lourdes en train
-1116,réserver tours - marseille pour demain
+1115,distance grenoble lourdes en train
+1116,Réserver tours - marseille pour demain
 1117,un billet pour voir valerie c'est quoi
 1118,je voudrais un café
-1119,boire un monaco en allant à le havre depuis perpignan
-1120,Voyage port-boulet besançon en première classe
+1119,boire un monaco en allant a le havre depuis perpignan
+1120,voyage port-boulet besançon en première classe
 1121,pouvez-vous répéter
 1122,Trajet direct caen créteil
-1123,Reserver angers - fort-de-france pour demain
+1123,Réserver angers - fort-de-france pour demain
 1124,Reserver la rochelle - lourdes pour demain
 1125,pouvez-vous repeter
 1126,ou puis-je acheter un ticket
 1127,Réserver colombes - saint-étienne pour demain
-1128,Arret a besancon en venant de antibes
+1128,Arrêt à besançon en venant de antibes
 1129,prochain train versailles vers lille
-1130,Billet SNCF boulogne-billancourt rennes
-1131,horaires angers montreuil ce week-end
+1130,billet sncf boulogne-billancourt rennes
+1131,Horaires angers montreuil ce week-end
 1132,un billet pour voir monaco c'est quoi
-1133,arrêt à tourcoing en venant de nantes
-1134,Billet SNCF orleans grenoble
+1133,Arret a tourcoing en venant de nantes
+1134,Billet SNCF orléans grenoble
 1135,mon collegue florence part de poitiers pour bordeaux
 1136,tarif amiens perpignan s'il vous plaît
-1137,voyage aix-en-provence clermont-ferrand en première classe
+1137,Voyage aix-en-provence clermont-ferrand en première classe
 1138,J'ai besoin d'un trajet la rochelle nantes
 1139,avec nancy je prends le train de nantes a merignac
 1140,où sont les toilettes
 1141,mon collègue albert part de lourdes pour rouen
-1142,J'ai besoin d'un trajet paris dunkirk
+1142,j'ai besoin d'un trajet paris dunkerque
 1143,je me suis perdu
-1144,Tarif boulogne-billancourt toulon s'il vous plait
+1144,Tarif boulogne-billancourt toulon s'il vous plaît
 1145,billet sncf lourdes aix-en-provence
 1146,je voudrais un cafe
-1147,réservation clermont-ferrand brest pour vendredi
+1147,Reservation clermont-ferrand brest pour vendredi
 1148,quelle heure est-il
 1149,distance rouen reims en train
 1150,je veux aller voir valerie et boire un monaco
-1151,Trajet direct lourdes amiens
-1152,Arret a reims en venant de port-boulet
+1151,trajet direct lourdes amiens
+1152,arrêt à reims en venant de port-boulet
 1153,TGV au départ de orléans à destination de versailles
-1154,réserver marseille - besançon pour demain
-1155,Billet SNCF mulhouse argenteuil
-1156,arrêt à vitry-sur-seine en venant de rennes
-1157,réserver une table pour deux
-1158,horaires courbevoie montreuil ce week-end
+1154,Reserver marseille - besancon pour demain
+1155,billet sncf mulhouse argenteuil
+1156,Arret a vitry-sur-seine en venant de rennes
+1157,reserver une table pour deux
+1158,Horaires courbevoie montreuil ce week-end
 1159,ou puis-je acheter un ticket
 1160,je ne comprends pas
-1161,Prochain train angers vers villeurbanne
-1162,Train du matin orleans mulhouse
-1163,Tarif rennes poitiers s'il vous plaît
-1164,Prochain train avignon vers nancy
-1165,Réserver toulon - montpellier pour demain
-1166,Où prendre le train le havre roubaix
-1167,correspondance rennes puis rouen
-1168,boire un monaco en allant à dunkirk depuis saint-étienne
-1169,boire un monaco en allant a dunkirk depuis le mans
+1161,prochain train angers vers villeurbanne
+1162,Train du matin orléans mulhouse
+1163,tarif rennes poitiers s'il vous plaît
+1164,prochain train avignon vers nancy
+1165,réserver toulon - montpellier pour demain
+1166,où prendre le train le havre roubaix
+1167,Correspondance rennes puis rouen
+1168,boire un monaco en allant a dunkerque depuis saint-etienne
+1169,boire un monaco en allant à dunkerque depuis le mans
 1170,je voudrais un cafe
-1171,billet sncf aulnay-sous-bois le havre
+1171,Billet SNCF aulnay-sous-bois le havre
 1172,quelle heure est-il
 1173,je veux aller voir nancy et boire un monaco
-1174,Billet SNCF aulnay-sous-bois paris
+1174,billet sncf aulnay-sous-bois paris
 1175,je veux aller voir albert et boire un monaco
 1176,Voyage le mans aix-en-provence en première classe
 1177,trajet direct poitiers caen
-1178,Prochain train florence vers aulnay-sous-bois
+1178,prochain train florence vers aulnay-sous-bois
 1179,Tarif dijon aix-en-provence s'il vous plaît
-1180,Correspondance entre tours et dijon
-1181,prochain train asnières-sur-seine vers béziers
-1182,Voyage béziers le havre en première classe
+1180,correspondance entre tours et dijon
+1181,Prochain train asnières-sur-seine vers béziers
+1182,voyage béziers le havre en première classe
 1183,Trajet direct vitry-sur-seine nice
 1184,Correspondance tours puis colombes
 1185,un billet pour voir albert c'est quoi
 1186,train du matin fort-de-france béziers
-1187,correspondance entre amiens et vitry-sur-seine
-1188,j'ai besoin d'un trajet reims montreuil
+1187,Correspondance entre amiens et vitry-sur-seine
+1188,J'ai besoin d'un trajet reims montreuil
 1189,mon collegue nancy part de rennes pour bordeaux
 1190,peut-on aller de aix-en-provence à rouen en train
 1191,je veux aller voir paris et boire un monaco
@@ -1194,268 +1194,268 @@
 1194,Liaison albert port-boulet aujourd'hui
 1195,je veux aller voir valerie et boire un monaco
 1196,un billet pour voir florence c'est quoi
-1197,J'ai besoin d'un trajet orléans metz
-1198,Prochain train dijon vers toulon
+1197,J'ai besoin d'un trajet orleans metz
+1198,prochain train dijon vers toulon
 1199,connexion ferroviaire aix-en-provence antibes
 1200,boire un monaco en allant à la rochelle depuis montreuil
 1201,prochain train saint-denis vers limoges
 1202,boire un monaco en allant a orleans depuis poitiers
 1203,distance béziers perpignan en train
 1204,avec monaco je prends le train de clermont-ferrand à marseille
-1205,horaires bordeaux nancy ce week-end
+1205,Horaires bordeaux nancy ce week-end
 1206,un billet pour voir valerie c'est quoi
 1207,des trains circulent-ils entre montaigu et port-boulet
 1208,distance besançon lourdes en train
 1209,je veux aller voir albert et boire un monaco
-1210,j'ai besoin d'un trajet perpignan nîmes
-1211,Voyage tours argenteuil en première classe
-1212,connexion ferroviaire aix-en-provence boulogne-billancourt
-1213,Trajet direct le mans clermont-ferrand
-1214,réserver lourdes - nantes pour demain
-1215,réservation brest nîmes pour vendredi
-1216,réserver montreuil - dunkirk pour demain
+1210,J'ai besoin d'un trajet perpignan nimes
+1211,Voyage tours argenteuil en premiere classe
+1212,Connexion ferroviaire aix-en-provence boulogne-billancourt
+1213,trajet direct le mans clermont-ferrand
+1214,Reserver lourdes - nantes pour demain
+1215,Reservation brest nimes pour vendredi
+1216,Reserver montreuil - dunkerque pour demain
 1217,Arrêt à paris en venant de le havre
-1218,Réservation clermont-ferrand créteil pour vendredi
+1218,Reservation clermont-ferrand creteil pour vendredi
 1219,train du matin villeurbanne albert
-1220,billet sncf asnières-sur-seine paris
-1221,réservation dunkirk lourdes pour vendredi
+1220,Billet SNCF asnières-sur-seine paris
+1221,Réservation dunkerque lourdes pour vendredi
 1222,Liaison rouen nîmes aujourd'hui
-1223,correspondance entre tours et amiens
-1224,mon collègue florence part de antibes pour toulon
+1223,Correspondance entre tours et amiens
+1224,mon collegue florence part de antibes pour toulon
 1225,où puis-je acheter un ticket
-1226,Tarif dijon lourdes s'il vous plait
+1226,tarif dijon lourdes s'il vous plaît
 1227,connexion ferroviaire fort-de-france poitiers
 1228,Arrêt à le havre en venant de rennes
 1229,un billet pour voir albert c'est quoi
-1230,reserver une table pour deux
+1230,réserver une table pour deux
 1231,où sont les toilettes
-1232,Réserver rennes - paris pour demain
-1233,liaison paris lyon aujourd'hui
-1234,avec florence je prends le train de orleans a tours
-1235,Connexion ferroviaire tourcoing avignon
-1236,peut-on aller de roubaix à reims en train
+1232,Reserver rennes - paris pour demain
+1233,Liaison paris lyon aujourd'hui
+1234,avec florence je prends le train de orléans à tours
+1235,connexion ferroviaire tourcoing avignon
+1236,Peut-on aller de roubaix a reims en train
 1237,boire un monaco en allant a tourcoing depuis saint-etienne
-1238,réserver aix-en-provence - saint-denis pour demain
-1239,correspondance entre dunkirk et montaigu
+1238,Réserver aix-en-provence - saint-denis pour demain
+1239,correspondance entre dunkerque et montaigu
 1240,je voudrais un cafe
 1241,je cherche une pharmacie
-1242,Reservation fort-de-france rouen pour vendredi
+1242,réservation fort-de-france rouen pour vendredi
 1243,avec paris je prends le train de nantes à mérignac
-1244,Train du matin strasbourg tours
+1244,train du matin strasbourg tours
 1245,distance florence perpignan en train
 1246,Connexion ferroviaire le havre tourcoing
 1247,voyage montpellier vitry-sur-seine en première classe
 1248,train du matin roubaix metz
-1249,Des trains circulent-ils entre saint-étienne et paris
+1249,Des trains circulent-ils entre saint-etienne et paris
 1250,un billet pour voir monaco c'est quoi
-1251,des trains circulent-ils entre versailles et aix-en-provence
+1251,Des trains circulent-ils entre versailles et aix-en-provence
 1252,mon collegue nancy part de tours pour angers
 1253,des trains circulent-ils entre lyon et montreuil
 1254,où puis-je acheter un ticket
-1255,Peut-on aller de antibes à caen en train
+1255,peut-on aller de antibes à caen en train
 1256,Peut-on aller de versailles à villeurbanne en train
 1257,avec florence je prends le train de la rochelle a dijon
-1258,arrêt à toulouse en venant de strasbourg
-1259,boire un monaco en allant a metz depuis montaigu
-1260,avec florence je prends le train de port-boulet a le mans
+1258,Arrêt à toulouse en venant de strasbourg
+1259,boire un monaco en allant à metz depuis montaigu
+1260,avec florence je prends le train de port-boulet à le mans
 1261,Connexion ferroviaire port-boulet nimes
 1262,je veux aller voir valerie et boire un monaco
-1263,Connexion ferroviaire bordeaux colombes
-1264,tgv au départ de roubaix à destination de créteil
-1265,réserver créteil - marseille pour demain
+1263,connexion ferroviaire bordeaux colombes
+1264,TGV au départ de roubaix à destination de créteil
+1265,Réserver créteil - marseille pour demain
 1266,Des trains circulent-ils entre argenteuil et saint-denis
-1267,Où prendre le train montpellier strasbourg
+1267,Ou prendre le train montpellier strasbourg
 1268,un billet pour voir florence c'est quoi
-1269,peut-on aller de roubaix à pessac en train
+1269,Peut-on aller de roubaix a pessac en train
 1270,je me suis perdu
-1271,trajet direct roubaix rouen
+1271,Trajet direct roubaix rouen
 1272,un billet pour voir valerie c'est quoi
-1273,réserver besançon - montaigu pour demain
+1273,Réserver besançon - montaigu pour demain
 1274,Ou prendre le train amiens lille
 1275,ou sont les toilettes
 1276,un billet pour voir monaco c'est quoi
-1277,j'ai besoin d'un trajet saint-étienne amiens
-1278,correspondance entre dijon et saint-denis
-1279,avec florence je prends le train de argenteuil à nîmes
+1277,J'ai besoin d'un trajet saint-etienne amiens
+1278,Correspondance entre dijon et saint-denis
+1279,avec florence je prends le train de argenteuil a nimes
 1280,où prendre le train strasbourg colombes
-1281,réserver une table pour deux
+1281,reserver une table pour deux
 1282,horaires villeurbanne boulogne-billancourt ce week-end
-1283,Tarif aulnay-sous-bois aix-en-provence s'il vous plaît
+1283,tarif aulnay-sous-bois aix-en-provence s'il vous plaît
 1284,Reserver montreuil - rennes pour demain
-1285,Distance caen colombes en train
-1286,Liaison montreuil villeurbanne aujourd'hui
+1285,distance caen colombes en train
+1286,liaison montreuil villeurbanne aujourd'hui
 1287,Train du matin saint-denis mulhouse
-1288,voyage avignon aix-en-provence en première classe
-1289,mon collègue monaco part de angers pour créteil
+1288,Voyage avignon aix-en-provence en premiere classe
+1289,mon collegue monaco part de angers pour creteil
 1290,avec albert je prends le train de toulon a perpignan
-1291,Peut-on aller de reims a avignon en train
-1292,Correspondance entre boulogne-billancourt et perpignan
-1293,boire un monaco en allant à nîmes depuis lourdes
-1294,boire un monaco en allant a nantes depuis reims
+1291,peut-on aller de reims à avignon en train
+1292,correspondance entre boulogne-billancourt et perpignan
+1293,boire un monaco en allant a nimes depuis lourdes
+1294,boire un monaco en allant à nantes depuis reims
 1295,Train du matin lille montpellier
 1296,quelle heure est-il
 1297,Où prendre le train perpignan roubaix
 1298,Voyage aix-en-provence tourcoing en premiere classe
-1299,avec nancy je prends le train de argenteuil à marseille
+1299,avec nancy je prends le train de argenteuil a marseille
 1300,des trains circulent-ils entre limoges et la rochelle
 1301,ou puis-je acheter un ticket
-1302,Correspondance saint-denis puis grenoble
-1303,distance boulogne-billancourt paris en train
-1304,Horaires besancon paris ce week-end
-1305,mon collegue valerie part de dunkirk pour argenteuil
-1306,connexion ferroviaire clermont-ferrand dunkirk
+1302,correspondance saint-denis puis grenoble
+1303,Distance boulogne-billancourt paris en train
+1304,Horaires besançon paris ce week-end
+1305,mon collegue valerie part de dunkerque pour argenteuil
+1306,connexion ferroviaire clermont-ferrand dunkerque
 1307,correspondance entre amiens et nancy
 1308,je ne comprends pas
 1309,j'ai besoin d'un trajet saint-étienne asnières-sur-seine
-1310,réservation marseille lille pour vendredi
+1310,Réservation marseille lille pour vendredi
 1311,connexion ferroviaire nice montaigu
-1312,horaires montaigu dunkirk ce week-end
-1313,réserver le mans - strasbourg pour demain
-1314,boire un monaco en allant a saint-denis depuis lille
-1315,Voyage amiens aulnay-sous-bois en premiere classe
+1312,horaires montaigu dunkerque ce week-end
+1313,Réserver le mans - strasbourg pour demain
+1314,boire un monaco en allant à saint-denis depuis lille
+1315,Voyage amiens aulnay-sous-bois en première classe
 1316,des trains circulent-ils entre brest et le mans
 1317,boire un monaco en allant à pessac depuis port-boulet
-1318,peut-on aller de saint-denis à orléans en train
+1318,Peut-on aller de saint-denis a orleans en train
 1319,Ou prendre le train toulouse nancy
 1320,J'ai besoin d'un trajet vitry-sur-seine paris
 1321,Réserver roubaix - strasbourg pour demain
 1322,Reserver nimes - aulnay-sous-bois pour demain
 1323,ou est la gare la plus proche
-1324,avec paris je prends le train de antibes a tourcoing
-1325,Liaison albert lyon aujourd'hui
+1324,avec paris je prends le train de antibes à tourcoing
+1325,liaison albert lyon aujourd'hui
 1326,quelle heure est-il
 1327,liaison nantes saint-denis aujourd'hui
-1328,Distance nancy le mans en train
-1329,avec florence je prends le train de orléans à mulhouse
+1328,distance nancy le mans en train
+1329,avec florence je prends le train de orleans a mulhouse
 1330,Voyage florence le havre en première classe
-1331,arrêt à roubaix en venant de boulogne-billancourt
+1331,Arret a roubaix en venant de boulogne-billancourt
 1332,mon collegue paris part de toulouse pour beziers
 1333,où prendre le train montpellier rouen
-1334,Correspondance roubaix puis grenoble
-1335,Distance strasbourg lourdes en train
-1336,connexion ferroviaire metz grenoble
+1334,correspondance roubaix puis grenoble
+1335,distance strasbourg lourdes en train
+1336,Connexion ferroviaire metz grenoble
 1337,Des trains circulent-ils entre nantes et strasbourg
 1338,boire un monaco en allant a brest depuis montreuil
 1339,je cherche une pharmacie
-1340,réservation la rochelle asnières-sur-seine pour vendredi
+1340,Réservation la rochelle asnières-sur-seine pour vendredi
 1341,pouvez-vous répéter
 1342,arrêt à lourdes en venant de clermont-ferrand
 1343,Réserver mérignac - rennes pour demain
 1344,J'ai besoin d'un trajet angers le havre
 1345,ou est la gare la plus proche
 1346,Correspondance albert puis strasbourg
-1347,Réservation perpignan dijon pour vendredi
-1348,correspondance pessac puis villeurbanne
+1347,réservation perpignan dijon pour vendredi
+1348,Correspondance pessac puis villeurbanne
 1349,je me suis perdu
 1350,Tarif fort-de-france pessac s'il vous plaît
 1351,je veux aller voir paris et boire un monaco
-1352,connexion ferroviaire pessac reims
+1352,Connexion ferroviaire pessac reims
 1353,ou sont les toilettes
 1354,distance nancy angers en train
-1355,Correspondance entre lyon et le havre
+1355,correspondance entre lyon et le havre
 1356,des trains circulent-ils entre reims et mérignac
 1357,où prendre le train lourdes le havre
-1358,distance argenteuil villeurbanne en train
+1358,Distance argenteuil villeurbanne en train
 1359,liaison brest nîmes aujourd'hui
 1360,Reserver lille - rennes pour demain
 1361,horaires fort-de-france florence ce week-end
-1362,arrêt à aix-en-provence en venant de aulnay-sous-bois
+1362,Arret a aix-en-provence en venant de aulnay-sous-bois
 1363,boire un monaco en allant a asnieres-sur-seine depuis tourcoing
 1364,je cherche une pharmacie
-1365,Prochain train limoges vers fort-de-france
+1365,prochain train limoges vers fort-de-france
 1366,où est la gare la plus proche
 1367,un billet pour voir monaco c'est quoi
-1368,peut-on aller de toulon à béziers en train
-1369,arrêt à pessac en venant de clermont-ferrand
+1368,Peut-on aller de toulon à béziers en train
+1369,Arret a pessac en venant de clermont-ferrand
 1370,Arret a dijon en venant de lille
 1371,je veux aller voir albert et boire un monaco
 1372,Réserver avignon - brest pour demain
-1373,correspondance entre aulnay-sous-bois et fort-de-france
-1374,billet sncf rouen albert
-1375,horaires florence béziers ce week-end
+1373,Correspondance entre aulnay-sous-bois et fort-de-france
+1374,Billet SNCF rouen albert
+1375,Horaires florence béziers ce week-end
 1376,boire un monaco en allant a marseille depuis merignac
-1377,Des trains circulent-ils entre beziers et lyon
+1377,des trains circulent-ils entre béziers et lyon
 1378,je voudrais un café
-1379,connexion ferroviaire perpignan colombes
-1380,J'ai besoin d'un trajet caen montaigu
-1381,correspondance entre la rochelle et asnières-sur-seine
+1379,Connexion ferroviaire perpignan colombes
+1380,j'ai besoin d'un trajet caen montaigu
+1381,Correspondance entre la rochelle et asnières-sur-seine
 1382,je voudrais un café
-1383,Tarif clermont-ferrand angers s'il vous plaît
-1384,liaison roubaix lille aujourd'hui
-1385,billet sncf montaigu montreuil
-1386,j'ai besoin d'un trajet albert boulogne-billancourt
+1383,tarif clermont-ferrand angers s'il vous plaît
+1384,Liaison roubaix lille aujourd'hui
+1385,Billet SNCF montaigu montreuil
+1386,J'ai besoin d'un trajet albert boulogne-billancourt
 1387,où puis-je acheter un ticket
 1388,ou sont les toilettes
 1389,j'ai besoin d'un trajet colombes montreuil
 1390,combien coûte ce livre
-1391,Voyage creteil lille en premiere classe
-1392,prochain train montaigu vers saint-étienne
+1391,voyage créteil lille en première classe
+1392,Prochain train montaigu vers saint-étienne
 1393,Horaires brest saint-etienne ce week-end
-1394,prochain train albert vers vitry-sur-seine
-1395,J'ai besoin d'un trajet rennes le havre
+1394,Prochain train albert vers vitry-sur-seine
+1395,j'ai besoin d'un trajet rennes le havre
 1396,avec albert je prends le train de metz à tours
-1397,train du matin saint-denis port-boulet
+1397,Train du matin saint-denis port-boulet
 1398,Connexion ferroviaire saint-etienne antibes
-1399,tarif béziers saint-étienne s'il vous plaît
+1399,Tarif béziers saint-étienne s'il vous plaît
 1400,quelle heure est-il
-1401,Connexion ferroviaire caen besançon
+1401,connexion ferroviaire caen besançon
 1402,Billet SNCF argenteuil grenoble
-1403,TGV au depart de angers a destination de dunkirk
+1403,TGV au depart de angers a destination de dunkerque
 1404,je veux aller voir florence et boire un monaco
 1405,Horaires reims strasbourg ce week-end
-1406,où prendre le train caen lyon
+1406,Ou prendre le train caen lyon
 1407,avec albert je prends le train de avignon a marseille
 1408,voyage tourcoing béziers en première classe
-1409,Où prendre le train le mans angers
-1410,billet sncf roubaix reims
-1411,boire un monaco en allant à brest depuis dunkirk
-1412,boire un monaco en allant à orléans depuis limoges
-1413,correspondance entre port-boulet et nancy
-1414,Arrêt à rennes en venant de tourcoing
-1415,Correspondance entre creteil et dijon
-1416,TGV au depart de florence a destination de dunkirk
-1417,réserver versailles - tourcoing pour demain
+1409,où prendre le train le mans angers
+1410,Billet SNCF roubaix reims
+1411,boire un monaco en allant a brest depuis dunkerque
+1412,boire un monaco en allant a orleans depuis limoges
+1413,Correspondance entre port-boulet et nancy
+1414,Arret a rennes en venant de tourcoing
+1415,Correspondance entre créteil et dijon
+1416,TGV au départ de florence à destination de dunkerque
+1417,Réserver versailles - tourcoing pour demain
 1418,Correspondance toulon puis saint-etienne
 1419,pouvez-vous répéter
 1420,mon collegue paris part de rennes pour pessac
 1421,Prochain train béziers vers antibes
 1422,Distance antibes lille en train
-1423,mon collègue albert part de boulogne-billancourt pour strasbourg
-1424,Horaires antibes toulouse ce week-end
+1423,mon collegue albert part de boulogne-billancourt pour strasbourg
+1424,horaires antibes toulouse ce week-end
 1425,un billet pour voir paris c'est quoi
 1426,mon collegue monaco part de clermont-ferrand pour rennes
-1427,peut-on aller de fort-de-france à saint-denis en train
-1428,où prendre le train paris aix-en-provence
+1427,Peut-on aller de fort-de-france à saint-denis en train
+1428,Ou prendre le train paris aix-en-provence
 1429,billet sncf perpignan poitiers
-1430,horaires poitiers rennes ce week-end
+1430,Horaires poitiers rennes ce week-end
 1431,Billet SNCF nice lourdes
-1432,reserver une table pour deux
+1432,réserver une table pour deux
 1433,avec valerie je prends le train de dijon à nîmes
-1434,distance dunkirk tours en train
-1435,avec monaco je prends le train de toulon a mulhouse
-1436,Train du matin dunkirk paris
+1434,Distance dunkerque tours en train
+1435,avec monaco je prends le train de toulon à mulhouse
+1436,train du matin dunkerque paris
 1437,je veux aller voir florence et boire un monaco
-1438,Voyage lyon caen en premiere classe
+1438,Voyage lyon caen en première classe
 1439,avec albert je prends le train de saint-étienne à dijon
 1440,correspondance entre aix-en-provence et montpellier
 1441,Distance tours albert en train
-1442,Correspondance entre rennes et lille
-1443,Tarif nice mulhouse s'il vous plaît
+1442,correspondance entre rennes et lille
+1443,tarif nice mulhouse s'il vous plaît
 1444,des trains circulent-ils entre toulon et colombes
-1445,boire un monaco en allant à lyon depuis béziers
+1445,boire un monaco en allant a lyon depuis beziers
 1446,Trajet direct le havre rennes
-1447,Réserver rennes - boulogne-billancourt pour demain
+1447,Reserver rennes - boulogne-billancourt pour demain
 1448,trajet direct pessac paris
-1449,Tarif amiens poitiers s'il vous plait
+1449,tarif amiens poitiers s'il vous plaît
 1450,train du matin argenteuil courbevoie
-1451,reserver une table pour deux
-1452,Reservation nancy paris pour vendredi
-1453,Billet SNCF clermont-ferrand brest
-1454,Voyage toulon avignon en première classe
+1451,réserver une table pour deux
+1452,Réservation nancy paris pour vendredi
+1453,billet sncf clermont-ferrand brest
+1454,Voyage toulon avignon en premiere classe
 1455,je veux aller voir paris et boire un monaco
 1456,mon collègue paris part de le havre pour lille
-1457,tgv au départ de grenoble à destination de la rochelle
-1458,correspondance entre florence et nice
+1457,TGV au départ de grenoble à destination de la rochelle
+1458,Correspondance entre florence et nice
 1459,combien coûte ce livre
 1460,boire un monaco en allant a besancon depuis vitry-sur-seine
 1461,je veux aller voir florence et boire un monaco
@@ -1463,157 +1463,157 @@
 1463,billet sncf tours nice
 1464,je veux aller voir florence et boire un monaco
 1465,je cherche une pharmacie
-1466,Connexion ferroviaire marseille mérignac
+1466,Connexion ferroviaire marseille merignac
 1467,je ne comprends pas
-1468,avec paris je prends le train de caen a lille
+1468,avec paris je prends le train de caen à lille
 1469,tgv au départ de colombes à destination de versailles
 1470,je veux aller voir florence et boire un monaco
-1471,où prendre le train saint-denis roubaix
+1471,Où prendre le train saint-denis roubaix
 1472,mon collegue nancy part de le havre pour rennes
-1473,tarif asnières-sur-seine poitiers s'il vous plaît
+1473,Tarif asnières-sur-seine poitiers s'il vous plaît
 1474,connexion ferroviaire colombes toulouse
-1475,tgv au départ de bordeaux à destination de colombes
+1475,TGV au départ de bordeaux à destination de colombes
 1476,un billet pour voir valerie c'est quoi
 1477,où puis-je acheter un ticket
-1478,Distance lourdes orleans en train
-1479,Trajet direct colombes rouen
+1478,distance lourdes orléans en train
+1479,trajet direct colombes rouen
 1480,prochain train saint-denis vers rouen
 1481,je cherche une pharmacie
 1482,un billet pour voir florence c'est quoi
 1483,mon collègue monaco part de vitry-sur-seine pour perpignan
-1484,TGV au départ de nancy à destination de dunkirk
+1484,TGV au départ de nancy à destination de dunkerque
 1485,Des trains circulent-ils entre nancy et bordeaux
 1486,Reservation lille marseille pour vendredi
-1487,correspondance tours puis brest
+1487,Correspondance tours puis brest
 1488,Réserver tours - saint-étienne pour demain
-1489,où prendre le train limoges la rochelle
+1489,Ou prendre le train limoges la rochelle
 1490,je me suis perdu
 1491,Peut-on aller de courbevoie à paris en train
-1492,Horaires clermont-ferrand saint-denis ce week-end
+1492,horaires clermont-ferrand saint-denis ce week-end
 1493,Distance le mans marseille en train
-1494,Train du matin florence limoges
-1495,Arrêt à brest en venant de montaigu
-1496,boire un monaco en allant à dunkirk depuis le havre
+1494,train du matin florence limoges
+1495,Arret a brest en venant de montaigu
+1496,boire un monaco en allant a dunkerque depuis le havre
 1497,quelle heure est-il
 1498,TGV au départ de nice à destination de la rochelle
 1499,Des trains circulent-ils entre courbevoie et roubaix
 1500,Train du matin florence port-boulet
-1501,Trajet direct caen lille
+1501,trajet direct caen lille
 1502,réservation amiens saint-denis pour vendredi
-1503,mon collègue valerie part de orléans pour antibes
+1503,mon collegue valerie part de orleans pour antibes
 1504,Connexion ferroviaire nantes besançon
-1505,mon collègue albert part de dunkirk pour le mans
+1505,mon collègue albert part de dunkerque pour le mans
 1506,avec monaco je prends le train de angers à lourdes
-1507,tgv au départ de le mans à destination de colombes
+1507,TGV au départ de le mans à destination de colombes
 1508,je veux aller voir nancy et boire un monaco
 1509,mon collègue monaco part de lyon pour antibes
-1510,Liaison nimes avignon aujourd'hui
-1511,Billet SNCF colombes dijon
+1510,liaison nîmes avignon aujourd'hui
+1511,billet sncf colombes dijon
 1512,mon collègue nancy part de argenteuil pour nîmes
-1513,Peut-on aller de toulon a rouen en train
+1513,peut-on aller de toulon à rouen en train
 1514,Trajet direct creteil roubaix
 1515,je veux aller voir albert et boire un monaco
 1516,Correspondance entre albert et aulnay-sous-bois
 1517,liaison rouen albert aujourd'hui
 1518,un billet pour voir albert c'est quoi
-1519,Correspondance entre aulnay-sous-bois et montpellier
+1519,correspondance entre aulnay-sous-bois et montpellier
 1520,des trains circulent-ils entre saint-denis et perpignan
-1521,Horaires lille reims ce week-end
+1521,horaires lille reims ce week-end
 1522,je veux aller voir valerie et boire un monaco
 1523,connexion ferroviaire clermont-ferrand antibes
-1524,mon collègue nancy part de orléans pour fort-de-france
+1524,mon collegue nancy part de orleans pour fort-de-france
 1525,mon collègue nancy part de saint-étienne pour amiens
 1526,Connexion ferroviaire bordeaux versailles
 1527,avec valerie je prends le train de caen à colombes
 1528,Peut-on aller de perpignan a villeurbanne en train
-1529,boire un monaco en allant a villeurbanne depuis dunkirk
-1530,Connexion ferroviaire boulogne-billancourt mérignac
+1529,boire un monaco en allant a villeurbanne depuis dunkerque
+1530,connexion ferroviaire boulogne-billancourt mérignac
 1531,j'ai besoin d'un trajet saint-denis montreuil
-1532,Liaison metz grenoble aujourd'hui
+1532,liaison metz grenoble aujourd'hui
 1533,boire un monaco en allant à toulouse depuis tours
 1534,Horaires colombes béziers ce week-end
 1535,boire un monaco en allant a tours depuis roubaix
-1536,réservation poitiers strasbourg pour vendredi
+1536,Réservation poitiers strasbourg pour vendredi
 1537,Connexion ferroviaire pessac mulhouse
-1538,Liaison orleans saint-etienne aujourd'hui
+1538,liaison orléans saint-étienne aujourd'hui
 1539,avec paris je prends le train de roubaix à caen
-1540,boire un monaco en allant à tours depuis saint-denis
+1540,boire un monaco en allant a tours depuis saint-denis
 1541,Correspondance amiens puis orleans
-1542,Tarif orléans clermont-ferrand s'il vous plaît
+1542,Tarif orleans clermont-ferrand s'il vous plait
 1543,Peut-on aller de courbevoie a lille en train
-1544,Prochain train bordeaux vers le mans
+1544,prochain train bordeaux vers le mans
 1545,J'ai besoin d'un trajet brest rouen
 1546,quel temps fait-il
 1547,un billet pour voir florence c'est quoi
 1548,avec florence je prends le train de saint-denis à lyon
-1549,TGV au départ de la rochelle à destination de florence
-1550,horaires paris marseille ce week-end
+1549,TGV au depart de la rochelle a destination de florence
+1550,Horaires paris marseille ce week-end
 1551,billet sncf brest argenteuil
-1552,Peut-on aller de saint-étienne à tourcoing en train
-1553,connexion ferroviaire brest mulhouse
+1552,Peut-on aller de saint-etienne a tourcoing en train
+1553,Connexion ferroviaire brest mulhouse
 1554,des trains circulent-ils entre caen et marseille
 1555,billet sncf lille montpellier
 1556,je voudrais un café
 1557,Prochain train lyon vers saint-denis
-1558,peut-on aller de villeurbanne à grenoble en train
+1558,Peut-on aller de villeurbanne à grenoble en train
 1559,Trajet direct toulon aix-en-provence
-1560,Prochain train aulnay-sous-bois vers dijon
-1561,Voyage caen tours en première classe
-1562,Reservation asnieres-sur-seine argenteuil pour vendredi
+1560,prochain train aulnay-sous-bois vers dijon
+1561,Voyage caen tours en premiere classe
+1562,réservation asnières-sur-seine argenteuil pour vendredi
 1563,Arret a beziers en venant de rouen
 1564,boire un monaco en allant a fort-de-france depuis montreuil
 1565,avec monaco je prends le train de perpignan à reims
 1566,mon collegue florence part de amiens pour limoges
-1567,Arret a amiens en venant de nice
-1568,boire un monaco en allant a avignon depuis reims
+1567,arrêt à amiens en venant de nice
+1568,boire un monaco en allant à avignon depuis reims
 1569,trajet direct amiens toulouse
 1570,mon collègue valerie part de lourdes pour aulnay-sous-bois
-1571,Voyage marseille florence en première classe
+1571,voyage marseille florence en première classe
 1572,distance montreuil nice en train
 1573,mon collègue monaco part de lille pour perpignan
-1574,avec paris je prends le train de boulogne-billancourt à pessac
+1574,avec paris je prends le train de boulogne-billancourt a pessac
 1575,avec valerie je prends le train de nimes a marseille
 1576,un billet pour voir valerie c'est quoi
-1577,tgv au départ de toulon à destination de strasbourg
-1578,Trajet direct villeurbanne nimes
+1577,TGV au depart de toulon a destination de strasbourg
+1578,trajet direct villeurbanne nîmes
 1579,un billet pour voir valerie c'est quoi
 1580,connexion ferroviaire nancy strasbourg
 1581,je veux aller voir albert et boire un monaco
-1582,Trajet direct florence roubaix
+1582,trajet direct florence roubaix
 1583,Correspondance lyon puis albert
-1584,voyage courbevoie port-boulet en première classe
-1585,avec albert je prends le train de béziers à toulouse
-1586,mon collègue albert part de créteil pour pessac
-1587,boire un monaco en allant à grenoble depuis marseille
-1588,Reserver tours - poitiers pour demain
+1584,Voyage courbevoie port-boulet en premiere classe
+1585,avec albert je prends le train de beziers a toulouse
+1586,mon collegue albert part de creteil pour pessac
+1587,boire un monaco en allant a grenoble depuis marseille
+1588,réserver tours - poitiers pour demain
 1589,Peut-on aller de nice a fort-de-france en train
 1590,je veux aller voir monaco et boire un monaco
-1591,avec nancy je prends le train de perpignan a lyon
+1591,avec nancy je prends le train de perpignan à lyon
 1592,Liaison saint-denis besancon aujourd'hui
-1593,Connexion ferroviaire pessac saint-étienne
+1593,connexion ferroviaire pessac saint-étienne
 1594,Ou prendre le train merignac nice
-1595,Arret a merignac en venant de toulon
-1596,Trajet direct limoges besancon
+1595,Arrêt à mérignac en venant de toulon
+1596,Trajet direct limoges besançon
 1597,quelle heure est-il
-1598,liaison rennes nantes aujourd'hui
+1598,Liaison rennes nantes aujourd'hui
 1599,un billet pour voir albert c'est quoi
-1600,TGV au départ de saint-denis à destination de poitiers
+1600,TGV au depart de saint-denis a destination de poitiers
 1601,Correspondance aix-en-provence puis montpellier
-1602,Train du matin dunkirk port-boulet
+1602,train du matin dunkerque port-boulet
 1603,Voyage besancon montreuil en premiere classe
 1604,Trajet direct courbevoie aulnay-sous-bois
-1605,prochain train dunkirk vers avignon
-1606,peut-on aller de limoges à reims en train
+1605,prochain train dunkerque vers avignon
+1606,Peut-on aller de limoges à reims en train
 1607,j'ai besoin d'un trajet toulouse amiens
 1608,trajet direct créteil le havre
 1609,Réservation aulnay-sous-bois béziers pour vendredi
-1610,Arrêt à port-boulet en venant de versailles
+1610,Arret a port-boulet en venant de versailles
 1611,avec valerie je prends le train de roubaix à mérignac
 1612,Train du matin poitiers saint-denis
-1613,avec florence je prends le train de dunkirk à la rochelle
-1614,Voyage boulogne-billancourt tours en premiere classe
-1615,Où prendre le train mulhouse fort-de-france
-1616,peut-on aller de la rochelle à nîmes en train
+1613,avec florence je prends le train de dunkerque à la rochelle
+1614,Voyage boulogne-billancourt tours en première classe
+1615,où prendre le train mulhouse fort-de-france
+1616,Peut-on aller de la rochelle à nîmes en train
 1617,je ne comprends pas
 1618,Prochain train toulon vers strasbourg
 1619,quel temps fait-il
@@ -1622,120 +1622,120 @@
 1622,un billet pour voir florence c'est quoi
 1623,combien coûte ce livre
 1624,je cherche une pharmacie
-1625,boire un monaco en allant à le mans depuis montaigu
-1626,J'ai besoin d'un trajet le mans nîmes
+1625,boire un monaco en allant a le mans depuis montaigu
+1626,J'ai besoin d'un trajet le mans nimes
 1627,un billet pour voir valerie c'est quoi
 1628,où prendre le train tourcoing lille
-1629,liaison montpellier argenteuil aujourd'hui
+1629,Liaison montpellier argenteuil aujourd'hui
 1630,ou sont les toilettes
-1631,Reserver vitry-sur-seine - nantes pour demain
-1632,Reservation tours angers pour vendredi
-1633,liaison aulnay-sous-bois clermont-ferrand aujourd'hui
-1634,mon collegue albert part de dunkirk pour nantes
-1635,Reservation colombes le mans pour vendredi
+1631,Réserver vitry-sur-seine - nantes pour demain
+1632,réservation tours angers pour vendredi
+1633,Liaison aulnay-sous-bois clermont-ferrand aujourd'hui
+1634,mon collègue albert part de dunkerque pour nantes
+1635,réservation colombes le mans pour vendredi
 1636,avec paris je prends le train de vitry-sur-seine a montpellier
 1637,un billet pour voir albert c'est quoi
 1638,distance mulhouse antibes en train
 1639,j'ai besoin d'un trajet montreuil toulon
 1640,tgv au départ de clermont-ferrand à destination de boulogne-billancourt
 1641,Connexion ferroviaire lille amiens
-1642,avec florence je prends le train de asnières-sur-seine à montreuil
-1643,boire un monaco en allant à dijon depuis béziers
+1642,avec florence je prends le train de asnieres-sur-seine a montreuil
+1643,boire un monaco en allant a dijon depuis beziers
 1644,un billet pour voir monaco c'est quoi
 1645,quel temps fait-il
-1646,Liaison besançon dunkirk aujourd'hui
+1646,liaison besançon dunkerque aujourd'hui
 1647,liaison saint-étienne brest aujourd'hui
 1648,un billet pour voir nancy c'est quoi
 1649,quelle heure est-il
 1650,Connexion ferroviaire florence nancy
 1651,J'ai besoin d'un trajet montpellier brest
-1652,Tarif pessac marseille s'il vous plaît
+1652,Tarif pessac marseille s'il vous plait
 1653,Billet SNCF pessac aix-en-provence
 1654,Tarif limoges nimes s'il vous plait
 1655,je veux aller voir valerie et boire un monaco
-1656,Billet SNCF marseille albert
+1656,billet sncf marseille albert
 1657,Reservation toulouse colombes pour vendredi
 1658,J'ai besoin d'un trajet aulnay-sous-bois rouen
 1659,Train du matin créteil angers
-1660,arrêt à versailles en venant de villeurbanne
+1660,Arret a versailles en venant de villeurbanne
 1661,correspondance entre saint-denis et amiens
-1662,j'ai besoin d'un trajet albert le havre
+1662,J'ai besoin d'un trajet albert le havre
 1663,prochain train reims vers saint-denis
-1664,Horaires caen mérignac ce week-end
+1664,Horaires caen merignac ce week-end
 1665,je voudrais un café
 1666,ou sont les toilettes
-1667,Reservation pessac orleans pour vendredi
+1667,Réservation pessac orléans pour vendredi
 1668,annuler ma commande
-1669,Reservation fort-de-france port-boulet pour vendredi
+1669,Réservation fort-de-france port-boulet pour vendredi
 1670,quelle heure est-il
-1671,J'ai besoin d'un trajet tourcoing dijon
-1672,Distance mérignac dijon en train
+1671,j'ai besoin d'un trajet tourcoing dijon
+1672,Distance merignac dijon en train
 1673,quel temps fait-il
 1674,quelle heure est-il
-1675,boire un monaco en allant à versailles depuis dunkirk
-1676,Trajet direct nantes créteil
+1675,boire un monaco en allant a versailles depuis dunkerque
+1676,trajet direct nantes créteil
 1677,annuler ma commande
 1678,où puis-je acheter un ticket
 1679,un billet pour voir valerie c'est quoi
-1680,Distance saint-denis le mans en train
+1680,distance saint-denis le mans en train
 1681,correspondance entre roubaix et versailles
-1682,Correspondance entre metz et versailles
-1683,avec monaco je prends le train de toulouse à angers
+1682,correspondance entre metz et versailles
+1683,avec monaco je prends le train de toulouse a angers
 1684,réserver montpellier - vitry-sur-seine pour demain
-1685,Liaison nancy orleans aujourd'hui
-1686,Correspondance entre lourdes et lyon
-1687,arrêt à vitry-sur-seine en venant de colombes
+1685,liaison nancy orléans aujourd'hui
+1686,correspondance entre lourdes et lyon
+1687,Arrêt à vitry-sur-seine en venant de colombes
 1688,je veux aller voir paris et boire un monaco
-1689,Réserver lille - la rochelle pour demain
-1690,Où prendre le train nantes nîmes
+1689,Reserver lille - la rochelle pour demain
+1690,où prendre le train nantes nîmes
 1691,réserver lourdes - nancy pour demain
 1692,annuler ma commande
 1693,Correspondance grenoble puis rennes
-1694,Liaison port-boulet clermont-ferrand aujourd'hui
+1694,liaison port-boulet clermont-ferrand aujourd'hui
 1695,train du matin paris florence
 1696,J'ai besoin d'un trajet orléans nantes
-1697,correspondance entre lourdes et nîmes
-1698,Correspondance orléans puis strasbourg
-1699,correspondance entre tourcoing et saint-denis
-1700,trajet direct mérignac poitiers
-1701,Liaison colombes la rochelle aujourd'hui
-1702,Billet SNCF besançon courbevoie
+1697,Correspondance entre lourdes et nimes
+1698,correspondance orléans puis strasbourg
+1699,Correspondance entre tourcoing et saint-denis
+1700,Trajet direct merignac poitiers
+1701,liaison colombes la rochelle aujourd'hui
+1702,billet sncf besançon courbevoie
 1703,correspondance toulouse puis montreuil
 1704,correspondance strasbourg puis tourcoing
 1705,un billet pour voir paris c'est quoi
 1706,Tarif perpignan fort-de-france s'il vous plait
-1707,Trajet direct créteil villeurbanne
+1707,Trajet direct creteil villeurbanne
 1708,je cherche une pharmacie
-1709,Arret a saint-etienne en venant de toulon
+1709,arrêt à saint-étienne en venant de toulon
 1710,je veux aller voir valerie et boire un monaco
 1711,un billet pour voir paris c'est quoi
 1712,mon collegue florence part de avignon pour besancon
 1713,Train du matin montaigu rennes
 1714,mon collègue paris part de nice pour villeurbanne
-1715,prochain train grenoble vers vitry-sur-seine
-1716,boire un monaco en allant à orléans depuis fort-de-france
-1717,trajet direct asnières-sur-seine angers
+1715,Prochain train grenoble vers vitry-sur-seine
+1716,boire un monaco en allant a orleans depuis fort-de-france
+1717,Trajet direct asnieres-sur-seine angers
 1718,connexion ferroviaire caen poitiers
 1719,un billet pour voir valerie c'est quoi
 1720,train du matin asnières-sur-seine orléans
 1721,Correspondance villeurbanne puis montpellier
-1722,réservation saint-denis marseille pour vendredi
+1722,Reservation saint-denis marseille pour vendredi
 1723,boire un monaco en allant à avignon depuis mérignac
-1724,TGV au depart de montreuil a destination de beziers
-1725,Peut-on aller de marseille à le havre en train
-1726,arrêt à brest en venant de avignon
-1727,réservation lyon nantes pour vendredi
-1728,Arrêt à clermont-ferrand en venant de toulon
+1724,tgv au départ de montreuil à destination de béziers
+1725,Peut-on aller de marseille a le havre en train
+1726,Arret a brest en venant de avignon
+1727,Réservation lyon nantes pour vendredi
+1728,Arret a clermont-ferrand en venant de toulon
 1729,annuler ma commande
 1730,Voyage versailles aulnay-sous-bois en premiere classe
 1731,annuler ma commande
 1732,horaires la rochelle toulouse ce week-end
 1733,quelle heure est-il
-1734,Horaires florence mérignac ce week-end
+1734,horaires florence mérignac ce week-end
 1735,Voyage beziers colombes en premiere classe
-1736,boire un monaco en allant à boulogne-billancourt depuis montreuil
+1736,boire un monaco en allant a boulogne-billancourt depuis montreuil
 1737,Arrêt à fort-de-france en venant de toulon
-1738,horaires lille grenoble ce week-end
+1738,Horaires lille grenoble ce week-end
 1739,avec florence je prends le train de dijon a courbevoie
 1740,J'ai besoin d'un trajet le mans reims
 1741,Arrêt à montaigu en venant de montpellier
@@ -1743,58 +1743,58 @@
 1743,Connexion ferroviaire antibes besancon
 1744,Trajet direct nantes bordeaux
 1745,j'ai besoin d'un trajet montaigu antibes
-1746,Arret a nantes en venant de vitry-sur-seine
+1746,arrêt à nantes en venant de vitry-sur-seine
 1747,Distance tourcoing beziers en train
-1748,Correspondance entre besançon et paris
+1748,Correspondance entre besancon et paris
 1749,avec nancy je prends le train de roubaix à aulnay-sous-bois
 1750,combien coûte ce livre
 1751,Trajet direct montreuil le havre
-1752,Horaires amiens toulouse ce week-end
+1752,horaires amiens toulouse ce week-end
 1753,avec albert je prends le train de limoges a nimes
-1754,Liaison reims strasbourg aujourd'hui
+1754,liaison reims strasbourg aujourd'hui
 1755,je veux aller voir florence et boire un monaco
 1756,un billet pour voir monaco c'est quoi
-1757,boire un monaco en allant à dunkirk depuis fort-de-france
+1757,boire un monaco en allant à dunkerque depuis fort-de-france
 1758,boire un monaco en allant à dijon depuis lille
-1759,boire un monaco en allant a le mans depuis asnieres-sur-seine
+1759,boire un monaco en allant à le mans depuis asnières-sur-seine
 1760,un billet pour voir albert c'est quoi
 1761,Liaison rennes colombes aujourd'hui
 1762,Voyage rouen pessac en première classe
-1763,Correspondance pessac puis orléans
+1763,correspondance pessac puis orléans
 1764,Des trains circulent-ils entre le mans et argenteuil
-1765,arrêt à aulnay-sous-bois en venant de saint-denis
+1765,Arrêt à aulnay-sous-bois en venant de saint-denis
 1766,Prochain train perpignan vers montpellier
-1767,Connexion ferroviaire bordeaux mérignac
-1768,trajet direct montreuil port-boulet
+1767,connexion ferroviaire bordeaux mérignac
+1768,Trajet direct montreuil port-boulet
 1769,un billet pour voir nancy c'est quoi
-1770,mon collègue florence part de mulhouse pour port-boulet
-1771,où prendre le train clermont-ferrand lourdes
+1770,mon collegue florence part de mulhouse pour port-boulet
+1771,Ou prendre le train clermont-ferrand lourdes
 1772,arrêt à clermont-ferrand en venant de besançon
-1773,Arrêt à perpignan en venant de nice
-1774,Correspondance entre colombes et caen
-1775,Reserver dunkirk - courbevoie pour demain
-1776,mon collègue florence part de béziers pour dunkirk
+1773,arrêt à perpignan en venant de nice
+1774,correspondance entre colombes et caen
+1775,réserver dunkerque - courbevoie pour demain
+1776,mon collègue florence part de béziers pour dunkerque
 1777,je veux aller voir florence et boire un monaco
-1778,Train du matin nancy dijon
-1779,liaison montaigu toulon aujourd'hui
-1780,Liaison nice limoges aujourd'hui
-1781,réservation lyon orléans pour vendredi
-1782,Trajet direct le havre lille
+1778,train du matin nancy dijon
+1779,Liaison montaigu toulon aujourd'hui
+1780,liaison nice limoges aujourd'hui
+1781,Réservation lyon orléans pour vendredi
+1782,trajet direct le havre lille
 1783,j'ai besoin d'un trajet avignon angers
-1784,où prendre le train villeurbanne courbevoie
-1785,horaires angers lille ce week-end
-1786,correspondance besançon puis aix-en-provence
+1784,Où prendre le train villeurbanne courbevoie
+1785,Horaires angers lille ce week-end
+1786,Correspondance besancon puis aix-en-provence
 1787,annuler ma commande
 1788,je voudrais un café
-1789,mon collègue albert part de rennes pour strasbourg
+1789,mon collegue albert part de rennes pour strasbourg
 1790,Train du matin amiens florence
-1791,Horaires reims clermont-ferrand ce week-end
+1791,horaires reims clermont-ferrand ce week-end
 1792,je me suis perdu
 1793,où prendre le train besançon lourdes
 1794,réservation aulnay-sous-bois toulon pour vendredi
 1795,Billet SNCF courbevoie asnières-sur-seine
-1796,boire un monaco en allant à versailles depuis argenteuil
-1797,horaires montpellier saint-denis ce week-end
-1798,avec florence je prends le train de antibes a orleans
+1796,boire un monaco en allant a versailles depuis argenteuil
+1797,Horaires montpellier saint-denis ce week-end
+1798,avec florence je prends le train de antibes à orléans
 1799,ou est la gare la plus proche
 1800,j'ai besoin d'un trajet amiens dijon
