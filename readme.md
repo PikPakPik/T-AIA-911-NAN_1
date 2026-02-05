@@ -25,10 +25,42 @@ python3 poc_spacy.py
 
 ## RoBERTa
 ### Train the model
+L’entraînement utilise **uniquement** les fichiers **dataset_input.txt** et **dataset_output.txt** (aucune phrase n’est définie dans le script d’entraînement).
+
+1. Générer le dataset (~100k phrases : valides, invalides, villes en contexte non-trajet, pièges, recette) :
+```bash
+cd dataset
+python3 generate_dataset.py
+cd ..
+```
+(Peut prendre quelques minutes.)
+
+2. Lancer l’entraînement :
 ```bash
 python3 poc_roberta_training.py
 ```
-This will fine-tune `benjamin/roberta-base-wechsel-french` for NER tasks. The trained model will be saved in `./roberta_ner_model/`.
+
+Options : `--dataset-dir ./dataset`, `--output-dir ./roberta_ner_model`, `--seed 42`.
+
+Le modèle fine-tuné est enregistré dans `./roberta_ner_model/`.
+
+**GPU Apple Silicon (M1/M2/M3)** : MPS est utilisé automatiquement par le Trainer et les pipelines (`poc_roberta.py`, `chat_roberta_loc.py`) si PyTorch est installé avec support MPS. PyTorch ≥ 1.13 recommandé.
+
+### Générer le jeu de test (formulations différentes)
+Pour évaluer le modèle sur des phrases **jamais vues** à l’entraînement :
+
+```bash
+cd dataset
+python3 generate_test_dataset.py
+cd ..
+```
+
+Cela crée **dataset_test_input.txt** et **dataset_test_output.txt** (formulations et seed différents de `generate_dataset.py`). Ensuite, évaluer le modèle sur ce fichier :
+
+```bash
+python3 poc_roberta.py --file dataset/dataset_test_input.txt --output dataset_test_output_roberta.csv
+```
+Puis comparer avec `dataset/dataset_test_output.txt` (ex. dans le notebook d’évaluation en pointant vers ces fichiers).
 
 ### Test the model
 ### Command to run the PoC

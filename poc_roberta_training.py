@@ -1,7 +1,9 @@
 import re
-import csv
 import random
 import json
+import argparse
+import os
+import csv
 from transformers import (
     AutoTokenizer,
     AutoModelForTokenClassification,
@@ -11,124 +13,16 @@ from transformers import (
 )
 from datasets import Dataset
 import torch
-from torch import nn
 import numpy as np
 from sklearn.metrics import accuracy_score, precision_recall_fscore_support
 import unicodedata
 
-# Charge les données de géolocalisation
-with open("./dataset/geo.csv", "r", encoding="utf-8") as file:
-    reader = csv.reader(file)
-    locations = list(reader)
 
 def remove_accents(text: str) -> str:
-    """Remove accents from text."""
-    nfkd = unicodedata.normalize('NFD', text)
-    return ''.join([c for c in nfkd if not unicodedata.combining(c)])
+    """Remove accents from text (used for matching in load_dataset_input_output)."""
+    nfkd = unicodedata.normalize("NFD", text)
+    return "".join(c for c in nfkd if not unicodedata.combining(c))
 
-def generate_variants(name: str) -> set[str]:
-    variants = set()
-    base = name.strip()
-
-    saint_rules = [
-        (r"\bSaint\b", ["Saint", "St", "St."]),
-        (r"\bSainte\b", ["Sainte", "Ste", "Ste."]),
-    ]
-
-    def apply_rules(text):
-        results = {text}
-        for pattern, repls in saint_rules:
-            new = set()
-            for r in results:
-                if re.search(pattern, r, flags=re.IGNORECASE):
-                    for repl in repls:
-                        new.add(re.sub(pattern, repl, r, flags=re.IGNORECASE))
-                else:
-                    new.add(r)
-            results = new
-        return results
-
-    for v in apply_rules(base):
-        variants.add(v)
-        variants.add(v.replace("-", " "))
-        variants.add(v.replace(" ", "-"))
-        variants.add(v.replace("'", " "))
-        variants.add(v.replace("'", ""))
-
-        no_accent = remove_accents(v)
-        variants.add(no_accent)
-        variants.add(no_accent.replace("-", " "))
-        variants.add(no_accent.replace(" ", "-"))
-        variants.add(no_accent.replace("'", " "))
-        variants.add(no_accent.replace("'", ""))
-
-    final = set()
-    for v in variants:
-        final.add(v)
-        final.add(v.lower())
-        final.add(v.upper())
-        final.add(v.capitalize())
-
-    return final
-
-TEMPLATES = [
-    "Je veux aller de {a} à {b}",
-    "Train entre {a} et {b}",
-    "Voyage de {a} vers {b}",
-    "Billet {a} {b}",
-    "Comment aller de {a} à {b}?",
-    "Quel train entre {a} et {b}?",
-    "C'est combien pour aller de {a} à {b}?",
-    "Je dois me rendre de {a} à {b}",
-    "Je dois aller de {a} à {b} demain",
-    "Un aller-retour {a}-{b} s'il vous plaît",
-    "Un billet {a} {b} svp",
-    "Départ de {a} vers {b} ce soir",
-    "Je pars de {a} pour {b} lundi prochain",
-    "Train de {a} à {b} demain matin",
-    "Départ {a} arrivée {b} cet après-midi",
-    "Trajet depuis {a} vers {b}",
-    "Réserver un billet de {a} pour {b}",
-    "Je souhaite me rendre à {b} depuis {a}",
-    "Je veux aller à {b} en partant de {a}",
-    "Aller à {b} au départ de {a}",
-    "Direction {b} depuis {a}",
-    "J'ai besoin d'aller de {a} à {b}",
-    "Faut que j'aille de {a} à {b}",
-    "Cherche train {a} {b}",
-    "Dispo {a}-{b}?",
-    "Réservation au départ de {a} direction {b}",
-    "Billet de train de {a} à destination de {b}",
-    "Partir de {a} pour rejoindre {b}",
-    "Trajet en train de {a} jusqu'à {b}",
-]
-
-def generate_annotated_sentences(locations, n=15000):
-    """Génère des phrases annotées pour l'entraînement NER"""
-    samples = []
-
-    for _ in range(n):
-        (name1, label1), (name2, label2) = random.sample(locations, 2)
-
-        v1 = random.choice(list(generate_variants(name1)))
-        v2 = random.choice(list(generate_variants(name2)))
-
-        sentence = random.choice(TEMPLATES).format(a=v1, b=v2)
-
-        start1 = sentence.index(v1)
-        end1 = start1 + len(v1)
-        start2 = sentence.index(v2)
-        end2 = start2 + len(v2)
-
-        samples.append((
-            sentence,
-            [
-                (start1, end1, "LOC"),
-                (start2, end2, "LOC"),
-            ]
-        ))
-
-    return samples
 
 def align_labels_with_char_positions(text, entities, offset_mapping):
     """Aligne les labels avec les tokens en utilisant les positions de caractères.
@@ -223,6 +117,207 @@ def create_iob_labels(text, entities):
     
     return tokens, labels
 
+def _normalize_for_match(s: str) -> str:
+    """Normalise pour recherche insensible à la casse et aux accents."""
+    s = remove_accents(s).lower().replace("-", " ")
+    return s
+
+def _find_all_occurrences(phrase: str, name: str) -> list[tuple[int, int]]:
+    """Trouve toutes les occurrences de name dans phrase (insensible casse/accents/tirets)."""
+    if not name or not name.strip():
+        return []
+    phrase_norm = _normalize_for_match(phrase)
+    name_norm = _normalize_for_match(name)
+    if not name_norm:
+        return []
+    # Longueur dans la phrase normalisée (espaces = 1 char) pour garder les indices
+    result = []
+    pos = 0
+    while True:
+        i = phrase_norm.find(name_norm, pos)
+        if i == -1:
+            break
+        # Span dans la phrase originale (même indices car replace préserve la longueur)
+        result.append((i, i + len(name_norm)))
+        pos = i + 1
+    return result
+
+def _load_all_cities_from_geo_csv(geo_csv_path: str = "./dataset/geo.csv") -> list[str]:
+    """Charge toutes les villes depuis geo.csv (37k+ villes, filtre LOC_CITY uniquement)."""
+    cities = []
+    try:
+        with open(geo_csv_path, "r", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                # Filtre : on ne garde que les villes (LOC_CITY), pas les régions/départements
+                if row.get("label", "").strip() == "LOC_CITY":
+                    city_name = row.get("nom", "").strip()
+                    if city_name:
+                        cities.append(city_name)
+    except FileNotFoundError:
+        print(f"⚠️  Fichier {geo_csv_path} introuvable.")
+    return cities
+
+def _build_city_index_by_first_letter(cities: list[str]) -> dict[str, list[str]]:
+    """
+    Crée un index des villes par première lettre (normalisée).
+    Exemple : {"p": ["Paris", "Perpignan", ...], "l": ["Lyon", "Lille", ...]}
+    Accélère la recherche de ~37x (cherche dans ~1/26ème des villes).
+    """
+    index = {}
+    for city in cities:
+        city_norm = _normalize_for_match(city)
+        if not city_norm:
+            continue
+        first_letter = city_norm[0].lower()
+        if first_letter not in index:
+            index[first_letter] = []
+        index[first_letter].append(city)
+    return index
+
+def _find_cities_in_phrase(phrase: str, city_index: dict[str, list[str]]) -> list[tuple[int, int, str]]:
+    """
+    Détecte automatiquement les villes présentes dans une phrase.
+    Retourne une liste d'entités (start, end, "LOC").
+    
+    Optimisé avec index par première lettre :
+    - Normalise la phrase une seule fois
+    - Ne cherche que les villes dont la première lettre apparaît dans la phrase
+    - ~37x plus rapide que de chercher dans toutes les 37k villes
+    """
+    entities = []
+    phrase_norm = _normalize_for_match(phrase)
+    
+    # Identifie les lettres présentes dans la phrase (pour filtrer les villes à chercher)
+    letters_in_phrase = set(phrase_norm.lower())
+    
+    # Collecte les villes candidates (dont la première lettre apparaît dans la phrase)
+    candidate_cities = []
+    for letter in letters_in_phrase:
+        if letter in city_index:
+            candidate_cities.extend(city_index[letter])
+    
+    # Trie par longueur décroissante pour détecter les plus longues d'abord
+    # (évite que "Paris" match dans "Paris-Brest" si "Paris-Brest" est une ville)
+    sorted_cities = sorted(set(candidate_cities), key=len, reverse=True)
+    
+    # Pour éviter les doublons, on garde trace des zones déjà couvertes
+    covered_ranges = []
+    
+    for city in sorted_cities:
+        city_norm = _normalize_for_match(city)
+        if not city_norm:
+            continue
+            
+        # Cherche toutes les occurrences de la ville normalisée dans la phrase normalisée
+        pos = 0
+        while True:
+            idx = phrase_norm.find(city_norm, pos)
+            if idx == -1:
+                break
+            
+            start, end = idx, idx + len(city_norm)
+            
+            # Vérifie qu'on ne chevauche pas une zone déjà couverte
+            overlaps = any(
+                (start < c_end and end > c_start)
+                for c_start, c_end in covered_ranges
+            )
+            
+            if not overlaps:
+                entities.append((start, end, "LOC"))
+                covered_ranges.append((start, end))
+            
+            pos = idx + 1
+    
+    # Trie par position pour cohérence
+    entities.sort(key=lambda x: x[0])
+    return entities
+
+def load_dataset_input_output(
+    input_path: str = "./dataset/dataset_input.txt",
+    output_path: str = "./dataset/dataset_output.txt",
+) -> list[tuple[str, list[tuple[int, int, str]]]]:
+    """
+    Charge dataset_input.txt et dataset_output.txt et les convertit en samples NER.
+    Chaque sample est (phrase, [(start, end, "LOC"), ...]).
+    
+    IMPORTANT: Pour les phrases INVALID, on détecte automatiquement les villes présentes
+    (uniquement celles utilisées dans le dataset) et on les annote comme LOC. 
+    
+    OPTIMISATION: On extrait d'abord les villes du dataset_output.txt (les 1000 villes
+    utilisées pour la génération) au lieu de charger les 37k villes de geo.csv.
+    Cela évite de chercher dans 37k villes pour chaque phrase INVALID.
+    """
+    with open(input_path, "r", encoding="utf-8") as f:
+        input_lines = [line.rstrip("\n") for line in f]
+    with open(output_path, "r", encoding="utf-8") as f:
+        output_lines = [line.rstrip("\n") for line in f]
+
+    # Extrait les villes utilisées dans le dataset (beaucoup plus rapide)
+    print(f"  Extraction des villes du dataset...")
+    dataset_cities = set()
+    for line in output_lines:
+        parts = line.strip().split(",")
+        if len(parts) >= 2:
+            dep = parts[1].strip()
+            if dep and dep != "INVALID":
+                dataset_cities.add(dep)
+        if len(parts) >= 3:
+            dest = parts[2].strip()
+            if dest and dest != "INVALID":
+                dataset_cities.add(dest)
+    
+    print(f"  → {len(dataset_cities)} villes uniques dans le dataset")
+    
+    print(f"  Création de l'index par première lettre...")
+    city_index = _build_city_index_by_first_letter(list(dataset_cities))
+    print(f"  → Index créé pour {len(city_index)} lettres")
+
+    samples = []
+    for inp, out in zip(input_lines, output_lines):
+        # Input: "id,phrase" (la phrase peut contenir des virgules)
+        parts_in = inp.split(",", 1)
+        if len(parts_in) < 2:
+            continue
+        phrase = parts_in[1].strip()
+
+        # Output: "id,dep,dest" ou "id,INVALID,"
+        parts_out = out.split(",")
+        if len(parts_out) < 2:
+            continue
+        dep = parts_out[1].strip() if len(parts_out) > 1 else ""
+        dest = parts_out[2].strip() if len(parts_out) > 2 else ""
+
+        if dep == "INVALID" or not dep:
+            # Détecte automatiquement les villes dans la phrase (avec index optimisé)
+            entities = _find_cities_in_phrase(phrase, city_index)
+            samples.append((phrase, entities))
+            continue
+
+        occ_dep = _find_all_occurrences(phrase, dep)
+        occ_dest = _find_all_occurrences(phrase, dest)
+
+        entities = []
+        if dep == dest:
+            # Même ville (ex: Paris → Paris) : prendre les 2 premières occurrences
+            all_occ = occ_dep[:2]
+            for (start, end) in all_occ:
+                entities.append((start, end, "LOC"))
+        else:
+            # Deux villes différentes : première occurrence de chaque
+            if occ_dep:
+                start, end = occ_dep[0]
+                entities.append((start, end, "LOC"))
+            if occ_dest:
+                start, end = occ_dest[0]
+                entities.append((start, end, "LOC"))
+
+        entities.sort(key=lambda x: x[0])
+        samples.append((phrase, entities))
+
+    return samples
+
 def prepare_dataset(samples, tokenizer):
     """Prépare le dataset au format Hugging Face"""
     texts = []
@@ -289,23 +384,39 @@ def compute_metrics(eval_pred):
     }
 
 def main():
-    # Configuration
+    parser = argparse.ArgumentParser(
+        description="Entraînement NER RoBERTa pour entités LOC (données = dataset_input.txt + dataset_output.txt)"
+    )
+    parser.add_argument("--dataset-dir", default="./dataset", help="Dossier contenant dataset_input.txt et dataset_output.txt")
+    parser.add_argument("--output-dir", default="./roberta_ner_model", help="Dossier de sortie du modèle")
+    parser.add_argument("--seed", type=int, default=42)
+    args = parser.parse_args()
+    random.seed(args.seed)
+
     model_name = "benjamin/roberta-base-wechsel-french"
-    output_dir = "./roberta_ner_model"
-    num_samples = 15000
-    
-    print(f"Génération de {num_samples} échantillons d'entraînement...")
-    samples = generate_annotated_sentences(locations, n=num_samples)
-    random.shuffle(samples)
-    
-    # Division train/dev/test
-    split_train = int(len(samples) * 0.8)
-    split_dev = int(len(samples) * 0.9)
-    
+    output_dir = args.output_dir
+
+    # Chargement du dataset (dataset_input.txt + dataset_output.txt)
+    input_path = os.path.join(args.dataset_dir, "dataset_input.txt")
+    output_path = os.path.join(args.dataset_dir, "dataset_output.txt")
+    if not os.path.isfile(input_path) or not os.path.isfile(output_path):
+        raise FileNotFoundError(
+            f"Fichiers dataset introuvables: {input_path}, {output_path}. "
+            "Générez-les avec: cd dataset && python3 generate_dataset.py"
+        )
+    print(f"Chargement du dataset: {input_path} / {output_path}...")
+    samples = load_dataset_input_output(input_path, output_path)
+    print(f"  → {len(samples)} phrases chargées")
+
+
+    # Division train / dev / test (80 / 10 / 10)
+    n = len(samples)
+    split_train = int(n * 0.8)
+    split_dev = int(n * 0.9)
     train_samples = samples[:split_train]
     dev_samples = samples[split_train:split_dev]
     test_samples = samples[split_dev:]
-    
+
     print(f"Train: {len(train_samples)}, Dev: {len(dev_samples)}, Test: {len(test_samples)}")
     
     # Charge le tokenizer
@@ -345,7 +456,16 @@ def main():
     # Data collator
     data_collator = DataCollatorForTokenClassification(tokenizer=tokenizer)
     
-    # Trainer
+    # Affiche le device (MPS sur Mac ARM64, CUDA, ou CPU)
+    _d = training_args.device
+    if _d.type == "mps":
+        print("Device: MPS (Apple Silicon GPU)")
+    elif _d.type == "cuda":
+        print("Device: CUDA")
+    else:
+        print("Device: CPU")
+
+    # Trainer (MPS sur Mac ARM64 utilisé automatiquement si disponible)
     trainer = Trainer(
         model=model,
         args=training_args,
@@ -377,5 +497,4 @@ def main():
     print("Entraînement terminé!")
 
 if __name__ == "__main__":
-    random.seed(42)
     main()
