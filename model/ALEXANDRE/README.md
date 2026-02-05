@@ -38,6 +38,7 @@ Ce dossier contient **4 approches** de tokenisation pour annoter des phrases (fo
 - **Limites** : Plus de tokens par phrase (découpage plus fin).
 - **Lancer** : `python script3_regexp_improved.py`
 - **Sortie** : `script3_output.json`
+- **Utilisation avec BERT** : Le fine-tuning BERT (`finetune_bert_europeana.py`) utilise par défaut les **spans Départ/Arrivée dérivés de la tokenisation script 3** pour étiqueter les sous-mots BERT (alignement cohérent). Désactiver avec `--no-script3` pour revenir aux spans par recherche de chaîne.
 
 ---
 

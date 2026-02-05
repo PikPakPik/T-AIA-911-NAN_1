@@ -38,6 +38,8 @@ EPOCHS = 10
 BATCH_SIZE = 16
 VALIDATION_SPLIT = 0.1
 RANDOM_STATE = 42
+# Utiliser la tokenisation script 3 (regex améliorée) pour définir les spans Départ/Arrivée
+USE_SCRIPT3_LABELS = True
 
 
 def load_dataset(limit=None):
@@ -84,7 +86,9 @@ class F1Callback(tf.keras.callbacks.Callback):
         logs['val_f1'] = float(f1)
 
 
-def main():
+def main(use_script3=None):
+    if use_script3 is None:
+        use_script3 = USE_SCRIPT3_LABELS
     print("// Preparation of labels ['O', 'B-DEP', 'I-DEP', 'B-ARR', 'I-ARR']")
     label_encoder = LabelEncoder()
     label_encoder.fit(UNIQUE_LABELS)
@@ -101,8 +105,10 @@ def main():
 
     tokenizer = BertTokenizerFast.from_pretrained(MODEL_NAME)
 
-    print("\n// Encoding data...")
-    encodings, labels = encode_data(data, tokenizer, label_encoder, max_length=MAX_LENGTH, verbose=True)
+    print("\n// Encoding data..." + (" (labels from script 3 tokenization)" if use_script3 else ""))
+    encodings, labels = encode_data(
+        data, tokenizer, label_encoder, max_length=MAX_LENGTH, verbose=True, use_script3=use_script3
+    )
 
     # Split train / val
     n = len(data)
@@ -184,4 +190,8 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    import argparse
+    parser = argparse.ArgumentParser(description="Fine-tune BERT Europeana for NER Départ/Arrivée")
+    parser.add_argument("--no-script3", action="store_true", help="Use raw string spans instead of script 3 tokenization for labels")
+    args = parser.parse_args()
+    main(use_script3=not args.no_script3)

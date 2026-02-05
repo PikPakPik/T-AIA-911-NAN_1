@@ -38,6 +38,15 @@ def _find_entity_spans(phrase: str, depart: str, arrivee: str):
     return dep_span, arr_span
 
 
+def _get_entity_spans_script3(phrase: str, depart: str, arrivee: str):
+    """Retourne (dep_span, arr_span) en utilisant la tokenisation + alignement du script 3 (regex améliorée)."""
+    try:
+        from script3_regexp_improved import get_entity_spans_from_script3
+        return get_entity_spans_from_script3(phrase, depart or "", arrivee or "")
+    except ImportError:
+        return _find_entity_spans(phrase, depart, arrivee)
+
+
 def _span_overlap(token_start: int, token_end: int, entity_start: int, entity_end: int) -> bool:
     """True si le token [token_start, token_end) chevauche l'entité [entity_start, entity_end)."""
     if entity_start < 0:
@@ -60,7 +69,7 @@ def _which_entity(token_start: int, token_end: int, dep_span, arr_span):
     return None
 
 
-def encode_data(data_list, tokenizer, label_encoder, max_length=64, verbose=False):
+def encode_data(data_list, tokenizer, label_encoder, max_length=64, verbose=False, use_script3=False):
     """
     Encode les données pour TFBertForTokenClassification.
     
@@ -68,6 +77,7 @@ def encode_data(data_list, tokenizer, label_encoder, max_length=64, verbose=Fals
     tokenizer: BertTokenizerFast (transformers)
     label_encoder: sklearn LabelEncoder fitté sur ['O','B-DEP','I-DEP','B-ARR','I-ARR']
     max_length: longueur max des séquences
+    use_script3: si True, les spans Départ/Arrivée sont dérivés de la tokenisation script 3 (regex améliorée)
     
     Returns:
         encodings: dict avec input_ids, attention_mask, etc. (format attendu par .fit)
@@ -77,12 +87,13 @@ def encode_data(data_list, tokenizer, label_encoder, max_length=64, verbose=Fals
     all_input_ids = []
     all_attention_mask = []
     all_labels = []
-    
+    span_fn = _get_entity_spans_script3 if use_script3 else _find_entity_spans
+
     for idx, row in enumerate(data_list):
         phrase = row['phrase']
         depart = row.get('depart', '')
         arrivee = row.get('arrivee', '')
-        dep_span, arr_span = _find_entity_spans(phrase, depart, arrivee)
+        dep_span, arr_span = span_fn(phrase, depart, arrivee)
         
         enc = tokenizer(
             phrase,

@@ -10,7 +10,7 @@ Regex: r"\b(?:d'|l'|j'|qu'|n'|s'|t'|m'|c')\b|\b\w+\b"
 """
 
 import re
-from typing import List, Dict
+from typing import List, Dict, Tuple
 import json
 
 
@@ -27,6 +27,40 @@ def tokenize_regexp_improved(text: str) -> List[str]:
     pattern = r"\b(?:d'|l'|j'|qu'|n'|s'|t'|m'|c')\b|\b\w+\b"
     tokens = re.findall(pattern, text, re.IGNORECASE)
     return tokens
+
+
+def tokenize_regexp_improved_with_spans(text: str) -> List[Tuple[str, int, int]]:
+    """
+    Tokenisation comme tokenize_regexp_improved, avec positions caractères (start, end).
+    Retourne une liste de (token, start, end) pour aligner les labels sur BERT (offset_mapping).
+    """
+    pattern = r"\b(?:d'|l'|j'|qu'|n'|s'|t'|m'|c')\b|\b\w+\b"
+    return [(m.group(0), m.start(), m.end()) for m in re.finditer(pattern, text, re.IGNORECASE)]
+
+
+def get_entity_spans_from_script3(phrase: str, departure: str, arrival: str) -> Tuple[Tuple[int, int], Tuple[int, int]]:
+    """
+    Utilise la tokenisation script 3 + alignement BIO pour obtenir les spans (début, fin)
+    des entités Départ et Arrivée en indices caractères.
+    Retourne ((dep_start, dep_end), (arr_start, arr_end)), ou (-1,-1) si non trouvé.
+    """
+    token_spans = tokenize_regexp_improved_with_spans(phrase)
+    if not token_spans:
+        return (-1, -1), (-1, -1)
+    tokens = [t[0] for t in token_spans]
+    labels = align_tokens_with_entities(tokens, departure, arrival)
+    dep_start = dep_end = -1
+    arr_start = arr_end = -1
+    for (_, s, e), lab in zip(token_spans, labels):
+        if lab in ("B-DEP", "I-DEP"):
+            if dep_start < 0:
+                dep_start = s
+            dep_end = e
+        elif lab in ("B-ARR", "I-ARR"):
+            if arr_start < 0:
+                arr_start = s
+            arr_end = e
+    return (dep_start, dep_end), (arr_start, arr_end)
 
 
 def align_tokens_with_entities(
