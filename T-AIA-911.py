@@ -6,6 +6,7 @@ import os
 import sys
 from urllib.parse import urlparse
 from urllib.request import urlopen
+from pathfinding import PathFinder
 
 parser = argparse.ArgumentParser(description="Extract LOC entities from a text file using RoBERTa/CamemBERT")
 group = parser.add_mutually_exclusive_group(required=True)
@@ -167,6 +168,10 @@ def read_lines_from_source(source: str):
                 cleaned_lines.append(line)
         return cleaned_lines
 
+pathfinder = None
+print("Initialisation du module Path Finding...")
+pathfinder = PathFinder("./dataset/geo.csv")
+
 if args.file or args.url:
     lines = read_lines_from_source(args.file if args.file else args.url)
 
@@ -217,13 +222,17 @@ if args.chat:
             break
 
         try:
-            entities = ner(phrase)
+            entities = ner_pipeline(phrase)
             locs = extract_locations(entities, phrase)
             locs = filter_non_travel_locs(phrase, locs)
             if locs:
                 print(f"LOC  > {locs}")
                 if len(locs) >= 2:
                     print(f"      (départ: {locs[0]}, arrivée: {locs[-1]})")
+                    route = pathfinder.find_shortest_path(
+                        locs[0], locs[-1], locs[1:-1]
+                    )
+                    print(f"      Route optimisée: {route}")
         except Exception as e:
             print(f"Erreur lors de l'extraction des entités : {e}")
 
