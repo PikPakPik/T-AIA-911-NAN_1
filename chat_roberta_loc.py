@@ -110,7 +110,7 @@ def main():
 
     while True:
         try:
-            phrase = input("Toi  > ").strip()
+            phrase = input("Toi > ").strip()
         except (EOFError, KeyboardInterrupt):
             print("\nBye.")
             break
