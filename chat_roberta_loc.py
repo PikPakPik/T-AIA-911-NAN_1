@@ -6,8 +6,40 @@ Usage: python3 chat_roberta_loc.py [--model ./roberta_ner_model]
 """
 
 import argparse
+import os
 import torch
-from transformers import pipeline
+from transformers import pipeline, AutoTokenizer, BertForTokenClassification
+
+
+def extract_dep_arr(entities, phrase=""):
+    """
+    Extrait Départ et Arrivée depuis les entités B-DEP/I-DEP et B-ARR/I-ARR (modèle BERT Europeana).
+    Retourne (départ, arrivée) ou (None, None) si non trouvés.
+    """
+    dep_words, arr_words = [], []
+    for entity in entities:
+        label = entity.get("entity_group", entity.get("label", ""))
+        label_upper = label.upper()
+        start = entity.get("start", 0)
+        end = entity.get("end", 0)
+        word = (entity.get("word", entity.get("text", "")) or "").strip()
+        if "DEP" in label_upper:
+            dep_words.append((start, end, word))
+        elif "ARR" in label_upper:
+            arr_words.append((start, end, word))
+    dep_words.sort(key=lambda x: x[0])
+    arr_words.sort(key=lambda x: x[0])
+    dep_str = None
+    arr_str = None
+    if dep_words and phrase:
+        dep_str = phrase[dep_words[0][0]:dep_words[-1][1]].strip()
+    elif dep_words:
+        dep_str = " ".join(w[2] for w in dep_words)
+    if arr_words and phrase:
+        arr_str = phrase[arr_words[0][0]:arr_words[-1][1]].strip()
+    elif arr_words:
+        arr_str = " ".join(w[2] for w in arr_words)
+    return (dep_str, arr_str)
 
 
 def extract_locations(entities, phrase=""):
@@ -98,14 +130,33 @@ def main():
     else:
         print("Device: CPU")
     print(f"Chargement du modèle: {args.model}...")
-    ner = pipeline(
-        "ner",
-        model=args.model,
-        tokenizer=args.model,
-        aggregation_strategy="simple",
-        device=_device,
-    )
-    print("Modèle prêt. Envoie une phrase pour extraire les lieux (LOC).")
+    # Modèle BERT Europeana : sauvegardé en TensorFlow (tf_model.h5), on charge en PyTorch avec from_tf=True
+    model_path = os.path.abspath(args.model)
+    tf_weights = os.path.join(model_path, "tf_model.h5")
+    if os.path.isfile(tf_weights):
+        # low_cpu_mem_usage=False évite les "meta tensors" qui empêchent .to(device) après from_tf=True
+        model = BertForTokenClassification.from_pretrained(
+            model_path, from_tf=True, low_cpu_mem_usage=False
+        )
+        tokenizer = AutoTokenizer.from_pretrained(model_path)
+        ner = pipeline(
+            "ner",
+            model=model,
+            tokenizer=tokenizer,
+            aggregation_strategy="simple",
+            device=_device,
+        )
+        use_dep_arr = True  # labels B-DEP / B-ARR
+    else:
+        ner = pipeline(
+            "ner",
+            model=args.model,
+            tokenizer=args.model,
+            aggregation_strategy="simple",
+            device=_device,
+        )
+        use_dep_arr = False
+    print("Modèle prêt. Envoie une phrase pour extraire les lieux (LOC) ou Départ/Arrivée.")
     print("  Commande: quit / exit / q  pour quitter.\n")
 
     while True:
@@ -122,17 +173,26 @@ def main():
 
         try:
             entities = ner(phrase)
-            locs = extract_locations(entities, phrase)
-            locs = filter_non_travel_locs(phrase, locs)
-            if locs:
-                print(f"LOC  > {locs}")
-                if len(locs) >= 2:
-                    print(f"      (départ: {locs[0]}, arrivée: {locs[-1]})")
-            else:
-                if any(c in phrase.lower() for c in ("recette", "cuisine", "paris-brest", "boire un")):
-                    print("LOC  > (aucun trajet — contexte recette/cuisine)")
+            if use_dep_arr:
+                dep, arr = extract_dep_arr(entities, phrase)
+                if dep or arr:
+                    print(f"Départ  > {dep or '—'}")
+                    print(f"Arrivée > {arr or '—'}")
                 else:
-                    print("LOC  > (aucun lieu détecté)")
+                    print("Départ  > (aucun)")
+                    print("Arrivée > (aucun)")
+            else:
+                locs = extract_locations(entities, phrase)
+                locs = filter_non_travel_locs(phrase, locs)
+                if locs:
+                    print(f"LOC  > {locs}")
+                    if len(locs) >= 2:
+                        print(f"      (départ: {locs[0]}, arrivée: {locs[-1]})")
+                else:
+                    if any(c in phrase.lower() for c in ("recette", "cuisine", "paris-brest", "boire un")):
+                        print("LOC  > (aucun trajet — contexte recette/cuisine)")
+                    else:
+                        print("LOC  > (aucun lieu détecté)")
         except Exception as e:
             print(f"LOC  > Erreur: {e}")
 

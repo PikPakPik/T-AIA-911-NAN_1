@@ -1,3 +1,4 @@
 roberta_ner_model/
 dataset_statistics.json
 camembert/models
+bert_europeana_ner/
