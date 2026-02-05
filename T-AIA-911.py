@@ -226,3 +226,29 @@ if args.chat:
                     print(f"      (départ: {locs[0]}, arrivée: {locs[-1]})")
         except Exception as e:
             print(f"Erreur lors de l'extraction des entités : {e}")
+
+if args.text:
+    phrase = args.text.strip()
+    
+    if not phrase:
+        print("Error: Empty text provided", file=sys.stderr)
+        sys.exit(1)
+    
+    try:
+        entities = ner_pipeline(phrase)
+        locs = extract_locations(entities, phrase)
+        locs = filter_non_travel_locs(phrase, locs)
+        
+        if locs:
+            print(f"Phrase: {phrase}")
+            print(f"LOC: {locs}")
+            if len(locs) >= 2:
+                print(f"Départ: {locs[0]}, Arrivée: {locs[-1]}")
+                if len(locs) > 2:
+                    print(f"Étapes: {locs[1:-1]}")
+        else:
+            print(f"Phrase: {phrase}")
+            print("Aucun lieu détecté.")
+    except Exception as e:
+        print(f"Error processing text: {e}", file=sys.stderr)
+        sys.exit(1)
