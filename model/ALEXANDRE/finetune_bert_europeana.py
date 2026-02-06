@@ -1,7 +1,7 @@
 """
 Fine-tuning de dbmdz/bert-base-french-europeana-cased pour la NER Départ/Arrivée.
 Dataset: dataset_input.txt + dataset_output.txt
-- 10 epochs, courbe F1 par epoch, courbes ROC multiclasses.
+- 5 epochs, courbe F1 par epoch, courbes ROC multiclasses.
 """
 
 import os
@@ -34,7 +34,7 @@ OUTPUT_PATH = os.path.join(DATASET_DIR, 'dataset_output.txt')
 MODEL_NAME = 'dbmdz/bert-base-french-europeana-cased'
 SAVE_DIR = os.path.normpath(os.path.join(SCRIPT_DIR, 'bert_europeana_ner'))
 MAX_LENGTH = 64
-EPOCHS = 10
+EPOCHS = 5
 BATCH_SIZE = 16
 VALIDATION_SPLIT = 0.1
 RANDOM_STATE = 42
@@ -101,7 +101,14 @@ def main(use_script3=None):
     data = load_dataset(limit=None)
     np.random.seed(RANDOM_STATE)
     np.random.shuffle(data)
-    print(f"-> Loaded {len(data)} samples")
+    
+    # Prendre seulement 10 000 phrases au hasard
+    SAMPLE_SIZE = 10000
+    if len(data) > SAMPLE_SIZE:
+        data = data[:SAMPLE_SIZE]
+        print(f"-> Loaded {len(data)} samples (randomly sampled from full dataset)")
+    else:
+        print(f"-> Loaded {len(data)} samples")
 
     tokenizer = BertTokenizerFast.from_pretrained(MODEL_NAME)
 
@@ -134,7 +141,7 @@ def main(use_script3=None):
 
     f1_callback = F1Callback(val_enc, val_lab, label_encoder)
 
-    print("\n// Starting model training (10 epochs)...")
+    print("\n// Starting model training (5 epochs)...")
     history = model.fit(
         train_enc,
         train_lab,

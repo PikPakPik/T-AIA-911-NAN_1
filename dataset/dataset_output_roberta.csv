@@ -1,1800 +1,1218 @@
-1,INVALID,INVALID
-2,attignat,chevillard
-3,INVALID,brens - beaupont
-4,INVALID,INVALID
-5,chaveyriat,INVALID
-6,ambérieu-en-bugey,cerdon
-7,INVALID,bolozon
-8,ambronay,INVALID
-9,INVALID,brest
-10,INVALID,INVALID
-11,chazey-sur-ain,valromey-sur-séran
-12,fer,champagne-en-valromey
-13,INVALID,INVALID
-14,INVALID,ins
-15,INVALID,ferroviaire bâgé-dommartin cleyzie
-16,INVALID,han
-17,champagne-en-valromey,chevillard
-18,la chapelle-du-châtelard,attignat
-19,asnières-sur-saône,ceyzérieu
-20,bressolles,champdor-corcelles
-21,cert,ines
-22,INVALID,buellas
-23,boyeux-saint-jérôme,et attignat
-24,combien coûte,INVALID
-25,INVALID,blyes - ars-sur-formans
-26,INVALID,INVALID
-27,bellignat,beynost
-28,la burbanche,certines
-29,arandas,INVALID
-30,aranc,ambérieu-en-bugey
-31,INVALID,cleyzieu
-32,chaveyria,veyriat et bourg-saint-christophe
-33,charix,bettant
-34,cleyzieu,INVALID
-35,chevillard,chazey-sur-ain
-36,bény,la chapelle-du-châtelard
+1,bettant,nogent-l'artaud
+2,relevant,bray-saint-christophe
+3,INVALID,INVALID
+4,laval-en-laonnois,bonnesvalyn
+5,bezu-saint-germain,grand-corent
+6,INVALID,INVALID
+7,arrancy,caulaincourt
+8,jassans riottier,saint denis en bugey
+9,missy-les-pierrepont,pleine-selve
+10,beligneux,courchamps
+11,marly-gomont,la herie
+12,monthiers,corcy
+13,épaux-bézu,ferney-voltaire
+14,INVALID,INVALID
+15,pontru,gandelu
+16,INVALID,INVALID
+17,INVALID,INVALID
+18,INVALID,paris
+19,INVALID,INVALID
+20,laffaux,nouvion et catillon
+21,INVALID,INVALID
+22,INVALID,INVALID
+23,INVALID,INVALID
+24,challex,villemotier
+25,oncieu,saint-vulbas
+26,vaux en bugey,INVALID
+27,brissy-hamégicourt,ozan
+28,mortefontaine,etreillers
+29,INVALID,INVALID
+30,sainte-euphémie,groslée-saint-benoit
+31,INVALID,INVALID
+32,neuville-sur-ain,la ferté-chevresis
+33,samognat,lurcy
+34,INVALID,INVALID
+35,montgru saint hilaire,hary
+36,iron,saint-julien-sur-reyssouze
 37,INVALID,INVALID
-38,bourg-saint-christophe,charix
-39,INVALID,deux
-40,INVALID,INVALID
-41,andert-et-condon,bolozon
-42,reserver,deux
-43,boz,chazey-bons
-44,INVALID,INVALID
-45,bol,ozon anglefort
-46,INVALID,ferroviaire arboys en bugey champfromier
-47,brégnier-cordon à destination de chézery-forens,destination de chézery-fore
-48,armix,arandas
-49,belleydoux,chalamont
-50,INVALID,INVALID
-51,bâgé-le-châtel,chaley
-52,bâgé-dommartin,château-gaillard
-53,Réserva,cerdon chazey-bons pour vendredi
-54,birieux,champagne-en-valromey
-55,chalamont,boissey
-56,bal,buellas
-57,INVALID,INVALID
-58,INVALID,clément
-59,INVALID,ket
-60,INVALID,INVALID
+38,Thomas,gercy
+39,maillat,fontenoy
+40,le hérie-la-viéville,erlon
+41,bezu-saint-germain,paissy
+42,parves et nattages,bray-saint-christophe
+43,INVALID,INVALID
+44,noircourt,leuze
+45,autremencourt,bey
+46,Oscar,florence
+47,cheignieu-la-balme,bellignat
+48,bourg-saint-christophe,bénonces
+49,saint julien sur veyle,monthenault
+50,bancigny,blanzy lès fismes
+51,martigny,bazoches et saint thibaut
+52,INVALID,INVALID
+53,paul,INVALID
+54,INVALID,mérignat
+55,magny-la-fosse,jouaignes
+56,colligis-crandelain,azy-sur-marne
+57,villereversure,bettant
+58,INVALID,INVALID
+59,vernoux,parcy-et-tigny
+60,commenchon,villette sur ain
 61,INVALID,INVALID
-62,asnières-sur-saône,certines
+62,birieux,happencourt
 63,INVALID,INVALID
-64,belley,cheignieu-la-balme
-65,bénonces,champfromier
-66,v au départ de ceignes à destination de béligneux,INVALID
-67,INVALID,nivigne et suran
-68,briord,champagne-en-valromey
+64,saint-étienne-sur-reyssouze,nantua
+65,bressolles,saint-julien-sur-reyssouze
+66,servas,pithon
+67,évosges,essigny-le-petit
+68,la boisse,charnoz-sur-ain
 69,INVALID,INVALID
-70,ambutrix,INVALID
-71,INVALID,pas
-72,chavannes-sur-reyssouze,ceignes
-73,chavannes-sur-reyssouze,valserhône
-74,chazey-sur-ain,bény
-75,INVALID,INVALID
-76,bénonces,arbent
+70,INVALID,INVALID
+71,billy-sur-aisne,maillat
+72,INVALID,INVALID
+73,INVALID,INVALID
+74,dallon,champs
+75,collonges,deuillet
+76,INVALID,INVALID
 77,INVALID,INVALID
-78,arbigny,bolozon
-79,certines châtillon-la-palud,châtillon-la-
-80,INVALID,béréziat
-81,INVALID,beauregard
-82,INVALID,brion
-83,bâgé-dommartin,chanoz-châtenay
+78,INVALID,INVALID
+79,marcy-sous-marle,bonnesvalyn
+80,oisy,parves et nattages
+81,INVALID,INVALID
+82,INVALID,INVALID
+83,épieds,curtafond
 84,INVALID,INVALID
-85,INVALID,pas
-86,ci,ze et bâgé-le-châtel
-87,bouligneux,INVALID
+85,chérêt-courtes,INVALID
+86,massignieu-de-rives,essises
+87,INVALID,INVALID
 88,INVALID,INVALID
-89,INVALID,INVALID
-90,armix,arboys en bugey
-91,armix,ars-sur-formans
-92,cleyzieu,chaneins
-93,INVALID,INVALID
-94,chaveyriat,INVALID
-95,collonges,destination de l'abergement-de-varey
-96,artemare,s-sur-forma
+89,mont-saint-père,lesges
+90,INVALID,INVALID
+91,INVALID,INVALID
+92,saint-jean-le-vieux,condeissiat
+93,simandre-sur-suran,ars-sur-formans
+94,saint-denis-lès-bourg,courmont
+95,baneins,castres
+96,nouvion-le-vineux,haramont
 97,INVALID,INVALID
-98,bouligneux,charix
-99,mon collegue Valerie part de balan,rie
-100,INVALID,INVALID
-101,aranc,chanay
-102,INVALID,champdor-corcelles
-103,chavannes-sur-reyssouze,charnoz-sur-ain
-104,ferroviaire la chapelle-du-châtelard,la chapelle-du-châtelard baneins
-105,Liaison,challes-la-montagne asnières-sur-saône aujourd'hui
-106,beynost,INVALID
-107,coligny,INVALID
-108,INVALID,celles cheignieu-la-balme
-109,INVALID,arandas - cheignieu-la-balme
-110,INVALID,la burbanche - bettant
-111,bouligneux,INVALID
-112,INVALID,la plus proche
-113,INVALID,bourg-en-bresse
-114,valromey-sur-séran,bény
-115,arb,briord
-116,Liaison,chanoz-châtenay bey aujourd'hui
-117,belleydoux,buellas
-118,brion,champfromier
-119,Reserver,INVALID
-120,challes-la-montagne,chanoz-châtenay
-121,annuler,ma commande
-122,bressolles à destination de ce,yzérieu
-123,INVALID,brens
-124,bourg-saint-christophe,béligneux
-125,INVALID,deux
-126,conand,béligneux
-127,baneins,bolozon
-128,INVALID,INVALID
-129,INVALID,INVALID
-130,INVALID,ambérieu-en-bugey
-131,INVALID,l'abergement-clémenciat - boyeux-saint-jérôme
-132,Liaison,la burbanche
-133,INVALID,attignat
-134,bettant,armix
-135,INVALID,ket
-136,INVALID,brens
-137,cheignieu-la-balme,chaleins
-138,SNCF ceyzérieu,arandas
-139,cleyzieu,chevillard
-140,nost,chevillard
-141,ambronay,ars-sur-formans
-142,biziat,cessy
-143,arb,belley
-144,INVALID,INVALID
-145,boissey,arbent
-146,chézery-forens,cheignieu-la-balme
-147,annuler,ma commande
-148,bellignat,burban
-149,arandas,bressolles
-150,INVALID,les toilettes
-151,chanay,beauregard
-152,arbent,chézery-forens
-153,ambérieu-en-bugey,érieu-en-bugey birieux
+98,INVALID,INVALID
+99,folembray,arbigny
+100,launoy,frières faillouël
+101,INVALID,INVALID
+102,INVALID,INVALID
+103,boz,mont-saint-jean
+104,cerdon,barenton-cel
+105,INVALID,montfaucon
+106,INVALID,INVALID
+107,guéreins,bézu-saint-germain
+108,INVALID,INVALID
+109,INVALID,INVALID
+110,courmangoux,cugny
+111,la croix-sur-ourcq,connigis
+112,hannapes,brissay-choigny
+113,la trancliere,marizy-sainte-genevieve
+114,INVALID,INVALID
+115,INVALID,INVALID
+116,ambléon,fleury
+117,INVALID,INVALID
+118,INVALID,INVALID
+119,osly courtil,nouvion et catillon
+120,saint-nizier-le-desert,domsure
+121,barzy-sur-marne,matafelon-granges
+122,INVALID,INVALID
+123,INVALID,INVALID
+124,Brest,l'abergement-de-varey
+125,INVALID,INVALID
+126,la neuville-housset,brancourt-en-laonnois
+127,cutry,francheleins
+128,caillouël-crepigny,concevreux
+129,étréaupont,saint-rambert-en-bugey
+130,INVALID,INVALID
+131,INVALID,INVALID
+132,INVALID,INVALID
+133,grisolles,joncourt
+134,ozan,bouffignereux
+135,INVALID,INVALID
+136,INVALID,INVALID
+137,INVALID,INVALID
+138,INVALID,INVALID
+139,corcy,chazey-bons
+140,INVALID,INVALID
+141,fesmy le sart,montbrehain
+142,INVALID,INVALID
+143,molain,goudelancourt lès pierrepont
+144,maissemy,montceaux
+145,essigny-le-grand,bernot
+146,INVALID,INVALID
+147,INVALID,INVALID
+148,lapeyrouse,froidmont-cohartille
+149,œuilly,cuzieu
+150,clémenciat,pont de veyle
+151,INVALID,INVALID
+152,frières-faillouël,oulches-la-vallée-foulon
+153,corlier,curciat-dongalon
 154,INVALID,INVALID
-155,chaveyriat,champdor-corcelles
-156,INVALID,INVALID
-157,ceignes,gna
-158,INVALID,INVALID
-159,INVALID,INVALID
-160,arbent,buellas
-161,INVALID,INVALID
-162,INVALID,llon-sur-chalaronne et chanoz-châtenay
-163,billiat à destination de la,burbanche
-164,INVALID,agne-en-valromey pour demain
-165,brégnier-cordon,INVALID
-166,châtillon-sur-chalaronne,beynost
-167,cheignieu-la-balme,belley
+155,INVALID,INVALID
+156,saint trivier sur moignans,paris
+157,chigny,raillimont
+158,bergues-sur-sambre,pignicourt
+159,crécy-sur-serre,orainville
+160,pougny,courmangoux
+161,INVALID,iron
+162,brenod,blesmes
+163,monceau-les-leups,perouges
+164,gandelu,celles lès condé
+165,jussy,hautevesnes
+166,INVALID,INVALID
+167,niévroz,papleux
 168,INVALID,INVALID
-169,ambérieux-en-dombes armix,INVALID
-170,INVALID,bey
+169,INVALID,INVALID
+170,INVALID,INVALID
 171,INVALID,INVALID
-172,conand,charix
+172,INVALID,INVALID
 173,INVALID,INVALID
-174,belleydoux,INVALID
-175,INVALID,les toilettes
-176,matin chazey-sur-ain,bâgé-le-châtel
-177,INVALID,INVALID
-178,roux,ambronay
-179,matin aranc,ceyzériat
-180,chalamont,INVALID
-181,INVALID,INVALID
-182,Liaison boyeux-saint-jérôme,boyeux-saint-jérôme bressolles aujourd'hui
-183,matin valromey-sur-séran,chaleins
-184,réservation châtillon-sur-chalaron,châtillon-sur-chalaronne la chapelle-du-châtelard
-185,INVALID,INVALID
-186,réservation,s-sur-formans arbigny pour vendredi
-187,châtenay,arandas
-188,chaneins ambérieux-en-dombes ce week-,ambérieux-en-dombes
-189,conand,INVALID
-190,INVALID,INVALID
-191,ambutrix,INVALID
-192,INVALID,boissey pour vendredi
-193,INVALID,INVALID
-194,INVALID,INVALID
-195,conand,boissey
-196,annuler,ma commande
-197,INVALID,INVALID
+174,lescheroux,bazoches-et-saint-thibaut
+175,INVALID,INVALID
+176,INVALID,INVALID
+177,acy,colligis-crandelain
+178,cleyzieu,INVALID
+179,mesbrecourt-richecourt,virieu-le-grand
+180,laiz,dhuys et morin en brie
+181,beauregard,mesnil-saint-laurent
+182,INVALID,INVALID
+183,matafelon-granges,aubigny-en-laonnois
+184,INVALID,INVALID
+185,saint-maurice-de-beynost,brion
+186,pignicourt,challes la montagne
+187,bruyères-sur-fère,besmont
+188,INVALID,INVALID
+189,saint-didier-de-formans,brens
+190,mezy-moulins,illiat
+191,perrex,coingt
+192,francheleins,pont arcy
+193,ciry-salsogne,le plantay
+194,dravegny,druillat
+195,condeissiat,hautecourt romanèche
+196,billiat,beaurieux
+197,ollezy,festieux
 198,INVALID,INVALID
-199,challex,charnoz-sur-ain
+199,saint-trivier-sur-moignans,bernot
 200,INVALID,INVALID
-201,brio,cessy
-202,attignat,ceignes
-203,ambutrix,puis bâgé-dommartin
-204,andert-et-condon,INVALID
-205,beaupont,beauregard
-206,bény,champagne-en-valromey
-207,arandas,apremont
-208,boissey,béligneux
-209,combien,INVALID
-210,INVALID,brion - brénod
-211,INVALID,INVALID
-212,asnières-sur-saône,chaley
-213,INVALID,arbent
-214,INVALID,coligny
-215,champdor-corcelles,aranc
-216,chaleins,armix
-217,quel temps,fait-il
-218,INVALID,INVALID
-219,INVALID,INVALID
-220,la chapelle-du-châtelard,ambutrix
-221,nivigne et suran,béligneux
-222,combien coûte,INVALID
-223,INVALID,INVALID
-224,armix,champagne-en-valromey
-225,la chapelle-du-châtelard,briord
-226,buellas,boissey
-227,beynost,bâgé-le-châtel
-228,arandas,armix
-229,arbigny,certines
-230,alb,ert
-231,combien coûte,INVALID
-232,bourg-en-bresse,buellas
-233,INVALID,INVALID
-234,chevillard,arandas
-235,cleyzieu,chaleins
-236,direct certines,chézery-forens
-237,cheignieu-la-balme,rhône
-238,INVALID,INVALID
-239,attignat,INVALID
-240,chanay,charnoz-sur-ain
-241,INVALID,belley
-242,réserver boyeux-saint-jé,boyeux-saint-jérôme - chaveyriat
-243,SNCF,INVALID
-244,chalamont,l'abergement-de-varey
-245,INVALID,ix
-246,sncf,ambérieux-en-dombes ambléon
-247,bellignat,INVALID
-248,belleydoux,ambléon
-249,beynost,chazey-sur-ain
-250,INVALID,INVALID
-251,INVALID,anglefort
-252,INVALID,INVALID
-253,matin ce,yzériat boyeux-saint-jérôme
-254,INVALID,coligny
-255,INVALID,cerdon
-256,chavannes-sur-reyssouze,champdor-corcelles
-257,réserv,chaveyriat bénonces
-258,cheignieu-la-balme,INVALID
-259,apremont,château-gaillard
-260,INVALID,certines
-261,ceyzérieu,INVALID
-262,Trajet direct nivigne et sur,INVALID
-263,INVALID,bellignat
-264,INVALID,les toilettes
-265,INVALID,colomieu
-266,blyes,cize
-267,INVALID,INVALID
-268,INVALID,buellas - boyeux-saint-jérôme
-269,INVALID,in
-270,aires,INVALID
-271,la chapelle-du-châtelard,arbigny
-272,bouligneux,l'abergement-clémenciat
-273,INVALID,pas
-274,INVALID,INVALID
-275,ceignes,bény
-276,INVALID,arbent aujourd'hui
-277,bouligneux,la boisse
-278,ket,INVALID
-279,INVALID,mieu
-280,Liaison,apremont
-281,INVALID,bellignat
-282,chazey-bons,bettant
-283,INVALID,bey
-284,INVALID,INVALID
+201,INVALID,INVALID
+202,fontenoy,ambronay
+203,artemps,remaucourt
+204,nesles-la-montagne,chermizy-ailles
+205,cuffies,certines
+206,esqueheries,marizy-sainte-genevieve
+207,saint-maurice-de-rémens,cuffies
+208,INVALID,INVALID
+209,INVALID,INVALID
+210,Anais,INVALID
+211,craonne,vernoux
+212,serrières-de-briord,froidestrées
+213,fonsomme,INVALID
+214,INVALID,INVALID
+215,INVALID,INVALID
+216,goudelancourt-les-berrieux,varambon
+217,Paris,-Brest
+218,pinon,montreal-la-cluse
+219,bourg-saint-christophe,boncourt
+220,oulchy-la-ville,molinchart
+221,mont-saint-pere,echenevex
+222,groslée-saint-benoit,belley
+223,gorrevod,argis
+224,INVALID,dagny-lambercy
+225,INVALID,INVALID
+226,bettant,muret-et-crouttes
+227,macogny,hary
+228,INVALID,INVALID
+229,INVALID,Brest
+230,fonsomme,puisieux-et-clanlieu
+231,chivres val,morsain
+232,landricourt,le montellier
+233,beaumont en beine,montigny le franc
+234,hannapes,conzieu
+235,saint-martin-le-châtel,cize
+236,INVALID,INVALID
+237,INVALID,INVALID
+238,proviseux et plesnoy,saint jean de gonville
+239,INVALID,INVALID
+240,douvres,crepy
+241,tenay,ambleny
+242,INVALID,INVALID
+243,sault-brenaz,INVALID
+244,savigneux,INVALID
+245,INVALID,bertaucourt-epourdon
+246,pargny-la-dhuys,barzy-sur-marne
+247,saint-julien-sur-reyssouze,saint-jean-de-niost
+248,ceyzériat,chevregny
+249,INVALID,INVALID
+250,pignicourt,la neuville-housset
+251,INVALID,INVALID
+252,curciat-dongalon,pollieu
+253,INVALID,Antoine
+254,INVALID,INVALID
+255,INVALID,INVALID
+256,étrépilly,domptin
+257,droizy,INVALID
+258,serrières-de-briord,bernoy-le-château
+259,léaz,la chapelle-du-châtelard
+260,cerseuil,mortefontaine
+261,INVALID,INVALID
+262,INVALID,INVALID
+263,crécy sur serre,celles lès condé
+264,farges,mionnay
+265,INVALID,INVALID
+266,mont saint martin,montanges
+267,Liam,neuville-les-dames
+268,gibercourt,chezy-en-orxois
+269,INVALID,INVALID
+270,INVALID,INVALID
+271,gouy,saint-sorlin-en-bugey
+272,pouillat,arrancy
+273,pont-d'ain,pinon
+274,certines,arbigny
+275,fresnes en tardenois,mionnay
+276,moulins,ciry-salsogne
+277,concevreux,gland
+278,le plessier-huleu,saint-jean-de-gonville
+279,fleury,prémont
+280,labalme,bucy-le-long
+281,gricourt,brion
+282,INVALID,INVALID
+283,les autels,montcornet
+284,orainville,fonsomme
 285,INVALID,INVALID
-286,cleyzieu,INVALID
-287,challes-la-montagne,puis chaveyriat
-288,INVALID,fe
-289,blyes,yes cerdon
-290,chaleins,andert-et-condon
-291,billiat,briord
-292,ambronay,beaupont
-293,réservation,bourg-en-bresse brégnier-cordon
-294,cerdon,buellas
-295,INVALID,apremont arboys en bugey
-296,challes-la-montagne,champagne-en-valromey
-297,INVALID,challes-la-montagne - arbigny
-298,INVALID,INVALID
-299,challex,INVALID
-300,INVALID,INVALID
-301,INVALID,colomieu cessy
-302,apremont,valromey-sur-séran
-303,combien coûte,INVALID
-304,INVALID,pas
-305,INVALID,INVALID
-306,ement-clémenciat,l'abergement-clémenciat bouligneux
-307,INVALID,ceignes blyes
-308,Réservation,coligny cize pour vendredi
-309,chevry,charix
-310,bettant,collonges
-311,arbigny,INVALID
-312,civrieux,chevroux
-313,charnoz-sur-ain,noz-sur-ain beauregard
-314,INVALID,INVALID
-315,balan,challes-la-montagne
-316,coligny,bettant
-317,andert-et-condon,chevroux
-318,SNCF brégnier-cordon,brégnier-cordon chevillard
-319,ceignes,chavannes-sur-reyssouze
-320,INVALID,INVALID
-321,beaupont,INVALID
-322,INVALID,apremont - ars-sur-formans
+286,Paris,-Brest
+287,INVALID,INVALID
+288,archon,journans
+289,INVALID,INVALID
+290,thoiry,pouillat
+291,INVALID,INVALID
+292,INVALID,INVALID
+293,INVALID,INVALID
+294,INVALID,INVALID
+295,cerseuil,parcy-et-tigny
+296,INVALID,INVALID
+297,marchais,saint-laurent-sur-saône
+298,charmes,boissey
+299,saint rambert en bugey,bertricourt
+300,folembray,oyonnax
+301,charnoz-sur-ain,évergnicourt
+302,prisces,boncourt
+303,la fère,festieux
+304,berlise,mont-saint-martin
+305,dampleux,chazey-sur-ain
+306,saint-bernard,saint-germain-de-joux
+307,lescheroux,montrevel-en-bresse
+308,gibercourt,foissiat
+309,INVALID,INVALID
+310,INVALID,INVALID
+311,marsonnas,caumont
+312,INVALID,INVALID
+313,INVALID,INVALID
+314,saint trivier sur moignans,parfondeval
+315,INVALID,INVALID
+316,INVALID,INVALID
+317,andert-et-condon,prémontré
+318,INVALID,INVALID
+319,INVALID,INVALID
+320,charles,florence
+321,barzy en thiérache,douchy
+322,INVALID,INVALID
 323,INVALID,INVALID
-324,matin bolozon,INVALID
-325,bâgé-le-châtel,belley
-326,INVALID,les toilettes
-327,ambérieu-en-bugey,chaley
-328,INVALID,chevillard
-329,INVALID,INVALID
-330,belle,y - briord
-331,Math,INVALID
+324,INVALID,INVALID
+325,INVALID,INVALID
+326,leyssard,cerseuil
+327,INVALID,INVALID
+328,mijoux,osly-courtil
+329,pignicourt,chanoz-châtenay
+330,pargnan,aisonville-et-bernoville
+331,nurieux volognat,bouligneux
 332,INVALID,INVALID
-333,INVALID,brion
-334,briord,champagne-en-valromey
-335,INVALID,les toilettes
-336,INVALID,chevroux - balan pour demain
-337,boissey,INVALID
-338,châtillon-la-palud,bolozon
-339,ceyzérieu,ambronay
-340,INVALID,artemare
+333,sainte-croix,couvrelles
+334,la tranclière,saint-germain-de-joux
+335,levergies,folembray
+336,ramicourt,dompierre-sur-chalaronne
+337,Zoe,florence
+338,béréziat,l'épine-aux-bois
+339,INVALID,INVALID
+340,Amiens,bievres
 341,INVALID,INVALID
-342,INVALID,deux
-343,INVALID,INVALID
-344,briord,bey
-345,ambronay,ars-sur-formans
-346,bressolles,INVALID
-347,INVALID,chazey-bons
-348,chanoz-châtenay,armix
-349,belley,beauregard
-350,INVALID,deux
-351,INVALID,nivigne et suran
-352,INVALID,l'abergement-de-varey aranc
-353,chevillard,boz
-354,prochain train champfromier,bourg-saint-christophe
-355,chalamont,ambléon
-356,Liaison la chapelle-du-châtelard,la chapelle-du-châtelard civrieux aujourd'hui
-357,SNCF châtillon-la-palud,certines
-358,INVALID,challes-la-montagne - cessy
+342,noyales,benay
+343,montracol,chevregny
+344,INVALID,INVALID
+345,ambleon,saint-alban
+346,INVALID,INVALID
+347,INVALID,INVALID
+348,la neuville housset,la bouteille
+349,la ferte-chevresis,martigny-courpierre
+350,licy-clignon,thoissey
+351,la chapelle-sur-chezy,bray-saint-christophe
+352,INVALID,INVALID
+353,brie,holnon
+354,INVALID,INVALID
+355,INVALID,INVALID
+356,INVALID,INVALID
+357,presles-et-thierny,thoissey
+358,INVALID,INVALID
 359,INVALID,INVALID
-360,INVALID,pas
-361,bourg-en-bresse,baneins
+360,ancienville,presles-et-thierny
+361,INVALID,INVALID
 362,INVALID,INVALID
-363,certines,attignat
-364,châtillon-la-palud,bouligneux
-365,INVALID,les toilettes
-366,coligny,chalamont
-367,chevillard,champagne-en-valromey
-368,valromey-sur-séran,chaneins
-369,charnoz-sur-ain,bey
-370,châtillon-sur-chalaronne,llon-sur-chalaronne chanay
+363,lavours,parfondru
+364,INVALID,INVALID
+365,pierremande,etaves-et-bocquiaux
+366,bois-les-pargny,dompierre-sur-veyle
+367,INVALID,INVALID
+368,INVALID,INVALID
+369,INVALID,INVALID
+370,essomes-sur-marne,montracol
 371,INVALID,INVALID
-372,charix,INVALID
-373,béligneux,argis
-374,civrieux,belley
-375,INVALID,conand
-376,gab,riel
-377,matin chanoz-châtenay,chevillard
-378,bettant,béréziat
-379,INVALID,arandas et challes-la-montagne
-380,combien,INVALID
-381,forens,chézery-forens et chaneins
-382,ceyzérieu,biz
-383,cheignieu-la-bal,me et billiat
-384,bâgé-dommartin,bolozon
-385,chevroux,biziat
-386,armix,belle
-387,INVALID,la boisse
-388,bellignat,INVALID
-389,chaley,INVALID
-390,INVALID,lex bey
-391,INVALID,cerdon chaley
-392,bourg-en-bresse,chanoz-châtenay
-393,chevillard,apremont
-394,INVALID,brégnier-cordon ambléon
-395,chanay,coligny
-396,INVALID,chevry
-397,êt à bâgé-le-châtel en venant de ambérieux-en-dombes,bâgé-le-châtel
-398,SNCF,INVALID
-399,INVALID,beaupont - nivigne et suran
-400,INVALID,INVALID
-401,réservation,la chapelle-du-châtelard ambérieux-en-dombes
-402,INVALID,belley
-403,INVALID,chazey-bons en train
-404,arbigny,chavannes-sur-reyssouze
-405,la boisse,asnières-sur-saône
-406,INVALID,INVALID
-407,bourg-saint-christophe,boissey
-408,INVALID,INVALID
-409,correspondance,INVALID
-410,la burbanche,cessy
-411,distance ars-sur-formans,blyes en train
-412,la chapelle-du-châtelard,béréziat
-413,ry,INVALID
+372,valserhone,vallees en champagne
+373,INVALID,INVALID
+374,contrevoz,thil
+375,INVALID,INVALID
+376,INVALID,INVALID
+377,marcy,pont-saint-mard
+378,margival,coulonges-cohan
+379,vallees en champagne,cruzilles-les-mepillat
+380,INVALID,INVALID
+381,INVALID,INVALID
+382,chazey-sur-ain,saint-genis-pouilly
+383,landricourt,paars
+384,INVALID,INVALID
+385,berlise,beaupont
+386,monceau lès leups,ambléon
+387,étouvelles,guyencourt
+388,chaudun,la chapelle-sur-chézy
+389,corcy,frieres-faillouël
+390,Nancy,INVALID
+391,INVALID,INVALID
+392,INVALID,INVALID
+393,échallon,bussiares
+394,INVALID,INVALID
+395,cerny-en-laon,licy-clignon
+396,INVALID,INVALID
+397,jeancourt,champfromier
+398,laffaux,mesnil-saint-laurent
+399,latilly,festieux
+400,mézières-sur-oise,proix
+401,INVALID,INVALID
+402,INVALID,INVALID
+403,saint-rambert-en-bugey,divonne-les-bains
+404,INVALID,INVALID
+405,corbonod,geovreisset
+406,curciat-dongalon,thoissey
+407,condé-sur-suippe,crottet
+408,abbecourt,passy-sur-marne
+409,INVALID,INVALID
+410,ornex,reyrieux
+411,brancourt-le-grand,neuville-sur-ain
+412,Ethan,saint-martin-du-frêne
+413,proix,confrancon
 414,INVALID,INVALID
-415,aprem,ont et bressolles
-416,châtillon-la-palud,chavannes-sur-reyssouze
-417,boz,champagne-en-valromey
-418,INVALID,aranc
-419,INVALID,INVALID
+415,le charmel,moussy-verneuil
+416,INVALID,INVALID
+417,foreste,dorengt
+418,Paris,Brest
+419,francheleins,armix
 420,INVALID,INVALID
-421,châtillon-la-palud,INVALID
-422,INVALID,collonges et l'abergement-clémenciat
-423,chevry,INVALID
-424,beauregard,bourg-en-bresse
-425,brégnier-cordon,beynost
-426,boz,champdor-corcelles
-427,champagne-en-valromey,chézery-forens en
-428,brio,n la burbanche
-429,INVALID,INVALID
-430,cheignieu-la-balme,arbent
-431,INVALID,INVALID
-432,INVALID,deux
-433,ambérieu-en-bugey,arboys en bugey
+421,INVALID,INVALID
+422,INVALID,Nancy
+423,beaurieux,peyzieux-sur-saône
+424,grugies,epaux-bezu
+425,folembray,tenay
+426,landouzy-la-ville,parpeville
+427,saint-jean-de-thurigneux,bézu-le-guéry
+428,thoiry,barenton sur serre
+429,vernoux,montigny en arrouaise
+430,saint-martin-le-chatel,aranc
+431,Anaïs,INVALID
+432,INVALID,INVALID
+433,INVALID,paris
 434,INVALID,INVALID
-435,nivigne et suran,ambérieux-en-dombes
-436,INVALID,INVALID
-437,SNCF champdor-corcelles,champdor-corcelles collonges
-438,INVALID,artemare
-439,INVALID,vendredi
-440,INVALID,pas
-441,sncf cheignieu-la-balme,birieux
-442,Réservation,challes-la-montagne brénod
-443,INVALID,INVALID
-444,apremont,INVALID
-445,collonges,biziat
-446,ambérieu-en-bugey,cheignieu-la-balme
-447,birieux,bouligneux
-448,chevillard,INVALID
+435,INVALID,INVALID
+436,mijoux,saint-cyr-sur-menthon
+437,homblières,cugny
+438,massignieu de rives,saint martin du frêne
+439,INVALID,INVALID
+440,Paris-Brest,INVALID
+441,curtafond,saint-martin-le-châtel
+442,saint trivier sur moignans,aubencheul aux bois
+443,gergny,balan
+444,INVALID,Sylvie
+445,gorrevod,barisis-aux-bois
+446,morgny en thiérache,gandelu
+447,certines,garnerans
+448,INVALID,INVALID
 449,INVALID,INVALID
-450,cerdon,INVALID
-451,INVALID,alexis
-452,bey,chanay
-453,êt à cheignieu-la-balme en venant de bettant,cheignieu-la-balme
-454,conand,INVALID
-455,balan,INVALID
-456,brens,belley
-457,ambutrix,chaneins en
-458,annuler,ma commande
-459,challes-la-montagne a destination de biziat,INVALID
-460,armix,INVALID
-461,INVALID,INVALID
-462,brens à destination de chale,INVALID
-463,bénonces,châtenay
-464,bâgé-dommartin,charnoz-sur-ain
-465,INVALID,cleyzieu - cize
-466,bet,bourg-saint-christophe
-467,INVALID,chézery-forens et bettant
-468,SNCF la chapelle-du-châtelard,la chapelle-du-châtelard nivigne et suran
-469,chanay,bourg-en-bresse
-470,roux,INVALID
-471,certines,INVALID
-472,blyes,arandas
-473,INVALID,INVALID
-474,INVALID,INVALID
-475,bolozon,chaley
-476,cerdon,champfromier
+450,brion,beautor
+451,INVALID,INVALID
+452,INVALID,INVALID
+453,saint-jean-sur-reyssouze,nampteuil-sous-muret
+454,Paris,-Brest
+455,lavaqueresse,montigny-lengrain
+456,INVALID,INVALID
+457,vaux-en-bugey,sauverny
+458,fresnoy-le-grand,chézery-forens
+459,INVALID,INVALID
+460,INVALID,INVALID
+461,barenton-bugny,mondrepuis
+462,brie,douvres
+463,INVALID,INVALID
+464,saint denis lès bourg,fayet
+465,ciry-salsogne,montigny-sur-crecy
+466,orainville,connigis
+467,germaine,moÿ-de-l'aisne
+468,INVALID,INVALID
+469,bézu-le-guéry,fayet
+470,INVALID,INVALID
+471,brie,cruzilles-lès-mépillat
+472,INVALID,INVALID
+473,missy lès pierrepont,murs et gélignieux
+474,cormoranche-sur-saône,Laura
+475,INVALID,INVALID
+476,INVALID,INVALID
 477,INVALID,INVALID
-478,ferroviaire chazey,chazey-sur-ain nivigne et suran
-479,INVALID,balan - aranc
-480,INVALID,INVALID
-481,INVALID,bourg-saint-christophe
-482,champagne-en-valromey,conand
+478,cormoz,plomion
+479,saint-just,ferney-voltaire
+480,nouvion-le-comte,thil
+481,INVALID,INVALID
+482,INVALID,INVALID
 483,INVALID,INVALID
-484,bourg-saint-christophe,bâgé-le-châtel
+484,hautevesnes,parfondru
 485,INVALID,INVALID
-486,distance ceignes,INVALID
-487,INVALID,INVALID
-488,INVALID,INVALID
-489,INVALID,ticket
+486,manicamp,charmes
+487,saint-marcel,biziat
+488,morgny-en-thiérache,bernoy-le-château
+489,reyssouze,thoissey
 490,INVALID,INVALID
-491,INVALID,la plus proche
-492,certines,cessy
-493,INVALID,florian
-494,INVALID,belley
-495,INVALID,cessy
-496,châtillon-sur-chalaronne,cerdon
-497,béligneux châtillon-la-palud,châtillon-la-pal
-498,INVALID,la plus proche
-499,beauregard,attignat
-500,INVALID,INVALID
-501,INVALID,INVALID
+491,INVALID,INVALID
+492,beauregard,amberieu-en-bugey
+493,Elise,goudelancourt lès pierrepont
+494,INVALID,INVALID
+495,saint nizier le désert,domptin
+496,jassans-riottier,besny-et-loizy
+497,INVALID,INVALID
+498,macquigny,fresnes-en-tardenois
+499,flaxieu,essigny-le-petit
+500,Reims,hautecourt-romanèche
+501,nouvion-et-catillon,laval-en-laonnois
 502,INVALID,INVALID
 503,INVALID,INVALID
-504,cessy,châtillon-sur-chalaronne
-505,belleydoux,brégnier-cordon
-506,INVALID,INVALID
-507,biziat,chevry
-508,ambérieu-en-bugey,conand
-509,attignat,INVALID
-510,INVALID,chaley
-511,beaupont,chavannes-sur-reyssouze
-512,quel temps,fait
-513,cheignieu-la-balme,INVALID
-514,INVALID,ligneux
-515,château-gaillard,belleydoux
-516,INVALID,proche
-517,beauregard,INVALID
-518,chazey-sur-ain,charnoz-sur-ain
-519,anglefort,INVALID
-520,chaneins,INVALID
-521,ara,nc chazey-bons
-522,INVALID,INVALID
-523,distance valromey-sur-séran,INVALID
-524,INVALID,mieu l'abergement-clémenciat
-525,et a arandas en venant de biziat,arandas
-526,ars-sur-formans,INVALID
-527,doux,belleydoux châtillon-la-palud
+504,INVALID,INVALID
+505,bettant,beaupont
+506,romans,magnieu
+507,dorengt,quierzy
+508,prouvais,journans
+509,merignat,audignicourt
+510,conzieu,la fère
+511,armentières-sur-ourcq,oigny-en-valois
+512,INVALID,INVALID
+513,INVALID,INVALID
+514,domptin,saint-bernard
+515,juvigny,boissey
+516,INVALID,torcieu
+517,Antoine,florence
+518,argis,champfromier
+519,INVALID,Amiens
+520,INVALID,INVALID
+521,INVALID,INVALID
+522,ostel,bucy-le-long
+523,beynost,mauregny en haye
+524,neuville saint amand,vésines
+525,INVALID,INVALID
+526,INVALID,INVALID
+527,INVALID,INVALID
 528,INVALID,INVALID
-529,INVALID,chazey-bons - charnoz-sur-ain
-530,brens,chevillard
-531,INVALID,arbigny
+529,iviers,neuflieux
+530,INVALID,INVALID
+531,INVALID,rossillon
 532,INVALID,INVALID
-533,bouligneux,colomieu
-534,ambérieux-en-dombes,ambronay
+533,cuiry lès chaudardes,bertricourt
+534,INVALID,INVALID
 535,INVALID,INVALID
-536,bouligneux,cheignieu-la-balme
-537,INVALID,arboys en bugey et challex
-538,INVALID,INVALID
-539,INVALID,INVALID
-540,chazey-bons,argis
-541,l'abergement-clémenciat,bey
-542,INVALID,ceyzérieu
-543,la boisse,ceignes
-544,Liaison,cheignieu-la-balme la boisse
-545,INVALID,la burbanche et conand
-546,bolozon,la chapelle-du-châtelard
-547,annuler,ma commande
-548,apremont,boz
-549,INVALID,INVALID
-550,valromey-sur-séran,châtenay
-551,INVALID,chaveyriat
-552,INVALID,alicia
-553,INVALID,INVALID
-554,chaveyriat,INVALID
-555,INVALID,INVALID
-556,arbent à destination de la burban,INVALID
-557,ars-sur-formans,challes-la-montagne en train
-558,llon-la-palud,INVALID
-559,INVALID,deux
-560,bâgé-dommartin,ambérieux-en-dombes
+536,marboz,perrex
+537,marlieux,cormoranche-sur-saone
+538,coyolles,ognes
+539,belleydoux,saint-jean-de-gonville
+540,INVALID,INVALID
+541,INVALID,INVALID
+542,pargny-les-bois,neuville-saint-amand
+543,meillonnas,INVALID
+544,bereziat,grougis
+545,missy-lès-pierrepont,châtillon-sur-oise
+546,pont de veyle,montréal la cluse
+547,corlier,blanzy-les-fismes
+548,INVALID,INVALID
+549,romane,albert
+550,pouillat,meillonnas
+551,INVALID,INVALID
+552,INVALID,INVALID
+553,berrieux,châtillon la palud
+554,INVALID,INVALID
+555,INVALID,aco
+556,oisy,montigny le franc
+557,étrépilly,cys-la-commune
+558,le plessier-huleu,bettant
+559,INVALID,Emilie
+560,brie,pierremande
 561,INVALID,INVALID
-562,INVALID,burbanche valserhône
-563,INVALID,dylan
-564,INVALID,INVALID
-565,combien,INVALID
-566,apremont,certines
-567,belley,bâgé-le-châtel
-568,coligny,cize
-569,civrieux,INVALID
-570,chazey-bons,la chapelle-du-châtelard
-571,l'abergement-de-varey,cerdon
-572,erva,blyes
-573,INVALID,la chapelle-du-châtelard
-574,INVALID,la plus proche
-575,beynost,belleydoux
-576,chaneins béligneux,ne
-577,belley,ars-sur-formans
-578,bolozon,INVALID
-579,chazey-bons,birieux
-580,birieux,bellignat
-581,INVALID,bâgé-le-châtel aujourd'hui
-582,collonges,bressolles
-583,béligneux,bourg-saint-christophe
-584,ambutrix,INVALID
-585,chaveyriat,biziat
-586,INVALID,ceignes boyeux-saint-jérôme
-587,INVALID,INVALID
-588,INVALID,cize
-589,chaneins,INVALID
-590,charix,armix
-591,INVALID,conand - champfromier
-592,INVALID,roviaire valserhone chazey-sur-ain
-593,INVALID,INVALID
-594,birieux,cheignieu-la-balme
-595,ceyzériat,INVALID
-596,chézery-forens,bettant
-597,direct ambérieu-en-bugey,civrieux
-598,civrieux,châtillon-la-palud aujourd'hui
-599,challes-la-montagne,bâgé-dommartin
-600,ceyzérieu,zérieu puis boissey
-601,INVALID,albert
-602,baneins,ambléon
-603,ceyzérieu,INVALID
-604,INVALID,la burbanche apremont
-605,INVALID,INVALID
-606,correspondance arm,ix puis chanay
-607,certines,chevillard
-608,INVALID,challex cheignieu-la-balme
-609,INVALID,artemare
-610,INVALID,beauregard châtenay
-611,INVALID,pas
-612,belleydoux,chevillard
-613,bourg-en-bresse,ars-sur-formans
-614,ze,boz
-615,INVALID,boissey et brégnier-cordon
-616,INVALID,les toilettes
-617,beau,regard belley
-618,INVALID,INVALID
-619,aranc,certines
-620,INVALID,bey chevroux
-621,coligny,utrix
-622,SNCF,cheignieu-la-balme
-623,brégnier-cordon,gnier-cordon challex
-624,valromey-sur-séran,baneins en
-625,bénonces boyeux-saint-jérôme,boyeux-saint-jérô
-626,béréziat,cleyzieu
-627,chaneins,ambérieu-en-bugey
-628,bourg-en-bresse,artemare
-629,brénod bâgé-dommartin,bâgé
-630,attignat,champfromier
-631,bourg-en-bresse,bâgé-le-châtel
-632,INVALID,châtillon-sur-chalaronne
-633,sncf,charnoz-sur-ain conand
-634,sncf ars-sur-formans,balan
-635,charnoz-sur-ain,chézery-forens
-636,arboys en buge,oys en bugey arbent
-637,tarif chazey-bons,chavannes-sur-reyssouze
+562,Victor,INVALID
+563,ollezy,hautevesnes
+564,courchamps,lantenay
+565,artemare,saint-benigne
+566,conde-sur-suippe,birieux
+567,INVALID,INVALID
+568,la boisse,concevreux
+569,bancigny,macquigny
+570,arcy-sainte-restitue,maissemy
+571,châtillon-sur-chalaronne,paris
+572,courmont,hartennes-et-taux
+573,assis-sur-serre,aranc
+574,la herie,curtafond
+575,outriaz,champdor-corcelles
+576,INVALID,INVALID
+577,crépy,autreville
+578,chierry,INVALID
+579,saint-benigne,joncourt
+580,jouaignes,conzieu
+581,mortefontaine,muret-et-crouttes
+582,haut valromey,etreux
+583,INVALID,paris
+584,INVALID,INVALID
+585,balan,arboys en bugey
+586,monceau-le-neuf-et-faucouzy,virieu-le-grand
+587,chaillevois,champs
+588,liez,étaves et bocquiaux
+589,simandre-sur-suran,contrevoz
+590,brens,chevillard
+591,INVALID,INVALID
+592,izenave,gercy
+593,bressolles,domsure
+594,INVALID,INVALID
+595,INVALID,INVALID
+596,INVALID,INVALID
+597,condamine,commenchon
+598,quincy-sous-le-mont,monthiers
+599,apremont,Limoges
+600,INVALID,INVALID
+601,ceyzériat,INVALID
+602,crouy,lhuis
+603,couvrelles,jumigny
+604,allemant,nouvion-et-catillon
+605,chézery forens,gex
+606,bastien,albert
+607,INVALID,INVALID
+608,INVALID,INVALID
+609,grisolles,ebouleau
+610,saint-nizier-le-bouchoux,cheignieu-la-balme
+611,INVALID,INVALID
+612,INVALID,INVALID
+613,INVALID,Brest
+614,saint étienne du bois,aubenton
+615,bussiares,caillouël-crépigny
+616,chaveyriat,hinacourt
+617,coyolles,étreux
+618,montloué,nampteuil-sous-muret
+619,brasles,margival
+620,prisces,apremont
+621,chivy-lès-étouvelles,chéry-chartreuve
+622,lhuys,ambérieu-en-bugey
+623,INVALID,INVALID
+624,chalamont,mérignat
+625,crozet,monthurel
+626,INVALID,INVALID
+627,épieds,villebois
+628,INVALID,INVALID
+629,INVALID,INVALID
+630,INVALID,INVALID
+631,Pauline,INVALID
+632,INVALID,INVALID
+633,festieux,chartèves
+634,villereversure,Loïc
+635,INVALID,INVALID
+636,condeissiat,pithon
+637,barenton-bugny,journans
 638,INVALID,INVALID
-639,l'abergement-clémenciat,colomieu
-640,béligneux,anglefort
-641,champagne-en-valromey,challex
-642,distance certines,INVALID
-643,champagne-en-valrom,asnières-sur-saône
-644,INVALID,ambléon
-645,chazey-bons,challex
-646,ambutrix,INVALID
-647,INVALID,baneins
-648,INVALID,lles
-649,INVALID,bouligneux
-650,INVALID,INVALID
-651,INVALID,INVALID
-652,INVALID,boz - civrieux
-653,du matin,bey asnières-sur-saône
-654,INVALID,INVALID
-655,brens,champdor-corcelles
-656,billiat,la chapelle-du-châtelard
-657,reyss,chavannes-sur-reyssouze brénod pour vendredi
-658,l'abergement-de-varey,bellignat
-659,arboys en bugey,cleyzieu
-660,direct bâgé-dommartin,briord
-661,arbigny,aranc
-662,anglefort à destination de chevroux,INVALID
-663,Réserve,challes-la-montagne - certines
-664,bettant,l'abergement-de-varey
-665,aranc,INVALID
-666,NCF cheignieu-la-balme,la-balme chazey-sur-ain
-667,Reserver,cerdon - bettant
-668,beauregard,nières-sur-saône
-669,valromey-sur-séran,arbent
-670,INVALID,proche
-671,valserhône,INVALID
-672,Liaison,boissey château-gaillard
+639,neuflieux,lavaqueresse
+640,neuflieux,reyrieux
+641,INVALID,INVALID
+642,blesmes,peyriat
+643,INVALID,INVALID
+644,saint-germain-sur-renon,chavigny
+645,saint-cyr-sur-menthon,prémeyzel
+646,laiz,saint-jean-le-vieux
+647,jaulgonne,druillat
+648,marle,malzy
+649,INVALID,INVALID
+650,audignicourt,parfondru
+651,saint jean de gonville,apremont
+652,cheignieu-la-balme,jouaignes
+653,INVALID,INVALID
+654,dhuys et morin-en-brie,bucy-les-cerny
+655,INVALID,INVALID
+656,grièges,harcigny
+657,aizy-jouy,cruzilles-les-mepillat
+658,INVALID,INVALID
+659,INVALID,INVALID
+660,montagnat,montmerle-sur-saone
+661,Alicia,INVALID
+662,INVALID,INVALID
+663,INVALID,INVALID
+664,beaumont-en-beine,chézery-forens
+665,INVALID,INVALID
+666,innimond,maast-et-violaine
+667,belleau,presles-et-boves
+668,bucy-les-pierrepont,monceau-sur-oise
+669,chevillard,péronnas
+670,INVALID,INVALID
+671,montrevel-en-bresse,Caen
+672,INVALID,INVALID
 673,INVALID,INVALID
-674,INVALID,bâgé-dommartin - andert-et-condon
-675,asnières-sur-saône,brégnier-cordon
-676,INVALID,repeter
+674,crécy-sur-serre,chavignon
+675,mercin-et-vaux,epaux-bezu
+676,largny-sur-automne,passy-sur-marne
 677,INVALID,INVALID
-678,voyage brens,l'abergement-de-varey
-679,aranc argis,INVALID
-680,Liaison,challex
+678,INVALID,INVALID
+679,INVALID,INVALID
+680,INVALID,INVALID
 681,INVALID,INVALID
-682,sncf,bellignat challes-la-montagne
-683,chavannes-sur-reyssouze,INVALID
-684,boissey,cize
-685,ambutrix,certines
-686,INVALID,coligny
-687,tarif châtillon-sur-chalaronne,asnières-sur-saône
+682,grisolles,beaupont
+683,villebois,évergnicourt
+684,INVALID,INVALID
+685,INVALID,INVALID
+686,la fere,epagny
+687,passy-sur-marne,arrancy
 688,INVALID,INVALID
-689,ambérieu-en-bugey,asnières-sur-saône en train
-690,INVALID,INVALID
-691,INVALID,nivigne et suran
-692,boissey,belley
-693,INVALID,INVALID
-694,gey,ambérieu-en-bugey et briord
-695,INVALID,ticket
-696,INVALID,INVALID
-697,SNCF bénonce,s châtillon-la-palud
-698,F bény,bâgé-le-châtel
-699,INVALID,INVALID
-700,ceignes,chézery-forens
-701,nivigne et suran bellignat,bellig
-702,INVALID,INVALID
-703,cf cleyzieu,yzieu challex
-704,asnières-sur-sa,INVALID
-705,bettant,blyes
-706,INVALID,bellignat
+689,guyencourt,saint-martin-de-bavel
+690,fontaine lès vervins,sainte euphémie
+691,oulchy-le-chateau,monthiers
+692,INVALID,INVALID
+693,bény,moulins
+694,INVALID,INVALID
+695,marest dampcourt,messimy sur saône
+696,haut valromey,origny en thiérache
+697,hinacourt,estrees
+698,INVALID,oigny en valois
+699,la neuville housset,belley
+700,nogentel,cierges
+701,fieulaine,buellas
+702,montgru saint hilaire,peyzieux sur saône
+703,INVALID,INVALID
+704,INVALID,INVALID
+705,INVALID,INVALID
+706,fontaine-uterte,landouzy-la-ville
 707,INVALID,INVALID
-708,bolozon,l'abergement-de-varey
-709,INVALID,INVALID
+708,villeneuve,jussy
+709,jumigny,bois lès pargny
 710,INVALID,INVALID
-711,beauregard,INVALID
-712,ambléon,boz
-713,anglefort,belley
-714,bressolles,INVALID
-715,liaison château-gaillard,chaveyriat
-716,INVALID,boissey
-717,trains,INVALID
-718,chazey-sur-ain,INVALID
+711,bettant,assis sur serre
+712,INVALID,INVALID
+713,gex,valserhône
+714,dompierre sur veyle,versailleux
+715,chaudun,ambronay
+716,INVALID,INVALID
+717,castres,cugny
+718,INVALID,INVALID
 719,INVALID,INVALID
-720,INVALID,INVALID
-721,direct ambérieux-en-dombes,châtenay
-722,INVALID,birieux - châtillon-sur-chalaronne
-723,ambérieux-en-dombes,et nivigne et suran
-724,balan,INVALID
-725,INVALID,INVALID
-726,INVALID,cerdon - l'abergement-de-varey
-727,chavannes-sur-reyssouze bâgé-,bâ
-728,arandas,colomieu
-729,INVALID,INVALID
-730,aranc,challex
-731,chaveyriat,chavannes-sur-reyssouze
-732,annuler,ma commande
-733,chavannes-sur-reyssouze a destination de ce,ignes
-734,chazey-sur-ain,INVALID
-735,ferroviaire ambérieu-en-buge,ambérieu-en-bugey bettant
-736,chalamont,bolozon
-737,INVALID,arbi
-738,chaleins,champagne-en-valromey
+720,dompierre sur veyle,béard géovreissiat
+721,neuville-saint-amand,gronard
+722,INVALID,INVALID
+723,besny-et-loizy,priay
+724,beaumont-en-beine,saint-andre-sur-vieux-jonc
+725,paris,-brest
+726,INVALID,INVALID
+727,bresse vallons,reyrieux
+728,crepy,monthenault
+729,injoux-génissiat,craonne
+730,crouy,prisces
+731,sainte olive,manicamp
+732,jumigny,landouzy-la-cour
+733,izernore,dagny-lambercy
+734,chaleins,INVALID
+735,charmes,artemare
+736,manicamp,nantua
+737,INVALID,INVALID
+738,camelin,essômes-sur-marne
 739,INVALID,INVALID
-740,blyes,cessy
+740,meximieux,croix-fonsomme
 741,INVALID,INVALID
-742,asnières-sur-saône,chevillard
-743,INVALID,arboys en bugey aujourd'
-744,INVALID,beynost
-745,INVALID,INVALID
-746,matin bolozon,oz
-747,sncf,arboys en bugey bolozon
-748,châtillon-la-palud,cheignieu-la-balme
-749,ambléon,ambérieux-en-dombes
-750,bey bâgé-le-châtel,INVALID
-751,bettant,briord
-752,sncf,nivigne et suran valserhône
-753,baneins,chevillard
-754,quel temps,fait
-755,INVALID,civrieux
-756,INVALID,chazey-sur-ain
-757,colomieu,chazey-sur-ain
-758,blyes,chaleins
-759,INVALID,arboys en bugey
-760,champfromier,INVALID
-761,INVALID,INVALID
-762,SNCF balan,INVALID
-763,INVALID,INVALID
-764,INVALID,bâgé-dommartin - chevroux
-765,Liaison l'abergement-clémenciat,l'abergement-clémenciat cheignieu-la-balme aujourd'hui
-766,champdor-corcelles,INVALID
-767,champfromier,bâgé-dommartin
-768,INVALID,cize
-769,bourg-en-bresse,brégnier-cordon
-770,boissey,buellas
-771,challes-la-montagne,INVALID
-772,chaleins,armix
-773,INVALID,INVALID
-774,SNCF champfr,omier con
-775,chaveyriat,ambronay
-776,INVALID,INVALID
-777,bény à destination de cess,INVALID
-778,beauregard,beaupont
-779,INVALID,cheignieu-la-balme
-780,INVALID,INVALID
-781,coligny,agne
-782,ferroviaire bourg-saint-christophe,bourg-saint-christophe baneins
-783,INVALID,INVALID
-784,INVALID,champdor-corcelles
-785,la boisse,arbent
-786,INVALID,INVALID
-787,INVALID,pas
+742,tenay,sainte-julie
+743,romans,béthancourt en vaux
+744,collonges,pollieu
+745,les neyrolles,mijoux
+746,INVALID,nancy
+747,quierzy,essômes-sur-marne
+748,étréaupont,arcy-sainte-restitue
+749,INVALID,INVALID
+750,arbigny,lélex
+751,bucy-lès-pierrepont,cuissy-et-geny
+752,arbigny,arrancy
+753,besmont,jayat
+754,billy-sur-ourcq,courmangoux
+755,lerzy,neuville-sur-ain
+756,mont-d'origny,miserieux
+757,INVALID,INVALID
+758,dhuizel,celles-les-conde
+759,bressolles,lompnas
+760,sacha,albert
+761,saint cyr sur menthon,fère en tardenois
+762,crézancy,autreppes
+763,saint-georges-sur-renon,englancourt
+764,athies sous laon,allemant
+765,INVALID,INVALID
+766,celles-sur-aisne,benay
+767,Jade,INVALID
+768,arboys en bugey,saint laurent sur saône
+769,mérignat,erlon
+770,contrevoz,confort
+771,INVALID,INVALID
+772,pinon,neuvillette
+773,laiz,saint-denis-en-bugey
+774,INVALID,INVALID
+775,corveissiat,le catelet
+776,farges,happencourt
+777,noroy-sur-ourcq,chalandry
+778,grandlup et fay,loupeigne
+779,INVALID,INVALID
+780,grandlup-et-fay,monthenault
+781,marcy,laval-en-laonnois
+782,dorengt,le hérie la viéville
+783,maissemy,essômes sur marne
+784,INVALID,INVALID
+785,INVALID,INVALID
+786,replonges,proix
+787,vésines,froidestrées
 788,INVALID,INVALID
-789,INVALID,deux
-790,challex,beaupont
-791,chazey-sur-ain,chalamont
-792,erver,INVALID
-793,INVALID,la burbanche
-794,INVALID,conand
-795,armix,chalamont
-796,civrieux,cheignieu-la-balme
-797,combien,INVALID
-798,distance ambronay,INVALID
-799,erve,beaupont - ambronay
-800,INVALID,INVALID
-801,andert-et-condon,vannes-sur-reyssouze
-802,INVALID,arboys en bugey et ambutrix
-803,buellas,INVALID
-804,INVALID,INVALID
-805,charnoz-sur-ain,INVALID
-806,INVALID,s cessy
-807,cerdon,INVALID
-808,INVALID,INVALID
-809,INVALID,cize
-810,bourg-saint-christophe,INVALID
-811,INVALID,ket
-812,INVALID,INVALID
-813,bouligneux,andert-et-condon
-814,chanoz-châtenay,chézery-forens
-815,armix,asnières-sur-saône
-816,bé,cessy
-817,INVALID,blyes
-818,INVALID,lucie
+789,Romane,INVALID
+790,INVALID,INVALID
+791,INVALID,INVALID
+792,berlise,laval en laonnois
+793,INVALID,INVALID
+794,leuilly-sous-coucy,grilly
+795,saint-jean-le-vieux,châtillon-lès-sons
+796,foissiat,bourguignon-sous-montbavin
+797,ambutrix,lelex
+798,clastres,omissy
+799,aubigny-aux-kaisnes,montcet
+800,chaillevois,monthenault
+801,INVALID,INVALID
+802,ornex,saint-didier-de-formans
+803,INVALID,INVALID
+804,condé-en-brie,holnon
+805,Florence,albert
+806,chaourse,virieu-le-grand
+807,mon,cuirieux
+808,massieux,ement-clémenciat
+809,archon,mâchecourt
+810,INVALID,INVALID
+811,briord,la neuville-en-beine
+812,agnicourt-et-séchelles,launoy
+813,bourguignon-sous-coucy,brens
+814,charly-sur-marne,beaurevoir
+815,vallées en champagne,bucy-lès-pierrepont
+816,vernoux,crécy-sur-serre
+817,béligneux,crupilly
+818,saint jean sur reyssouze,mennevret
 819,INVALID,INVALID
-820,ceignes,INVALID
-821,INVALID,INVALID
-822,quel temps,fait-il
-823,la burbanche,champagne-en-valromey
-824,belley,brion
-825,Liaison,bourg-saint-christophe
-826,chevry à destination de cha,zey-bons
-827,sur-forma,INVALID
-828,chanoz-châtenay et,chaleins
-829,anglefort,INVALID
-830,ju,lie
-831,INVALID,challex
-832,INVALID,INVALID
+820,charly sur marne,missy sur aisne
+821,nampcelles la,cour brégnier
+822,INVALID,INVALID
+823,seillonnaz,jouaignes
+824,INVALID,INVALID
+825,bouconville-vauclair,bertricourt
+826,faverolles,injoux-génissiat
+827,saint-maurice-de-rémens,saint-bernard
+828,plagne,oigny-en-valois
+829,flavigny-le-grand-et-beaurain,farges
+830,saint-bénigne,mézériat
+831,INVALID,INVALID
+832,crupilly-macogny,INVALID
 833,INVALID,INVALID
-834,l'abergement-de-varey,valromey-sur-séran
-835,INVALID,ket
-836,conand,chevroux
-837,ceignes,valserhône
-838,beynost,chalamont
-839,ambronay,charix
-840,INVALID,les toilettes
-841,charnoz-sur-ain,chazey-bons
-842,attignat,INVALID
-843,INVALID,bey et apremont
-844,INVALID,INVALID
-845,la burbanche,briord
-846,cert,bouligneux
-847,artemare,ambérieu-en-bugey
-848,chaleins,INVALID
-849,bellignat,INVALID
-850,colomieu,INVALID
-851,conand,béréziat
-852,belley,la burbanche
-853,colomieu,challes-la-montagne
-854,quel temps,fait-il
-855,quel temps,fait
-856,INVALID,chavannes-sur-reyssouze
-857,SNCF,y arbent
-858,INVALID,INVALID
-859,birieux,INVALID
-860,valromey,champagne-en-valromey beynost
-861,combien,INVALID
-862,INVALID,les toilettes
-863,valromey-sur-séran,lé
-864,tarif chevry,ambutrix
-865,INVALID,INVALID
-866,bourg-saint-christophe,INVALID
-867,belley à destination de arm,INVALID
-868,quel temps,fait-il
-869,INVALID,arbigny
-870,challex,champfromier
-871,INVALID,INVALID
-872,sncf,champdor-corcelles collonges
-873,coligny,boissey
-874,quel temps,fait
-875,cessy artem,INVALID
-876,cessy,biziat
-877,êt à valserhône en venant de cessy,valserhône
-878,chevillard,chaley
-879,INVALID,INVALID
-880,arboys en bugey,balan
-881,arbigny,colomieu
-882,INVALID,pas
+834,beny,gricourt
+835,fareins,saint-georges-sur-renon
+836,beaumont-en-beine,chavignon
+837,jouaignes,andert et condon
+838,INVALID,manon
+839,berthenicourt,conand
+840,INVALID,INVALID
+841,charix,pargny-la-dhuys
+842,erloy,burelles
+843,leyment,jasseron
+844,saint genis pouilly,valromey sur séran
+845,INVALID,INVALID
+846,challex,buire
+847,camelin,arboys en bugey
+848,Paris,-Brest
+849,mennevret,saint-just
+850,INVALID,INVALID
+851,INVALID,INVALID
+852,martigny courpierre,parves et nattages
+853,rossillon,paris
+854,Lena,florence
+855,vescours,mondrepuis
+856,INVALID,INVALID
+857,virignin,sandrans
+858,arcy-sainte-restitue,port
+859,INVALID,INVALID
+860,INVALID,INVALID
+861,INVALID,INVALID
+862,lerzy,cuiry-les-iviers
+863,INVALID,INVALID
+864,INVALID,INVALID
+865,Paris-Brest,INVALID
+866,Paris,-Brest
+867,INVALID,INVALID
+868,plagne,beaume
+869,INVALID,INVALID
+870,INVALID,INVALID
+871,groslée saint benoit,fontaine lès vervins
+872,monthurel,vonnas
+873,INVALID,INVALID
+874,monceau-les-leups,sauverny
+875,INVALID,INVALID
+876,montfaucon,virieu-le-grand
+877,INVALID,INVALID
+878,souclin,monthenault
+879,guereins,tossiat
+880,lhuis,guéreins
+881,INVALID,INVALID
+882,loyettes,grisolles
 883,INVALID,INVALID
-884,chevroux,chanay
-885,fer,INVALID
-886,ambronay,andert-et-condon
-887,colomieu,belleydoux
-888,brénod,buellas
-889,andert-et-condon,INVALID
-890,cleyzieu,INVALID
-891,ambutrix,artemare
-892,châtillon-la-palud,INVALID
-893,INVALID,arthur
-894,ceyzériat,civrieux
-895,chaleins,bolozon
-896,banein,s bey
-897,bény,beauregard
-898,ambronay,INVALID
-899,et a bourg-saint-christophe en venant de briord,bourg-saint-christophe
+884,briord,château-gaillard
+885,bouconville-vauclair,ars-sur-formans
+886,INVALID,INVALID
+887,brancourt-le-grand,eppes
+888,INVALID,INVALID
+889,armentieres-sur-ourcq,saint-julien-sur-reyssouze
+890,boyeux-saint-jérôme,saint-sorlin-en-bugey
+891,INVALID,INVALID
+892,illiat,pierremande
+893,fontenoy,machecourt
+894,INVALID,INVALID
+895,INVALID,INVALID
+896,innimond,dompierre-sur-chalaronne
+897,seyssel,beautor
+898,collonges,villereversure
+899,la bouteille,lerzy
 900,INVALID,INVALID
-901,INVALID,INVALID
-902,billiat,bâgé-le-châtel
-903,gny,INVALID
-904,quel temps,fait-
-905,liaison aranc,chavannes-sur-reyssouze
-906,challex,ambléon
-907,billiat,INVALID
-908,chézery-forens,y-forens chaneins
-909,-châtelard,la chapelle-du-châtelard et bettant
-910,bellignat,la chapelle-du-châtelard
-911,Rés,beaupont - aranc
-912,arbent,chevry
-913,INVALID,bellignat
+901,mâchecourt,montgobert
+902,brens,bourg saint christophe
+903,INVALID,INVALID
+904,guyencourt,laigny
+905,lavours,anglefort
+906,grandrieux,montigny-sous-marle
+907,INVALID,INVALID
+908,la hérie,bazoches-et-saint-thibaut
+909,INVALID,INVALID
+910,arboys en bugey,bosmont sur serre
+911,tramoyes,seyssel
+912,servignat,jasseron
+913,paris,-brest
 914,INVALID,INVALID
-915,noémie,INVALID
-916,ambronay,bourg-en-bresse
-917,matin brégnier-cordon,gnier-cordon bény
-918,chézery-forens,châtenay
-919,INVALID,la chapelle-du-châtelard cize
-920,brio,belleydoux
-921,boul,igneux et cheignieu-la-balme
-922,INVALID,INVALID
+915,INVALID,INVALID
+916,izernore,cierges
+917,INVALID,INVALID
+918,INVALID,INVALID
+919,prisces,la fere
+920,fesmy le sart,prémeyzel
+921,INVALID,INVALID
+922,moÿ-de-l'aisne,INVALID
 923,INVALID,INVALID
-924,coligny,briord
-925,baneins,apremont
-926,condon,andert-et-condon et bourg-saint-christophe
-927,INVALID,INVALID
-928,birieux,cheignieu-la-balme aujourd'hui
-929,SNCF valserhône,bourg-en-bresse
-930,INVALID,INVALID
-931,anglefort,béréziat
-932,buellas,cessy
+924,INVALID,INVALID
+925,dorengt,benay
+926,INVALID,INVALID
+927,coyolles,guivry
+928,lavaqueresse,fluquieres
+929,INVALID,INVALID
+930,charly-sur-marne,nouvion-le-vineux
+931,tramoyes,saint-jean-de-niost
+932,buzancy,montfaucon
 933,INVALID,INVALID
-934,quel temps,fait-il
-935,INVALID,vendredi
-936,INVALID,INVALID
-937,INVALID,INVALID
-938,INVALID,INVALID
-939,chaneins,ars-sur-formans
-940,INVALID,INVALID
-941,cerdon,chazey-bons aujourd'hui
-942,INVALID,INVALID
-943,réservation,charnoz-sur-ain ambutrix pour vendredi
-944,arandas,chevillard
-945,challex,INVALID
-946,challes-la-montagne,arboys en bugey
-947,INVALID,INVALID
-948,brion,puis blyes
-949,INVALID,INVALID
-950,aranc à destination de la,INVALID
-951,INVALID,INVALID
-952,INVALID,INVALID
-953,beaupont,bellignat
-954,charnoz-sur-ain,cerdon
-955,belley,arbigny
-956,INVALID,INVALID
-957,chevroux,INVALID
-958,INVALID,INVALID
-959,annuler,ma commande
-960,chaneins,chaveyriat
-961,direct charnoz-sur-ain,noz-sur-ain bressolles
-962,chalamont,aranc
-963,chaneins,certines
-964,réserver coligny,- collonges pour demain
-965,INVALID,INVALID
-966,INVALID,ms
-967,INVALID,INVALID
-968,INVALID,repeter
-969,utrix,balan
+934,frans,birieux
+935,INVALID,INVALID
+936,courtrizy-et-fussigny,le hérie-la-viéville
+937,chaillevois,assis sur serre
+938,cutry,cheignieu-la-balme
+939,INVALID,INVALID
+940,lor,jujurieux
+941,Paris,Brest
+942,la flamengrie,neuflieux
+943,harcigny,reyssouze
+944,léaz,couvrelles
+945,INVALID,INVALID
+946,audigny,ambrief
+947,villette sur ain,benay
+948,INVALID,INVALID
+949,burelles,courboin
+950,sainte-olive,colomieu
+951,la bouteille,beaumé
+952,thoiry,péronnas
+953,INVALID,INVALID
+954,bois lès pargny,rancé
+955,ognes,coligny
+956,Paris,-Brest
+957,chevresis-monceau,sonthonnax-la-montagne
+958,mennevret,valserhone
+959,champagne en valromey,latilly
+960,INVALID,INVALID
+961,beynost,hartennes et taux
+962,neuvillette,chaneins
+963,la fere,marfontaine
+964,mézériat,parfondeval
+965,berrieux,montgru-saint-hilaire
+966,parves et nattages,lompnas
+967,brie,laffaux
+968,condeissiat,achery
+969,INVALID,INVALID
 970,INVALID,INVALID
-971,la burbanche,civrieux
-972,et a chaley en venant de brens,chaley
-973,INVALID,INVALID
-974,cerdon,champdor-corcelles
-975,tgv au départ de bettant à destination de la chapelle-du-châtelard,du-chât
-976,tarif chalamont,challes-la-montagne
-977,INVALID,INVALID
-978,INVALID,l'abergement-clémenciat
-979,armix,la chapelle-du-châtelard
-980,INVALID,champdor-corcelles
-981,INVALID,iat chanay pour vendredi
-982,cheignieu-la-balme,chazey-bons
-983,Liam,INVALID
-984,INVALID,cheignieu-la-balme - château-gaillard
-985,la burbanche,châtenay
-986,beaupont,buellas
-987,INVALID,INVALID
-988,distance l'abergement-de-varey,chanay en train
-989,INVALID,chavannes-sur-reyssouze
+971,INVALID,INVALID
+972,cutry,morgny-en-thiérache
+973,bourg-et-comin,flavy-le-martel
+974,la neuville-bosmont,seillonnaz
+975,raillimont,anglefort
+976,INVALID,INVALID
+977,INVALID,Brest
+978,INVALID,INVALID
+979,monceau le waast,peyrieu
+980,gercy,hauteville
+981,INVALID,INVALID
+982,erloy,connigis
+983,tossiat,messimy sur saône
+984,corveissiat,sonthonnax la montagne
+985,INVALID,INVALID
+986,Paris,INVALID
+987,colligis-crandelain,buzancy
+988,lhuis,crozet
+989,INVALID,INVALID
 990,INVALID,INVALID
-991,INVALID,attignat
-992,bettant,ambérieu-en-bugey
-993,châtillon-la-palud,champfromier
-994,chaveyriat,châtillon-la-palud
-995,charix,birieux
-996,bellignat,ambronay
-997,distance ceyzériat,INVALID
-998,béréziat,bettant
-999,INVALID,chaneins
-1000,conand,châtillon-sur-chalaronne
-1001,zey-,chazey-bons
-1002,liaison colomieu,colomieu chézery-forens aujourd'hui
-1003,ambutrix,champagne-en-valromey
-1004,Reserver,l'abergement-de-varey - civrieux
-1005,INVALID,colomieu biziat
-1006,Trajet direct châtillon-sur-chalaronne,bouligneux
-1007,ambérieux-en-dombes,INVALID
-1008,argis,INVALID
-1009,billiat,bettant
-1010,certines,andert-et-condon
+991,limé,pignicourt
+992,gricourt,pont-arcy
+993,charix,murs-et-gélignieux
+994,INVALID,INVALID
+995,droizy,bucy-lès-cerny
+996,INVALID,INVALID
+997,camelin,bonneil
+998,versailleux,savigneux
+999,INVALID,INVALID
+1000,brion,chazey-sur-ain
+1001,proix,briord
+1002,INVALID,INVALID
+1003,INVALID,INVALID
+1004,INVALID,INVALID
+1005,festieux,pougny
+1006,saint paul de varax,villeneuve
+1007,INVALID,paris
+1008,INVALID,INVALID
+1009,montcet,lurcy
+1010,INVALID,INVALID
 1011,INVALID,INVALID
-1012,andert-et-condon,buellas
-1013,INVALID,colomieu
-1014,INVALID,bény - conand
-1015,attignat,l'abergement-de-varey
-1016,Réserva,ry la chapelle-du-châtelard
-1017,apremont,INVALID
-1018,buellas,brion
-1019,l'abergement-clémenciat à destination de ce,ignes
-1020,INVALID,la plus proche
-1021,INVALID,INVALID
-1022,INVALID,INVALID
+1012,tenay,happencourt
+1013,INVALID,cerizy
+1014,cerseuil,jeancourt
+1015,INVALID,INVALID
+1016,INVALID,INVALID
+1017,INVALID,INVALID
+1018,INVALID,INVALID
+1019,INVALID,INVALID
+1020,INVALID,Angers
+1021,châtillon-sur-chalaronne,saint-sorlin-en-bugey
+1022,croix-fonsomme,mennevret
 1023,INVALID,INVALID
-1024,certines à destination de artemare,INVALID
-1025,challex,birieux
-1026,sncf bet,tant ceyzérieu
+1024,INVALID,INVALID
+1025,INVALID,INVALID
+1026,INVALID,INVALID
 1027,INVALID,INVALID
-1028,INVALID,apr
-1029,l'abergement-de-varey,ceignes
-1030,INVALID,INVALID
-1031,ars-sur-formans,et bénonces
-1032,brio,chaleins
-1033,INVALID,INVALID
-1034,cessy,champdor-corcelles
-1035,cleyzieu,nivigne et suran
-1036,INVALID,INVALID
+1028,étouvelles,attilly
+1029,franqueville,saint-martin-le-châtel
+1030,belleu,toussieux
+1031,bray saint christophe,bagneux
+1032,INVALID,INVALID
+1033,chéry lès rozoy,berny rivière
+1034,cilly,beauvois en vermandois
+1035,bucy-le-long,saint-genis-sur-menthon
+1036,machecourt,chierry
 1037,INVALID,INVALID
 1038,INVALID,INVALID
-1039,nat a destination de cheignieu-la-balme,INVALID
-1040,prochain train apremont,cleyzieu
-1041,INVALID,billiat bâgé-le-châtel
-1042,INVALID,INVALID
-1043,belle,bolozon
-1044,INVALID,ceignes
-1045,anglefort,INVALID
-1046,bouligneux,arboys en bugey
-1047,INVALID,INVALID
-1048,INVALID,buellas béréziat
-1049,INVALID,INVALID
-1050,baneins,artemare
-1051,INVALID,INVALID
-1052,INVALID,la burbanche
-1053,INVALID,coligny - cleyzieu
+1039,brens,fontaine-lès-clercs
+1040,chivy-lès-étouvelles,nogent-l'artaud
+1041,bey,béligneux
+1042,caen,souclin
+1043,condeissiat,craonne
+1044,INVALID,INVALID
+1045,chigny,villeneuve sur aisne
+1046,INVALID,INVALID
+1047,Marine,la croix-sur-ourcq
+1048,vongnes,oulches-la-vallée-foulon
+1049,saint laurent sur saône,bruys
+1050,ambleny,levergies
+1051,le plantay,buire
+1052,presles-et-thierny,nanteuil-notre-dame
+1053,INVALID,INVALID
 1054,INVALID,INVALID
-1055,buellas,INVALID
-1056,INVALID,INVALID
-1057,la chapelle-du-châtelard,collonges
-1058,INVALID,challex et champdor-corcelles
-1059,cize,blyes
-1060,béréziat,beauregard
-1061,INVALID,INVALID
-1062,nivigne et suran,INVALID
-1063,argis,ars-sur-formans
-1064,INVALID,boissey et ambléon
-1065,certines,bâgé-le-châtel
-1066,chaneins,beaupont
-1067,INVALID,birieux - bouligneux
-1068,INVALID,INVALID
-1069,certines,boz
-1070,belley,andert-et-condon
+1055,divonne-les-bains,cuiry-les-iviers
+1056,cuirieux,crouy
+1057,magny-la-fosse,corcy
+1058,pierremande,neuville les dames
+1059,INVALID,INVALID
+1060,froidmont cohartille,saint sulpice
+1061,Paris,Brest
+1062,leury,saint-didier-de-formans
+1063,fontenelle,lompnas
+1064,vesancy,dagny lambercy
+1065,seillonnaz,villes
+1066,mayot,mennevret
+1067,INVALID,giron
+1068,holnon,gauchy
+1069,versonnex,lagnieu
+1070,ambérieu en bugey,lor
 1071,INVALID,INVALID
-1072,Liaison,beynost aujourd'hui
-1073,INVALID,INVALID
-1074,INVALID,is artemare
-1075,INVALID,INVALID
-1076,bettant,cize
-1077,valserhône,beynost
-1078,INVALID,civrieux
-1079,blyes,INVALID
-1080,Reservation,INVALID
+1072,INVALID,INVALID
+1073,Elisa,florence
+1074,chaourse,péron
+1075,becquigny,leme
+1076,montlevon,étaves et bocquiaux
+1077,coingt,jumigny
+1078,connigis,hargicourt
+1079,barisis-aux-bois,juvincourt-et-damary
+1080,INVALID,INVALID
 1081,INVALID,INVALID
-1082,INVALID,bey et chaleins
-1083,INVALID,INVALID
-1084,INVALID,INVALID
-1085,cheignieu-la-balme,valserhône
-1086,INVALID,certines challex pour vendredi
-1087,INVALID,INVALID
+1082,INVALID,INVALID
+1083,mezieres-sur-oise,dommiers
+1084,hargicourt,baneins
+1085,vernoux,chavonne
+1086,INVALID,INVALID
+1087,INVALID,tours
 1088,INVALID,INVALID
-1089,INVALID,eins arboys en bugey
-1090,arboys en bugey,bâgé-le-châtel
-1091,beauregard,champagne-en-valromey
+1089,INVALID,INVALID
+1090,INVALID,INVALID
+1091,INVALID,fesmy-le-sart
 1092,INVALID,INVALID
-1093,INVALID,pas
-1094,boz,chevillard
-1095,INVALID,belleydoux
-1096,anglefort,chanay
-1097,INVALID,deux
-1098,INVALID,birieux
-1099,certines,châtenay
-1100,collonges,arbigny
-1101,bettant à destination de coll,INVALID
-1102,cleyzieu,chaley
-1103,ars-sur-formans,ambérieux-en-dombes aujourd'hui
+1093,INVALID,INVALID
+1094,INVALID,INVALID
+1095,trevoux,francheleins
+1096,sainte croix,saint bénigne
+1097,coucy-lès-eppes,pouilly-sur-serre
+1098,bertaucourt-epourdon,sauverny
+1099,anizy-le-grand,martigny-courpierre
+1100,izenave,flavigny-le-grand-et-beaurain
+1101,INVALID,INVALID
+1102,INVALID,INVALID
+1103,INVALID,INVALID
 1104,INVALID,INVALID
-1105,ire,rovia
-1106,INVALID,vendredi
-1107,challes-la-montagne,challex
-1108,INVALID,belleydoux
-1109,arboys en bugey,bâgé-dommartin
-1110,conand,argis
+1105,pougny,craonnelle
+1106,INVALID,INVALID
+1107,INVALID,INVALID
+1108,INVALID,INVALID
+1109,INVALID,INVALID
+1110,INVALID,INVALID
 1111,INVALID,INVALID
-1112,INVALID,nc et chaneins
-1113,utrix,INVALID
-1114,balan,arandas
-1115,INVALID,INVALID
-1116,INVALID,vendredi
-1117,êt à charnoz-sur-ain en venant de brénod,charnoz-sur-ain
-1118,quel temps,fait
-1119,arandas,chavannes-sur-reyssouze
-1120,INVALID,la plus proche
+1112,Pauline,florence
+1113,bassoles aulers,verjon
+1114,INVALID,INVALID
+1115,saint trivier sur moignans,crupilly
+1116,gizy,INVALID
+1117,bruyeres-sur-fere,fluquieres
+1118,INVALID,INVALID
+1119,gabin et pommiers,paris
+1120,crecy-au-mont,bezu-saint-germain
 1121,INVALID,INVALID
-1122,chevillard,arandas
-1123,direct,civrieux apremont
-1124,INVALID,challes-la-montagne
-1125,INVALID,bénonces
-1126,beynost,aranc
+1122,chavignon,villeneuve
+1123,servignat,Metz
+1124,macogny,contescourt
+1125,INVALID,INVALID
+1126,macquigny,prouvais
 1127,INVALID,INVALID
-1128,chaleins,biziat
-1129,quel temps,fait
-1130,distance arandas,INVALID
-1131,chaley,INVALID
-1132,valserhône,attigna
-1133,Liaison,INVALID
-1134,INVALID,INVALID
-1135,ch,loé
-1136,INVALID,INVALID
-1137,bolozon,boyeux-saint-jérôme
-1138,INVALID,'abergement-de-var
-1139,INVALID,INVALID
-1140,combien,INVALID
-1141,ars-sur-formans,sur-formans charnoz-sur-ain
-1142,INVALID,pas
-1143,ceignes,arbigny
-1144,chaleins à destination de coll,onges
-1145,armix,champagne-en-valromey
-1146,cerdon - la chapelle-du-châtelard,la chapelle-du-châtelard pour demain
-1147,ambérieu-en-bugey,bellignat en train
-1148,INVALID,cessy
-1149,Réservation,chézery-forens chanay pour vendredi
-1150,beauregard,balan
-1151,champdor-corcelles,cheignieu-la-balme
-1152,INVALID,civrieux
-1153,baneins,l'abergement-de-varey
-1154,erva,vendredi
-1155,ceyzériat,INVALID
-1156,INVALID,INVALID
-1157,chaneins,belley
+1128,le catelet,INVALID
+1129,Morgane,florence
+1130,izieu,nesles la montagne
+1131,lavours,laniscourt
+1132,Paris,Brest
+1133,cuzieu,chateau-thierry
+1134,louatre,fayet
+1135,INVALID,INVALID
+1136,saint nizier le bouchoux,orainville
+1137,laura,INVALID
+1138,brunehamel,bourg-saint-christophe
+1139,clastres,pont-de-veyle
+1140,crozet,cutry
+1141,INVALID,INVALID
+1142,INVALID,INVALID
+1143,ly-fontaine,l'épine-aux-bois
+1144,INVALID,INVALID
+1145,mesbrecourt-richecourt,manicamp
+1146,injoux-genissiat,machecourt
+1147,cessy,pancy-courtecon
+1148,florence,jujurieux
+1149,apremont,sainte euphémie
+1150,dagny lambercy,armentières sur ourcq
+1151,cheignieu-la-balme,labalme
+1152,INVALID,INVALID
+1153,innimond,crans
+1154,buellas,bouresches
+1155,gex,dagny-lambercy
+1156,bouresches,chevregny
+1157,bourg-en-bresse,courcelles-sur-vesle
 1158,INVALID,INVALID
-1159,asnières-sur-saône,iat
-1160,combien coûte,INVALID
-1161,chaleins,bénonces
-1162,INVALID,champagne-en-valromey aujourd'hui
-1163,INVALID,beynost
-1164,INVALID,blyes
-1165,INVALID,INVALID
-1166,INVALID,INVALID
-1167,ceyzériat,châtillon-la-palud
+1159,merlieux-et-fouquerolles,pancy-courtecon
+1160,nogentel,sauverny
+1161,ployart-et-vaurseine,condeissiat
+1162,INVALID,INVALID
+1163,pithon,cugny
+1164,buellas,thoiry
+1165,jayat,dagneux
+1166,rance,bolozon
+1167,saint jean sur reyssouze,acy
 1168,INVALID,INVALID
-1169,chavannes-sur-reyssouze,bellignat
-1170,INVALID,arboys en bugey brens
-1171,artemare,beauregard
-1172,INVALID,INVALID
-1173,INVALID,armix
+1169,jumencourt,champdor-corcelles
+1170,besmé,mondrepuis
+1171,INVALID,INVALID
+1172,coucy-le-château-auffrique,sainte-julie
+1173,chevroux,bichancourt
 1174,INVALID,INVALID
-1175,beyno,châtillon-la-palud en train
-1176,INVALID,ix
-1177,INVALID,INVALID
-1178,INVALID,ja
-1179,chalamont,conand
-1180,INVALID,INVALID
-1181,INVALID,valromey-sur-séran
-1182,INVALID,INVALID
-1183,reserver,deux
-1184,champfromier,chaley
-1185,beynost,conand
-1186,brénod,INVALID
-1187,quel temps,fait
-1188,INVALID,ticket
-1189,cerdon,ambérieu-en-bugey
-1190,chazey-sur-ain à destination de bâgé-le-chât,destination de bâgé-le-châtel
-1191,armix,ignieu-la-bal
+1175,boncourt,beaumont-en-beine
+1176,INVALID,INVALID
+1177,saint-andré-de-corcy,saint-maurice-de-gourdans
+1178,INVALID,INVALID
+1179,INVALID,INVALID
+1180,arvière en valromey,ambutrix
+1181,apremont,grand corent
+1182,landouzy-la-cour,marsonnas
+1183,amberieu-en-bugey,bage-le-chatel
+1184,INVALID,INVALID
+1185,INVALID,INVALID
+1186,chatenay,outriaz
+1187,INVALID,INVALID
+1188,mézériat,INVALID
+1189,INVALID,INVALID
+1190,chouy,jouaignes
+1191,saint-cyr-sur-menthon,domptin
 1192,INVALID,INVALID
-1193,INVALID,bénonces - chazey-bons
-1194,INVALID,INVALID
-1195,quel temps,fait-il
-1196,êt à bouligneux en venant de beynost,bouligneux
-1197,INVALID,INVALID
-1198,bourg-en-bresse,INVALID
-1199,andert-et-condon,beauregard
-1200,l'abergement-de-varey,baneins
-1201,cerdon,ceignes
-1202,andert-et-condon,INVALID
-1203,êt à chanoz-châtenay en venant de asnières-sur-saône,chanoz-châtenay
-1204,distance valromey-sur-séran,INVALID
-1205,INVALID,INVALID
-1206,charnoz-sur-ain,birieux
-1207,INVALID,emont anglefort
-1208,INVALID,INVALID
-1209,INVALID,chevry
-1210,bey,champdor-corcelles
+1193,montigny-lès-condé,pierrepont
+1194,hinacourt,eppes
+1195,INVALID,INVALID
+1196,proviseux-et-plesnoy,maast-et-violaine
+1197,lisa,albert
+1198,crécy sur serre,lesdins
+1199,brion,papleux
+1200,lempire,leuze
+1201,lhuys,saint rémy
+1202,INVALID,INVALID
+1203,bage-dommartin,chazey-sur-ain
+1204,armix,mâchecourt
+1205,jeantes,bourg saint christophe
+1206,lerzy,pont de vaux
+1207,dury,INVALID
+1208,bourg-en-bresse,chalamont
+1209,besny et loizy,crans
+1210,artemare,cuirieux
 1211,INVALID,INVALID
-1212,INVALID,INVALID
-1213,INVALID,ars-sur-formans billiat
+1212,château-gaillard,prémillieu
+1213,INVALID,INVALID
 1214,INVALID,INVALID
-1215,INVALID,INVALID
-1216,INVALID,ticket
-1217,armix,INVALID
-1218,attignat,chevroux
-1219,cheignieu-la-balme,challex
-1220,annuler,ma commande
-1221,champagne-en-valromey,chaveyriat
-1222,chevillard,la chapelle-du-châtelard
-1223,INVALID,asnières-sur-saône - arbent
-1224,chanay à destination de apr,INVALID
-1225,INVALID,chevry
-1226,INVALID,INVALID
-1227,INVALID,INVALID
-1228,artemare,INVALID
-1229,INVALID,pas
-1230,INVALID,INVALID
-1231,INVALID,INVALID
-1232,INVALID,asnières-sur-saône - ars-sur-formans
-1233,INVALID,chaley
-1234,INVALID,la boisse
-1235,combien coûte,INVALID
-1236,INVALID,INVALID
-1237,ja,de
-1238,INVALID,cheignieu-la-balme
-1239,INVALID,arbent
-1240,brens,birieux
-1241,INVALID,INVALID
-1242,brégnier-cordon,châtillon-la-palud
-1243,valserhône,bénonces
-1244,buellas,boissey
-1245,INVALID,vie
-1246,INVALID,nc puis bettant
-1247,INVALID,INVALID
-1248,v au départ de chazey-bons,INVALID
-1249,distance argis,INVALID
-1250,INVALID,billiat
-1251,la chapelle-du-châtelard,INVALID
-1252,INVALID,coligny
-1253,cessy,chaley
-1254,annuler,ma commande
-1255,charnoz-sur-ain,INVALID
-1256,belleydoux,brens
-1257,INVALID,billiat
-1258,réservation belley,doux brégnier-cordon
-1259,chalamont,attignat
-1260,béligneux,chavannes-sur-reyssouze
-1261,chevillard,bourg-en-bresse
-1262,INVALID,INVALID
-1263,INVALID,INVALID
-1264,INVALID,ket
-1265,coligny,INVALID
-1266,artemare,bourg-saint-christophe
-1267,INVALID,INVALID
-1268,INVALID,vie
-1269,coligny,la chapelle-du-châtelard
-1270,brion,apremont
-1271,charix,civrieux
-1272,INVALID,INVALID
-1273,INVALID,béréziat
-1274,chazey-sur-ain,champagne-en-valromey
-1275,INVALID,champdor-corcelles puis bolozon
-1276,quel temps,fait-il
-1277,brénod,ceyzériat
-1278,INVALID,INVALID
-1279,INVALID,repeter
-1280,ison belleydoux,ux
-1281,INVALID,INVALID
-1282,INVALID,clément
-1283,cessy,conand
-1284,brégnier-cordon à valromey,valromey-sur-séran
-1285,ambléon,aranc
-1286,birieux,cheignieu-la-balme
-1287,asnières-sur-saône bourg-en-bresse ce week,nières-sur-saône bourg-en-bresse ce week-end
-1288,balan,asnières-sur-saône
-1289,chézery-forens aranc,INVALID
-1290,INVALID,INVALID
-1291,ceyzérieu,apremont
-1292,INVALID,belley - argis
-1293,chaneins,bâgé-le-châtel
-1294,sncf armix,charnoz-sur-ain
-1295,chan,ay ambérieu-en-bugey pour vendredi
-1296,cessy,bénonces
-1297,chazey-sur-ain chalamont,chalamo
-1298,cheignieu-la-balme,chaleins aujourd'hui
-1299,INVALID,INVALID
-1300,INVALID,INVALID
-1301,INVALID,INVALID
-1302,INVALID,INVALID
-1303,chris,bourg-saint-christophe collonges
-1304,INVALID,INVALID
-1305,INVALID,bâgé-dommartin
-1306,charix,INVALID
-1307,champfromier,boyeux-saint-jérôme
-1308,INVALID,INVALID
-1309,quel temps,fait-il
-1310,bénonces,INVALID
-1311,chev,blyes
-1312,INVALID,INVALID
-1313,biziat,bâgé-dommartin
-1314,liaison chanoz-châtenay,INVALID
-1315,INVALID,arbi
-1316,boissey,bourg-saint-christophe
-1317,champfromier,argis
-1318,INVALID,billiat
-1319,arandas,chaneins
-1320,bettant,bénonces
-1321,chaley,coligny
-1322,ceignes artemare,INVALID
-1323,conand,ambérieu-en-bugey
-1324,chaley,brion
-1325,INVALID,INVALID
-1326,INVALID,aranc aujourd'
-1327,charix,arboys en bugey
-1328,INVALID,INVALID
-1329,INVALID,INVALID
-1330,colomieu,mieu puis chalamont
-1331,INVALID,pas
-1332,baneins,INVALID
-1333,ambronay,brénod
-1334,bressolles,collonges
-1335,chézery-forens,brion
-1336,cheignieu-la-balme a destination de aranc,INVALID
-1337,INVALID,INVALID
-1338,ydoux,INVALID
-1339,INVALID,margaux
-1340,INVALID,les toilettes
-1341,chaveyriat,brens
-1342,bressolles,INVALID
-1343,Reserver,INVALID
-1344,challes-la-montagne,INVALID
-1345,-et-condon,andert-et-condon et arbent
-1346,la burbanche,belleydoux
-1347,Liaison,bourg-en-bresse chaley
-1348,SNCF,collonges champdor-corcelles
-1349,INVALID,colomieu
-1350,INVALID,nivigne et suran
-1351,belley,coligny
-1352,INVALID,INVALID
-1353,INVALID,INVALID
-1354,baneins aranc,ara
-1355,cheignieu-la-balme,INVALID
-1356,Réservation boyeux-saint-jérôme,boyeux-saint-jérôme charix pour vendredi
-1357,INVALID,iat bettant pour vendredi
-1358,ars-sur-formans,bâgé-dommartin
-1359,balan,bourg-saint-christophe
-1360,brénod,chaleins
-1361,la burbanche,asnières-sur-saône
-1362,arbigny,INVALID
-1363,SNCF biziat,champdor-corcelles
-1364,INVALID,INVALID
-1365,ze a destination de l'abergement-de-varey,INVALID
-1366,boissey,INVALID
-1367,INVALID,INVALID
-1368,INVALID,bolozon l'abergement-clémenciat
-1369,belley,ambérieux-en-dombes
-1370,attignat,INVALID
-1371,INVALID,INVALID
-1372,INVALID,l'abergement-de-varey
-1373,belle,bourg-saint-christophe pour vendredi
-1374,INVALID,beauregard - blyes pour demain
-1375,asnières-sur-saône,boyeux-saint-jérôme
-1376,INVALID,bourg-saint-christophe - chalamont
-1377,champfromier,civrieux
-1378,arbent,artemare
-1379,châtenay,boyeux-saint-jérôme
-1380,INVALID,INVALID
-1381,brénod,chézery-forens
-1382,chaley,béligneux
-1383,asnières-sur-saône,billiat
-1384,conand,la boisse
-1385,INVALID,chevillard - coligny pour demain
-1386,INVALID,boz
-1387,INVALID,INVALID
-1388,boz,bolozon
-1389,brénod,arandas
-1390,châtillon-la-palud,arboys en bugey
-1391,civrie,champdor-corcelles en train
-1392,cessy,bénonces
-1393,chanoz-châtenay,arbent
-1394,INVALID,INVALID
-1395,tgv au départ de chaveyriat,INVALID
-1396,Reserver,ars-sur-formans - boz
-1397,quel temps,fait-il
-1398,INVALID,INVALID
-1399,INVALID,civrieux
-1400,INVALID,bill
-1401,INVALID,INVALID
-1402,béligneux,bellignat
-1403,biziat,chézery-forens
-1404,INVALID,ement-de-varey la
-1405,INVALID,bény challex aujourd'hui
-1406,bourg-en-bresse,ambérieux-en-dombes
-1407,INVALID,bi
-1408,INVALID,INVALID
-1409,INVALID,chaleins - blyes
-1410,armix,cleyzieu
-1411,INVALID,arbigny
-1412,reserver,deux
-1413,champdor-corcelles,dor-corcelles bouligneux
-1414,INVALID,ambérieu-en-bugey et conand
-1415,aranc,chevillard
-1416,INVALID,INVALID
-1417,INVALID,INVALID
-1418,INVALID,pas
-1419,INVALID,INVALID
-1420,boissey,ambérieu-en-bugey
-1421,arbigny,cheignieu-la-balme
-1422,INVALID,INVALID
-1423,ceyzérieu,blyes
-1424,INVALID,INVALID
-1425,ône,rh
-1426,INVALID,INVALID
-1427,matin ars-sur-formans,chavannes-sur-reyssouze
-1428,arandas,asnières-sur-saône
-1429,beynost,bâgé-le-châtel
-1430,chaneins,puis challes-la-montagne
-1431,annuler,ma commande
-1432,champfromier,INVALID
-1433,artemare,chevillard
-1434,INVALID,chavannes-sur-reyssouze cheignieu-la-balme
-1435,cheignieu-la-balme,INVALID
-1436,INVALID,chaveyriat colomieu
-1437,bâgé-le-châtel,INVALID
-1438,INVALID,INVALID
-1439,châtillon-sur-chalaronne,béligneux
-1440,aranc,andert-et-condon
-1441,château-gaillard,chalamont
-1442,distance asnières-sur-saône,charnoz-sur-ain en train
-1443,INVALID,beaupont pour vendredi
-1444,asnières-sur-saône,nières-sur-saône beauregard
-1445,INVALID,nivigne et suran
-1446,boz cleyzieu,INVALID
-1447,INVALID,et buellas
-1448,INVALID,roviaire bereziat charnoz-sur-ain
-1449,INVALID,INVALID
-1450,bénonces,apremont
-1451,brio,bolozon
-1452,belleydoux,colomieu
-1453,INVALID,INVALID
-1454,réservation,chézery-forens châtillon-sur-chalaronne
-1455,brénod,bouligneux
-1456,INVALID,INVALID
-1457,on,bolozon coligny
-1458,châtillon-la-palud,valromey-sur-séran
-1459,INVALID,INVALID
-1460,INVALID,chanay chézery-forens
-1461,sncf chavannes-sur-reyssouze,chavannes-sur-reyssouze birieux
-1462,INVALID,INVALID
-1463,ceyzériat,bâgé-dommartin
-1464,chavannes-sur-reyssouze,cerdon
-1465,chaveyriat,l'abergement-de-varey
-1466,INVALID,bouligneux
-1467,SNCF,fromier chaleins
-1468,brens bettant,bet
-1469,INVALID,INVALID
-1470,INVALID,INVALID
-1471,INVALID,INVALID
-1472,chazey-,bons
-1473,châtillon-sur-chalaronne,andert-et-condon
-1474,cessy,INVALID
-1475,INVALID,INVALID
-1476,INVALID,INVALID
-1477,INVALID,châtillon-sur-chalaronne en première classe
-1478,béréziat,réziat ars-sur-formans
-1479,aranc,cleyzieu
-1480,andert-et-condon,-et-condon et apremont
-1481,matin bellignat,arandas
-1482,chevillard,INVALID
-1483,chézery-forens,armix
-1484,INVALID,INVALID
-1485,bourg-saint-christophe,INVALID
-1486,INVALID,cerdon
-1487,INVALID,INVALID
-1488,attignat,beaupont
-1489,bellignat,INVALID
-1490,cheignieu-la-balme,birieux
-1491,challes-la-montagne,la burbanche
-1492,artemare,chalamont
-1493,apremont,arbent
-1494,che,ignieu-la-balme - arbigny
-1495,INVALID,INVALID
-1496,INVALID,INVALID
-1497,INVALID,pas
-1498,ferroviaire charnoz-sur-ain,charnoz-sur-ain cerdon
-1499,INVALID,deux
-1500,INVALID,roviaire chevillard arb
-1501,INVALID,château-gaillard
-1502,chalamont,bâgé-le-châtel
-1503,chalamont,champfromier
-1504,INVALID,INVALID
-1505,INVALID,oys en buge
-1506,ison,yzérie
-1507,INVALID,INVALID
-1508,INVALID,INVALID
-1509,bâgé-dommartin,arandas
-1510,distance armix,INVALID
-1511,charix,arandas
-1512,connexion ferroviaire,INVALID
-1513,jet direct ars-sur-formans,artemare
-1514,INVALID,pas
-1515,INVALID,INVALID
-1516,INVALID,INVALID
-1517,INVALID,INVALID
-1518,chavannes-sur-reyssouze,INVALID
-1519,brénod,INVALID
-1520,INVALID,les toilettes
-1521,INVALID,repeter
-1522,certines,chaley
-1523,arbigny,chaleins
-1524,blyes,chazey-bons en
-1525,prochain train béréziat,cerdon
-1526,Réserve,cessy - chaneins
-1527,INVALID,belley
-1528,annuler,ma commande
-1529,bourg-en-bresse,colomieu
-1530,INVALID,INVALID
-1531,INVALID,INVALID
-1532,INVALID,INVALID
-1533,INVALID,INVALID
-1534,reserver,deux
-1535,INVALID,INVALID
-1536,annuler,ma commande
-1537,châtenay,INVALID
-1538,INVALID,chanoz-châtenay la burbanche
-1539,Reserver,INVALID
-1540,table,deux
-1541,bettant,bénonces
-1542,chevry chazey-sur-,chazey-sur-ain
-1543,la chapelle-du-châtelard,chanay
-1544,INVALID,aranc - bellignat
-1545,ria,chaveyriat
-1546,correspondance,INVALID
-1547,INVALID,challex ambronay
-1548,certines,INVALID
-1549,boissey,ndas
-1550,beaupont,chazey-bons
-1551,bénonces,boyeux-saint-jérôme
-1552,Voyage arbigny,INVALID
-1553,ferroviaire cheignieu-la-balme,cheignieu-la-balme coligny
-1554,INVALID,INVALID
-1555,sur-saône,asnières-sur-saône et civrieux
-1556,apremont,châtenay
-1557,Inès,INVALID
-1558,INVALID,INVALID
-1559,beynost,colomieu
-1560,bellignat,arandas
-1561,INVALID,INVALID
-1562,apremont,beaupont
-1563,brégnier-cordon,arbent
-1564,INVALID,baneins
-1565,INVALID,la chapelle-du-châtela
-1566,INVALID,saint-christophe
-1567,Reserver,INVALID
-1568,INVALID,INVALID
-1569,bouligneux,champagne-en-valromey
-1570,coligny,arboys en bugey en
-1571,SNCF cize,chazey-sur-ain
-1572,INVALID,INVALID
-1573,INVALID,ambronay
-1574,INVALID,INVALID
-1575,INVALID,INVALID
-1576,INVALID,bourg-en-bresse - bolozon
-1577,INVALID,la burbanche
-1578,INVALID,voir angers
-1579,INVALID,caroline
-1580,belleydoux,ceignes
-1581,INVALID,apremont
-1582,INVALID,la plus proche
-1583,INVALID,in
-1584,bâgé-dommartin,chaneins
-1585,INVALID,INVALID
-1586,INVALID,chazey-bons bénonces pour vendredi
-1587,INVALID,les toilettes
-1588,INVALID,léna
-1589,INVALID,INVALID
-1590,INVALID,bolozon
-1591,certines,ambutrix
-1592,conand,INVALID
-1593,prochain train l'abergement-de-varey,brénod
-1594,INVALID,blyes et arbigny
-1595,annuler,ma commande
-1596,INVALID,at
-1597,ambléon,bouligneux
-1598,bény,ceyzérieu
-1599,INVALID,repeter
-1600,INVALID,INVALID
-1601,charnoz-sur-ain,chézery-forens
-1602,belley,boyeux-saint-jérôme
-1603,Reservation,challes-la-montagne cessy
-1604,SNCF asnières-sur-saône,asnières-sur-saône bolozon
-1605,INVALID,INVALID
-1606,INVALID,INVALID
-1607,chevroux,béréziat
-1608,châtillon-sur-chalaronne,ars-sur-formans
-1609,andert-et-condon,ert-et-condon beauregard
-1610,INVALID,robin
-1611,INVALID,INVALID
-1612,cleyzieu,INVALID
-1613,INVALID,INVALID
-1614,ci,buellas
-1615,INVALID,INVALID
-1616,ambronay,INVALID
-1617,igneux,bouligneux bellignat
-1618,INVALID,INVALID
-1619,INVALID,florence
-1620,biziat,INVALID
-1621,châtillon-la-palud,bey
-1622,INVALID,chazey-bons andert-et-condon
-1623,chevry,charnoz-sur-ain
-1624,chazey-bons à destination de ars-sur-formans,INVALID
-1625,sncf,chézery-forens balan
-1626,chevroux,arbent
-1627,armix,INVALID
-1628,nat a destination de ars-sur-,s-sur-formans
-1629,INVALID,INVALID
-1630,INVALID,bourg-saint-christophe coligny
-1631,bettant champagne-,INVALID
-1632,INVALID,vendredi
-1633,certines,chevroux
-1634,INVALID,INVALID
-1635,briord,INVALID
-1636,INVALID,INVALID
-1637,INVALID,ticket
-1638,INVALID,INVALID
-1639,INVALID,INVALID
-1640,challes-la-montagne,attignat
-1641,INVALID,chevillard
-1642,valromey-sur-séran,champfromier
-1643,bolozon,arboys en bugey
-1644,INVALID,INVALID
-1645,Arrêt à ambérieu-en-bugey en venant de civrieux,ambérieu-en-bugey
-1646,combien,INVALID
-1647,andert-et-condon,bey
-1648,INVALID,INVALID
-1649,NCF bâgé-le-châtel,le-châtel collonges
-1650,bellignat,l'abergement-de-varey
-1651,champdor-corcelles,chanay
-1652,INVALID,INVALID
-1653,tarif bouligneux,igneux cize
-1654,INVALID,ès
-1655,INVALID,igny ceignes
-1656,artemare,nivigne et suran
-1657,INVALID,armix - beauregard
-1658,attignat,apremont
-1659,s-sur-forma,INVALID
-1660,INVALID,béréziat - chanoz-châtenay pour demain
-1661,briord,INVALID
-1662,INVALID,pas
-1663,INVALID,coligny
-1664,Réservation,ars-sur-formans ceignes pour vendredi
-1665,jet,INVALID
-1666,Reserver,beynost - ars-sur-formans
-1667,argis,château-gaillard
-1668,chazey-bons,chaneins
-1669,Reservation,certines asnieres-sur-saone pour vendredi
-1670,INVALID,chevroux
-1671,INVALID,brens chanay
-1672,SNC,ozon château-gaillard
-1673,INVALID,bourg-saint-christophe ambérieux-en-dombes
-1674,chanay,l'abergement-clémenciat
-1675,chavannes-sur-reyssouze,INVALID
-1676,INVALID,charnoz-sur-ain
-1677,INVALID,INVALID
-1678,chevroux,arboys en bugey
-1679,INVALID,INVALID
-1680,champfromier,cessy
-1681,bourg-en-bresse,asnières-sur-saône
-1682,birieux,champagne-en-valromey
-1683,INVALID,INVALID
-1684,arboys en bugey,boissey
-1685,liaison boz,charnoz-sur-ain aujourd'hui
-1686,cheignieu-la-balme,certines
-1687,INVALID,amont pour vendredi
-1688,INVALID,bey
-1689,bre,ns boyeux-saint-jérôme
-1690,biziat,roux
-1691,INVALID,les toilettes
-1692,tarif aranc,blyes
-1693,INVALID,INVALID
-1694,INVALID,INVALID
-1695,la burbanche chaveyriat,INVALID
-1696,INVALID,bourg-saint-christophe
-1697,INVALID,INVALID
-1698,bénonces,charix
-1699,bo,INVALID
-1700,INVALID,deux
-1701,INVALID,INVALID
-1702,INVALID,INVALID
-1703,direct ambérieu-en-bugey,chevillard
-1704,chevroux,INVALID
-1705,challes-la-montagne,chavannes-sur-reyssouze
-1706,INVALID,INVALID
-1707,la burbanche,conand
-1708,INVALID,INVALID
-1709,bressolles,brénod
-1710,béréziat,chevroux
-1711,INVALID,INVALID
-1712,INVALID,arboys en bugey
-1713,SNCF,bénonces châtillon-la-palud
-1714,tgv au départ de bourg-saint-christophe,INVALID
-1715,colomieu,aranc
-1716,coligny,chaneins en train
-1717,aranc,bolozon
-1718,INVALID,INVALID
-1719,aranc,chevillard
-1720,bey,chevroux
-1721,brens à destination de valserhône,INVALID
-1722,bény,charix
-1723,ceignes - billiat,- billiat pour demain
-1724,INVALID,deux
-1725,INVALID,INVALID
-1726,matin bey,buellas
-1727,INVALID,champdor-corcelles - ambronay pour demain
-1728,matin buellas,buellas bressolles
-1729,INVALID,chaneins - ambronay pour demain
-1730,matin chanoz-châtenay,chanoz-châtenay bâgé-le-châtel
-1731,conand,la chapelle-du-châtelard
-1732,INVALID,cheignieu-la-balme
-1733,bouligneux,boz
-1734,belleydoux,bourg-en-bresse
-1735,arbent,charnoz-sur-ain
-1736,arbent,ambronay
-1737,ambronay,puis valromey-sur-séran
-1738,INVALID,INVALID
-1739,INVALID,bourg-en-bresse argis
-1740,INVALID,INVALID
-1741,ambutrix,ceignes
-1742,aranc,boz
-1743,champagne-en-valromey,agne-en-
-1744,êt à valserhône en venant de bourg-saint-christophe,valserhône
-1745,ire champagne-en-valrom,ferroviaire champagne-en-valromey
-1746,ca,fe
-1747,beauregard,challex
-1748,belle,y bourg-en-bresse
-1749,chalamont,INVALID
-1750,INVALID,INVALID
-1751,chalamont,ambutrix
-1752,bourg-saint-christophe,chavannes-sur-reyssouze
-1753,chaley,bourg-en-bresse
-1754,INVALID,INVALID
-1755,INVALID,INVALID
-1756,arandas,belleydoux
-1757,arbent,INVALID
-1758,INVALID,INVALID
-1759,châtillon-la-palud,belleydoux
-1760,apremont,INVALID
-1761,INVALID,châtillon-sur-chalaronne - ambléon
-1762,champagne-en-valromey,armix
-1763,tgv au départ de asnières-sur-saône,yes
-1764,INVALID,balan
-1765,ambronay,cheignieu-la-balme
-1766,la boisse,nd
-1767,INVALID,attignat ambérieux-en-dombes
-1768,valromey-sur-séran,arboys en bugey
-1769,INVALID,Maxence
-1770,INVALID,INVALID
-1771,INVALID,INVALID
-1772,distance chaneins,INVALID
-1773,cerdon,argis
-1774,INVALID,repeter
-1775,chevillard,INVALID
-1776,distance aranc,INVALID
-1777,asnières-sur-saône,ars-sur-formans
-1778,boissey,INVALID
-1779,INVALID,INVALID
-1780,correspondance bourg-saint-christo,bourg-saint-christophe puis chaley
-1781,Liaison nivigne et sur,nivigne et suran bourg-saint-christophe
-1782,beauregard,INVALID
-1783,voyage bellignat,chazey-bons
-1784,matin beynost,bâgé-dommartin
-1785,INVALID,INVALID
-1786,valserhône,la chapelle-du-châtelard
-1787,chevry,beaupont
-1788,quel temps,fait-il
-1789,INVALID,valromey-sur-séran - chaleins
-1790,beynost,birieux
-1791,INVALID,la plus proche
-1792,INVALID,deux
-1793,INVALID,INVALID
-1794,challex,belleydoux
-1795,bourg-en-bresse,arboys en bugey
-1796,INVALID,rep
-1797,réservation challes-la,les-la-montagne cheignieu-la-balme
-1798,INVALID,INVALID
-1799,la burbanche,l'abergement-de-varey
-1800,cize,champdor-corcelles
+1215,fourdrain,archon
+1216,INVALID,parpe
+1217,sault-brénaz,villeneuve-sur-aisne
+1218,amigny rouy,prémillieu

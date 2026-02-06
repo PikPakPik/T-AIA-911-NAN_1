@@ -41,9 +41,10 @@ def _find_entity_spans(phrase: str, depart: str, arrivee: str):
 def _get_entity_spans_script3(phrase: str, depart: str, arrivee: str):
     """Retourne (dep_span, arr_span) en utilisant la tokenisation + alignement du script 3 (regex améliorée)."""
     try:
-        from script3_regexp_improved import get_entity_spans_from_script3
+        from tokenization.script3_regexp_improved import get_entity_spans_from_script3
         return get_entity_spans_from_script3(phrase, depart or "", arrivee or "")
-    except ImportError:
+    except ImportError as e:
+        print(f"⚠️  Warning: Could not import script3_regexp_improved ({e}), falling back to simple string matching")
         return _find_entity_spans(phrase, depart, arrivee)
 
 

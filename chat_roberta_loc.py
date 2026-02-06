@@ -11,34 +11,52 @@ import torch
 from transformers import pipeline, AutoTokenizer, BertForTokenClassification
 
 
+_MIN_SCORE = 0.85  # Seuil de confiance minimum pour accepter une entité
+_MAX_GAP = 5       # Écart max (en caractères) entre deux entités pour les fusionner
+
+
+def _merge_spans(spans, phrase):
+    """Fusionne les spans consécutifs proches en un seul texte. Ignore les fragments trop éloignés."""
+    if not spans:
+        return None
+    groups = [[spans[0]]]
+    for s in spans[1:]:
+        prev_end = groups[-1][-1][1]
+        if s[0] - prev_end <= _MAX_GAP:
+            groups[-1].append(s)
+        else:
+            groups.append([s])
+    # Prendre le groupe le plus long (le plus probable)
+    best = max(groups, key=lambda g: g[-1][1] - g[0][0])
+    if phrase:
+        return phrase[best[0][0]:best[-1][1]].strip()
+    return " ".join(w[2] for w in best)
+
+
 def extract_dep_arr(entities, phrase=""):
     """
-    Extrait Départ et Arrivée depuis les entités B-DEP/I-DEP et B-ARR/I-ARR (modèle BERT Europeana).
+    Extrait Départ et Arrivée depuis les entités B-DEP/I-DEP/B-ORIGIN/I-ORIGIN et B-ARR/I-ARR/B-DEST/I-DEST.
+    Filtre les entités à faible confiance et fusionne uniquement les spans consécutifs proches.
     Retourne (départ, arrivée) ou (None, None) si non trouvés.
     """
     dep_words, arr_words = [], []
     for entity in entities:
+        score = entity.get("score", 1.0)
+        if score < _MIN_SCORE:
+            continue  # Ignorer les entités à faible confiance
         label = entity.get("entity_group", entity.get("label", ""))
         label_upper = label.upper()
         start = entity.get("start", 0)
         end = entity.get("end", 0)
         word = (entity.get("word", entity.get("text", "")) or "").strip()
-        if "DEP" in label_upper:
+        if "DEP" in label_upper or "ORIGIN" in label_upper:
             dep_words.append((start, end, word))
-        elif "ARR" in label_upper:
+        elif "ARR" in label_upper or "DEST" in label_upper:
             arr_words.append((start, end, word))
     dep_words.sort(key=lambda x: x[0])
     arr_words.sort(key=lambda x: x[0])
-    dep_str = None
-    arr_str = None
-    if dep_words and phrase:
-        dep_str = phrase[dep_words[0][0]:dep_words[-1][1]].strip()
-    elif dep_words:
-        dep_str = " ".join(w[2] for w in dep_words)
-    if arr_words and phrase:
-        arr_str = phrase[arr_words[0][0]:arr_words[-1][1]].strip()
-    elif arr_words:
-        arr_str = " ".join(w[2] for w in arr_words)
+    dep_str = _merge_spans(dep_words, phrase)
+    arr_str = _merge_spans(arr_words, phrase)
     return (dep_str, arr_str)
 
 
@@ -155,7 +173,17 @@ def main():
             aggregation_strategy="simple",
             device=_device,
         )
+        # Auto-détection : si le modèle a des labels DEP/ARR/ORIGIN/DEST, on utilise le mode Départ/Arrivée
         use_dep_arr = False
+        try:
+            from transformers import AutoConfig
+            config = AutoConfig.from_pretrained(args.model)
+            all_labels = " ".join(config.id2label.values()).upper()
+            if "DEP" in all_labels or "ARR" in all_labels or "ORIGIN" in all_labels or "DEST" in all_labels:
+                use_dep_arr = True
+                print(f"  → Labels Départ/Arrivée détectés: {list(config.id2label.values())}")
+        except Exception:
+            pass
     print("Modèle prêt. Envoie une phrase pour extraire les lieux (LOC) ou Départ/Arrivée.")
     print("  Commande: quit / exit / q  pour quitter.\n")
 

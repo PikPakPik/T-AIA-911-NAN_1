@@ -93,7 +93,7 @@ else:
 # bloquent .to(device) quand on utilise from_pretrained(..., from_tf=True).
 model_path = os.path.abspath(args.model)
 tf_weights = os.path.join(model_path, "tf_model.h5")
-use_bio_labels = False  # True pour BERT Europeana (B-DEP, I-DEP, B-ARR, I-ARR)
+use_bio_labels = False  # True pour modèles avec labels DEP/ARR ou ORIGIN/DEST
 if os.path.isfile(tf_weights):
     use_bio_labels = True
     config = AutoConfig.from_pretrained(model_path)
@@ -119,6 +119,15 @@ else:
             device=_device
         )
         print("Model loaded successfully as NER model!")
+        # Auto-détection des labels BIO : si le config contient DEP/ARR/ORIGIN/DEST, on utilise extract_dep_arr_bio
+        try:
+            config = AutoConfig.from_pretrained(args.model)
+            all_labels = " ".join(config.id2label.values()).upper()
+            if "DEP" in all_labels or "ARR" in all_labels or "ORIGIN" in all_labels or "DEST" in all_labels:
+                use_bio_labels = True
+                print(f"  → Labels BIO détectés: {list(config.id2label.values())} → mode Départ/Arrivée")
+        except Exception:
+            pass
     except Exception as e:
         print(f"Warning: Could not load as NER model: {e}")
         print("Attempting to use model with zero-shot NER or alternative approach...")
@@ -165,17 +174,23 @@ def extract_dep_arr_bio(entities, phrase="", debug=False):
     Gère aussi les noms génériques LABEL_0..LABEL_3 si le config n'a pas les vrais noms.
     Retourne (départ, arrivée) ; utilise start/end pour le texte exact si phrase fournie.
     """
+    _MIN_SCORE = 0.85  # Seuil de confiance minimum
+    _MAX_GAP = 5       # Écart max (caractères) pour fusionner deux spans
+
     dep_words, arr_words = [], []
     unique_labels = set()
     for entity in entities:
+        score = entity.get("score", 1.0)
+        if score < _MIN_SCORE:
+            continue  # Ignorer les entités à faible confiance
         label = entity.get("entity_group", entity.get("label", ""))
         unique_labels.add(label)
-        # Normaliser : B-DEP, I-DEP -> DEP ; B-ARR, I-ARR -> ARR ; ou LABEL_1/LABEL_3 -> DEP, LABEL_0/LABEL_2 -> ARR
+        # Normaliser : B-DEP/B-ORIGIN, I-DEP/I-ORIGIN -> DEP ; B-ARR/B-DEST, I-ARR/I-DEST -> ARR ; ou LABEL_1/LABEL_3 -> DEP, LABEL_0/LABEL_2 -> ARR
         lu = label.upper()
         kind = None
-        if "DEP" in lu:
+        if "DEP" in lu or "ORIGIN" in lu:
             kind = "DEP"
-        elif "ARR" in lu:
+        elif "ARR" in lu or "DEST" in lu:
             kind = "ARR"
         elif label in _LABEL_ID_TO_BIO:
             kind = _LABEL_ID_TO_BIO[label]
@@ -185,16 +200,25 @@ def extract_dep_arr_bio(entities, phrase="", debug=False):
             arr_words.append((entity.get("start", 0), entity.get("end", 0), (entity.get("word", entity.get("text", "")) or "").strip()))
     dep_words.sort(key=lambda x: x[0])
     arr_words.sort(key=lambda x: x[0])
-    dep_str = None
-    arr_str = None
-    if dep_words and phrase:
-        dep_str = phrase[dep_words[0][0] : dep_words[-1][1]].strip()
-    elif dep_words:
-        dep_str = " ".join(w[2] for w in dep_words if w[2])
-    if arr_words and phrase:
-        arr_str = phrase[arr_words[0][0] : arr_words[-1][1]].strip()
-    elif arr_words:
-        arr_str = " ".join(w[2] for w in arr_words if w[2])
+
+    def _merge_spans(spans):
+        """Fusionne les spans consécutifs proches, prend le groupe le plus long."""
+        if not spans:
+            return None
+        groups = [[spans[0]]]
+        for s in spans[1:]:
+            prev_end = groups[-1][-1][1]
+            if s[0] - prev_end <= _MAX_GAP:
+                groups[-1].append(s)
+            else:
+                groups.append([s])
+        best = max(groups, key=lambda g: g[-1][1] - g[0][0])
+        if phrase:
+            return phrase[best[0][0]:best[-1][1]].strip()
+        return " ".join(w[2] for w in best if w[2])
+
+    dep_str = _merge_spans(dep_words)
+    arr_str = _merge_spans(arr_words)
     # Filtre des faux positifs : mots courants non-lieux et fragments
     if dep_str and _is_likely_non_location(dep_str):
         dep_str = None
