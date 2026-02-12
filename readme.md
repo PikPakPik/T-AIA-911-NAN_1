@@ -251,3 +251,19 @@ jupyter notebook pathfinding_sncf.ipynb
 ```
 
 Exécuter toutes les cellules dans l'ordre. Les tests de trajet s'affichent automatiquement à la fin.
+
+### App chat + carte (Streamlit)
+
+Une app web est disponible pour faire:
+- chat utilisateur (phrase libre)
+- extraction automatique des villes avec NER
+- calcul du trajet avec pathfinding SNCF GTFS
+- recap des stations
+- carte du trajet
+
+Lancer:
+
+```bash
+pip install streamlit pydeck
+streamlit run model/ALEXANDRE/pathfinding/chat_pathfinding_app.py
+```
