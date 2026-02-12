@@ -3,3 +3,4 @@ dataset_statistics.json
 camembert/models
 bert_europeana_ner/
 best_model/
+flaubert/best_model.pt
