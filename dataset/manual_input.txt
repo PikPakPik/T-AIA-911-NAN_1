@@ -1,0 +1,1495 @@
+1,Mon ami Albert veut aller de Tours à Bordeaux
+2,Je vais voir Albert à Nice en partant de Marseille
+3,Albert m'a dit de prendre le train de Paris à Lyon
+4,Avec mon pote Albert on part de Sens pour aller à Gap
+5,J'accompagne Albert jusqu'à Orange depuis Avignon
+6,C'est Albert qui m'a conseillé le train de Pau à Lourdes
+7,Mon cousin Albert habite à Tours je veux y aller depuis Nantes
+8,Albert et moi on veut des billets de Cognac à Angoulême
+9,Ma copine Florence veut aller de Nice à Menton
+10,Avec Florence on cherche un train de Paris à Tours
+11,Florence m'attend à Lens je pars de Lille
+12,Mon ami Victor m'accompagne de Lyon à Valence
+13,Je rejoins Victor à Pau depuis Dax
+14,Martin veut qu'on aille de Tours à Blois ensemble
+15,Avec mes amis florence et paris je voudrais aller de paris à florence
+16,Mon ami nice et moi on va de nice à marseille
+17,Je voyage avec mon chien Orange de lyon à orange
+18,Avec Albert on quitte Albert pour aller à Amiens
+19,Paris et Albert veulent aller de Paris à Albert
+20,Mon ami Tours m'attend je pars de Sens
+21,C'est Campagne qui m'a dit d'aller de Campagne à Pau
+22,Chars m'a conseillé de partir de Chars vers Pontoise
+23,Je pars avec Florence de Nice en direction de Menton
+24,Mon collègue Albert prend le même train que moi de Lens à Arras
+25,Florence veut qu'on parte de Tours pour rejoindre Cognac
+26,Avec Albert et Florence on va de Sens à Orange
+27,Mon ami Gap m'a parlé d'un train de Gap à Briançon
+28,Albert connait bien le trajet de Albert à Amiens il le fait souvent
+29,Je vais retrouver Florence à Nice depuis Toulon
+30,Ma fille s'appelle Lourdes on va de Pau à Lourdes
+31,Avec mon fils Albert on prend le train de Vichy à Clermont-Ferrand
+32,Mon chat s'appelle Menton on va de Nice à Menton justement
+33,Tours me manque je veux y retourner depuis Paris
+34,Nice est vraiment nice comme ville je veux y aller de Marseille
+35,Sens c'est pas loin je pars de Paris
+36,Orange c'est joli on y va depuis Avignon
+37,Gap c'est la montagne j'y vais depuis Marseille
+38,Pau c'est bien pour les vacances on part de Bordeaux
+39,Cognac j'adore cette ville on y va depuis Angoulême
+40,Lens c'est pour le match on part de Paris
+41,Je veux aller voir le match à Lens depuis Arras
+42,Albert c'est une ville sympa je veux m'y rendre depuis Amiens
+43,Tours c'est magnifique on y va depuis Orléans
+44,Je dois aller à Tours pas la peine de faire un tour je veux juste un billet depuis Poitiers
+45,On va faire un tour à Tours en partant de Blois
+46,Je veux visiter Nice c'est pas nice le temps ici à Lyon
+47,Pour le gap year de mon fils on part de Gap à Marseille
+48,J'ai pas le sens de l'orientation mais je veux aller de Sens à Auxerre
+49,Je vais manger une orange à Orange en partant d'Avignon
+50,Le cognac de Cognac est excellent j'y retourne depuis Saintes
+51,Je me rends à Paris depuis Toulouse
+52,Je veux arriver à Bordeaux en partant de Lyon
+53,Ma destination c'est Marseille je suis à Montpellier
+54,Direction Nice au départ de Cannes
+55,Vers Strasbourg depuis Paris svp
+56,À destination de Rennes en provenance de Nantes
+57,J'aimerais rejoindre Lille depuis Arras
+58,Pour aller à Lyon je pars de Grenoble
+59,Mon arrivée sera à Toulouse mon départ de Montauban
+60,C'est à Nantes que je veux aller je suis actuellement à Angers
+61,Destination Avignon au départ de Valence
+62,Je vais à Poitiers depuis Tours
+63,À Clermont-Ferrand depuis Vichy
+64,C'est vers Brest que je me dirige au départ de Rennes
+65,Pour Bayonne en partance de Pau
+66,Mon trajet se termine à Perpignan il commence à Narbonne
+67,La destination finale c'est Dijon et je pars de Besançon
+68,À Rouen je veux me rendre depuis Le Havre
+69,Vers Limoges en partant de Brive
+70,C'est à Metz que j'arrive je quitte Nancy
+71,Arrivée prévue à Reims départ de Paris
+72,Je souhaite atteindre Caen depuis Lisieux
+73,Pour me rendre à Dunkerque je quitte Calais
+74,Ma destination sera Lorient mon point de départ Vannes
+75,C'est à Amiens que je dois arriver en partant de Compiègne
+76,Vers Mulhouse depuis Colmar
+77,À Tarbes je veux aller depuis Pau
+78,Direction Agen au départ de Toulouse
+79,C'est à Périgueux que je me rends en partant de Limoges
+80,Pour arriver à Angoulême je quitte Poitiers
+81,marsseille lyon
+82,je ve aler a pari depui tulouse
+83,un bilé pour bordo svp je sui a lile
+84,strazbour nante aler simple
+85,je voudrais un bilet de nise a marsey
+86,toulouse monpelier
+87,jai besoin daler a rene depui brest
+88,un trin de lyon a grneoble
+89,billet pari bordau
+90,je veu aller a toulous depuis nante
+91,bilet nan tou svp
+92,marseil pari un aller
+93,je cherche un tren pour lile depui pari
+94,angoulem bordo
+95,un biye de digeion a besenson
+96,je ve prandre le tgv de pari a marsey
+97,y a des trin pour straasbourg depui nansi ?
+98,avinyion monpélyé aler
+99,je voudré un bilai pour périgeu depui bordau
+100,trin de tourcoing a lile
+101,un aler pour reims depui meaux
+102,je veu allé a toullouse depui carcassone
+103,bilet limoge a poytié
+104,pari saint etiene
+105,je ve un trin de bloi a orlean
+106,bayonn bordeau svp
+107,bilai clairmont feran a lhion
+108,tren de caen a rouan
+109,je voudrais aler de narbone à perpinian
+110,nimme a avignion svp
+111,ya un trin pour marse depui tlon?
+112,cherbour a caen
+113,le havre a rouean
+114,un bilè saint malot rene
+115,bourge a vierzon
+116,aje a montpélyé
+117,je ve allé de compiegne a amien
+118,un trin de lanse a digeion
+119,bilet pour nise depui monacao
+120,marsay a aks en provanse
+121,je veux aller de paris a lyon
+122,un billet nantes bordeaux
+123,marseille toulouse svp
+124,de strasbourg a paris
+125,lyon grenoble aller simple
+126,je pars de rennes pour aller a brest
+127,un aller de nice a cannes
+128,lille arras
+129,de montpellier a perpignan
+130,je veux aller de dijon a besancon
+131,billet de caen a rouen
+132,tours poitiers svp
+133,de bordeaux a pau
+134,un train limoges toulouse
+135,nimes avignon
+136,de reims a metz
+137,le mans rennes
+138,de amiens a paris
+139,un billet calais dunkerque
+140,de orleans a tours
+141,perpignan narbonne svp
+142,de angouleme a bordeaux
+143,billet rouen le havre
+144,metz nancy
+145,de clermont ferrand a lyon
+146,valence montelimar
+147,de saint etienne a lyon
+148,bayonne biarritz
+149,de vannes a lorient
+150,billet mulhouse colmar
+151,slt tu peux me trouver un train paris lyon
+152,wsh ya un train de marseille a nice?
+153,jtrain toulouse bordeaux
+154,tgv pari lyon vit
+155,qd est le prochain pr nantes dep rennes
+156,chui a lille jveux aller a paris
+157,jsp si ya un train strasbourg metz
+158,g besoin d'1 billet lyon marseille
+159,pk ya pa de train dijon paris?
+160,jsuis a bordeaux faut que jaille a toulouse
+161,1 aller montpellier nice
+162,bjr je cherch 1 train pr rouen dep paris
+163,stp un billet pr lyon jpar de grenoble
+164,train lil par svp
+165,jveu un tgv pr paris jsui a nantes
+166,yo c possible paris marseille dem1?
+167,qqun sait le prix lyon strasbourg
+168,billet 2eme classe tours angouleme
+169,reims paris rapide svp
+170,mdrr g raté mon train faut que jretourne de paris a lyon
+171,mrc pour le billet lyon toulouse
+172,help jdois aller a bordeaux jsui a limoges
+173,aled faut que jaille de rennes a paris auj
+174,nn mais serieux ya rien comme train nice cannes?
+175,oklm je veux un paris lyon demain mat
+176,je prend celui de 8h avignon marseille
+177,ptdr le train de montpellier toulouse est en retard
+178,un a/r paris bordeaux
+179,billet x2 nantes rennes
+180,train du soir strasbourg paris
+181,Je voudrais savoir s'il serait possible de réserver un billet de train au départ de la gare de Toulouse-Matabiau à destination de la gare de Bordeaux-Saint-Jean pour demain en début de matinée
+182,Pourriez-vous m'indiquer les horaires des trains qui partent de Marseille-Saint-Charles en direction de Paris-Gare-de-Lyon pour la journée de vendredi prochain
+183,Je souhaiterais obtenir des informations concernant les possibilités de voyage en train depuis la ville de Lyon jusqu'à la ville de Strasbourg pour le week-end du 15 mars
+184,Bonjour je me permets de vous contacter car j'aurais besoin de réserver un aller simple au départ de Nantes et à destination de Rennes pour demain matin si possible avant 10 heures
+185,Excusez-moi est-ce que vous pourriez me dire comment je peux me rendre de Lille-Flandres jusqu'à Paris-Nord en train en partant vers 14 heures
+186,Je planifie un déplacement professionnel et j'aurais besoin d'un billet de train première classe au départ de Dijon pour me rendre à Paris dans la journée de lundi prochain
+187,Ma mère est souffrante et j'ai besoin de me rendre au plus vite de Montpellier à Lyon est-ce qu'il y a des trains directs aujourd'hui
+188,Pour les vacances de Noël j'aimerais emmener toute la famille de Paris jusqu'à Nice on serait quatre adultes et deux enfants
+189,Je suis en déplacement à Bordeaux et je dois impérativement être à Toulouse avant 18 heures est-ce que c'est faisable en train
+190,Mon fils entre à l'université à Grenoble et j'aimerais l'accompagner depuis Lyon est-ce qu'il y a des trains fréquents entre les deux villes
+191,J'ai un entretien d'embauche à Paris mardi prochain et je dois partir de Reims assez tôt le matin pour arriver avant 9 heures
+192,Nous organisons un séminaire d'entreprise à Avignon et nous serions huit personnes à partir de Paris pourriez-vous me donner les meilleurs horaires
+193,Je cherche un train pas trop cher pour aller de Clermont-Ferrand à Paris c'est pour un étudiant avec une carte de réduction
+194,Suite à une annulation de vol j'ai besoin de trouver un train de toute urgence de Marseille à Paris est-ce qu'il reste des places ce soir
+195,Mon grand-père habite à Brest et je voudrais lui rendre visite en partant de Rennes pendant les vacances de février
+196,Pour mon stage de troisième année je dois me rendre chaque semaine de Poitiers à Limoges est-ce qu'il y a un abonnement
+197,Avec ma femme on aimerait faire un petit week-end romantique on partirait de Lyon pour aller à Annecy
+198,Je suis bloqué à Perpignan à cause d'une grève et j'ai besoin d'aller à Montpellier par un autre moyen de transport
+199,On est un groupe de dix amis et on veut aller au festival de Bayonne en partant de Toulouse est-ce qu'on peut avoir un tarif de groupe
+200,Je dois me rendre de toute urgence de Nancy à Strasbourg pour une raison familiale quel est le prochain train disponible
+201,Quel temps fait-il à Lyon ?
+202,J'adore la ville de Bordeaux c'est vraiment magnifique
+203,Le train de 8h est en retard comme d'habitude
+204,Combien coûte un café à la gare de Marseille
+205,La SNCF c'est vraiment nul en ce moment
+206,Mon chat dort sur le canapé
+207,Tu connais un bon restaurant à Paris ?
+208,Je cherche un appartement à louer à Toulouse
+209,Les horaires de la poste de Lyon
+210,Comment préparer une quiche lorraine
+211,Je cherche un hôtel pas cher à Nice
+212,Le musée du Louvre est fermé le mardi
+213,J'aime beaucoup me promener dans Bordeaux
+214,La tour Eiffel fait 330 mètres de haut
+215,Est-ce que le wifi marche dans le TGV
+216,Les meilleurs croissants de Strasbourg
+217,Mon fils étudie la médecine à Montpellier
+218,Il pleut à Nantes depuis trois jours
+219,Le match de foot à Lens était incroyable
+220,Je suis en vacances à Biarritz c'est super
+221,Quelle est la population de Marseille
+222,J'ai visité le château de Chambord c'est magnifique
+223,Les embouteillages sur le périphérique de Lyon
+224,Mon collègue habite à Versailles
+225,La plage de Nice est bondée en été
+226,Le vin de Bordeaux est excellent cette année
+227,Je travaille à la Défense
+228,Combien d'habitants à Rennes
+229,Le tramway de Montpellier est gratuit le dimanche ?
+230,C'est bientôt les fêtes de Bayonne
+231,Quel est le code postal de Strasbourg
+232,J'ai mangé une excellente bouillabaisse à Marseille
+233,La cathédrale de Reims est classée UNESCO
+234,Mon dentiste est en vacances à Tours
+235,Le parc de la Tête d'Or à Lyon est magnifique
+236,Je cherche un travail à Nantes
+237,Les magasins de Lyon ouvrent à quelle heure
+238,Le carnaval de Nice c'est en février
+239,Qui est le maire de Toulouse
+240,La température à Perpignan aujourd'hui
+241,Je vais manger une fondue
+242,L'accent marseillais est très chantant
+243,Mes parents habitent à Caen
+244,La fac de droit de Bordeaux est bien classée
+245,J'ai perdu mon portefeuille dans le métro de Paris
+246,Le centre-ville de Strasbourg est piéton
+247,Quelle heure est-il
+248,Je suis fatigué
+249,Bonjour comment allez-vous
+250,Merci pour votre aide
+251,Lyon ou Marseille c'est mieux pour vivre ?
+252,Je voudrais une pizza
+253,Le train est parti sans moi
+254,Mon vélo est en panne
+255,Quel est le meilleur quartier de Bordeaux pour habiter
+256,Le stade de France est à Saint-Denis
+257,Je cherche une pharmacie à Rouen
+258,Les travaux sur la ligne Paris-Lyon sont terminés ?
+259,Albert est un bon ami
+260,J'ai fait un tour de Tours la semaine dernière
+261,J'ai acheté des oranges au marché d'Orange
+262,Il n'y a rien à faire à Gap le dimanche
+263,Le cognac de Cognac est mondialement connu
+264,À Sens je n'ai pas trouvé de sens à cette phrase
+265,Mon fils s'appelle Albert et il vit à Paris
+266,Vichy c'est bien pour les cures thermales
+267,Les lentilles du Puy-en-Velay sont AOC
+268,Lens a gagné le match hier soir
+269,Mon amie Florence vient de Nice
+270,Je me suis perdu dans les rues de Menton
+271,Tours est une ville universitaire agréable
+272,Le gap entre les riches et les pauvres se creuse
+273,Dax est connue pour ses thermes
+274,La moutarde de Dijon n'est plus fabriquée à Dijon
+275,Je me balade à Pau avec mon chien
+276,Lourdes accueille des millions de pèlerins chaque année
+277,Je vis à Perpignan depuis dix ans
+278,J'ai raté ma correspondance
+279,Le TGV va vite
+280,Un aller retour je sais pas où
+281,Billet pour euh je sais plus
+282,Mon train est annulé qu'est-ce que je fais
+283,Je veux un remboursement
+284,C'est quoi le numéro de voie
+285,Ya des prises dans le wagon
+286,Le contrôleur est pas sympa
+287,J'ai oublié ma valise dans le train
+288,Quand est-ce qu'on arrive
+289,Est-ce qu'il y a un wagon restaurant
+290,Je peux changer mon billet
+291,Je voudrais un billet de Saint-Malo à Rennes
+292,De Aix-en-Provence à Marseille svp
+293,Un train de Clermont-Ferrand à Saint-Étienne
+294,Billet Le Mans Rennes
+295,De Le Havre à Rouen aller simple
+296,Je veux aller de La Rochelle à Poitiers
+297,Saint-Brieuc à Brest svp
+298,Un billet de Aix-les-Bains à Chambéry
+299,De Saint-Nazaire à Nantes
+300,Billet pour Le Creusot depuis Dijon
+301,Saint-Raphaël à Nice svp
+302,De Saint-Jean-de-Luz à Bayonne
+303,Un aller de La Roche-sur-Yon à Nantes
+304,Saint-Dié à Strasbourg
+305,De Chalon-sur-Saône à Dijon
+306,Billet Vitry-le-François à Reims
+307,De Saint-Quentin à Paris
+308,Un train de Mont-de-Marsan à Bordeaux
+309,Boulogne-sur-Mer à Calais
+310,De Saint-Germain-en-Laye à Paris
+311,Un billet de saint malo à rennes
+312,de aix en provence a marseille
+313,train clermont ferrand saint etienne
+314,le mans rennes svp
+315,billet le havre rouen
+316,la rochelle poitiers aller simple
+317,de saint brieuc a brest
+318,aix les bains chambery
+319,saint nazaire nantes
+320,le creusot depuis dijon
+321,st malo a rene
+322,aix en provance a marseil
+323,clairmont feran a st etiène
+324,le men a rène
+325,le avre a rouan
+326,la rochele a poitié
+327,st brieu a brest
+328,éx lé ben a chambéri
+329,sain nazère nant
+330,le creuzo depui digeon
+331,Je pars de Lyon-Part-Dieu et j'arrive à Paris-Gare-de-Lyon
+332,Un billet de Paris-Nord à Lille-Flandres
+333,De Marseille-Saint-Charles à Lyon-Perrache
+334,Bordeaux-Saint-Jean à Toulouse-Matabiau
+335,De Paris-Est à Strasbourg-Ville
+336,Paris-Austerlitz vers Orléans
+337,De Lyon-Part-Dieu à Marseille-Saint-Charles
+338,Paris-Montparnasse à Rennes svp
+339,De Lyon-Perrache à Saint-Étienne-Châteaucreux
+340,Lille-Europe vers Paris-Nord
+341,Je me rends à Toulouse depuis Paris mais j'hésite entre Toulouse-Matabiau et prendre un bus pour le centre
+342,Est-ce que les trains de la ligne Paris-Bordeaux s'arrêtent à Angoulême j'ai besoin d'un Paris Angoulême
+343,La dernière fois que j'ai pris le train de Nantes il était en retard mais bon je veux quand même un Nantes Lyon
+344,J'habite à côté de la gare de Grenoble et je travaille à Lyon je fais le trajet tous les jours
+345,Mon bureau est à Marseille mais je vis à Aix-en-Provence je veux un abonnement entre les deux
+346,C'est pour un déménagement de Bordeaux à Nantes est-ce que je peux prendre des bagages volumineux dans le train
+347,Je voudrais emmener mon vélo dans le train de Tours à Paris est-ce que c'est possible
+348,Avec ma poussette est-ce que je peux monter dans le train facilement de Rennes à Saint-Brieuc
+349,J'ai une correspondance à Lyon est-ce que le train de Grenoble arrive au même endroit que celui qui part pour Paris
+350,C'est mon premier voyage en train en France je veux aller de Paris à Marseille comment ça marche
+351,je voudrais un billet de Paris à Lyon pour demain matin
+352,un aller simple de Marseille à Toulouse s'il vous plaît
+353,je cherche un train de Bordeaux à Nantes
+354,billet de Strasbourg à Paris pour vendredi
+355,je veux prendre le TGV de Lyon à Nice
+356,un aller-retour Lille Paris
+357,de Rennes à Brest demain soir
+358,je voudrais réserver de Montpellier à Avignon
+359,train de Dijon à Besançon pour samedi
+360,billet Nantes Rennes le plus tôt possible
+361,de Caen à Rouen demain
+362,je pars de Poitiers pour aller à Limoges
+363,un billet Perpignan Montpellier
+364,Metz Nancy aller simple
+365,de Toulon à Nice svp
+366,billet pour Reims au départ d'Épernay
+367,Lyon Valence par le premier train
+368,de Angers à Tours
+369,je cherche un Orléans Blois
+370,train Bayonne Pau pour ce soir
+371,un train lyon marseil svp
+372,je ve un bilet de bx a tlse
+373,jai bsoin dun train pari lile
+374,bilet nant renés
+375,je cherch un trin de montpelyé a avinyion
+376,aller sinple tlon nis
+377,biyé marsaille a toulouze
+378,train pari strass bourg
+379,1 bilé de grenobl a lion
+380,trin d'aje a toulous
+381,je ve alé de roan a paris
+382,bilet pari a lhion sil vou plé
+383,tren angoulaime a bordo
+384,de poytyé a limoje
+385,biyai nimme monpelyé
+386,un bilet de reinn a nan
+387,trin d amien a pari
+388,combian un bilet digeion a besansson
+389,1 alai marse a aje
+390,lair sinpl arras a lile
+391,Dites-moi Albert vous qui connaissez bien les trains comment je fais pour aller de Paris à Bordeaux
+392,Mon ami Tours c'est son surnom parce qu'il vient de Tours justement et il veut aller à Nantes
+393,Le petit Albert part de la gare de Albert pour aller voir sa grand-mère à Amiens
+394,Ma fille Nice qui est née à Nice veut prendre le train pour Cannes
+395,Avec Florence on a décidé d'aller de Florence à Rome non je rigole de Lyon à Marseille
+396,Je cherche un billet pas cher y'a un gap de prix énorme entre les trains de Gap à Marseille
+397,Le sens commun voudrait qu'on parte de Sens mais non je veux aller à Sens depuis Auxerre
+398,C'est pas la peine de faire des tours et des détours je veux un direct de Tours à Paris
+399,Orange est la couleur du TGV qui va de Orange à Avignon
+400,J'ai pas de bol le train de Vichy à Lyon est complet et celui de Vichy à Clermont aussi
+401,En partant de Nice on peut aller à Menton c'est nice comme balade en train
+402,Pau est une ville formidable surtout quand on y arrive depuis Bayonne
+403,Lourdes c'est pour les miracles moi j'ai juste besoin d'un train depuis Tarbes
+404,Le cognac c'est pas que de l'alcool c'est aussi une gare et je veux aller de Cognac à Saintes
+405,Dax c'est les thermes mais moi je veux juste un billet de Dax à Bayonne
+406,Je pars de Lens après le match pour rentrer à Paris
+407,Chars c'est un bled paumé mais j'ai besoin d'un train de Chars à Pontoise
+408,Je suis dans le Lot et j'ai pas de réseau bref un Cahors Toulouse svp
+409,Foix c'est au bout du monde mais je veux y aller depuis Toulouse
+410,Pour la fois où je suis allé à Foix j'avais pris un train de Toulouse
+411,Moi j'habite à Tours et je fais des allers-retours à Paris pour le boulot
+412,Je déménage de Nice à Paris c'est un sacré changement
+413,Avec Albert on se retrouve à mi-chemin entre Lille et Paris alors on prend le train chacun de notre côté
+414,Florence m'a dit que le train de Strasbourg à Paris était souvent en retard
+415,Faut que j'aille à Bordeaux depuis Périgueux et j'ai même pas de voiture
+416,Je suis perdu dans Paris et en plus je dois trouver un train pour Lyon
+417,Franchement entre Nantes et Rennes j'hésite mais bon réserve-moi un Nantes Rennes
+418,Mon pote qui s'appelle Paris oui c'est son prénom veut aller de Marseille à Montpellier
+419,J'ai une amie qui s'appelle Lourdes elle veut aller de Pau à Lourdes justement
+420,C'est ironique mais mon chien s'appelle Toulouse et on va de Toulouse à Bordeaux
+421,Je prends le train de paris à lyon demain matin
+422,un billet de marseille à toulouse svp
+423,billet bordeaux nantes
+424,de strasbourg à paris vendredi
+425,le tgv de lyon à nice
+426,aller-retour lille paris
+427,rennes brest demain soir
+428,de montpellier à avignon
+429,dijon besançon samedi
+430,nantes rennes le plus tôt
+431,billet caen rouen
+432,poitiers limoges svp
+433,perpignan montpellier
+434,metz nancy aller simple
+435,toulon nice
+436,reims épernay
+437,lyon valence premier train
+438,angers tours
+439,orléans blois
+440,bayonne pau ce soir
+441,Excusez-moi je suis un touriste et je ne connais pas très bien la France mais j'aimerais aller de Paris en direction de Marseille en train est-ce que c'est compliqué
+442,J'ai une réunion super importante à Bordeaux et je suis encore à Toulouse il me faut le premier train qui part
+443,Bon alors voilà la situation je suis coincé à Grenoble il neige partout et il faut absolument que je sois à Lyon ce soir
+444,Ma belle-mère débarque à Nantes et je dois aller la chercher en venant de Rennes c'est la galère
+445,J'ai promis à ma fille qu'on irait à Disneyland donc on part de Lyon pour aller à Paris ce week-end
+446,Le médecin m'a dit d'aller voir un spécialiste à Montpellier alors je prends le train depuis Perpignan
+447,On fait un road trip mais ma voiture est tombée en panne à Valence du coup on continue en train jusqu'à Marseille
+448,Ma copine m'a largué à Bordeaux et je veux rentrer chez moi à Paris le plus vite possible
+449,Je reviens de vacances à Biarritz et je dois rentrer à Toulouse c'est la déprime
+450,Mon avion pour Nice a été annulé est-ce qu'il y a un train depuis Paris ce soir
+451,C'est les vacances scolaires et je voudrais emmener les enfants à la mer depuis Clermont-Ferrand jusqu'à Montpellier
+452,J'ai un concert à Nantes samedi et je viens de Bordeaux quel train je prends
+453,Pour l'enterrement de vie de garçon on part tous de Paris direction Reims
+454,Ma grand-mère a 90 ans elle veut prendre le train de Limoges à Paris pour la première fois
+455,Je suis étudiant Erasmus et je veux visiter la France en partant de Strasbourg pour aller à Lyon
+456,Mon chat est malade et le seul véto spécialisé est à Toulouse je pars de Montauban
+457,J'ai un casting à Paris demain matin et je suis encore à Marseille là
+458,On veut aller au ski depuis Paris on vise Chambéry pour après prendre la navette
+459,Ma coloc déménage à Lille et je l'aide en venant de Paris avec plein de cartons
+460,Je dois rendre ma thèse à la fac de Toulouse et je suis bloqué à Agen
+461,Je veux aller à la gare de Lyon à Paris depuis Dijon
+462,Comment aller de Paris-Gare-de-Lyon à la gare de Lyon-Part-Dieu
+463,De la gare de Marseille-Saint-Charles vers Lyon-Part-Dieu
+464,Billet gare du Nord gare de Lille-Flandres
+465,De Paris-Austerlitz vers la gare de Toulouse-Matabiau
+466,Gare de Bordeaux-Saint-Jean vers Paris-Montparnasse
+467,De Montpellier-Saint-Roch à Nîmes
+468,La gare de Strasbourg-Ville vers celle de Paris-Est
+469,Je pars de Paris et j'arrive à Lyon mais à quelle gare de Lyon exactement
+470,C'est depuis la gare de Lyon à Paris que je veux aller à Lyon la ville
+471,Je pars de Nice mais je m'arrête à Toulon avant de continuer vers Marseille
+472,De Bordeaux avec un arrêt à Angoulême puis jusqu'à Paris
+473,Lyon Avignon en passant par Valence
+474,De Toulouse à Paris en faisant une halte à Limoges
+475,Je veux aller de Nantes à Bordeaux en m'arrêtant à La Rochelle
+476,Paris vers Marseille avec une correspondance à Lyon ça me va
+477,De Lille à Strasbourg j'imagine qu'il faut changer à Paris
+478,Rennes Toulouse en passant par Nantes et Bordeaux
+479,De Brest à Nice ça doit être long mais allons-y
+480,Caen Paris avec un stop à Rouen c'est possible ?
+481,je veu allé a pari de puis lion
+482,bilet marsèye a toulous
+483,un trin de bòrdo a nan
+484,strazburg pari sil vou plé
+485,le tégévé de lhyon a nis
+486,alé retour lile pari
+487,rène brèst dem1 soir
+488,monpelié avignion
+489,digeion bézanson samdi
+490,nant rène le plu to
+491,bilé quand à rouan
+492,poitiés limoj
+493,pèrpinian monpelyè
+494,mèss nansi alé simpl
+495,toulont nis
+496,un bilé reims épèrné
+497,lhyon valanse premié trin
+498,anjé tour
+499,orléant bloua
+500,bayone po se soir
+501,je veu un tgv marseil a lile
+502,trin de bordo a monpélyé svp
+503,bilet nant a strazbur
+504,un alé de poytyé a bordo
+505,le trin de dax a bayon
+506,combian le bilé de pari a nis
+507,je cherch un tgv de lhion à marsey pa tro cher
+508,y'a un tren dirèk de bordo a pari?
+509,bilet de toullouse a sète
+510,un alai de grenoble a shanberry
+511,J'habite à Lyon et je travaille à Paris je fais l'aller-retour chaque semaine
+512,Depuis que je suis à Nantes je prends le train pour Rennes tous les matins
+513,Ça fait trois ans que je fais le trajet Bordeaux Toulouse pour le boulot
+514,Je connais par coeur le train de Marseille à Aix-en-Provence
+515,Je fais le pendulaire entre Strasbourg et Paris depuis septembre
+516,Le trajet entre Tours et Paris je le connais les yeux fermés
+517,Tous les vendredis soir je prends le Lyon Grenoble
+518,Mon abonnement Lille Paris expire bientôt il faut que je le renouvelle
+519,Je fais la navette Montpellier Nîmes depuis mon déménagement
+520,Le Dijon Paris de 7h12 c'est mon train quotidien
+521,Je descends à Avignon ou je continue jusqu'à Marseille finalement Marseille
+522,Bon on part de Lyon et on va où déjà ah oui Annecy
+523,Euh attends je réfléchis oui un billet de Nantes à La Rochelle
+524,Hmm c'est compliqué en fait je veux juste aller de Toulouse à Pau c'est tout
+525,Alors alors alors un billet de Paris à non pas Paris de Marseille à Lyon
+526,C'est pour mon fils hein pas pour moi un billet de Rennes à Saint-Brieuc
+527,Comment dire euh je voudrais partir de Bordeaux pour me rendre à Arcachon
+528,En fait non j'ai changé d'avis je veux aller de Lyon à Clermont-Ferrand pas à Saint-Étienne
+529,Pardon je me suis trompé c'est de Nantes à Bordeaux pas de Nantes à Rennes
+530,Attendez je vérifie oui c'est bien de Dijon à Lyon que je veux aller
+531,Je dois aller voir mon père à l'hôpital de Limoges depuis Toulouse
+532,Mon ex habite à Lyon et je dois y aller depuis Paris pour récupérer mes affaires
+533,J'ai peur de l'avion donc je prends le train de Paris à Marseille
+534,Le médecin m'a dit de faire une cure à Vichy j'arrive de Paris
+535,Mon patron m'envoie à Strasbourg pour une formation je pars de Lyon
+536,Mes enfants sont chez leur mère à Bordeaux et je suis à Toulouse il faut que j'y aille
+537,J'ai gagné un séjour à Biarritz et je pars de Toulouse trop content
+538,C'est l'anniversaire de ma soeur à Montpellier je dois y aller depuis Paris
+539,On m'a volé ma voiture à Nantes du coup je prends le train pour Rennes
+540,J'ai un mariage à Reims ce week-end je viens de Lyon
+541,Je veux prendre le train de 8h de Lyon à Paris
+542,Le TGV de 14h30 de Paris à Bordeaux il reste des places ?
+543,Je veux être à Marseille avant midi en partant de Lyon
+544,Le premier train du matin de Nantes à Paris c'est à quelle heure
+545,Le dernier train ce soir de Lille à Paris
+546,Je veux arriver à Toulouse avant 18h en partant de Bordeaux
+547,Y'a un train vers 10h de Strasbourg à Paris ?
+548,Le TGV du dimanche soir de Nice à Paris
+549,Premier Marseille Lyon demain matin
+550,Train de nuit Paris Briançon
+551,Billet Rennes Nantes pour 2 adultes et 1 enfant
+552,3 places Paris Lyon TGV de 7h
+553,Un billet tarif réduit de Marseille à Nice carte jeune
+554,2 allers simples Bordeaux Toulouse
+555,Place en première de Paris à Strasbourg
+556,Billet groupe 8 personnes Lyon Marseille
+557,Un aller-retour pour 2 de Nantes à La Rochelle
+558,Billet senior de Dijon à Paris
+559,Place vélo dans le train de Rennes à Brest
+560,2 billets avec carte famille nombreuse de Lille à Paris
+561,y a t il un train pour marseille depuis lyon
+562,est ce que je peux aller de paris a bordeaux en train
+563,c est possible de prendre un train de nantes a rennes demain
+564,comment je fais pour aller de toulouse a montpellier
+565,il existe un train direct de strasbourg a paris
+566,est ce qu il y a des trains de nice a cannes
+567,je me demande si je peux aller de dijon a lyon en train
+568,c est quoi le prix d un billet de lille a paris
+569,y a des trains le dimanche de bordeaux a arcachon
+570,je peux aller de grenoble a chambery en train
+571,Salut je voudrais réserver un billet de Paris pour Lyon pour demain
+572,Bonjour madame je souhaiterais me renseigner sur les trains de Marseille à Toulon
+573,Bonsoir est-ce qu'il y a encore des trains de Nantes à Paris ce soir
+574,Hello un billet Lyon Marseille c'est possible
+575,Coucou j'aurais besoin d'un train de Rennes à Saint-Malo
+576,Re-bonjour j'ai oublié de demander le prix de Bordeaux à Pau
+577,Excusez-moi de vous déranger mais je cherche un train de Rouen à Paris
+578,Si c'est pas trop demander un billet de Tours à Poitiers
+579,Pardon j'aimerais avoir des infos sur le train Metz Nancy
+580,S'il vous plaît un aller de Caen à Cherbourg
+581,Un Paris Lyon mais pas trop cher hein je suis étudiant
+582,Faut que j'aille à Bordeaux depuis Toulouse et j'ai que 30 euros
+583,Je suis en galère de thunes mais il faut que j'aille de Marseille à Nice
+584,C'est quoi le billet le moins cher de Nantes à Paris
+585,J'ai un petit budget pour aller de Lyon à Grenoble
+586,Ya un Ouigo de Paris à Marseille ?
+587,Le prix c'est combien pour un Lille Strasbourg
+588,Un billet pas cher de Rennes à Bordeaux ça existe ?
+589,Tarif le plus bas de Montpellier à Lyon
+590,Le TGV de Toulouse à Paris c'est hors de prix ya pas une alternative
+591,Paris Lyon aller simple 2ème classe
+592,Un aller-retour Marseille Paris
+593,Bordeaux Toulouse aller
+594,Nantes Rennes AR
+595,Lyon Nice direct
+596,Lille Paris 1ère
+597,Strasbourg Lyon TGV
+598,Montpellier Toulouse Intercités
+599,Dijon Paris Ouigo
+600,Reims Strasbourg TER
+601,Mon voyage commence à Nantes et se finit à Toulouse
+602,Le point de départ c'est Marseille l'arrivée c'est Paris
+603,J'ai besoin d'aller de mon domicile à Rennes jusqu'à mon bureau à Paris
+604,Mon itinéraire c'est Lyon départ et Bordeaux arrivée
+605,C'est un trajet professionnel de Strasbourg vers Paris
+606,Je pars de chez moi à Nantes pour rejoindre ma famille à Brest
+607,L'aller c'est de Paris et le retour de Marseille mais je veux juste l'aller
+608,On décolle de Toulouse pour atterrir enfin façon de parler à Bordeaux
+609,Le départ se fait à Dijon et l'arrivée à Lyon
+610,Trajet Grenoble Lyon pour aujourd'hui
+611,pari a lhion
+612,marseil toulous
+613,bx nan
+614,stras pari
+615,lhion nis
+616,lile pari
+617,ren brest
+618,mpl avi
+619,dijon besan
+620,nan ren
+621,tgv pari lion 2m1
+622,train mar toulous ajrd
+623,ya 1 train bx nan?
+624,combo strass pari
+625,1 place lhion nis
+626,lil par svp
+627,ren brest vit
+628,mpl avig
+629,dijon bzc sam
+630,nan ren 2m1 mat
+631,Oh purée faut que j'aille de Marseille à Lyon et y'a grève
+632,Pfff encore en retard le train de Paris à Bordeaux
+633,Bon allez je me motive je prends un billet de Nantes à Toulouse
+634,C'est chaud je dois être à Strasbourg dans 4h et je suis à Paris
+635,La galère pour trouver un train de Lyon à Nice en plein été
+636,Franchement c'est pas donné un Lille Paris
+637,Ça me saoule de devoir changer à Rennes pour aller de Brest à Paris
+638,Heureusement qu'il y a le TGV pour faire Montpellier Avignon
+639,Quelle plaie les travaux sur la ligne Dijon Besançon
+640,Je kiffe prendre le train de Nantes à Rennes c'est rapide
+641,aller de lyon a paris
+642,partir de marseille pour toulouse
+643,voyager de bordeaux vers nantes
+644,prendre le train de strasbourg a paris
+645,se rendre de lyon a nice
+646,quitter lille pour paris
+647,rejoindre brest depuis rennes
+648,rallier avignon depuis montpellier
+649,filer de dijon a besancon
+650,foncer de nantes a rennes
+651,Je viens de débarquer à la gare de Metz et je dois aller à Strasbourg
+652,Je suis sur le quai à Bordeaux et je dois être à Agen ce soir
+653,Là maintenant je suis à la gare de Lyon et je veux aller à Marseille
+654,Je suis à Lille-Flandres et faut que j'aille à Bruxelles non pardon à Valenciennes
+655,En ce moment je suis bloqué à Avignon TGV et mon train pour Montpellier est annulé
+656,Je suis coincé à Rennes depuis 2h et je dois absolument aller à Saint-Brieuc
+657,J'attends à la gare de Tours depuis une heure mon train pour Paris est en retard
+658,Je viens d'arriver à Nantes et je dois repartir immédiatement pour Angers
+659,Là je suis dans le hall de la gare de Marseille Saint-Charles et je veux aller à Toulon
+660,On m'a déposé à la gare de Caen et je dois aller jusqu'à Paris
+661,Comment aller de Tours à Paris sachant que je ne veux pas de correspondance
+662,De Lyon à Marseille mais uniquement en TGV pas d'Intercités
+663,Un billet Bordeaux Toulouse mais le train direct pas celui qui s'arrête partout
+664,Je veux le plus rapide de Strasbourg à Paris sans changement
+665,De Montpellier à Paris en passant par Lyon c'est obligé ?
+666,Le Nantes Bordeaux direct ça existe ou faut changer ?
+667,Paris Nice sans escale c'est faisable ?
+668,De Grenoble à Paris le plus court en temps
+669,Brest Paris sans correspondance svp
+670,Le train le plus rapide Reims Strasbourg
+671,Normalement je prends le train à Rennes mais là on me dépose directement à la gare de Saint-Malo donc je veux un Saint-Malo Paris
+672,D'habitude c'est Toulouse Bordeaux mais cette fois j'ai besoin d'un Montauban Bordeaux
+673,Je fais souvent Lyon Paris mais aujourd'hui je pars de Villefranche-sur-Saône
+674,Pour une fois je ne pars pas de Paris mais de Marne-la-Vallée pour aller à Lyon
+675,Au lieu de prendre le train à Bordeaux je monte à Angoulême direction Paris
+676,Je pars de Valence au lieu de Lyon comme d'habitude pour aller à Marseille
+677,Ma gare habituelle c'est Nantes mais cette fois je prends à Angers pour Rennes
+678,Exceptionnellement je pars de Metz et pas de Nancy pour aller à Paris
+679,Je ne pars pas de Montpellier cette fois mais de Sète destination Lyon
+680,Au lieu du Lille Paris habituel je fais un Arras Paris
+681,Je suis pas sûr si c'est un train ou un bus mais je veux aller de Lyon à Saint-Étienne
+682,Est-ce qu'il y a un moyen d'aller de Perpignan à Carcassonne en train
+683,C'est quoi la meilleure option pour aller de Rouen à Paris train ou bus
+684,Je préfère le train à la voiture pour aller de Bordeaux à Arcachon
+685,Le covoiturage ou le train de Toulouse à Montpellier qu'est-ce qui est mieux
+686,J'hésite entre l'avion et le train pour aller de Nice à Paris
+687,Est-ce que le train c'est plus pratique que la voiture de Lyon à Annecy
+688,Plutôt train ou Blablacar de Nantes à Rennes
+689,Je peux prendre un TER de Avignon à Nîmes
+690,Le bus ou le TER de Limoges à Brive c'est quoi le mieux
+691,Où est la gare ?
+692,C'est combien un abonnement TGV
+693,Quel est le prochain train
+694,Les toilettes sont où dans la gare
+695,Mon billet est valable combien de temps
+696,La SNCF recrute en ce moment ?
+697,Comment devenir conducteur de train
+698,C'est quoi un Ouigo
+699,La différence entre TGV et Intercités
+700,Comment marche la carte Avantage
+701,Le wifi dans les TGV c'est gratuit ?
+702,Est-ce que les chiens sont acceptés dans le train
+703,Je peux fumer dans le train
+704,Comment annuler un billet SNCF
+705,La gare de Lyon c'est pour aller où
+706,Pourquoi les trains sont toujours en retard
+707,C'est quoi IDTgv
+708,Les horaires de la gare de Nantes
+709,Le parking de la gare de Lyon-Part-Dieu
+710,Y'a un distributeur dans la gare de Marseille
+711,Je veux aller quelque part mais je sais pas où
+712,Un billet pour nulle part
+713,Emmenez-moi au bout du monde en train
+714,Je veux partir loin d'ici
+715,N'importe quel train n'importe où
+716,Surprenez-moi avec une destination
+717,Le prochain train qui part je le prends
+718,Un billet pour la mer
+719,Je veux aller à la montagne en train
+720,Direction le soleil
+721,Le train de 8h03
+722,Voie 7 c'est pour quel train
+723,Wagon 12 place 45
+724,C'est le bon quai pour Lyon oh wait c'est une question pas une réservation
+725,Le TGV numéro 6234 il est à l'heure
+726,Ma correspondance c'est à quelle heure
+727,Je suis dans le mauvais train
+728,On arrive dans combien de temps
+729,C'est quoi le prochain arrêt
+730,Le wagon bar c'est dans quel sens
+731,Paris
+732,Lyon
+733,Je veux un train
+734,Billet
+735,Aller simple
+736,TGV
+737,demain matin
+738,première classe
+739,pas cher
+740,le plus tôt possible
+741,J'hésite entre Paris et Lyon
+742,Soit Bordeaux soit Toulouse
+743,N'importe où en Bretagne
+744,Peut-être Marseille ou Nice je sais pas
+745,Je veux visiter le sud de la France
+746,Quelque part dans le nord
+747,Une ville sympa pas trop loin de Paris
+748,Je veux voir la mer
+749,Un endroit avec de la neige
+750,Pas trop loin pas trop cher
+751,Je prends le RER de Chatelet à la Défense
+752,Le métro de Bastille à République
+753,Le bus 42 passe à quelle heure
+754,Comment aller de la gare à l'aéroport
+755,Le tramway de Bordeaux ligne A
+756,Navette aéroport de Nice
+757,Le funiculaire de Lyon
+758,Vélib station proche de la gare
+759,Le batobus sur la Seine
+760,Taxi de la gare à l'hôtel
+761,Un billet de train Lyon Marseille et aussi un hôtel à Marseille
+762,Je veux aller de Paris à Bordeaux et j'ai aussi besoin d'une voiture de location
+763,Train de Nantes à Rennes et ensuite un bus pour Saint-Malo
+764,Billet Toulouse Paris et un retour la semaine prochaine aussi
+765,Lyon Nice par le train et après je prends le ferry pour la Corse
+766,De Marseille à Avignon en train puis un taxi pour le festival
+767,Un aller Bordeaux Toulouse et réserve-moi aussi un siège côté fenêtre
+768,Paris Strasbourg en TGV et je voudrais aussi savoir si y'a le wifi
+769,Lille Paris aller-retour et est-ce qu'on peut emmener un vélo
+770,De Rennes à Brest et après comment je fais pour aller à Ouessant
+771,De nantes a rennes
+772,de PARIS a LYON
+773,DE MARSEILLE A TOULOUSE
+774,De Bordeaux A Nantes
+775,de strasbourg à PARIS
+776,BILLET LYON NICE
+777,je Veux Aller De Lille A Paris
+778,rENNES bREST
+779,De MoNtPeLlIeR a AvIgNoN
+780,DIJON BESANÇON SVP
+781,J'aimerais prendre un train qui part vers 8h de Lyon pour arriver à Paris pas trop tard dans la matinée si possible avant midi
+782,Est-ce que vous avez un train qui part de Marseille le matin et qui arrive à Toulouse en début d'après-midi c'est pour un rendez-vous
+783,Je cherche quelque chose de pas trop tôt le matin pour aller de Bordeaux à Nantes genre vers 10h-11h
+784,Le train du soir de Paris à Lyon celui qui part vers 19h-20h il est complet ?
+785,Un train de nuit s'il en existe encore de Paris à Toulouse
+786,Le week-end prochain samedi matin de Lyon à Nice qu'est-ce que vous avez
+787,Dimanche soir le retour de Rennes à Paris le plus tard possible
+788,Le vendredi soir de Lille à Lyon pour le week-end
+789,Mercredi prochain de Strasbourg à Paris le matin de bonne heure
+790,Le premier train lundi matin de Dijon à Paris
+791,Si j'ai bien compris pour aller de Lyon à Marseille c'est à Part-Dieu qu'il faut que j'aille
+792,On m'a dit que le train de Paris à Bordeaux part de Montparnasse c'est vrai
+793,Est-ce que c'est mieux de partir de Lyon-Perrache ou Lyon-Part-Dieu pour aller à Grenoble
+794,Le train pour Toulouse il part de quelle gare à Paris
+795,C'est Paris-Nord ou Paris-Est pour aller à Strasbourg
+796,Je préfère partir de Marseille-Blancarde plutôt que Saint-Charles pour aller à Toulon
+797,De quelle gare de Lille faut partir pour aller à Paris Flandres ou Europe
+798,Pour aller à Rennes c'est Montparnasse ou un autre gare parisienne
+799,Lyon-Part-Dieu vers Annecy c'est direct ?
+800,Bordeaux-Saint-Jean c'est bien la bonne gare pour Toulouse
+801,Je vais de Paris à Tours et ensuite de Tours à Bordeaux le même jour
+802,Premier trajet Lyon Avignon puis Avignon Montpellier
+803,Mon parcours c'est Lille Paris puis Paris Lyon
+804,Je fais Nantes Rennes puis Rennes Saint-Malo dans la foulée
+805,D'abord de Marseille à Lyon et après de Lyon à Strasbourg
+806,Première étape Bordeaux Toulouse puis Toulouse Montpellier
+807,Le matin de Paris à Reims et l'après-midi de Reims à Strasbourg
+808,Aller de Caen à Rouen le matin et de Rouen à Paris l'après-midi
+809,Je fais un Dijon Lyon puis un Lyon Marseille
+810,D'abord Rennes Nantes et ensuite Nantes La Rochelle
+811,Depuis Bordeaux je veux me rendre à Périgueux c'est mon lieu de naissance
+812,En partance de la ville de Montpellier vers la cité de Carcassonne
+813,Acheminement ferroviaire de la commune de Béziers au chef-lieu du département de l'Hérault à savoir Montpellier
+814,Je souhaiterais effectuer un déplacement par voie ferroviaire depuis la métropole lyonnaise jusqu'à la préfecture du département du Rhône qui est en fait la même ville mais bon disons vers Dijon
+815,Au départ de la cité phocéenne en direction de la ville rose
+816,Depuis la capitale des Gaules vers la capitale de la France
+817,De la ville lumière en direction de la perle du Bordelais
+818,Depuis le pays basque français à destination de la préfecture de la Gironde
+819,Au départ de la Venise provençale en direction de la principauté monégasque enfin je veux dire Nice
+820,De la cité corsaire vers la capitale bretonne
+821,Je fais toujours le même trajet de Vannes à Lorient c'est pénible
+822,Mon père prenait ce train de Béziers à Montpellier il y a 30 ans
+823,Je connais ce trajet par coeur de Libourne à Bordeaux
+824,C'est la première fois que je prends le train de Rodez à Toulouse
+825,Autrefois je faisais souvent le trajet de Aurillac à Clermont-Ferrand
+826,Mon grand-père faisait ce trajet de Cahors à Toulouse tous les dimanches
+827,Quand j'étais petit on prenait le train de Auch à Toulouse
+828,L'époque où le train de Figeac à Toulouse était direct me manque
+829,Je suis nostalgique du vieux train de Mende à Clermont-Ferrand
+830,À l'époque c'était plus simple d'aller de Guéret à Limoges
+831,Je dois aller de Nantes à Bordeaux mais je n'ai pas de carte d'identité est-ce que c'est grave
+832,Mon billet de Paris à Lyon est au nom de mon mari mais c'est moi qui voyage
+833,J'ai une valise énorme est-ce que je peux quand même prendre le train de Marseille à Nice
+834,Avec mon fauteuil roulant comment je fais pour aller de Rennes à Paris
+835,Je suis enceinte de 8 mois est-ce que je peux voyager de Toulouse à Bordeaux en train
+836,J'ai le vertige est-ce que le viaduc de Millau c'est sur la route ou sur la voie ferrée de Béziers à Millau
+837,Avec 3 valises et un carton de déménagement de Lyon à Clermont-Ferrand
+838,Mon fils de 4 ans voyage gratuit de Paris à Marseille
+839,J'ai un instrument de musique encombrant et je vais de Strasbourg à Paris
+840,Je voyage avec un bébé de 6 mois de Lille à Lyon est-ce qu'il y a des espaces famille
+841,de paris a liyon
+842,de marsseye a nis
+843,bordau a nan
+844,tulous a montpéyé
+845,de liyon a marsseille
+846,strazebour a parie
+847,rène a bres
+848,liyle a parie
+849,je ve un bilé de greunoble a lion
+850,1 alé dé dijeon a bézanson
+851,bilet parie a bordo
+852,je cherche 1 tren de rouan a parie
+853,alé simpel de kan a le avre
+854,1 bilé de sen deni a parie
+855,tren de valanse a lion
+856,bilé de niort a la rochellle
+857,de chateauroux a tour
+858,bilet de périgeu a brivve
+859,alé de tarb a pô
+860,tren de sèt a monpélyé
+861,J'ai un rendez-vous très important à Paris mardi prochain à 14h et je dois absolument y être à temps en partant de Lyon est-ce que le TGV de 10h30 me laisserait assez de marge
+862,Ma fille fait sa rentrée à la fac de Bordeaux le 2 septembre et on voudrait y aller ensemble depuis Toulouse avec pas mal de bagages pour installer son studio
+863,Mon père vient d'avoir un accident à l'hôpital de Rouen et je dois y aller de toute urgence depuis Paris quel est le moyen le plus rapide en train
+864,On organise une surprise pour les 50 ans de mariage de mes grands-parents on est 12 personnes à vouloir aller de Paris à Tours le même week-end
+865,J'ai raté mon avion à Marseille et je dois absolument être à Nice ce soir pour un concert est-ce qu'il reste des trains
+866,La semaine prochaine j'ai des entretiens d'embauche à la fois à Lyon et à Strasbourg alors je dois d'abord aller de Paris à Lyon puis de Lyon à Strasbourg
+867,Avec le télétravail je vis à Montpellier maintenant mais je dois aller au bureau à Paris deux fois par mois j'ai besoin d'un aller simple pour mardi
+868,Mon déménagement est prévu le 15 mars de Nantes à Bordeaux et j'aimerais prendre le train ce jour-là pour être sur place avant le camion
+869,Pour les obsèques de ma tante à Limoges je dois partir de Marseille le plus rapidement possible
+870,Je participe à un marathon à Nice dimanche prochain et j'arrive de Lyon le samedi si possible en fin de matinée
+871,kel trin pour alé de lhion a pari 2m1 mat?
+872,wsh frer ya un tgv marseil bordô?
+873,slt cv? jsui a nan et jveu alé a ren
+874,mdrr g loupé mon train de pari a lhion
+875,ptdr le trin de toulous a monpéyé é en r'tar
+876,oklm 1 biyé stras pari
+877,c poss 1 trin lil liyon?
+878,aled jdoi alé de bx a tls
+879,trkl 1 bilé ren brest
+880,chui dég ya rien comme trin nan pari
+881,De Paris à Bordeaux mais en fait non à Toulouse finalement
+882,Lyon enfin non Dijon vers Paris
+883,Euh Marseille pardon Montpellier à Lyon
+884,C'est pas Nantes c'est Rennes à Brest que je veux
+885,Attendez j'ai dit Lille mais c'est Arras vers Paris
+886,Non pas Bordeaux Toulouse c'est Bordeaux Pau que je veux
+887,Je me suis trompé c'est de Grenoble à Lyon pas de Grenoble à Chambéry
+888,Oubliez ce que j'ai dit je veux un Nice Marseille
+889,En fait mon train c'est de Rouen à Caen pas de Rouen à Paris
+890,Pardon c'est de Tours à Poitiers pas de Tours à Paris
+891,Combien de temps dure le trajet de Lyon à Paris
+892,C'est loin Bordeaux depuis Toulouse en train
+893,Y'a combien de km entre Marseille et Nice par le train
+894,Le train de Nantes à Rennes il met combien de temps
+895,C'est rapide le trajet de Strasbourg à Paris
+896,Quelle est la durée du voyage de Lille à Lyon
+897,Le Paris Marseille ça prend combien de temps
+898,Est-ce que c'est long de Dijon à Besançon
+899,Le trajet de Montpellier à Toulouse c'est combien d'heures
+900,Combien de temps pour aller de Rennes à Brest
+901,De Lyon à Paris je préfère le train du matin
+902,Le Marseille Toulouse de l'après-midi c'est à quelle heure
+903,Je prends souvent le Bordeaux Nantes du soir
+904,Le Strasbourg Paris express il existe toujours
+905,Mon Lyon Nice préféré c'est celui de 9h
+906,Vous avez un Lille Paris en fin de matinée
+907,Le Rennes Brest du dimanche soir
+908,Un Montpellier Avignon vers midi
+909,Le Dijon Besançon du samedi matin
+910,Votre Nantes Rennes le plus fréquenté c'est lequel
+911,je voudrais me rendre à bordeaux au départ de lyon en passant par clermont-ferrand
+912,de toulouse à paris avec un changement à bordeaux si nécessaire
+913,paris à nice mais je veux m'arrêter à marseille pour déjeuner et reprendre un train après
+914,de nantes à toulouse est-ce qu'il faut forcément passer par bordeaux
+915,lyon à strasbourg via dijon ou via paris quel est le plus rapide
+916,je vais de brest à paris en m'arrêtant à rennes pour déposer quelqu'un
+917,de perpignan à lyon avec un stop à montpellier pour prendre un café
+918,lille à marseille en passant par paris ça rallonge beaucoup
+919,de caen à toulouse quel est le meilleur itinéraire sachant que j'ai pas envie de passer par paris
+920,grenoble à nantes via lyon et puis par le tgv atlantique
+921,Je veux pas aller à Lyon hein je veux aller DE Lyon à Marseille
+922,C'est pas un aller POUR Paris c'est un aller DEPUIS Paris vers Lyon
+923,Attention l'origine c'est Bordeaux pas la destination je vais à Toulouse
+924,Mon départ c'est Nantes et l'arrivée c'est Rennes pas l'inverse
+925,Je pars de Strasbourg hein je ne vais PAS à Strasbourg je vais à Paris
+926,Non non non c'est Lille le départ et Paris l'arrivée
+927,L'origine du trajet c'est Marseille la destination finale c'est Lyon
+928,Ne confondez pas je QUITTE Dijon pour ALLER à Besançon
+929,Pour être clair mon point A c'est Rennes et mon point B c'est Brest
+930,Départ Montpellier arrivée Avignon c'est clair comme ça ?
+931,Mon père prend le train à Lyon mais moi je veux un billet de Paris à Bordeaux
+932,Ma soeur va de Marseille à Toulouse mais moi c'est de Nice à Marseille
+933,Le train de mon collègue va à Rennes mais le mien va de Paris à Lyon
+934,Mon ami prend le Nantes Rennes mais moi je fais le Rennes Brest
+935,Pendant que ma femme va à Dijon moi je vais de Lyon à Grenoble
+936,Les enfants vont chez leur grand-mère à Tours mais moi je continue de Tours à Bordeaux
+937,Mon frère rentre de Paris mais moi j'y vais donc un Marseille Paris
+938,Ma collègue fait le sens inverse de moi elle fait Paris Lyon et moi Lyon Paris
+939,On se croise avec ma soeur elle va à Nantes et moi je pars de Nantes pour aller à La Rochelle
+940,Mon voisin de palier fait le Toulouse Bordeaux tous les jours mais moi c'est le Bordeaux Toulouse
+941,Y'a un train de Brive-la-Gaillarde à Limoges
+942,De Châlons-en-Champagne à Reims svp
+943,Billet de Villeneuve-lès-Avignon à Avignon
+944,De Vitry-le-François à Paris
+945,Un train de Bagnères-de-Bigorre à Tarbes
+946,De Saint-Jean-Pied-de-Port à Bayonne
+947,Billet de Castelnaudary à Toulouse
+948,De Villeneuve-sur-Lot à Agen
+949,Un aller de Lons-le-Saunier à Lyon
+950,De Bagnères-de-Luchon à Toulouse
+951,brive la gailarde a limoj
+952,chalon en champane a reims
+953,vilneuv lé avignon a avignon
+954,vitri le fransoa a pari
+955,bagnere de bigorre a tarb
+956,sin jan pié de por a bayone
+957,castelnodari a toulous
+958,vilneuv sur lo a ajein
+959,lon le soniè a lion
+960,bagnere de luchon a toulous
+961,En tant que touriste américain I would like to go from Paris to Lyon please
+962,Je suis espagnol et je veux ir de Perpignan a Barcelona enfin non à Montpellier
+963,Mon anglais est meilleur que mon français mais billet de Marseille à Nice please
+964,Ich möchte von Strasbourg nach Paris fahren euh pardon un billet Strasbourg Paris
+965,My french is bad but I need train from Lyon to Paris
+966,Billet from Bordeaux to Toulouse please
+967,Un billet de Nantes to Rennes svp
+968,Je want aller de Nice à Cannes
+969,Tren de Madrid non pardon de Montpellier à Toulouse
+970,Scusi un biglietto da Marseille a Nice
+971,Je cherche le train de Marseille à Aix-en-Provence mais celui qui passe par la côte pas l'autoroute enfin le train quoi
+972,Pour aller de Lyon à Genève ah non c'est pas en France bon alors Lyon à Annecy
+973,Je crois que le train de Nantes à Rennes passe par Redon non bref je veux un billet
+974,Y'a un train qui va de Dijon à Marseille en direct ou faut passer par Lyon allez tant pis réserve
+975,Mon GPS me dit de passer par Limoges pour aller de Bordeaux à Clermont-Ferrand mais je préfère le train
+976,Vous savez la ligne qui passe dans les gorges de l'Allier j'aimerais la prendre de Clermont-Ferrand à Nîmes
+977,Le train des Pignes c'est bien pour aller de Nice à Digne non ? bon réserve-moi ça
+978,La ligne de la côte bleue c'est bien de Marseille à Miramas par la côte magnifique
+979,Le TGV qui longe la Méditerranée de Montpellier à Perpignan j'adore
+980,La ligne du Cévenol de Clermont-Ferrand à Nîmes ça existe encore ?
+981,J'habite pas loin de la gare et je veux aller de Toulouse à Carcassonne
+982,Depuis chez moi à Lyon c'est rapide d'aller à la gare donc un Lyon Paris
+983,Je suis à l'hôtel à côté de la gare de Marseille je veux aller à Montpellier
+984,Mon bureau est juste en face de la gare de Bordeaux je veux un Bordeaux Angoulême
+985,La gare est au bout de ma rue à Nantes billet pour Rennes
+986,Je peux marcher jusqu'à la gare de Tours un billet pour Paris svp
+987,Depuis la gare la plus proche de chez moi à Lille un train pour Bruxelles euh non pour Paris
+988,Mon Airbnb est à 5 min de la gare de Strasbourg un billet pour Paris
+989,Je loge à côté de la gare de Dijon et je veux aller à Lyon
+990,L'hôtel est en face de la gare de Rennes parfait pour mon train vers Saint-Malo
+991,Y'a un TGV pour Nice demain matin au départ de Paris ou que des Intercités
+992,C'est quoi les options pour aller de Marseille à Bordeaux TGV ou Intercités
+993,Le TER de Lyon à Saint-Étienne il est fréquent ?
+994,Y'a un Ouigo de Paris à Nantes ?
+995,TGV ou avion de Paris à Marseille qu'est-ce qui est le plus rapide
+996,Le TER Nantes Rennes c'est tous les combien
+997,Un Intercités de nuit de Paris à Briançon
+998,Y'a encore un train Corail de Bordeaux à Toulouse
+999,Le Ouigo de Lyon à Paris c'est vraiment moins cher
+1000,TGV InOui ou Ouigo de Lille à Lyon qu'est-ce que tu recommandes
+1001,Je pars demain de Lyon à Marseille mais j'sais pas encore si matin ou après-midi
+1002,Euh un billet enfin non un aller hmm de Paris à Bordeaux voilà
+1003,Bon alors il me faudrait un truc pour aller de Toulouse à comment elle s'appelle déjà Montpellier voilà
+1004,C'est pour le week-end prochain ou celui d'après enfin bref un Nantes Rennes
+1005,Mon train habituel le Paris Lyon quoi celui de 7h je crois
+1006,Alors voilà en gros j'ai besoin d'aller de Marseille à Lyon mais c'est compliqué parce que j'ai plein de bagages
+1007,Comment dire euh en fait je voudrais aller enfin prendre le train de Bordeaux jusqu'à Paris
+1008,Voilà voilà en gros c'est simple un Lyon Nice quoi
+1009,Bref bref un Strasbourg Paris et on en parle plus
+1010,Pour faire court un Dijon Lyon rapide
+1011,hola un billet de marsaille a tolose
+1012,salu jvoudr 1 biye pari leo
+1013,bjr msieur jé bzoin dalé de nan a ren
+1014,svp é ce kya 1 train de bordo a tlse
+1015,ya koi com train lil pari osecour
+1016,c a dir ke jveu allé de stras a pari mé pa tro cher
+1017,oh la la jcomprend rien o site de la sncf jve juste un lyon marsey
+1018,frer jte jure le site sncf cé 1 galere bref un pari bordeau
+1019,mé parent von a lhion é moi jveu un marsey nis
+1020,svp svp svp un nan ren vit jé pa bcoup 2 tan
+1021,Je pars pour le weekend un aller de Lyon à Nice vendredi soir et retour dimanche
+1022,Vacances d'été on part de Paris à Marseille le 1er juillet
+1023,Pour Noël un billet de Toulouse à Bordeaux le 23 décembre
+1024,La Toussaint on va de Nantes à Rennes chez les grands-parents
+1025,Pont de l'Ascension un aller de Lyon à Avignon
+1026,Pour le 14 juillet on va de Paris à Bordeaux voir les feux d'artifice
+1027,Week-end de Pâques un aller-retour de Marseille à Nice
+1028,Vacances de février on part au ski de Paris à Chambéry
+1029,Pour le réveillon du nouvel an un Paris Lyon le 31 décembre
+1030,Pendant les vacances de la Toussaint de Strasbourg à Paris avec les enfants
+1031,je vais a tours pas le tours de france hein la ville de tours depuis paris
+1032,orange comme la ville pas le fruit un billet d'avignon a orange
+1033,un billet pour nice la ville de la cote d'azur depuis marseille
+1034,gap la ville dans les hautes alpes pas un trou un billet depuis marseille
+1035,sens la ville pas la direction un train depuis paris
+1036,albert la ville de la somme pas le prenom billet depuis amiens
+1037,je vais a pau la ville pas la fin d'une phrase billet depuis bordeaux
+1038,lens la ville du foot pas les lentilles billet depuis lille
+1039,dax les thermes un billet depuis bayonne
+1040,vichy la ville thermale pas les pastilles depuis clermont-ferrand
+1041,Mon neveu qui habite à Lyon voudrait que je lui prenne un billet de Paris jusqu'à chez lui
+1042,Ma femme veut que je réserve pour elle un train de Marseille à Nice
+1043,C'est pour ma belle-mère un Bordeaux Toulouse elle sait pas se servir d'internet
+1044,Mon fils m'a demandé de lui acheter un billet de Nantes à Paris il est étudiant
+1045,Je prends un billet pour ma collègue de Lyon à Grenoble elle est en réunion
+1046,Ma grand-mère a besoin d'un billet de Pau à Bordeaux elle voyage seule
+1047,C'est pas pour moi c'est pour mon père un train de Dijon à Paris
+1048,Mon stagiaire doit aller de Strasbourg à Lyon je lui réserve
+1049,Je prends pour un groupe de collègues 5 billets de Rennes à Paris
+1050,Ma nièce qui a 16 ans doit aller de Toulouse à Montpellier toute seule
+1051,Avec les 40 euros qui me restent est-ce que je peux aller de Lyon à Paris
+1052,J'ai une carte jeune est-ce que ça marche sur le Marseille Nice
+1053,Le Ouigo de Bordeaux à Paris c'est moins cher que le TGV InOui non
+1054,Tarif dernière minute de Nantes à Rennes c'est combien
+1055,Y'a une promo en ce moment sur le Lyon Marseille
+1056,Le billet de Toulouse à Bordeaux en dernière minute ça coûte combien
+1057,Je cherche le tarif le plus bas possible de Paris à Strasbourg
+1058,C'est quoi le prix maximum d'un Lille Lyon
+1059,En réservant 3 mois à l'avance le Paris Bordeaux c'est moins cher
+1060,Le prem's de Montpellier à Lyon il est à combien
+1061,Le train part à quelle heure de Lyon pour Paris
+1062,À quelle heure j'arrive à Marseille si je pars de Nice à 8h
+1063,Le prochain départ de Bordeaux vers Toulouse c'est quand
+1064,Horaires du Nantes Rennes pour demain matin
+1065,Le Paris Strasbourg de 14h il arrive à quelle heure
+1066,Premier et dernier train de Lyon à Grenoble
+1067,Les trains du soir de Lille à Paris après 20h
+1068,Fréquence des trains de Montpellier à Avignon
+1069,Tous les horaires de Dijon à Besançon pour samedi
+1070,Le train de 6h30 de Rennes à Paris il existe encore
+1071,De Paris-Gare-de-Lyon à Lyon-Part-Dieu je sais que c'est perturbé en ce moment
+1072,Un billet de Bordeaux-Saint-Jean à Paris-Montparnasse première classe
+1073,De la gare de Marseille-Saint-Charles vers Nice-Ville svp
+1074,Paris-Est Strasbourg-Ville le plus rapide
+1075,De Lyon-Perrache à Saint-Étienne-Châteaucreux par le TER
+1076,Lille-Flandres à Paris-Nord le matin de bonne heure
+1077,De Paris-Austerlitz à Toulouse-Matabiau
+1078,Lyon-Part-Dieu Marseille-Saint-Charles TGV
+1079,Paris-Nord Lille-Europe en Eurostar euh non le TGV classique
+1080,De Montpellier-Saint-Roch à Perpignan centre
+1081,Je vais de Marseille à Aix-en-Provence c'est la porte à côté mais bon
+1082,De Lyon à Villefranche-sur-Saône c'est court mais j'y vais quand même
+1083,Bordeaux Arcachon c'est pas loin mais je prends le train quand même
+1084,De Nantes à Saint-Nazaire c'est une demi-heure à peine
+1085,Toulouse Carcassonne en TER c'est pas le bout du monde
+1086,De Paris à Marne-la-Vallée pour Disneyland
+1087,Lyon Saint-Étienne le petit trajet de tous les jours
+1088,Marseille Aubagne en TER rapide
+1089,De Strasbourg à Colmar c'est une escapade d'une journée
+1090,Rennes Saint-Malo pour la plage c'est court et agréable
+1091,Le mieux pour aller de Rennes à Nantes c'est le TER ou le TGV
+1092,Pour aller de Paris à Lyon le plus écolo c'est le train non
+1093,Mon médecin m'a interdit de conduire donc un Toulouse Bordeaux en train
+1094,Depuis la grève des aiguilleurs un billet de Marseille à Nice c'est fiable
+1095,Avec les travaux sur l'A10 autant prendre le train de Bordeaux à Poitiers
+1096,La route est dangereuse avec la neige je préfère le train de Clermont à Lyon
+1097,Écologiquement parlant un Paris Bordeaux en train c'est mieux qu'en avion
+1098,Le péage coûte cher entre Lyon et Marseille je prends le train
+1099,Avec le prix de l'essence un Nantes Paris en train c'est plus rentable
+1100,Ma voiture est au garage donc un Strasbourg Paris en train
+1101,Un billet de Vichy à Clermont-Ferrand j'y vais pour ma cure
+1102,De Dax à Bayonne pour les thermes
+1103,Billet de Lourdes à Tarbes je reviens de pèlerinage
+1104,Un train de Rodez à Toulouse c'est l'Aveyron profond mais bon
+1105,De Aurillac à Clermont-Ferrand au milieu de nulle part
+1106,Billet de Cahors à Toulouse le Lot c'est joli mais loin
+1107,De Figeac à Toulouse y'a un train direct ?
+1108,Un aller de Millau à Béziers par les gorges c'est possible en train
+1109,De Mende à Clermont-Ferrand la Lozère c'est au bout du monde
+1110,Billet de Guéret à Limoges la Creuse me manque déjà pas
+1111,Je veux réserver un billet svp
+1112,Un train pour demain matin
+1113,Billet aller simple
+1114,C'est combien le train
+1115,Y'a des places disponibles
+1116,Je cherche un train pas cher
+1117,Un billet en première classe
+1118,Le train de 8h il est à l'heure
+1119,Où est-ce que je composte mon billet
+1120,Mon train est annulé que faire
+1121,Je veux changer de place dans le train
+1122,Le wagon 7 il est où
+1123,Est-ce qu'il y a la clim dans le TGV
+1124,Le contrôleur arrive quand
+1125,À quelle voie est mon train
+1126,Le bar du train il est ouvert
+1127,Y'a une prise électrique à ma place
+1128,Comment marche le wifi dans le train
+1129,Je peux mettre ma valise où
+1130,Le train s'arrête combien de fois
+1131,Paris et Lyon sont les deux plus grandes villes de France
+1132,Bordeaux est connue pour son vin et Toulouse pour ses cassoulets
+1133,Marseille Nice et Cannes sont sur la Côte d'Azur
+1134,Strasbourg est la capitale de l'Europe avec Bruxelles
+1135,Lyon est entre Paris et Marseille géographiquement
+1136,Nantes Rennes et Brest sont les grandes villes bretonnes
+1137,Dijon Besançon et Belfort sont en Bourgogne-Franche-Comté
+1138,Toulouse Montpellier et Perpignan sont dans le sud
+1139,Le match Lens Lille ce week-end ça va être chaud
+1140,L'Olympique de Marseille joue contre Nice dimanche
+1141,La finale se joue à Paris au Stade de France
+1142,Le Tour de France passe par Lyon et Marseille cette année
+1143,Tours ou Blois pour visiter les châteaux de la Loire
+1144,Dijon ou Lyon pour un week-end gastronomique
+1145,Nice ou Cannes pour les vacances d'été
+1146,Bordeaux ou Toulouse où fait-il meilleur vivre
+1147,Nantes ou Rennes laquelle est la vraie capitale de la Bretagne
+1148,Marseille ou Montpellier pour étudier la médecine
+1149,Le prix de l'immobilier à Lyon a explosé
+1150,Les loyers à Paris sont inabordables
+1151,Combien coûte un appartement à Bordeaux
+1152,Le marché de l'emploi à Toulouse est dynamique
+1153,Les universités de Strasbourg sont bien classées
+1154,La qualité de vie à Nantes est excellente
+1155,Le climat à Nice est agréable toute l'année
+1156,Rennes est une ville étudiante très vivante
+1157,La gastronomie lyonnaise est mondialement connue
+1158,Marseille est la deuxième ville de France
+1159,J'voudrais un billet d'Paris à Lyon s'vous plaît
+1160,Dis-moi si y'a un train d'Marseille à Nice
+1161,J'sais pas si c'est possible mais un Bordeaux Toulouse
+1162,Y'aurait pas un p'tit train de Nantes à Rennes
+1163,C'est-y possible d'aller de Strasbourg à Paris
+1164,J'me demandais si y'avait un train de Lyon à Grenoble
+1165,Dites voir un billet de Lille à Paris ça coûte combien
+1166,Ben euh un billet de Rennes à Brest j'crois
+1167,C'est qu'j'voudrais aller de Montpellier à Avignon voyez
+1168,Alors j'vous explique faudrait que j'aille de Dijon à Besançon
+1169,De quel quai part le train de Lyon pour Paris ah non je veux juste un billet de Lyon à Paris
+1170,Voie 3 c'est bien le Marseille Nice non attendez je veux juste acheter un billet
+1171,Le TGV 6234 de Bordeaux à Paris c'est celui de 14h non
+1172,Le train en retard de Nantes c'est celui qui va à Rennes
+1173,La place 45 du wagon 7 sur le Strasbourg Paris c'est côté fenêtre
+1174,Correspondance à Lyon pour aller de Grenoble à Paris
+1175,Je change à Bordeaux pour aller de Toulouse à Paris
+1176,Faut que je passe par Rennes pour aller de Brest à Paris
+1177,Changement à Paris pour aller de Lille à Marseille
+1178,Correspondance à Lyon pour le Dijon Marseille
+1179,je ve un bilé pari a lhion sil vou plé c urjan
+1180,svp un trin de toulous a bordo pou 2m1 matin
+1181,c posible 1 tgv de marseil a straszbourg
+1182,g tré bzoin dalé de nan a pari rapido
+1183,alor jvé vous expliké jé bzoin dalé de lil a lion
+1184,comen fair pour alé de ren a nan
+1185,il me fo un bilé de grenoble a marseil
+1186,un trin de digeon a pari vit vit vit
+1187,jsui a bordo é jdoi alé a monpélyé
+1188,est ce kil ya 1 trin de aviniion a nis
+1189,Pour aller de Tours à Poitiers c'est un TER qui passe par Châtellerault
+1190,Le train de Clermont-Ferrand à Lyon ça passe par Roanne ou par Saint-Étienne
+1191,De Nice à Vintimille ah non c'est en Italie bon alors de Nice à Menton
+1192,Le Perpignan Barcelone ah mais c'est un train international bon le Perpignan Narbonne alors
+1193,Je voudrais le Lille Bruxelles non attendez le Lille Valenciennes
+1194,Est-ce qu'on peut aller de Strasbourg à Karlsruhe en TER non bon Strasbourg à Colmar alors
+1195,De Bayonne à Saint-Sébastien c'est pas la France bon alors Bayonne à Pau
+1196,Le train de Metz à Luxembourg est cher bon tant pis un Metz Nancy
+1197,De Calais à Douvres c'est l'Eurostar non bon de Calais à Boulogne alors
+1198,Annecy Genève c'est en Suisse non bon Annecy Lyon
+1199,faut k jaille de pari a lhyon
+1200,chelou ya pa de tgv marseil bordo
+1201,frr jte jur le trin de nan a ren é nul
+1202,ui ui un bilé de toulous a pari
+1203,tro bien le tgv de bordo a pari
+1204,pk le trin de lil a lhion é si cher
+1205,nn mé sérieu ya rien de stras a nan
+1206,wallah jdoi alé de marseil a toulous
+1207,bgtt un bilé de ren a nan stp
+1208,c galèr le trin de digeon a nis
+1209,Lyon Paris en Ouigo c'est bien
+1210,Le Ouigo Montpellier Paris il part de quelle gare
+1211,Un InOui de Bordeaux à Paris svp
+1212,TGV Lyria de Paris à Genève euh non Paris à Lyon en TGV normal
+1213,Le TER 200 de Strasbourg à Bâle non juste Strasbourg à Colmar
+1214,Intercités de nuit de Paris à Toulouse ça existe encore ?
+1215,Le TGV double decker de Paris à Marseille
+1216,Un iDTGV de Lyon à Paris ça s'appelle encore comme ça ?
+1217,Le Thalys de Lille à Paris non c'est plus comme ça le train de Lille à Paris
+1218,Un TER de Nantes à Le Croisic pour la plage
+1219,j'ai mon rdv médical à lyon je pars de grenoble le matin
+1220,faut que j'aille chercher mon colis à la gare de marseille je viens de aix
+1221,j'ai un entretien à paris mardi je suis de bordeaux
+1222,on se retrouve tous à toulouse pour l'anniversaire on vient de montpellier
+1223,j'accompagne ma fille à la fac de nantes on part de rennes
+1224,le repas de famille c'est à lyon cette année et moi j'habite à marseille
+1225,mon stage commence lundi à strasbourg et je suis encore à paris ce week-end
+1226,rdv chez le notaire à bordeaux je viens de périgueux
+1227,je vais récupérer mes clés d'appart à lille depuis paris
+1228,réunion de chantier à toulouse je suis basé à montauban
+1229,de paris a lyon ca coute combien pour un adulte
+1230,est ce que les enfants payent le billet de marseille a nice
+1231,prix aller retour bordeaux toulouse avec carte jeune
+1232,tarif reduit de nantes a rennes pour les seniors
+1233,combien le strasbourg paris avec un abonnement frequence
+1234,le lyon grenoble en carte liberté c'est gratuit non
+1235,prix du billet de lille a paris un dimanche
+1236,le rennes brest avec le tarif congé annuel c'est combien
+1237,montpellier avignon pour un étudiant boursier
+1238,un billet gratuit avec mes points fidélité de dijon à besançon
+1239,je fais le trajet de paris a lyon tous les jours en semaine
+1240,mon abonnement mensuel de marseille a aix en provence
+1241,le passe navigo marche pour aller de paris à fontainebleau non bon un billet alors
+1242,je fais 5 fois par semaine le bordeaux agen
+1243,abonnement travail de nantes a saint nazaire
+1244,carte fréquence pour le lyon saint etienne
+1245,abonnement étudiant du toulouse montauban
+1246,billet domicile travail de rouen a paris
+1247,forfait mensuel du metz nancy
+1248,je fais la navette tous les jours de strasbourg a colmar
+1249,Nous on part de Lyon notre destination finale c'est Marseille mais on veut s'arrêter une nuit à Avignon en chemin
+1250,De Paris on veut aller à Biarritz mais s'il faut changer à Bordeaux c'est pas grave
+1251,Je prends le train qui va de Paris à Toulouse mais je descends à Limoges
+1252,Le Bordeaux Paris qui s'arrête à Angoulême c'est celui que je veux mais je vais jusqu'à Paris
+1253,De Rennes je vais à Paris mais si le train s'arrête à Le Mans je peux y descendre aussi non en fait Paris
+1254,Lyon Montpellier en passant par Nîmes mais ma destination c'est Montpellier hein
+1255,De Toulouse à Bordeaux mais est-ce qu'il s'arrête à Agen au passage
+1256,Le Marseille Paris avec arrêt à Valence ça m'intéresse mais je vais à Paris
+1257,Je monte à Dijon sur le train qui va à Lyon
+1258,Le Nantes Bordeaux avec escale à La Rochelle destination finale Bordeaux
+1259,svp moi c'est de pari a marseil
+1260,voila en fai moi il me fo alé de bordeaux a toulouze sil vou plai
+1261,escuzé moi jvoudrai savouare sil ya un trin de nantte a rènne
+1262,moi je cherch un bilé de straszburg a parie c posib?
+1263,bonjourr je voudrè un alé de lion a greunoble mersi
+1264,pardon mesieur c pour un bilet de lile a pari sil vou plai
+1265,salu alor jé un problaime jé bezoin dalé de marsail a nis
+1266,excusé moi mé jé besoin dalé de bordo a périgueu
+1267,bonjoure je souète un bilé pour alé de toulouze a monpelié
+1268,jé vrèman bezoin dalé de reinn a sain-malo
+1269,De Paris à Lyon en passant par Dijon c'est plus long mais plus joli
+1270,Marseille à Bordeaux via Toulouse ou via Montpellier et Toulouse
+1271,Le chemin le plus court de Nantes à Strasbourg passe par Paris forcément
+1272,De Rennes à Marseille ça doit être un sacré voyage
+1273,Lyon à Brest c'est quasiment une traversée de la France
+1274,De Lille à Nice combien de temps ça prend en train
+1275,Perpignan à Dunkerque c'est le trajet le plus long de France non
+1276,De Bordeaux à Strasbourg c'est faisable dans la journée
+1277,Toulouse à Lille ça traverse tout le pays
+1278,De Brest à Nice c'est possible sans passer la nuit dans le train
+1279,Un billet de trains Paris Lyon pardon de train Paris Lyon
+1280,Je voudrais acheter un billet de Marseille à Nice pour aller voir ma tante qui est malade
+1281,Mon fils a raté son bac et il doit repasser les rattrapages à Bordeaux on est à Toulouse
+1282,C'est la dernière fois que je prends le train de Nantes à Rennes la prochaine fois je prends la voiture
+1283,Ça fait 10 ans que j'ai pas pris le train mais là faut que j'aille de Lyon à Marseille
+1284,Je déteste le train mais j'ai pas le choix un Strasbourg Paris svp
+1285,Mon patron me force à prendre le train de Lille à Lyon au lieu de l'avion pour le bilan carbone
+1286,J'ai le mal des transports mais bon un Bordeaux Nantes quand même
+1287,Je suis claustrophobe et les tunnels me font peur mais je dois aller de Lyon à Chambéry
+1288,La dernière fois j'ai été malade dans le train de Paris à Bordeaux mais j'y retourne
+1289,Mon pire souvenir c'est un Toulouse Montpellier où j'ai dormi et raté mon arrêt mais bon un billet svp
+1290,Je prends le train de Lyon pas l'avion donc Lyon Marseille en TGV
+1291,C'est décidé je vais en train de Paris à Nice et pas en voiture
+1292,Non je veux pas le bus le train de Bordeaux à Toulouse
+1293,Pas de covoiturage un vrai billet de train Nantes Paris
+1294,Je refuse de prendre l'avion un Paris Marseille en train uniquement
+1295,Le bus c'est trop long de Strasbourg à Paris je préfère le train
+1296,Ni avion ni voiture juste un train de Lyon à Bordeaux
+1297,Je boycotte les compagnies aériennes un Lille Nice en train svp
+1298,Mon empreinte carbone est déjà trop élevée train de Rennes à Toulouse svp
+1299,Zéro avion cette année donc un Paris Lyon en TGV
+1300,Le prochain train de Lyon à Paris qui a encore des places
+1301,Un billet sur le train de Marseille à Nice qui part le plus tôt demain
+1302,Le dernier Bordeaux Toulouse de ce soir il reste des places
+1303,Un siège côté couloir sur le Nantes Paris de 14h
+1304,Place côté fenêtre de Strasbourg à Paris svp
+1305,Le carré famille sur le Lyon Marseille de 10h
+1306,Une place dans le wagon silence du Paris Bordeaux
+1307,Espace business sur le Lille Lyon de demain matin
+1308,Place près de la porte avec mes bagages de Rennes à Paris
+1309,Un siège avec tablette et prise sur le Toulouse Paris
+1310,albert lens
+1311,tours sens
+1312,nice gap
+1313,orange pau
+1314,cognac dax
+1315,lens vichy
+1316,menton pau
+1317,lourdes gap
+1318,albert orange
+1319,tours cognac
+1320,Un billet d'Albert à Lens pour le match
+1321,De Tours à Sens c'est faisable en TER ?
+1322,Nice Gap par la montagne ça doit être beau
+1323,Orange Pau c'est long non ?
+1324,De Cognac à Dax pour les thermes
+1325,Lens Vichy pour une cure
+1326,De Menton à Pau ça traverse toute la France
+1327,Lourdes Gap deux villes de montagne
+1328,Albert Orange un sacré voyage
+1329,De Tours à Cognac c'est pas loin
+1330,il fau ke jaille de lhion a pari é vit
+1331,ya rien sur lapli sncf de marseil a nis c normal?
+1332,le site marche pa jveu juste 1 bordo toulous
+1333,lapli bug mé je cherch un nan pari
+1334,le site sncf cé dla m*rde un stras pari svp
+1335,jariv pa a réservé en lign un lil lion
+1336,internet rame mé jveu un ren brest
+1337,jai clické partouu sur le site jveu just un mpl avig
+1338,le site é en maintenanse mé moi jveu mon dijon bezan
+1339,pourquoi c si compliqué de réservé un nan ren en lign
+1340,Mon Albert préféré c'est la gare d'Albert je veux y aller depuis Paris
+1341,Je rêve de visiter Tours depuis que j'ai lu un livre dessus billet depuis Lyon
+1342,Nice n'est pas qu'un adjectif c'est aussi ma destination depuis Marseille
+1343,Orange rappelle le fruit mais c'est là que je vais depuis Avignon
+1344,Sens a du sens comme destination billet depuis Auxerre
+1345,Gap est une marque de vêtements mais aussi une ville billet depuis Marseille
+1346,Pau c'est la ville d'Henri IV j'y vais depuis Tarbes
+1347,Cognac c'est pas que de l'alcool c'est ma destination depuis Angoulême
+1348,Lens et son stade mythique j'y vais depuis Arras
+1349,Vichy et ses pastilles j'y vais depuis Clermont-Ferrand
+1350,un trin de toulous a pari av 1 arè a bordo
+1351,d lyon a marseil mé jsui pa sur de loREUR
+1352,jpren le tgv de 7h de pari a lhion normalment
+1353,c koi le pri dun bilet de nan a ren pr 2 personn
+1354,ya 1 tren dirèk stras pari ou fo changé
+1355,jé 1 kart jeun c moin cher de bordo a toulous?
+1356,le wikend prochein un marseil nis aller retour
+1357,c kombien le lil pari en 2ème klass
+1358,1 plass assis de lhion a grenobl stp
+1359,kel eur le 1er trin de ren a brest dem1
+1360,billets Paris à Lyon pour moi et ma femme le 25 mars
+1361,réservation de groupe Marseille Nice 6 personnes
+1362,place PMR de Bordeaux à Toulouse pour mon père en fauteuil
+1363,2 adultes 3 enfants de Nantes à La Rochelle
+1364,billet animal de compagnie de Lyon à Grenoble j'ai un petit chien
+1365,place vélo de Strasbourg à Colmar
+1366,un carré 4 places de Lille à Paris pour ma famille
+1367,siège bébé de Rennes à Nantes mon fils a 18 mois
+1368,billet militaire de Montpellier à Toulouse tarif défense
+1369,place en silence de Dijon à Paris j'ai besoin de travailler
+1370,Le train que mon frère prend habituellement de Nantes il va à Rennes mais moi c'est un Nantes Bordeaux que je veux
+1371,Ma soeur fait le Lyon Marseille tous les jours mais moi je fais l'inverse le Marseille Lyon
+1372,Les collègues de Paris prennent le Paris Lyon du matin mais moi je prends celui de l'après-midi aussi Paris Lyon
+1373,Mon voisin fait le Bordeaux Paris en avion mais moi c'est en train Bordeaux Paris
+1374,Pendant que tout le monde va à Paris moi je quitte Paris pour aller à Strasbourg
+1375,Mes parents prennent le Toulouse Bordeaux et moi le Toulouse Montpellier
+1376,Les autres font le Marseille Lyon mais moi je descends à Valence donc Marseille Valence
+1377,Mon équipe part de Lille vers Paris mais moi je pars de Lille vers Lyon directement
+1378,La moitié du groupe va de Rennes à Nantes et l'autre moitié dont moi de Rennes à Brest
+1379,Tout le monde prend le Nantes Paris sauf moi je fais Nantes Bordeaux
+1380,Je prends toujours le 6234 de Lyon à Paris le mardi matin
+1381,Le TGV 8421 de Paris à Marseille celui du vendredi soir
+1382,Train numéro 3456 de Bordeaux à Toulouse si ça existe
+1383,L'Intercités 4567 de Nantes à Bordeaux
+1384,Le TER de 7h15 de Strasbourg à Colmar c'est le 832100
+1385,Le Ouigo 7800 de Lyon à Paris
+1386,Le train 1234 de Lille à Paris
+1387,Le 6789 de Marseille à Nice celui de 9h
+1388,Le TGV du matin de Dijon à Paris le 2154
+1389,Train 9876 de Rennes à Brest le samedi
+1390,Pour mon job j'ai besoin d'un Toulouse Paris tous les lundis
+1391,Stage à Lyon à partir de septembre je pars de Clermont-Ferrand
+1392,Mutation à Strasbourg depuis Paris c'est officiel
+1393,On m'a proposé un poste à Bordeaux je suis à Toulouse faut que j'y aille pour visiter
+1394,Formation professionnelle à Paris pendant 3 mois je viens de Marseille
+1395,Mission de consulting à Lyon je suis basé à Grenoble
+1396,Séminaire d'entreprise à Nantes toute l'équipe part de Paris
+1397,Conférence à Montpellier la semaine prochaine je viens de Toulouse
+1398,Rendez-vous client à Bordeaux je pars de la gare de Limoges
+1399,Salon professionnel à Paris je viens de Lyon comme chaque année
+1400,On est combien à vouloir aller de Paris à Lyon déjà on est 4
+1401,Ma mère mes 2 soeurs et moi de Marseille à Nice ça fait 4 billets
+1402,Toute l'équipe de foot 15 joueurs de Bordeaux à Toulouse pour le match
+1403,La classe entière 30 élèves de Nantes à Paris pour une sortie scolaire
+1404,Le couple d'à côté et nous 4 personnes de Strasbourg à Paris
+1405,Bande de potes 8 personnes de Lyon à Marseille pour le week-end
+1406,Famille recomposée 2 adultes 4 enfants de Rennes à La Rochelle
+1407,Mon club de randonnée 12 personnes de Dijon à Besançon
+1408,Les collègues du bureau 6 personnes de Lille à Lyon
+1409,Avec mes beaux-parents et mes enfants 7 personnes de Toulouse à Bordeaux
+1410,Un aller de Paris à Lyon et un retour le surlendemain
+1411,Billet aller le 15 Marseille Nice et retour le 18
+1412,Aller le vendredi soir de Bordeaux à Toulouse et retour le dimanche
+1413,Un aller-retour dans la journée Nantes Rennes
+1414,Aller le matin Strasbourg Paris et retour le soir même
+1415,Lyon Grenoble aller le samedi matin retour le samedi soir
+1416,Un aller de Lille à Paris lundi et un retour vendredi
+1417,Aller-retour de Rennes à Brest pour la journée
+1418,Montpellier Avignon aller après-midi retour le lendemain matin
+1419,Dijon Besançon aller-retour dans la matinée c'est faisable ?
+1420,je vois sur google maps que lyon est à 2h de paris en train donc un billet svp
+1421,le site comparateur me dit que le marseille nice c'est 25 euros un billet
+1422,j'ai vu sur trainline un bordeaux toulouse à 19 euros c'est pareil chez vous
+1423,mon appli sncf me propose un nantes paris à 35 balles je prends
+1424,sur rome2rio le strasbourg paris c'est 1h46 c'est vrai ?
+1425,d'après google le lyon grenoble c'est 1h en TER un billet pour demain
+1426,j'ai checké sur oui.sncf le lille paris de 8h est dispo
+1427,le site omio me dit qu'il y a un rennes brest à 15h
+1428,j'ai comparé sur trainline le montpellier avignon le moins cher
+1429,google flights me propose l'avion mais je préfère le train de dijon à paris
+1430,J'ai entendu dire que le train de nuit Paris Toulouse était de retour
+1431,On m'a raconté que le Paris Nice en train de nuit c'est génial
+1432,Mon ami m'a recommandé le TGV de Lyon à Marseille c'est rapide
+1433,D'après mon collègue le Bordeaux Paris en Ouigo c'est pas cher
+1434,Ma voisine prend toujours le Nantes Rennes de 7h elle dit que c'est bien
+1435,On m'a conseillé le TGV plutôt que l'Intercités de Strasbourg à Paris
+1436,J'ai lu sur internet que le train de Lille à Lyon était direct maintenant
+1437,Mon frère dit que le Toulouse Montpellier est souvent en retard mais tant pis
+1438,Les avis sur Google disent que le Marseille Nice est confortable
+1439,Reddit recommande le TGV de Rennes à Paris plutôt que le bus
+1440,Si le train de Paris à Lyon est complet donnez-moi le suivant
+1441,Au cas où le Marseille Nice est annulé quelles alternatives
+1442,Si y'a plus de place en 2ème sur le Bordeaux Toulouse je prends en 1ère
+1443,En cas de grève le Nantes Paris il roule quand même ?
+1444,Si le TGV de Strasbourg à Paris est en retard je peux prendre le suivant ?
+1445,Plan B si le Lyon Grenoble est supprimé
+1446,Le Lille Paris de 8h est souvent complet sinon celui de 8h30
+1447,Si la correspondance à Rennes est ratée pour le Brest Paris
+1448,En cas d'annulation du Montpellier Avignon y'a un bus de remplacement ?
+1449,Si le Dijon Besançon du matin est supprimé celui de l'après-midi me va aussi
+1450,Avant j'allais de Paris à Lyon en voiture maintenant je prends le train
+1451,Quand j'étais jeune on faisait le Marseille à Nice en voiture c'était long
+1452,Il y a 20 ans le Bordeaux Toulouse en train c'était 3h maintenant c'est 2h
+1453,Mes parents faisaient le Nantes Paris en 4h maintenant c'est 2h15
+1454,Du temps de ma grand-mère le Strasbourg Paris c'était toute une journée
+1455,Le TGV a changé ma vie pour le Lyon Grenoble avant c'était la galère
+1456,Le Lille Paris c'est devenu si simple avec le TGV 1h c'est rien
+1457,Je me souviens du vieux train de Rennes à Brest il mettait 4h
+1458,Mon père me racontait le Montpellier Avignon d'autrefois en omnibus
+1459,Dijon Besançon ça a toujours été un petit trajet tranquille
+1460,écoute Albert je te dis qu'on va de Tours à Bordeaux c'est pas compliqué
+1461,nan nan nan c'est de Sens à Paris que je veux aller pas de Paris à Sens
+1462,t'es sûr que c'est le bon train pour Nice depuis Marseille
+1463,ma mère arrête pas de me dire d'aller de Lyon à Paris par le TGV
+1464,mon boss veut que je prenne le train de Toulouse à Bordeaux pas l'avion
+1465,dis donc tu crois que c'est possible un Nantes La Rochelle aujourd'hui
+1466,franchement le Lille Paris à 8h c'est toujours bondé mais bon
+1467,je te jure le Marseille Lyon c'est le meilleur trajet du monde
+1468,crois-moi un Bordeaux Nantes c'est plus rapide qu'en voiture
+1469,t'as vu le prix du Strasbourg Paris c'est abusé mais j'ai pas le choix
+1470,De Paris à Lyon
+1471,Aller de Marseille à Nice
+1472,Un train Bordeaux Toulouse
+1473,Nantes direction Rennes
+1474,Départ Strasbourg arrivée Paris
+1475,Lyon vers Grenoble
+1476,Trajet Lille Paris
+1477,Rennes Brest aller simple
+1478,De Montpellier en direction d'Avignon
+1479,Billet Dijon Besançon
+1480,Depuis Toulouse vers Paris en première
+1481,Au départ de Bordeaux pour Lyon
+1482,En provenance de Marseille à destination de Toulouse
+1483,Nantes Paris aller-retour semaine prochaine
+1484,De Nice vers Cannes par le TER
+1485,Lyon Annecy dimanche matin
+1486,Depuis Rennes jusqu'à Saint-Malo
+1487,Rouen direction Le Havre
+1488,Billet simple de Reims à Metz
+1489,De Caen vers Cherbourg par le premier train
+1490,Poitiers La Rochelle aller simple pas cher
+1491,Perpignan Narbonne TER
+1492,D'Agen à Toulouse le matin
+1493,Tarbes Pau c'est court
+1494,Un billet d'Arles à Marseille
+1495,Libourne Bordeaux TER
