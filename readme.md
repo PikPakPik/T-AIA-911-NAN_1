@@ -1,31 +1,31 @@
 # T-AIA-911
 
-## Initialize the environment
+## Initialiser l'environnement
 ```bash
 pyenv install 3.12.8
 ```
 
-## Spacy
-### Train the model
+## SpaCy
+### Entraîner le modèle
 ```bash
 python3 poc_spacy_training.py
 python3 -m spacy train config.cfg --output output --paths.train train.spacy --paths.dev dev.spacy --paths.base_model fr_core_news_lg
 ```
 
-## Test the model
-### Command to run the PoC
+### Tester le modèle
+### Commande pour lancer le PoC
 ```bash
 python3 poc_spacy.py
 ```
-### CLI Parameters
-- `--file`: Path to a text file to analyze.
-- `--url`: URL of a text document to analyze.
-- `--model`: Path to the trained Spacy model (default: `fr_core_news_lg`).
-- `--output`: Path to save the output results (default: `output/dataset_output.csv`).
+### Paramètres CLI
+- `--file` : Chemin vers un fichier texte à analyser.
+- `--url` : URL d'un document texte à analyser.
+- `--model` : Chemin vers le modèle SpaCy entraîné (par défaut : `fr_core_news_lg`).
+- `--output` : Chemin de sortie pour sauvegarder les résultats (par défaut : `output/dataset_output.csv`).
 
 ## RoBERTa
-### Train the model
-L’entraînement utilise **uniquement** les fichiers **dataset_input.txt** et **dataset_output.txt** (aucune phrase n’est définie dans le script d’entraînement).
+### Entraîner le modèle
+L'entraînement utilise **uniquement** les fichiers **dataset_input.txt** et **dataset_output.txt** (aucune phrase n'est définie dans le script d'entraînement).
 
 1. Générer le dataset (~100k phrases : valides, invalides, villes en contexte non-trajet, pièges, recette) :
 ```bash
@@ -35,7 +35,7 @@ cd ..
 ```
 (Peut prendre quelques minutes.)
 
-2. Lancer l’entraînement :
+2. Lancer l'entraînement :
 ```bash
 python3 poc_roberta_training.py
 ```
@@ -44,10 +44,10 @@ Options : `--dataset-dir ./dataset`, `--output-dir ./roberta_ner_model`, `--seed
 
 Le modèle fine-tuné est enregistré dans `./roberta_ner_model/`.
 
-**GPU Apple Silicon (M1/M2/M3)** : MPS est utilisé automatiquement par le Trainer et les pipelines (`poc_roberta.py`, `chat_roberta_loc.py`) si PyTorch est installé avec support MPS. PyTorch ≥ 1.13 recommandé.
+**GPU Apple Silicon (M1/M2/M3)** : MPS est utilisé automatiquement par le Trainer et les pipelines (`poc_roberta.py`, `chat_roberta_loc.py`) si PyTorch est installé avec support MPS. PyTorch >= 1.13 recommandé.
 
 ### Générer le jeu de test (formulations différentes)
-Pour évaluer le modèle sur des phrases **jamais vues** à l’entraînement :
+Pour évaluer le modèle sur des phrases **jamais vues** à l'entraînement :
 
 ```bash
 cd dataset
@@ -60,63 +60,63 @@ Cela crée **dataset_test_input.txt** et **dataset_test_output.txt** (formulatio
 ```bash
 python3 poc_roberta.py --file dataset/dataset_test_input.txt --output dataset_test_output_roberta.csv
 ```
-Puis comparer avec `dataset/dataset_test_output.txt` (ex. dans le notebook d’évaluation en pointant vers ces fichiers).
+Puis comparer avec `dataset/dataset_test_output.txt` (ex. dans le notebook d'évaluation en pointant vers ces fichiers).
 
-### Test the model
-### Command to run the PoC
+### Tester le modèle
+### Commande pour lancer le PoC
 ```bash
 python3 poc_roberta.py --file dataset/dataset_input.txt
 ```
-### CLI Parameters
-- `--file`: Path to a text file to analyze.
-- `--url`: URL of a text document to analyze.
-- `--model`: Model to use (default: `Jean-Baptiste/camembert-ner`). Options:
-  - `Jean-Baptiste/camembert-ner`: Pre-trained NER model
-  - `benjamin/roberta-base-wechsel-french`: Base model (needs fine-tuning)
-  - `./roberta_ner_model`: Fine-tuned model (after training)
-- `--output`: Path to save the output results (default: `dataset_output_roberta.csv`).
+### Paramètres CLI
+- `--file` : Chemin vers un fichier texte à analyser.
+- `--url` : URL d'un document texte à analyser.
+- `--model` : Modèle à utiliser (par défaut : `Jean-Baptiste/camembert-ner`). Options :
+  - `Jean-Baptiste/camembert-ner` : Modèle NER pré-entraîné
+  - `benjamin/roberta-base-wechsel-french` : Modèle de base (nécessite un fine-tuning)
+  - `./roberta_ner_model` : Modèle fine-tuné (après entraînement)
+- `--output` : Chemin de sortie pour sauvegarder les résultats (par défaut : `dataset_output_roberta.csv`).
 
-### Evaluate the model
-To evaluate the fine-tuned model with metrics, visualizations, and detailed analysis:
+### Évaluer le modèle
+Pour évaluer le modèle fine-tuné avec des métriques, des visualisations et une analyse détaillée :
 ```bash
 jupyter notebook evaluate_roberta_model.ipynb
 ```
-or
+ou
 ```bash
 jupyter lab evaluate_roberta_model.ipynb
 ```
 
-The notebook includes:
-- Model loading and testing on specific examples
-- Full dataset evaluation
-- Performance metrics (accuracy, precision, recall, F1)
-- Error analysis
-- Visualizations (bar charts, confusion matrix, pie charts, top cities)
-- Detailed evaluation report
-- Export of results to CSV
+Le notebook inclut :
+- Chargement du modèle et tests sur des exemples spécifiques
+- Évaluation complète du dataset
+- Métriques de performance (accuracy, precision, recall, F1)
+- Analyse des erreurs
+- Visualisations (histogrammes, matrice de confusion, camembert, top villes)
+- Rapport d'évaluation détaillé
+- Export des résultats en CSV
 
-### Analyze the dataset
-To explore and understand the dataset structure, patterns, and statistics:
+### Analyser le dataset
+Pour explorer et comprendre la structure, les motifs et les statistiques du dataset :
 ```bash
 jupyter notebook analyze_dataset.ipynb
 ```
 
-The notebook includes:
-- General statistics and data overview
-- Distribution analysis (VALID vs INVALID)
-- City frequency analysis
-- Phrase pattern detection
-- Trap analysis (monaco, albert, etc.)
-- Word frequency analysis
-- City pair analysis
-- Length distribution visualizations
-- Export of statistics to JSON
+Le notebook inclut :
+- Statistiques générales et vue d'ensemble des données
+- Analyse de la distribution (VALID vs INVALID)
+- Analyse de fréquence des villes
+- Détection des patterns de phrases
+- Analyse des pièges (monaco, albert, etc.)
+- Analyse de fréquence des mots
+- Analyse des paires de villes
+- Visualisations de la distribution des longueurs
+- Export des statistiques en JSON
 
 ---
 
 ## Pathfinding SNCF (`pathfinding_sncf.ipynb`)
 
-### But
+### Objectif
 Trouver le **trajet le plus rapide** entre deux villes françaises en utilisant le **réseau ferroviaire réel** de la SNCF. Le notebook permet aussi de comparer les trajets en **TGV**, **TER**, ou **tous trains confondus**.
 
 ### Source des données : GTFS
@@ -141,8 +141,8 @@ routes --> trips --> stop_times --> stops
 #### 1. Les nœuds = les gares
 
 Dans `stops.txt`, il y a deux types d'entrées :
-- **StopArea** (location_type=1) : la gare elle-même (ex: "Lyon Part Dieu") — **3 498 gares**
-- **StopPoint** (location_type=0) : un quai spécifique dans la gare (ex: "voie 3 de Lyon Part Dieu") — **5 401 quais**
+- **StopArea** (location_type=1) : la gare elle-même (ex: "Lyon Part Dieu") -- **3 498 gares**
+- **StopPoint** (location_type=0) : un quai spécifique dans la gare (ex: "voie 3 de Lyon Part Dieu") -- **5 401 quais**
 
 On travaille au niveau **StopArea** (la gare), pas au niveau des quais. Chaque StopPoint est rattaché à un StopArea parent.
 
@@ -150,9 +150,9 @@ On travaille au niveau **StopArea** (la gare), pas au niveau des quais. Chaque S
 
 On parcourt `stop_times.txt` qui contient tous les horaires de tous les trains. Pour chaque train, les arrêts sont numérotés dans l'ordre (stop_sequence). Deux arrêts **consécutifs** d'un même train = une liaison directe.
 
-**Exemple** : le TGV 6201 fait Paris (08:00) → Mâcon (09:30) → Lyon (10:00)
-- Ça crée l'arête Paris → Mâcon (90 min)
-- Et l'arête Mâcon → Lyon (30 min)
+**Exemple** : le TGV 6201 fait Paris (08:00) -> Mâcon (09:30) -> Lyon (10:00)
+- Ça crée l'arête Paris -> Mâcon (90 min)
+- Et l'arête Mâcon -> Lyon (30 min)
 
 #### 3. Le poids des arêtes = le temps de trajet minimum
 
@@ -162,14 +162,14 @@ Par exemple, entre Paris et Lyon :
 - TGV : 1h46
 - TER : pourrait être 4h+
 
-Le poids de l'arête Paris → Lyon dans le graphe global sera **1h46** (le min).
+Le poids de l'arête Paris -> Lyon dans le graphe global sera **1h46** (le min).
 
 #### 4. Le type de train
 
 Le type de train (TGV INOUI, TER, Intercités, etc.) est extrait depuis le `stop_id` :
-- `StopPoint:OCETGV INOUI-87686006` → **TGV INOUI**
-- `StopPoint:OCETrain TER-87342014` → **TER**
-- `StopPoint:OCENavette-87571000` → **Navette**
+- `StopPoint:OCETGV INOUI-87686006` -> **TGV INOUI**
+- `StopPoint:OCETrain TER-87342014` -> **TER**
+- `StopPoint:OCENavette-87571000` -> **Navette**
 
 On construit un **graphe par type de train** pour pouvoir comparer.
 
@@ -197,9 +197,9 @@ C'est comme une vague qui se propage depuis le départ : elle atteint d'abord le
 
 #### Implémentation technique :
 
-- **Min-heap (file de priorité)** : c'est une structure de données qui garde toujours l'élément le plus petit en haut de la pile. Ici, on y met les gares avec leur temps d'accès. À chaque étape, on retire la gare la plus rapide à atteindre (celle en haut du tas) au lieu de parcourir toute la liste — c'est ce qui rend Dijkstra efficace.
+- **Min-heap (file de priorité)** : c'est une structure de données qui garde toujours l'élément le plus petit en haut de la pile. Ici, on y met les gares avec leur temps d'accès. À chaque étape, on retire la gare la plus rapide à atteindre (celle en haut du tas) au lieu de parcourir toute la liste -- c'est ce qui rend Dijkstra efficace.
 
-- **Complexité : O((V + E) log V)** — ça décrit la "vitesse" de l'algorithme en fonction de la taille du graphe :
+- **Complexité : O((V + E) log V)** -- ça décrit la "vitesse" de l'algorithme en fonction de la taille du graphe :
   - **V** = nombre de nœuds (gares) = ~3 500
   - **E** = nombre d'arêtes (liaisons) = ~10 800
   - **log V** = le coût d'insertion/extraction dans le min-heap (~12 opérations pour 3 500 gares)
@@ -207,17 +207,17 @@ C'est comme une vague qui se propage depuis le départ : elle atteint d'abord le
 
 - En pratique : le calcul prend **50-100 ms** pour n'importe quel trajet en France
 
-### Recherche ville → gare
+### Recherche ville -> gare
 
 L'utilisateur tape un nom de ville (ex: "Lyon"). Le système doit trouver la bonne gare dans le graphe.
 
 **Stratégie de matching :**
-1. Correspondance exacte → score 1.0
-2. Le nom de la gare commence par la ville → score 0.93 (ex: "Lyon" → "Lyon Part Dieu")
-3. Le nom contient la ville → score 0.70
-4. Similarité approximative (fuzzy matching) → score variable
+1. Correspondance exacte -> score 1.0
+2. Le nom de la gare commence par la ville -> score 0.93 (ex: "Lyon" -> "Lyon Part Dieu")
+3. Le nom contient la ville -> score 0.70
+4. Similarité approximative (fuzzy matching) -> score variable
 
-En cas d'égalité, on préfère les gares **les plus connectées** (les gares principales). Ainsi "Lyon" → "Lyon Part Dieu" (42 connexions) plutôt que "Lyon-Vaise" (4 connexions).
+En cas d'égalité, on préfère les gares **les plus connectées** (les gares principales). Ainsi "Lyon" -> "Lyon Part Dieu" (42 connexions) plutôt que "Lyon-Vaise" (4 connexions).
 
 ### Distances et vitesse
 
@@ -232,10 +232,10 @@ Le notebook permet de comparer le même trajet avec différents types de trains 
 | | TGV INOUI | TER |
 |---|---|---|
 | **Réseau** | Grandes lignes, liaisons directes longue distance | Réseau régional, dessert toutes les petites gares |
-| **Paris → Lyon** | ~1h46, direct | Beaucoup plus long, nombreux arrêts |
+| **Paris -> Lyon** | ~1h46, direct | Beaucoup plus long, nombreux arrêts |
 | **Avantage** | Rapide | Dessert les petites villes |
 
-**Pourquoi le TGV "saute" des gares :** Le TGV crée des arêtes directes longue distance (ex: Angers → Saint-Pierre-des-Corps en 22 min) alors que le TER s'arrête partout (Angers → Saumur → Saint-Pierre-des-Corps en ~55 min). Dijkstra choisit naturellement le chemin le plus rapide.
+**Pourquoi le TGV "saute" des gares :** Le TGV crée des arêtes directes longue distance (ex: Angers -> Saint-Pierre-des-Corps en 22 min) alors que le TER s'arrête partout (Angers -> Saumur -> Saint-Pierre-des-Corps en ~55 min). Dijkstra choisit naturellement le chemin le plus rapide.
 
 ### Limites actuelles
 
