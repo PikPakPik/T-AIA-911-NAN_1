@@ -1,0 +1,287 @@
+================================================================================
+RAPPORT D'ÉVALUATION - FlauBERT Travel Order
+================================================================================
+Date: 2026-01-16 11:17:16
+Total d'exemples: 11000
+
+--------------------------------------------------------------------------------
+MÉTRIQUES PRINCIPALES
+--------------------------------------------------------------------------------
+Loss moyenne:                0.0080
+Accuracy (ville de départ):  75.48%
+Accuracy (ville d'arrivée):  52.78%
+Accuracy (les deux villes):  44.77%
+
+Precision:                   0.9395
+Recall:                      0.7810
+F1-Score:                    0.8529
+
+--------------------------------------------------------------------------------
+MATRICE DE CONFUSION
+--------------------------------------------------------------------------------
+                Prédit INVALID  Prédit VALID
+Vrai INVALID      1547            453
+Vrai VALID        1971           7029
+
+--------------------------------------------------------------------------------
+ERREURS DÉTAILLÉES (6075 erreurs au total)
+--------------------------------------------------------------------------------
+
+[Erreur 1] Ligne 1
+Texte: je cherche un restaurant
+  Attendu:  INVALID → 
+  Prédit:   INVALID → None
+
+[Erreur 2] Ligne 6
+Texte: trains de valerie vers colombes
+  Attendu:  INVALID → 
+  Prédit:   INVALID → Colombes
+
+[Erreur 3] Ligne 9
+Texte: je veux aller voir mon ami a amiens en partant de merignac
+  Attendu:  Mérignac → Amiens
+  Prédit:   INVALID → None
+
+[Erreur 4] Ligne 11
+Texte: pour aller à angers depuis rouen, quels sont les trains
+  Attendu:  Rouen → Angers
+  Prédit:   Rouen → None
+
+[Erreur 5] Ligne 12
+Texte: je voudrai aller de limoges à la rochelle
+  Attendu:  Limoges → La Rochelle
+  Prédit:   Limoges → None
+
+[Erreur 6] Ligne 15
+Texte: je veux aller voir mon ami a asnieres-sur-seine en partant de montreuil
+  Attendu:  Montreuil → Asnières-sur-Seine
+  Prédit:   Montreuil → None
+
+[Erreur 7] Ligne 21
+Texte: je voudrais réserver une chambre d'hôtel
+  Attendu:  INVALID → 
+  Prédit:   INVALID → None
+
+[Erreur 8] Ligne 22
+Texte: Trains de aulnay sous bois vers avignon
+  Attendu:  Aulnay-sous-Bois → Avignon
+  Prédit:   Aulnay → Avignon
+
+[Erreur 9] Ligne 26
+Texte: Je souhaite me rendre a angers depuis bordeaux
+  Attendu:  Bordeaux → Angers
+  Prédit:   Bordeaux → None
+
+[Erreur 10] Ligne 27
+Texte: je voudrais un billet versailles amiens
+  Attendu:  Versailles → Amiens
+  Prédit:   INVALID → None
+
+[Erreur 11] Ligne 29
+Texte: depuis monaco je veux aller à monaco pour boire un monaco
+  Attendu:  INVALID → 
+  Prédit:   INVALID → None
+
+[Erreur 12] Ligne 31
+Texte: Pour aller à la rochelle depuis asnières sur seine, quels sont les trains
+  Attendu:  Asnières-sur-Seine → La Rochelle
+  Prédit:   Asnières → None
+
+[Erreur 13] Ligne 32
+Texte: je vais voir monaco a bordeaux en partant de limoges
+  Attendu:  Limoges → Bordeaux
+  Prédit:   Limoges → None
+
+[Erreur 14] Ligne 33
+Texte: je veux aller voir monaco et boire un monaco
+  Attendu:  INVALID → 
+  Prédit:   INVALID → None
+
+[Erreur 15] Ligne 34
+Texte: Y a t il des trains de argenteuil à le havre
+  Attendu:  Argenteuil → Le Havre
+  Prédit:   Argenteuil → None
+
+[Erreur 16] Ligne 37
+Texte: je voudrai un billet saint-denis montpellier
+  Attendu:  Saint-Denis → Montpellier
+  Prédit:   INVALID → None
+
+[Erreur 17] Ligne 38
+Texte: depuis nancy aller à florence
+  Attendu:  INVALID → 
+  Prédit:   Nancy → None
+
+[Erreur 18] Ligne 39
+Texte: nice toulon
+  Attendu:  Nice → Toulon
+  Prédit:   INVALID → None
+
+[Erreur 19] Ligne 40
+Texte: Trains de lourdes vers port boulet
+  Attendu:  Lourdes → Port-Boulet
+  Prédit:   Lourdes → Port
+
+[Erreur 20] Ligne 42
+Texte: je voudrais aller de strasbourg a le havre
+  Attendu:  Strasbourg → Le Havre
+  Prédit:   Strasbourg → None
+
+[Erreur 21] Ligne 44
+Texte: c'est une belle journée
+  Attendu:  INVALID → 
+  Prédit:   INVALID → None
+
+[Erreur 22] Ligne 45
+Texte: Je dois me rendre de amiens à le mans pour mon travail
+  Attendu:  Amiens → Le Mans
+  Prédit:   Amiens → None
+
+[Erreur 23] Ligne 47
+Texte: j'aimerais aller à toulon en partant de le havre
+  Attendu:  Le Havre → Toulon
+  Prédit:   INVALID → Toulon
+
+[Erreur 24] Ligne 48
+Texte: rennes saint-etienne
+  Attendu:  Rennes → Saint-Étienne
+  Prédit:   INVALID → None
+
+[Erreur 25] Ligne 51
+Texte: Horaires de dunkirk à asnières-sur-seine
+  Attendu:  Dunkirk → Asnières-sur-Seine
+  Prédit:   INVALID → Asnières-sur-Seine
+
+[Erreur 26] Ligne 53
+Texte: je souhaite me rendre de brest a besancon
+  Attendu:  Brest → Besançon
+  Prédit:   Brest → None
+
+[Erreur 27] Ligne 55
+Texte: je voudrais un billet rennes nantes
+  Attendu:  Rennes → Nantes
+  Prédit:   INVALID → None
+
+[Erreur 28] Ligne 56
+Texte: Comment me rendre de asnières sur seine à roubaix
+  Attendu:  Asnières-sur-Seine → Roubaix
+  Prédit:   Asnières → None
+
+[Erreur 29] Ligne 59
+Texte: je voudrai aller à dunkirk depuis grenoble
+  Attendu:  Grenoble → Dunkirk
+  Prédit:   Grenoble → None
+
+[Erreur 30] Ligne 60
+Texte: De tourcoing jusqu'à clermont ferrand
+  Attendu:  Tourcoing → Clermont-Ferrand
+  Prédit:   Tourcoing → Clermont
+
+[Erreur 31] Ligne 61
+Texte: un trajet lille le mans
+  Attendu:  Lille → Le Mans
+  Prédit:   INVALID → None
+
+[Erreur 32] Ligne 63
+Texte: en compagnie de nancy je veu aller de boulogne-billancourt à asnières-sur-seine
+  Attendu:  Boulogne-Billancourt → Asnières-sur-Seine
+  Prédit:   Nancy → Asnières-sur-Seine
+
+[Erreur 33] Ligne 65
+Texte: je dois rejoindre albert quelque part
+  Attendu:  INVALID → 
+  Prédit:   INVALID → None
+
+[Erreur 34] Ligne 66
+Texte: merci beaucoup
+  Attendu:  INVALID → 
+  Prédit:   INVALID → None
+
+[Erreur 35] Ligne 69
+Texte: Trains de port boulet vers avignon
+  Attendu:  Port-Boulet → Avignon
+  Prédit:   Port → Avignon
+
+[Erreur 36] Ligne 70
+Texte: je veu aller de lyon à valerie boire un monaco
+  Attendu:  INVALID → 
+  Prédit:   Lyon → None
+
+[Erreur 37] Ligne 71
+Texte: trains de nancy vers nancy
+  Attendu:  INVALID → 
+  Prédit:   Nancy → Nancy
+
+[Erreur 38] Ligne 72
+Texte: aller de florence a tours boire un monaco
+  Attendu:  INVALID → 
+  Prédit:   INVALID → Tours
+
+[Erreur 39] Ligne 73
+Texte: à bientôt
+  Attendu:  INVALID → 
+  Prédit:   INVALID → None
+
+[Erreur 40] Ligne 76
+Texte: Un voyage de nantes à aix en provence s'il vous plaît
+  Attendu:  Nantes → Aix-en-Provence
+  Prédit:   Nantes → Aix
+
+[Erreur 41] Ligne 79
+Texte: je voudrai réserver une chambre d'hôtel
+  Attendu:  INVALID → 
+  Prédit:   INVALID → None
+
+[Erreur 42] Ligne 81
+Texte: mon ami monaco veut aller à monaco voir florence
+  Attendu:  INVALID → 
+  Prédit:   INVALID → None
+
+[Erreur 43] Ligne 84
+Texte: j'aimerais aller a boulogne-billancourt en partant de saint-denis
+  Attendu:  Saint-Denis → Boulogne-Billancourt
+  Prédit:   Saint-Denis → None
+
+[Erreur 44] Ligne 85
+Texte: aix en provence dunkirk
+  Attendu:  Aix-en-Provence → Dunkirk
+  Prédit:   INVALID → None
+
+[Erreur 45] Ligne 86
+Texte: une phrase sans origine ni destination
+  Attendu:  INVALID → 
+  Prédit:   INVALID → None
+
+[Erreur 46] Ligne 89
+Texte: aller de florence a montreuil boire un monaco
+  Attendu:  INVALID → 
+  Prédit:   INVALID → Montreuil
+
+[Erreur 47] Ligne 90
+Texte: Quels horaires de orleans a dunkirk
+  Attendu:  Orléans → Dunkirk
+  Prédit:   INVALID → None
+
+[Erreur 48] Ligne 91
+Texte: Un trajet metz port boulet
+  Attendu:  Metz → Port-Boulet
+  Prédit:   INVALID → None
+
+[Erreur 49] Ligne 92
+Texte: je cherche un restaurant
+  Attendu:  INVALID → 
+  Prédit:   INVALID → None
+
+[Erreur 50] Ligne 93
+Texte: Y a-t-il des trains de dunkirk a port-boulet
+  Attendu:  Dunkirk → Port-Boulet
+  Prédit:   INVALID → Port-Boulet
+
+... et 6025 autres erreurs
+
+================================================================================
+RÉSUMÉ
+================================================================================
+Score global: 44.77%
+F1-Score: 0.8529
+Nombre d'erreurs: 6075/11000
