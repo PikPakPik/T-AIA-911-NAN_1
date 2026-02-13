@@ -1,6 +1,7 @@
 import re
+import importlib.util
 from pathlib import Path
-from typing import List
+from typing import List, Optional, Tuple
 
 import pandas as pd
 import pydeck as pdk
@@ -324,6 +325,74 @@ def answer_user(user_text: str, ner_bundle, pathfinder: SNCFPathFinder):
     return {"ok": True, "message": recap, "route": route}
 
 
+@st.cache_resource(show_spinner=False)
+def load_stt_module(repo_root: Path):
+    stt_path = repo_root / "model" / "LEO" / "stt" / "stt_bridge.py"
+    if not stt_path.is_file():
+        return None, f"Fichier STT introuvable: {stt_path}"
+    try:
+        spec = importlib.util.spec_from_file_location("leo_microphone_recognition", stt_path)
+        if spec is None or spec.loader is None:
+            return None, "Impossible de charger le module STT."
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        return module, None
+    except Exception as exc:
+        return None, f"Erreur de chargement du module STT: {exc}"
+
+
+def transcribe_wav_bytes_with_stt(
+    audio_bytes: bytes,
+    stt_module,
+    language: str = "fr-FR",
+) -> Tuple[Optional[str], Optional[str]]:
+    if stt_module is None:
+        return None, "Module STT indisponible."
+    transcriber = getattr(stt_module, "transcribe_wav_bytes", None)
+    if transcriber is None:
+        return None, "Fonction `transcribe_wav_bytes` absente de stt_bridge.py."
+    try:
+        return transcriber(audio_bytes, language=language)
+    except Exception as exc:
+        return None, f"Erreur pendant la transcription WAV: {exc}"
+
+
+def transcribe_server_microphone_with_stt(
+    stt_module,
+    language: str = "fr-FR",
+) -> Tuple[Optional[str], Optional[str]]:
+    if stt_module is None:
+        return None, "Module STT indisponible."
+    transcriber = getattr(stt_module, "transcribe_microphone", None)
+    if transcriber is None:
+        return None, "Fonction `transcribe_microphone` absente de stt_bridge.py."
+    try:
+        return transcriber(language=language)
+    except Exception as exc:
+        return None, f"Erreur pendant la transcription microphone: {exc}"
+
+
+def process_prompt(prompt: str, ner_bundle, pathfinder: SNCFPathFinder):
+    st.session_state.messages.append({"role": "user", "content": prompt})
+    with st.chat_message("user"):
+        st.markdown(prompt)
+
+    result = answer_user(prompt, ner_bundle, pathfinder)
+    assistant_msg = {"role": "assistant", "content": result["message"]}
+    if result.get("route") is not None:
+        assistant_msg["route"] = result["route"]
+    st.session_state.messages.append(assistant_msg)
+
+    with st.chat_message("assistant"):
+        st.markdown(result["message"])
+        if result.get("route") is not None:
+            route = result["route"]
+            st.subheader("Recap des stations")
+            st.dataframe(route_to_dataframe(route), use_container_width=True, hide_index=True)
+            st.subheader("Carte du trajet")
+            render_map(route, pathfinder)
+
+
 def main():
     st.set_page_config(page_title="SNCF AI Chat Pathfinding", layout="wide")
     st.title("SNCF AI Chat Pathfinding")
@@ -331,6 +400,7 @@ def main():
 
     repo_root = Path(__file__).resolve().parents[3]
     gtfs_dir = str(repo_root / "dataset" / "sncf")
+    stt_module, stt_error = load_stt_module(repo_root)
 
     default_local_model = str((repo_root / "roberta_ner_model").resolve())
     if not Path(default_local_model).exists():
@@ -360,28 +430,59 @@ def main():
                 st.dataframe(route_to_dataframe(route), use_container_width=True, hide_index=True)
                 render_map(route, pathfinder)
 
-    prompt = st.chat_input("Ex: Je veux aller de Nantes a Marseille en passant par Angers")
-    if not prompt:
+    st.divider()
+    st.subheader("Entree audio")
+    st.caption("Tu peux envoyer un .wav ou utiliser le micro, puis envoyer la transcription dans le chat.")
+    if stt_error:
+        st.warning(stt_error)
+        st.info("Verifie aussi que `SpeechRecognition` est installe (`pip install SpeechRecognition`).")
+
+    audio_mode = st.radio("Source audio", ["Fichier WAV", "Microphone"], horizontal=True)
+    audio_prompt = None
+
+    if audio_mode == "Fichier WAV":
+        uploaded_wav = st.file_uploader("Importer un fichier .wav", type=["wav"])
+        if uploaded_wav is not None:
+            wav_bytes = uploaded_wav.getvalue()
+            st.audio(wav_bytes, format="audio/wav")
+            if st.button("Transcrire et envoyer", key="send_wav"):
+                with st.spinner("Transcription en cours..."):
+                    audio_prompt, error = transcribe_wav_bytes_with_stt(wav_bytes, stt_module)
+                if error:
+                    st.error(error)
+                else:
+                    st.success(f"Transcription: {audio_prompt}")
+    else:
+        if hasattr(st, "audio_input"):
+            mic_audio = st.audio_input("Enregistrer depuis le microphone")
+            if mic_audio is not None:
+                mic_bytes = mic_audio.getvalue()
+                st.audio(mic_bytes, format="audio/wav")
+                if st.button("Transcrire et envoyer", key="send_mic"):
+                    with st.spinner("Transcription en cours..."):
+                        audio_prompt, error = transcribe_wav_bytes_with_stt(mic_bytes, stt_module)
+                    if error:
+                        st.error(error)
+                    else:
+                        st.success(f"Transcription: {audio_prompt}")
+        else:
+            st.info("Cette version de Streamlit ne supporte pas `st.audio_input`.")
+            st.caption("Option de secours: utiliser le microphone local de la machine serveur.")
+            if st.button("Ecouter le micro serveur et envoyer", key="send_server_mic"):
+                with st.spinner("Ecoute du microphone serveur..."):
+                    audio_prompt, error = transcribe_server_microphone_with_stt(stt_module)
+                if error:
+                    st.error(error)
+                else:
+                    st.success(f"Transcription: {audio_prompt}")
+
+    if audio_prompt:
+        process_prompt(audio_prompt, ner_bundle, pathfinder)
         return
 
-    st.session_state.messages.append({"role": "user", "content": prompt})
-    with st.chat_message("user"):
-        st.markdown(prompt)
-
-    result = answer_user(prompt, ner_bundle, pathfinder)
-    assistant_msg = {"role": "assistant", "content": result["message"]}
-    if result.get("route") is not None:
-        assistant_msg["route"] = result["route"]
-    st.session_state.messages.append(assistant_msg)
-
-    with st.chat_message("assistant"):
-        st.markdown(result["message"])
-        if result.get("route") is not None:
-            route = result["route"]
-            st.subheader("Recap des stations")
-            st.dataframe(route_to_dataframe(route), use_container_width=True, hide_index=True)
-            st.subheader("Carte du trajet")
-            render_map(route, pathfinder)
+    prompt = st.chat_input("Ex: Je veux aller de Nantes a Marseille en passant par Angers")
+    if prompt:
+        process_prompt(prompt, ner_bundle, pathfinder)
 
 
 if __name__ == "__main__":

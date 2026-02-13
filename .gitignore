@@ -6,3 +6,4 @@ best_model/
 model/LEO/flaubert/best_model.pt
 .DS_Store
 */.DS_Store
+__pycache__/
