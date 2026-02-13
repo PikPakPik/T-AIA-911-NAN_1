@@ -32,7 +32,8 @@ def transcribe_audio(audio_file_path):
             return None
 
 if __name__ == "__main__":
-    audio_directory = "./wav/"
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    audio_directory = os.path.join(script_dir, "wav/")
 
     # Créer un tableau des fichiers .wav dans le dossier
     try:
