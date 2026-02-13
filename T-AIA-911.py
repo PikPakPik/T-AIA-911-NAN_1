@@ -4,9 +4,10 @@ from transformers import pipeline
 import csv
 import os
 import sys
+import subprocess
+from pathlib import Path
 from urllib.parse import urlparse
 from urllib.request import urlopen
-from pathfinding import PathFinder
 
 parser = argparse.ArgumentParser(description="Extract LOC entities from a text file using RoBERTa/CamemBERT")
 group = parser.add_mutually_exclusive_group(required=True)
@@ -14,6 +15,7 @@ group.add_argument("--file", help="Path to input text file")
 group.add_argument("--url", help="URL to input text file (one sentence per line)")
 group.add_argument("--text", help="Direct input text (one sentence)")
 group.add_argument("--chat", help="Interactive chat mode (type sentences one by one, 'exit' to quit)", action="store_true")
+group.add_argument("--ui", help="Launch Streamlit pathfinding UI", action="store_true")
 
 parser.add_argument("--output", help="Path to output CSV file", default=None)
 parser.add_argument(
@@ -28,6 +30,21 @@ parser.add_argument(
 )
 
 args = parser.parse_args()
+
+if args.ui:
+    ui_script = Path(__file__).resolve().parent / "model" / "ALEXANDRE" / "pathfinding" / "chat_pathfinding_app.py"
+    if not ui_script.is_file():
+        print(f"UI script not found: {ui_script}", file=sys.stderr)
+        sys.exit(1)
+    try:
+        subprocess.run([sys.executable, "-m", "streamlit", "run", str(ui_script)], check=True)
+    except FileNotFoundError:
+        print("Streamlit is not installed. Install it with: pip install streamlit", file=sys.stderr)
+        sys.exit(1)
+    except subprocess.CalledProcessError as e:
+        print(f"Failed to launch UI: {e}", file=sys.stderr)
+        sys.exit(e.returncode)
+    sys.exit(0)
 
 # Validation : --output uniquement avec --file ou --url
 if args.output and not (args.file or args.url):
@@ -168,10 +185,6 @@ def read_lines_from_source(source: str):
                 cleaned_lines.append(line)
         return cleaned_lines
 
-pathfinder = None
-print("Initialisation du module Path Finding...")
-pathfinder = PathFinder("./dataset/geo.csv")
-
 if args.file or args.url:
     lines = read_lines_from_source(args.file if args.file else args.url)
 
@@ -206,6 +219,10 @@ if args.file or args.url:
     print(f"Extraction completed. Output saved to {args.output} with {len(lines)} entries using RoBERTa model: {args.model}.")
 
 if args.chat:
+    print("Initialisation du module Path Finding...")
+    from pathfinding import PathFinder
+    pathfinder = PathFinder("./dataset/geo.csv")
+
     print("Modèle prêt. Envoie une phrase pour extraire les lieux (LOC).")
     print("Commande: quit / exit / q  pour quitter.\n")
 
