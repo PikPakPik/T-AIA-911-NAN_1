@@ -106,35 +106,87 @@ def _merge_spans(spans, phrase: str) -> str:
 
 def extract_dep_arr_from_ner(entities, phrase: str) -> List[str]:
     """Supporte les labels DEP/ARR et ORIGIN/DEST."""
-    dep_spans = []
-    arr_spans = []
+    def _extract_with_min_score(min_score: float) -> List[str]:
+        dep_spans = []
+        arr_spans = []
+        for ent in entities:
+            score = ent.get("score", 1.0)
+            if score < min_score:
+                continue
+            label = ent.get("entity_group", ent.get("label", ""))
+            label_u = str(label).upper()
+            start = ent.get("start")
+            end = ent.get("end")
+            word = (ent.get("word", ent.get("text", "")) or "").strip()
+            if not (isinstance(start, int) and isinstance(end, int) and end > start):
+                continue
+            if "DEP" in label_u or "ORIGIN" in label_u:
+                dep_spans.append((start, end, word))
+            elif "ARR" in label_u or "DEST" in label_u:
+                arr_spans.append((start, end, word))
+
+        dep_spans.sort(key=lambda x: x[0])
+        arr_spans.sort(key=lambda x: x[0])
+        dep = _merge_spans(dep_spans, phrase)
+        arr = _merge_spans(arr_spans, phrase)
+
+        out = []
+        if dep:
+            out.append(dep)
+        if arr:
+            out.append(arr)
+        return out
+
+    # Passage strict puis fallback permissif si une ville manque.
+    strict = _extract_with_min_score(_MIN_SCORE_DEP_ARR)
+    if len(strict) >= 2:
+        return strict
+    return _extract_with_min_score(0.0)
+
+
+def extract_locations_from_any_location_labels(entities, phrase: str) -> List[str]:
+    """
+    Fallback NER-only:
+    récupère les entités portant des labels de lieu (LOC/DEP/ARR/ORIGIN/DEST),
+    puis fusionne les spans proches.
+    """
+    spans = []
     for ent in entities:
-        score = ent.get("score", 1.0)
-        if score < _MIN_SCORE_DEP_ARR:
+        label = str(ent.get("entity_group", ent.get("label", ""))).upper()
+        if not any(tag in label for tag in ("LOC", "DEP", "ARR", "ORIGIN", "DEST")):
             continue
-        label = ent.get("entity_group", ent.get("label", ""))
-        label_u = str(label).upper()
         start = ent.get("start")
         end = ent.get("end")
         word = (ent.get("word", ent.get("text", "")) or "").strip()
-        if not (isinstance(start, int) and isinstance(end, int) and end > start):
-            continue
-        if "DEP" in label_u or "ORIGIN" in label_u:
-            dep_spans.append((start, end, word))
-        elif "ARR" in label_u or "DEST" in label_u:
-            arr_spans.append((start, end, word))
+        if isinstance(start, int) and isinstance(end, int) and end > start:
+            spans.append((start, end, word))
+        elif word:
+            spans.append((-1, -1, word))
 
-    dep_spans.sort(key=lambda x: x[0])
-    arr_spans.sort(key=lambda x: x[0])
-    dep = _merge_spans(dep_spans, phrase)
-    arr = _merge_spans(arr_spans, phrase)
+    if not spans:
+        return []
 
-    out = []
-    if dep:
-        out.append(dep)
-    if arr:
-        out.append(arr)
-    return out
+    with_offsets = [s for s in spans if s[0] >= 0 and s[1] > s[0]]
+    if not with_offsets:
+        return [s[2] for s in spans if s[2]]
+
+    with_offsets.sort(key=lambda s: s[0])
+    merged = []
+    cur_start, cur_end, cur_word = with_offsets[0]
+    for start, end, word in with_offsets[1:]:
+        if start <= cur_end + _MAX_GAP:
+            cur_end = max(cur_end, end)
+        else:
+            if phrase and cur_start < len(phrase) and cur_end <= len(phrase):
+                merged.append(phrase[cur_start:cur_end].strip())
+            else:
+                merged.append(cur_word)
+            cur_start, cur_end, cur_word = start, end, word
+    if phrase and cur_start < len(phrase) and cur_end <= len(phrase):
+        merged.append(phrase[cur_start:cur_end].strip())
+    else:
+        merged.append(cur_word)
+    return [m for m in merged if m]
 
 
 def normalize_locations(locations: List[str]) -> List[str]:
@@ -229,6 +281,9 @@ def extract_cities(user_text: str, ner_bundle) -> List[str]:
         locations = extract_locations_from_ner(entities, user_text)
         locations = filter_non_travel_locs(user_text, locations)
         locations = normalize_locations(locations)
+    if len(locations) < 2:
+        # Fallback sans patterns: on prend tous les labels de lieu détectés par le NER.
+        locations = normalize_locations(extract_locations_from_any_location_labels(entities, user_text))
     return locations
 
 
