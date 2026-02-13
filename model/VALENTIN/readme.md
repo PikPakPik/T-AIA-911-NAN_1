@@ -1,6 +1,26 @@
-# T-AIA-911 - SpaCy
+# VALENTIN - SpaCy et PoC Pathfinding
 
-Le modèle de traitement du langage naturel (NLP) fine-tuned avec SpaCy, n'est pas stable et 100% fonctionnel par rapport au attendu du projet.
-Celui-ci a été abandonné pour le projet, et ne sera pas utilisé pour les tâches de reconnaissance d'entités nommées (NER) et de classification de texte dans le domaine de la santé.
+Ce dossier contient deux pistes exploratoires:
 
-Cependant, il est possible de consulter le code source directement dans le dossier ``model/VALENTIN/spacy`` pour voir les étapes d'entraînement et d'évaluation du modèle.
+- `spacy/`: PoC NER avec SpaCy (entraînement + inférence).
+- `pathfinding.py`: PoC de calcul d'itinéraire par distance géographique (Haversine).
+
+## Statut
+
+Le pipeline SpaCy est conservé pour référence, mais n'est pas la solution principale utilisée dans l'app finale.
+
+## Lancer le PoC pathfinding
+
+```bash
+python3 model/VALENTIN/pathfinding.py
+```
+
+Le script expose une classe `PathFinder` qui:
+- charge les lieux depuis un CSV géographique;
+- calcule des distances entre villes;
+- estime une route avec points intermédiaires;
+- propose un ordre de visite "plus proche voisin" pour plusieurs lieux.
+
+## Lancer le PoC SpaCy
+
+Voir `model/VALENTIN/spacy/readme.md`.
