@@ -13,5 +13,6 @@ tensorflow==2.20.0
 torch==2.10.0
 tqdm==4.67.3
 transformers==5.2.0
+huggingface-hub>=0.20.0
 pipreqs==0.1.6
 tiktoken==0.12.0

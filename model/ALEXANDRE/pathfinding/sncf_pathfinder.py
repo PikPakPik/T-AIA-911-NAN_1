@@ -30,6 +30,40 @@ class RouteResult:
     matched_stations: List[str]
 
 
+@dataclass
+class ScheduleStop:
+    station_id: str
+    station_name: str
+    arrival_time: str
+    departure_time: str
+
+
+@dataclass
+class TrainLeg:
+    trip_id: str
+    train_number: str
+    train_type: str
+    stops: List[ScheduleStop]
+    dep_min: float
+    arr_min: float
+
+
+@dataclass
+class ConnectionInfo:
+    station_name: str
+    arrive_time: str
+    depart_time: str
+    wait_min: float
+
+
+@dataclass
+class ScheduleResult:
+    legs: List[TrainLeg]
+    connections: List[ConnectionInfo]
+    total_time_min: float
+    total_wait_min: float
+
+
 class SNCFPathFinder:
     """Build a railway graph from GTFS files and run Dijkstra."""
 
@@ -44,6 +78,13 @@ class SNCFPathFinder:
         self.area_id_to_lon: Dict[str, float] = {}
         self.station_degree: Dict[str, int] = {}
         self._is_ready = False
+
+        # Schedule data
+        self._trip_headsign: Dict[str, str] = {}
+        self._trip_schedule: Dict[str, List[Tuple[str, float, float]]] = {}
+        self._trip_type: Dict[str, str] = {}
+        self._edge_trips: Dict[Tuple[str, str], List[Tuple[str, float, float]]] = defaultdict(list)
+        self._station_trips: Dict[str, List[Tuple[str, int, float]]] = defaultdict(list)
 
         # Geo data for city -> nearest station fallback
         self._geo_csv_path = geo_csv_path
@@ -128,6 +169,54 @@ class SNCFPathFinder:
 
             self.station_degree[source] = self.station_degree.get(source, 0) + 1
             self.station_degree[target] = self.station_degree.get(target, 0) + 1
+
+        # ── Build schedule data (trip stops, edge trips, train types) ──
+        trips_df = self._read_csv("trips.txt")
+        self._trip_headsign = dict(
+            zip(trips_df["trip_id"], trips_df["trip_headsign"].astype(str))
+        )
+
+        trip_data = st[
+            ["trip_id", "parent_station", "arrival_min", "departure_min", "stop_id"]
+        ].values
+
+        cur_tid: Optional[str] = None
+        cur_sched: List[Tuple[str, float, float]] = []
+
+        def _flush_trip(tid: str, sched: List[Tuple[str, float, float]]) -> None:
+            self._trip_schedule[tid] = sched
+            for k in range(len(sched) - 1):
+                s0, s1 = sched[k], sched[k + 1]
+                if s1[1] - s0[2] > 0:
+                    self._edge_trips[(s0[0], s1[0])].append(
+                        (tid, s0[2], s1[1])
+                    )
+
+        for row in trip_data:
+            tid = str(row[0])
+            ps, am, dm, sid = str(row[1]), float(row[2]), float(row[3]), str(row[4])
+            if tid != cur_tid:
+                if cur_tid is not None and cur_sched:
+                    _flush_trip(cur_tid, cur_sched)
+                cur_tid = tid
+                cur_sched = []
+                m = re.match(r"StopPoint:OCE(.+)-\d+", sid)
+                if m:
+                    self._trip_type[tid] = m.group(1)
+            cur_sched.append((ps, am, dm))
+
+        if cur_tid is not None and cur_sched:
+            _flush_trip(cur_tid, cur_sched)
+
+        for key in self._edge_trips:
+            self._edge_trips[key].sort(key=lambda x: x[1])
+
+        # Build station -> trips reverse index
+        for trip_id, sched in self._trip_schedule.items():
+            for idx, (station, _arr, dep) in enumerate(sched):
+                self._station_trips[station].append((trip_id, idx, dep))
+        for key in self._station_trips:
+            self._station_trips[key].sort(key=lambda x: x[2])
 
         self._is_ready = True
 
@@ -399,3 +488,154 @@ class SNCFPathFinder:
         if pd.isna(lat) or pd.isna(lon):
             return None
         return float(lat), float(lon)
+
+    @staticmethod
+    def _minutes_to_hhmm(minutes: float) -> str:
+        total = int(round(minutes))
+        h = (total // 60) % 24
+        m = total % 60
+        return f"{h:02d}:{m:02d}"
+
+    def find_schedule_for_route(
+        self,
+        station_ids: List[str],
+        min_departure: float = 480.0,
+    ) -> Optional[ScheduleResult]:
+        """
+        Find a concrete train schedule for the given route.
+
+        Uses a station->trips index so that a single train covering multiple
+        path stations (even with intermediate stops not in the path) is
+        correctly detected as one leg.
+
+        Args:
+            station_ids: ordered parent-station IDs (from RouteResult).
+            min_departure: earliest departure in minutes from midnight (480 = 08h00).
+
+        Returns ScheduleResult with legs, connections, times — or None.
+        """
+        self.build()
+        if len(station_ids) < 2:
+            return None
+
+        legs: List[TrainLeg] = []
+        connections: List[ConnectionInfo] = []
+        current_time = min_departure
+        i = 0
+
+        while i < len(station_ids) - 1:
+            from_st = station_ids[i]
+
+            # All trips departing from this station after current_time
+            from_trips = self._station_trips.get(from_st, [])
+            valid: List[Tuple[str, int, float]] = []
+            for tid, sidx, dep in from_trips:
+                if dep >= current_time:
+                    valid.append((tid, sidx, dep))
+            if not valid:
+                # Fallback: earliest departures of the day
+                valid = from_trips[:20]
+            if not valid:
+                return None
+
+            # Score each candidate: prefer trips covering more path stations
+            best_trip_id: Optional[str] = None
+            best_coverage = 0
+            best_dep = float("inf")
+            best_start_idx = 0
+
+            for tid, sidx, dep in valid:
+                trip_sched = self._trip_schedule.get(tid, [])
+                # Count how many subsequent path stations this trip visits
+                cov = 0
+                pj = i + 1
+                tj = sidx + 1
+                while pj < len(station_ids) and tj < len(trip_sched):
+                    if trip_sched[tj][0] == station_ids[pj]:
+                        cov += 1
+                        pj += 1
+                    tj += 1  # always advance — skip intermediate stops
+
+                if cov > 0 and (
+                    cov > best_coverage
+                    or (cov == best_coverage and dep < best_dep)
+                ):
+                    best_trip_id = tid
+                    best_coverage = cov
+                    best_dep = dep
+                    best_start_idx = sidx
+
+            if best_trip_id is None:
+                return None
+
+            trip_sched = self._trip_schedule.get(best_trip_id, [])
+            dep_min = best_dep
+            start_idx = best_start_idx
+
+            # Record connection / transfer
+            if legs:
+                wait = max(0.0, dep_min - current_time)
+                connections.append(ConnectionInfo(
+                    station_name=self.area_id_to_name.get(from_st, from_st),
+                    arrive_time=self._minutes_to_hhmm(current_time),
+                    depart_time=self._minutes_to_hhmm(dep_min),
+                    wait_min=round(wait, 1),
+                ))
+
+            # ── Build leg stops (path stations only, skip intermediates) ──
+            leg_stops: List[ScheduleStop] = []
+            ts = trip_sched[start_idx]
+            leg_stops.append(ScheduleStop(
+                station_id=ts[0],
+                station_name=self.area_id_to_name.get(ts[0], ts[0]),
+                arrival_time=self._minutes_to_hhmm(ts[1]),
+                departure_time=self._minutes_to_hhmm(ts[2]),
+            ))
+
+            j = i + 1
+            tidx = start_idx + 1
+            last_arr_min = dep_min
+
+            while j < len(station_ids) and tidx < len(trip_sched):
+                if trip_sched[tidx][0] == station_ids[j]:
+                    ts = trip_sched[tidx]
+                    leg_stops.append(ScheduleStop(
+                        station_id=ts[0],
+                        station_name=self.area_id_to_name.get(ts[0], ts[0]),
+                        arrival_time=self._minutes_to_hhmm(ts[1]),
+                        departure_time=self._minutes_to_hhmm(ts[2]),
+                    ))
+                    last_arr_min = ts[1]
+                    j += 1
+                tidx += 1  # always advance — skip intermediate stops
+
+            if len(leg_stops) < 2:
+                return None
+
+            train_number = self._trip_headsign.get(best_trip_id, "")
+            train_type = self._trip_type.get(best_trip_id, "Train")
+
+            legs.append(TrainLeg(
+                trip_id=best_trip_id,
+                train_number=train_number,
+                train_type=train_type,
+                stops=leg_stops,
+                dep_min=dep_min,
+                arr_min=last_arr_min,
+            ))
+
+            current_time = last_arr_min
+            i = j - 1
+
+        if not legs:
+            return None
+
+        total_time = legs[-1].arr_min - legs[0].dep_min
+        total_wait = sum(c.wait_min for c in connections)
+
+        return ScheduleResult(
+            legs=legs,
+            connections=connections,
+            total_time_min=round(total_time, 1),
+            total_wait_min=round(total_wait, 1),
+        )

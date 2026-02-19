@@ -9,7 +9,19 @@ import streamlit as st
 import torch
 from transformers import AutoConfig, AutoTokenizer, BertForTokenClassification, pipeline
 
-from sncf_pathfinder import RouteResult, SNCFPathFinder
+try:
+    from huggingface_hub import snapshot_download as _hf_snapshot_download
+    HF_HUB_AVAILABLE = True
+except ImportError:
+    HF_HUB_AVAILABLE = False
+
+from sncf_pathfinder import (
+    ConnectionInfo,
+    RouteResult,
+    ScheduleResult,
+    SNCFPathFinder,
+    TrainLeg,
+)
 
 
 RECIPE_CUES = (
@@ -220,6 +232,18 @@ def filter_non_travel_locs(phrase: str, locs: List[str]) -> List[str]:
     return locs
 
 
+@st.cache_resource(show_spinner="Telechargement du modele depuis Hugging Face...")
+def download_hf_model(repo_id: str) -> str:
+    """Download a model from Hugging Face Hub and return the local path."""
+    if not HF_HUB_AVAILABLE:
+        raise RuntimeError(
+            "huggingface-hub n'est pas installe. "
+            "Installe-le avec: pip install huggingface-hub"
+        )
+    local_path = _hf_snapshot_download(repo_id=repo_id)
+    return local_path
+
+
 @st.cache_resource(show_spinner=True)
 def load_ner(model_name: str):
     device = get_device()
@@ -377,6 +401,38 @@ def answer_user(user_text: str, ner_bundle, pathfinder: SNCFPathFinder):
         f"- Correspondances: **{max(0, len(route.station_names) - 2)}**"
     )
 
+    # Try to find a concrete train schedule
+    schedule = None
+    try:
+        schedule = pathfinder.find_schedule_for_route(route.station_ids)
+    except Exception:
+        pass
+
+    if schedule and schedule.legs:
+        recap += "\n\n---\n\n\U0001f686 **Horaires detailles (exemple)**\n"
+        for leg_idx, leg in enumerate(schedule.legs):
+            if leg_idx > 0 and leg_idx - 1 < len(schedule.connections):
+                conn = schedule.connections[leg_idx - 1]
+                recap += (
+                    f"\n\U0001f504 **Correspondance a {conn.station_name}** "
+                    f"\u2014 **{format_duration(conn.wait_min)}** d'attente "
+                    f"({conn.arrive_time} \u2192 {conn.depart_time})\n"
+                )
+            type_str = leg.train_type if leg.train_type else "Train"
+            recap += f"\n**{type_str} n\u00b0{leg.train_number}**\n"
+            for si, stop in enumerate(leg.stops):
+                if si == 0:
+                    recap += f"- {stop.departure_time} \u2014 **{stop.station_name}** *(depart)*\n"
+                elif si == len(leg.stops) - 1:
+                    recap += f"- {stop.arrival_time} \u2014 **{stop.station_name}** *(arrivee)*\n"
+                else:
+                    recap += f"- {stop.arrival_time} \u2014 {stop.station_name}\n"
+        if schedule.total_wait_min > 0:
+            recap += (
+                f"\n\u23f1\ufe0f Temps de correspondance total : "
+                f"**{format_duration(schedule.total_wait_min)}**"
+            )
+
     return {"ok": True, "message": recap, "route": route}
 
 
@@ -458,13 +514,28 @@ def main():
     geo_csv_path = str(repo_root / "dataset" / "geo.csv")
     stt_module, stt_error = load_stt_module(repo_root)
 
-    default_local_model = str((repo_root / "roberta_ner_model").resolve())
-    if not Path(default_local_model).exists():
-        default_local_model = "Jean-Baptiste/camembert-ner"
+    HF_MODEL_ID = "PikPak44/yann_best_model"
 
     with st.sidebar:
         st.subheader("Configuration")
-        model_name = st.text_input("Modele NER", value=default_local_model)
+        model_source = st.radio(
+            "Source du modele NER",
+            [f"Hugging Face ({HF_MODEL_ID})", "Chemin local"],
+            index=0,
+        )
+        if model_source.startswith("Hugging Face"):
+            if not HF_HUB_AVAILABLE:
+                st.error("huggingface-hub n'est pas installe. `pip install huggingface-hub`")
+                st.stop()
+            model_name = download_hf_model(HF_MODEL_ID)
+            st.success(f"Modele charge depuis HF")
+            st.caption(f"`{model_name}`")
+        else:
+            default_local = str((repo_root / "roberta_ner_model").resolve())
+            if not Path(default_local).exists():
+                default_local = "Jean-Baptiste/camembert-ner"
+            model_name = st.text_input("Chemin du modele local", value=default_local)
+        st.divider()
         st.write(f"GTFS: `{gtfs_dir}`")
         st.write("Le graphe est calcule une fois puis mis en cache.")
 
