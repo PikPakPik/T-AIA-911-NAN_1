@@ -263,8 +263,8 @@ def load_ner(model_name: str):
 
 
 @st.cache_resource(show_spinner=True)
-def load_pathfinder(gtfs_dir: str):
-    pathfinder = SNCFPathFinder(gtfs_dir=gtfs_dir)
+def load_pathfinder(gtfs_dir: str, geo_csv_path: str = ""):
+    pathfinder = SNCFPathFinder(gtfs_dir=gtfs_dir, geo_csv_path=geo_csv_path or None)
     pathfinder.build()
     return pathfinder
 
@@ -455,6 +455,7 @@ def main():
 
     repo_root = Path(__file__).resolve().parents[3]
     gtfs_dir = str(repo_root / "dataset" / "sncf")
+    geo_csv_path = str(repo_root / "dataset" / "geo.csv")
     stt_module, stt_error = load_stt_module(repo_root)
 
     default_local_model = str((repo_root / "roberta_ner_model").resolve())
@@ -469,7 +470,7 @@ def main():
 
     try:
         ner_bundle = load_ner(model_name)
-        pathfinder = load_pathfinder(gtfs_dir)
+        pathfinder = load_pathfinder(gtfs_dir, geo_csv_path)
     except Exception as exc:
         st.error(f"Erreur d'initialisation: {exc}")
         st.stop()

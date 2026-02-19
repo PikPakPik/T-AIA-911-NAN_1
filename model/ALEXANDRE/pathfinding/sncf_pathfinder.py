@@ -1,4 +1,5 @@
 import heapq
+import math
 import os
 import re
 import unicodedata
@@ -32,7 +33,7 @@ class RouteResult:
 class SNCFPathFinder:
     """Build a railway graph from GTFS files and run Dijkstra."""
 
-    def __init__(self, gtfs_dir: str):
+    def __init__(self, gtfs_dir: str, geo_csv_path: Optional[str] = None):
         self.gtfs_dir = gtfs_dir
         self.graph: Dict[str, List[Tuple[str, float, int]]] = defaultdict(list)
         self.edge_time_by_pair: Dict[Tuple[str, str], float] = {}
@@ -43,6 +44,11 @@ class SNCFPathFinder:
         self.area_id_to_lon: Dict[str, float] = {}
         self.station_degree: Dict[str, int] = {}
         self._is_ready = False
+
+        # Geo data for city -> nearest station fallback
+        self._geo_csv_path = geo_csv_path
+        self._geo_data: Optional[pd.DataFrame] = None
+        self._geo_name_to_idx: Dict[str, int] = {}
 
     @staticmethod
     def _normalize(text: str) -> str:
@@ -125,6 +131,89 @@ class SNCFPathFinder:
 
         self._is_ready = True
 
+    @staticmethod
+    def _haversine_km(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
+        """Haversine distance in km between two (lat, lon) points."""
+        R = 6371.0
+        phi1, phi2 = math.radians(lat1), math.radians(lat2)
+        dphi = math.radians(lat2 - lat1)
+        dlam = math.radians(lon2 - lon1)
+        a = math.sin(dphi / 2) ** 2 + math.cos(phi1) * math.cos(phi2) * math.sin(dlam / 2) ** 2
+        return R * 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+
+    def _load_geo(self) -> None:
+        """Load geo.csv lazily."""
+        if self._geo_data is not None:
+            return
+        if self._geo_csv_path is None or not os.path.exists(self._geo_csv_path):
+            self._geo_data = pd.DataFrame()
+            return
+        df = pd.read_csv(self._geo_csv_path)
+        df = df.dropna(subset=["latitude", "longitude"])
+        self._geo_data = df
+        for idx, row in df.iterrows():
+            key = self._normalize(str(row["nom"]))
+            self._geo_name_to_idx[key] = idx
+
+    def find_nearest_station(self, lat: float, lon: float, top_n: int = 3) -> List[Tuple[str, str, float]]:
+        """
+        Find the nearest SNCF stations to given coordinates.
+        Returns list of (station_id, station_name, distance_km).
+        Only considers stations that are actually in the graph (have connections).
+        """
+        self.build()
+        results: List[Tuple[str, str, float]] = []
+        for station_id, station_name in self.area_id_to_name.items():
+            slat = self.area_id_to_lat.get(station_id)
+            slon = self.area_id_to_lon.get(station_id)
+            if slat is None or slon is None or pd.isna(slat) or pd.isna(slon):
+                continue
+            # Only consider stations that have at least one connection
+            if station_id not in self.graph and station_id not in self.station_degree:
+                continue
+            dist = self._haversine_km(lat, lon, float(slat), float(slon))
+            results.append((station_id, station_name, dist))
+        results.sort(key=lambda x: x[2])
+        return results[:top_n]
+
+    def find_nearest_station_for_city(self, city: str, top_n: int = 3) -> List[Tuple[str, str, float]]:
+        """
+        Look up a city in geo.csv by name, then find the nearest SNCF station(s).
+        Returns list of (station_id, station_name, distance_km) or empty list.
+        """
+        self._load_geo()
+        if self._geo_data is None or self._geo_data.empty:
+            return []
+
+        city_norm = self._normalize(city)
+
+        # Exact match
+        idx = self._geo_name_to_idx.get(city_norm)
+        if idx is not None:
+            row = self._geo_data.loc[idx]
+            return self.find_nearest_station(float(row["latitude"]), float(row["longitude"]), top_n)
+
+        # Partial / fuzzy match: find cities that contain the query or vice versa
+        best_match = None
+        best_score = 0.0
+        for norm_name, idx in self._geo_name_to_idx.items():
+            if city_norm in norm_name:
+                score = len(city_norm) / len(norm_name)
+                if score > best_score:
+                    best_score = score
+                    best_match = idx
+            elif norm_name in city_norm:
+                score = len(norm_name) / len(city_norm) * 0.9
+                if score > best_score:
+                    best_score = score
+                    best_match = idx
+
+        if best_match is not None and best_score > 0.5:
+            row = self._geo_data.loc[best_match]
+            return self.find_nearest_station(float(row["latitude"]), float(row["longitude"]), top_n)
+
+        return []
+
     def find_station_candidates(self, query: str, top_n: int = 5) -> List[Tuple[str, str, float]]:
         """Return list of (station_id, station_name, score)."""
         self.build()
@@ -198,10 +287,24 @@ class SNCFPathFinder:
 
     def _pick_candidates(self, city: str) -> List[Tuple[str, str, float]]:
         candidates = self.find_station_candidates(city, top_n=5)
-        if not candidates:
-            return []
-        min_score = candidates[0][2] * 0.7
-        return [item for item in candidates if item[2] >= min_score][:3]
+        if candidates:
+            min_score = candidates[0][2] * 0.7
+            filtered = [item for item in candidates if item[2] >= min_score][:3]
+            if filtered:
+                return filtered
+
+        # Fallback: look up city in geo.csv and find the nearest station
+        geo_candidates = self.find_nearest_station_for_city(city, top_n=3)
+        if geo_candidates:
+            # Convert (station_id, station_name, distance_km) to scoring format
+            # Use a synthetic score: closer = higher score, cap at 100km
+            scored = []
+            for station_id, station_name, dist_km in geo_candidates:
+                score = max(0.1, 1.0 - dist_km / 100.0)
+                scored.append((station_id, station_name, score))
+            return scored
+
+        return []
 
     def route_between_cities(self, city_from: str, city_to: str) -> RouteResult:
         self.build()
@@ -209,9 +312,9 @@ class SNCFPathFinder:
         ends = self._pick_candidates(city_to)
 
         if not starts:
-            raise ValueError(f"No station found for city '{city_from}'.")
+            raise ValueError(f"Aucune gare trouvée pour '{city_from}' (ni par nom, ni par géolocalisation).")
         if not ends:
-            raise ValueError(f"No station found for city '{city_to}'.")
+            raise ValueError(f"Aucune gare trouvée pour '{city_to}' (ni par nom, ni par géolocalisation).")
 
         best_path = None
         best_time = float("inf")
