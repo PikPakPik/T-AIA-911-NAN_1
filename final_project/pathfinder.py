@@ -389,23 +389,40 @@ class SNCFPathFinder:
         """
         Plus court chemin entre deux gares (Dijkstra).
         Retourne (liste d'IDs, temps total en minutes) ou (None, inf).
+
+        Exemple Marseille → Toulouse :
+            Marseille --105--> Lyon --120--> Paris --150--> Toulouse
+                 \\--175--> Bordeaux --200--> Toulouse
+            Résultat : [Marseille, Bordeaux, Toulouse], 375 min
         """
+        # ─── Bloc 1 : Préparation ─────────────────────────────────────────
         self.build()
         if start_id == end_id:
-            return [start_id], 0.0
+            return [start_id], 0.0  # Ex: Paris → Paris → ([Paris], 0)
 
+        # ─── Bloc 2 : Initialisation ─────────────────────────────────────
+        # Exemple Marseille → Toulouse :
+        #   heap      = [(0.0, 0, "Marseille")]
+        #   distances = {"Marseille": 0.0}
+        #   previous  = {"Marseille": None}
         counter = 0
         heap = [(0.0, counter, start_id)]
         distances = {start_id: 0.0}
         previous: Dict[str, Optional[str]] = {start_id: None}
         visited: set = set()
 
+        # ─── Bloc 3 : Exploration (boucle principale) ──────────────────────
+        # Ex: heappop → (175, 2, "Bordeaux") = gare la plus proche à traiter
         while heap:
             current_dist, _, node = heapq.heappop(heap)
             if node in visited:
                 continue
             visited.add(node)
 
+            # ─── Bloc 4 : Arrivée atteinte → reconstruction du chemin ────
+            # Ex: node="Toulouse" → cur=previous[cur] donne :
+            #     Toulouse → Bordeaux → Marseille → None
+            #     path.reverse() → [Marseille, Bordeaux, Toulouse]
             if node == end_id:
                 path: List[str] = []
                 cur: Optional[str] = node
@@ -415,6 +432,10 @@ class SNCFPathFinder:
                 path.reverse()
                 return path, current_dist
 
+            # ─── Bloc 5 : Relaxation des voisins ──────────────────────────
+            # Ex: node="Bordeaux", neigh="Toulouse", weight=200
+            #     alt = 175 + 200 = 375
+            #     previous["Toulouse"] = "Bordeaux"
             for neigh, weight, _ in self.graph.get(node, []):
                 if neigh in visited:
                     continue
